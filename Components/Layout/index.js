@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import Head from "next/head";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -44,6 +45,7 @@ const Layout = ({ children }) => {
       </Head>
       <Header />
       <main className={styles.mainContainer}>{children}</main>
+      <Footer />
     </div>
   );
 };
