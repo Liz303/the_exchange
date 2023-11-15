@@ -1,0 +1,76 @@
+@use "../../../styles/vars";
+
+.footer {
+  @include vars.flexbox();
+  @include vars.flex-direction(column);
+  @include vars.justify-content(space-between);
+  background-color: vars.$black;
+  color: vars.$white;
+  padding: 60px;
+  position: relative;
+  z-index: 100;
+
+  .label {
+    margin-bottom: 40px;
+  }
+
+  .type {
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-transform: capitalize;
+  }
+
+  .addressContainer {
+    padding-right: 80px;
+  }
+
+  .addressContainer,
+  .socialContainer {
+    margin-bottom: 60px;
+    @include vars.mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  .emailGroupContainer {
+    @include vars.flexbox();
+    @include vars.tablet-and-lower {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include vars.mobile {
+      @include vars.flexbox();
+      @include vars.flex-direction(column);
+    }
+    .emailGroup {
+      padding-bottom: 30px;
+      padding-right: 60px;
+    }
+  }
+
+  .addressContainer {
+    .addressGroup {
+      padding-bottom: 5px;
+    }
+  }
+
+  // .socialContainer {
+  //   .socialLinkContainer {
+  //     .social {
+  //       margin-bottom: 15px;
+  //     }
+  //   }
+  // }
+
+  .logoContainer {
+    height: 200px;
+    div,
+    svg,
+    a {
+      height: 100%;
+    }
+    svg path {
+      fill: vars.$white;
+    }
+  }
+}

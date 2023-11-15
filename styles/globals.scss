@@ -213,6 +213,94 @@ section {
 
 /* BUTTONS */
 
+button {
+  &:focus,
+  &:focus-visible,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.btn-secondary {
+    @include button();
+    @include flexbox();
+    @include align-items(center);
+    background-color: transparent;
+    border: none;
+    color: $white;
+    border-bottom: 2px solid white;
+    padding-left: 0;
+    padding-right: 0;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    z-index: 1000;
+    .address-row {
+      @include flexbox();
+      @include flex-flow(column);
+      @include align-items(flex-start);
+    }
+    .button-text .address-line-one {
+      margin-bottom: 10px;
+    }
+    .arrow-container {
+      background-color: transparent;
+      height: 16px;
+      margin-left: 30px;
+      transition: all 0.3s linear;
+      width: 16px;
+      .arrow {
+        border-bottom: 1px solid $white;
+        bottom: 19px;
+        height: 1px;
+        position: absolute;
+        right: 2px;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+        width: 16px;
+      }
+      .arrow::after,
+      .arrow::before {
+        content: "";
+        background-color: $white;
+        height: 13px;
+        position: absolute;
+        right: 3px;
+        transition: all 0.3s ease-in-out;
+        width: 1px;
+      }
+
+      .arrow::after {
+        top: -10px;
+        transform: rotate(-45deg);
+      }
+
+      .arrow::before {
+        top: -1px;
+        transform: rotate(45deg);
+      }
+    }
+    box-shadow: inset 0 0 0 0 $white !important;
+    color: $white !important;
+    &:hover {
+      cursor: pointer;
+      color: $black !important;
+      box-shadow: inset 0 -200px 0 0 $white !important;
+      .arrow-container {
+        .arrow {
+          border-bottom: 1px solid $black;
+        }
+        .arrow::after,
+        .arrow::before {
+          background-color: $black;
+        }
+      }
+    }
+  }
+}
+
 button.hamburger-wrapper {
   @include flexbox();
   @include justify-content(center);
