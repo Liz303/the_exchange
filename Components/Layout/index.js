@@ -2,22 +2,22 @@ import styles from "./style.module.scss";
 import Head from "next/head";
 import Header from "./Header";
 
-const Layout = ({ pageTitle, metaDescription, siteUrl, children }) => {
+const Layout = ({ children }) => {
   return (
     <div className={styles.mainContainer}>
       <Head>
-        <title>{pageTitle}</title>
-        <meta name="description" content={metaDescription} />
+        <title>{"City Leisure Groupe"}</title>
+        <meta name="description" content={"page metadata placeholder"} />
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, viewport-fit=cover"
         />
-        <meta property="og:title" content={pageTitle} />
+        <meta property="og:title" content={"City Leisure Group"} />
 
         <meta property="og:image:height" content="1257" />
         <meta property="og:image:width" content="2400" />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={siteUrl} />
+        <meta property="og:description" content={"page metadata placeholder"} />
+        <meta property="og:url" content={"CLG placeholder URL"} />
         <meta property="og:image" content="/og-image.jpg" />
 
         <link

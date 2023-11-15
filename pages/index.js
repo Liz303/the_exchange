@@ -1,19 +1,17 @@
 import { getPage } from "../utils/contentful-client";
-import { renderPageSections } from "/utils/renderPageSections";
 import Layout from "@/Components/Layout";
+import BiosSection from "@/Components/BiosSection";
+import ProjectsSection from "@/Components/ProjectsSection";
+import NewsSection from "@/Components/NewsSection";
 
 export default function Home({ homePageContent }) {
-  const { pageSections } = homePageContent.fields;
+  const { bios, news, projects } = homePageContent.fields;
+
   return (
-    <Layout
-      pageTitle={"City Leisure Group"}
-      metaDescription={"Page metadata placeholder"}
-      siteUrl={"url placeholder"}
-      id="home-page"
-    >
-      {pageSections && pageSections.length > 0
-        ? renderPageSections(pageSections)
-        : ""}
+    <Layout>
+      <BiosSection section={bios} />
+      <ProjectsSection section={projects} />
+      <NewsSection section={news} />
     </Layout>
   );
 }
