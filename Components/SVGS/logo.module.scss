@@ -1,0 +1,8 @@
+@use "../../styles/vars";
+
+.logoContainer {
+  height: 100%;
+  .logo path {
+    fill: vars.$black;
+  }
+}

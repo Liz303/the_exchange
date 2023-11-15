@@ -1,0 +1,175 @@
+@use "../../../styles/vars";
+
+.header {
+  background-color: vars.$white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  .mobileNavigation {
+    display: none;
+    height: 60px;
+    padding: 0;
+    padding: 0 10px;
+    width: vars.$full;
+    @include vars.tablet-and-lower {
+      @include vars.flexbox();
+    }
+    svg,
+    a {
+      height: 100%;
+    }
+    .hamburger {
+      cursor: pointer;
+      height: 20px;
+      position: absolute;
+      right: 30px;
+      top: 17px;
+      transform: rotate(0deg);
+      transform: translateZ(10001px);
+      transform-style: preserve-3d;
+      transition: all 0.5s ease-in-out;
+      width: 30px;
+      z-index: 10001;
+      @include vars.x-small {
+        right: 15px;
+      }
+      span {
+        background: vars.$black;
+        display: block;
+        height: 2px;
+        left: 0;
+        opacity: 1;
+        position: absolute;
+        width: 100%;
+        transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        &:nth-child(1) {
+          top: 0px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          top: 10px;
+        }
+        &:nth-child(4) {
+          top: 20px;
+        }
+      }
+    }
+    &:hover {
+      .hamburger {
+        transform: scale(1.02);
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+    &.opened {
+      .hamburger {
+        span {
+          background: vars.$white;
+          &:nth-child(1) {
+            left: 50%;
+            top: 18px;
+            width: 0%;
+          }
+          &:nth-child(2) {
+            transform: rotate(45deg);
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+          }
+          &:nth-child(4) {
+            left: 50%;
+            top: 18px;
+            width: 0%;
+          }
+        }
+        &:hover {
+          span {
+            background: vars.$white;
+          }
+        }
+      }
+    }
+  }
+
+  .drawer {
+    @include vars.flexbox();
+    @include vars.flex-flow(column);
+    @include vars.justify-content(center);
+    @include vars.align-items(center);
+    background: vars.$black;
+    display: none;
+    height: 100vh;
+    left: 0px;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0px;
+    transition: top 0.5s linear;
+    width: 100vw;
+    z-index: 10;
+    @include vars.tablet-and-lower {
+      @include vars.flexbox();
+    }
+    &.closed {
+      top: -120vh;
+    }
+    &.opened {
+      top: 0px;
+    }
+    .navContainerMobile {
+      @include vars.flexbox();
+      @include vars.flex-flow(column);
+      @include vars.justify-content(center);
+      @include vars.align-items(center);
+      height: 100vh;
+      padding: 120px 0;
+      width: 100vw;
+      .navItem {
+        margin-bottom: 30px;
+        a {
+          color: vars.$white;
+          font-size: 1.5rem;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .headerContainer {
+    @include vars.flexbox();
+    @include vars.align-items(center);
+    @include vars.justify-content(space-between);
+    border-bottom: 1px solid vars.$black;
+    height: 75px;
+    padding: 10px 30px;
+    svg,
+    a {
+      height: 100%;
+    }
+    .navContainer {
+      @include vars.flexbox();
+      @include vars.align-items(center);
+      @include vars.justify-content(space-between);
+      width: vars.$four-twelfths;
+    }
+    .navItem {
+      color: vars.$black;
+      margin-right: 20px;
+      text-transform: capitalize;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @include vars.tablet-and-lower {
+      display: none;
+    }
+  }
+  .buttonContainer {
+    @include vars.flexbox();
+    @include vars.justify-content(flex-end);
+    width: vars.$four-twelfths;
+  }
+}

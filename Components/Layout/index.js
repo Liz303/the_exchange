@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import Head from "next/head";
+import Header from "./Header";
 
 const Layout = ({ pageTitle, metaDescription, siteUrl, children }) => {
   return (
@@ -41,6 +42,7 @@ const Layout = ({ pageTitle, metaDescription, siteUrl, children }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <Header />
       <main className={styles.mainContainer}>{children}</main>
     </div>
   );
