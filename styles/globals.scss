@@ -11,11 +11,6 @@ body {
   padding: 0;
 }
 
-body {
-  position: fixed;
-  top: 0;
-}
-
 a,
 .link {
   @include body-font();
@@ -210,6 +205,10 @@ p {
 /* Styles page */
 #styles {
   padding: 0 90px;
+}
+
+section {
+  height: 40vh;
 }
 
 /* BUTTONS */
