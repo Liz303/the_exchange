@@ -54,44 +54,50 @@
 
 // COLORS
 /* Put in your brand colors here */
-$black: #222224;
-$brown: #1f0502;
-$white: #edebe3;
-$green: #1f3a1f;
-$lightbrown: #cb9b6e;
-$yellow: #f1e889;
-$orange: #f5841f;
+$black: #1e1e1e;
+$lightblue: #6894b5;
+$blue: #061636;
+$white: #f2f2e9;
+$yellow: #f1d800;
+$green: #2e4d36;
 $grayscale-60: #757474;
 
 // FONTS
 /* Import your fonts here */
-@import url("https://use.typekit.net/xul8wir.css");
 
-// @font-face {
-//   font-family: "GintoCondensed";
-//   src: url("../public/fonts/ABCGintoNordCondensed-MediumItalic.woff2")
-//       format("woff2"),
-//     url("../public/fonts/ABCGintoNordCondensed-MediumItalic.woff")
-//       format("woff");
-//   font-display: swap;
-// }
+@font-face {
+  font-family: "BasierCircle-Medium";
+  src: url("../public/fonts/BasierCircle-Medium.otf") format("otf");
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: "GintoBold";
-//   src: url("../public/fonts/ABCGintoNord-Bold.woff2") format("woff2"),
-//     url("../public/fonts/ABCGintoNord-Bold.woff") format("woff");
-//   font-display: swap;
-// }
+@font-face {
+  font-family: "BasierCircle-Regular";
+  src: url("../public/fonts/BasierCircle-Regular.otf") format("otf");
+  font-display: swap;
+}
 
-$header-font-family: GintoBold, sans-serif;
+@font-face {
+  font-family: "BasierCircle-SemiBold";
+  src: url("../public/fonts/BasierCircle-SemiBold.otf") format("otf");
+  font-display: swap;
+}
 
-$subhead-font-family: "ff-scala", sans-serif;
+@font-face {
+  font-family: "Sfizia-Regular";
+  src: url("../public/fonts/Sfizia-Regular.otf") format("otf");
+  font-display: swap;
+}
+
+$header-font-family: BasierCircle-SemiBold, sans-serif;
+
+$subhead-font-family: BasierCircle-Regular, sans-serif;
 $subhead-font-weight: 400;
 $subhead-font-style: normal;
 
-$eyebrow-font-family: GintoCondensed, serif;
+$eyebrow-font-family: Sfizia-Regular, serif;
 
-$body-font-family: "ff-scala", sans-serif;
+$body-font-family: BasierCircle-Regular, sans-serif;
 $body-font-weight: 400;
 $body-bold-weight: 700;
 $body-font-style: normal;
@@ -228,7 +234,6 @@ $full: 100%;
   font-size: 125pt;
   font-size: calc(25pt + (95 - 25) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
-  text-transform: uppercase;
   @include tablet-and-lower {
     font-size: calc(36pt + (125 - 36) * ((100vw - 300px) / (1600 - 300)));
   }
@@ -364,7 +369,7 @@ $full: 100%;
 // Buttons //
 @mixin button() {
   @include eyebrow-font();
-  background-color: $lightbrown;
+  background-color: $lightblue;
   border: none;
   border-radius: 20px;
   font-size: 13pt;

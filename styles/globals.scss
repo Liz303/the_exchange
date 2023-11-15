@@ -45,9 +45,9 @@ a,
       color: inherit;
       cursor: pointer;
       outline: none;
-      text-decoration-color: $orange;
-      -webkit-text-decoration-color: $orange;
-      -moz-text-decoration-color: $orange;
+      text-decoration-color: $yellow;
+      -webkit-text-decoration-color: $yellow;
+      -moz-text-decoration-color: $yellow;
       &:before {
         transform-origin: 0% 50%;
         transform: scale3d(1, 1, 1);
@@ -207,10 +207,6 @@ p {
   padding: 0 90px;
 }
 
-section {
-  height: 40vh;
-}
-
 /* BUTTONS */
 
 button {
@@ -352,16 +348,16 @@ button.hamburger-wrapper {
       width: 45px;
       opacity: 1;
       &:nth-child(1) {
-        background-color: $orange;
+        background-color: $yellow;
         top: 0px;
       }
       &:nth-child(2),
       &:nth-child(3) {
-        background-color: $orange;
+        background-color: $yellow;
         top: 15px;
       }
       &:nth-child(4) {
-        background-color: $orange;
+        background-color: $yellow;
         top: 30px;
       }
     }

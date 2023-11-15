@@ -1,0 +1,10 @@
+@use "../../styles/vars";
+
+.introSection {
+  .imageContainer {
+    height: 100vh;
+    img {
+      height: 100%;
+    }
+  }
+}

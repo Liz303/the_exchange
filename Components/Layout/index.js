@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.mainContainer}>
       <Head>
-        <title>{"City Leisure Groupe"}</title>
+        <title>{"City Leisure Group"}</title>
         <meta name="description" content={"page metadata placeholder"} />
         <meta
           name="viewport"
