@@ -7,7 +7,7 @@ const IntroSection = () => {
     <section className={styles.introSection}>
       <h1>Your Passport For Adventure</h1>
       <div className={styles.imageContainer}>
-        <ImageRender image={introImage} />
+        <ImageRender image={introImage} cover={true} />
       </div>
     </section>
   );
