@@ -14,7 +14,7 @@ export default function Home({ homePageContent }) {
     <Layout>
       <IntroSection />
       <AboutSection />
-      <ProjectsSection section={projects} />
+      <ProjectsSection projects={projects} />
       <TeamSection bios={bios} />
       <NewsSection section={news} />
       <CTASection />
