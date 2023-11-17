@@ -381,3 +381,73 @@ button.hamburger-wrapper {
     }
   }
 }
+
+// styles for react-slick
+
+.slick-next::before {
+  display: none !important;
+}
+
+.slick-prev::before {
+  display: none !important;
+}
+
+.slick-next {
+  right: 20px !important;
+  svg {
+    fill: none;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    width: 100% !important;
+    path:first-child {
+      fill: #000925;
+      transition: fill 0.25s ease-in-out;
+    }
+    path:last-child {
+      fill: white;
+      transition: fill 0.25s ease-in-out;
+    }
+  }
+  &:hover {
+    svg {
+      path:first-child {
+        fill: white;
+      }
+      path:last-child {
+        fill: #000925;
+      }
+    }
+  }
+}
+
+.slick-next,
+.slick-prev {
+  top: calc(50% - 20px) !important;
+  width: 48px !important;
+  z-index: 1;
+}
+
+.slick-prev {
+  svg {
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    path:first-child {
+      fill: #000925;
+      transition: fill 0.25s ease-in-out;
+    }
+    path:last-child {
+      fill: white;
+      transition: fill 0.25s ease-in-out;
+    }
+  }
+  &:hover {
+    svg {
+      path:first-child {
+        fill: white;
+      }
+      path:last-child {
+        fill: #000925;
+      }
+    }
+  }
+}
