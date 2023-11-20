@@ -5,6 +5,8 @@ import ModalWrapper from "../ModalWrapper";
 import { gsap } from "gsap";
 import Eyebrow from "../Eyebrow";
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
+import { SliderWrapper } from "../SliderWrapper";
+import ImageRender from "../Images/ImageRender";
 
 const ProjectsSection = ({ projects }) => {
   const [activeProject, setActiveProject] = useState();
@@ -45,9 +47,12 @@ const ProjectsSection = ({ projects }) => {
       } = project.fields;
 
       return (
-        <div onClick={() => handleOpenClose(project)}>
+        <div
+          className={styles.projectCard}
+          onClick={() => handleOpenClose(project)}
+        >
+          <ImageRender image={primaryImage} cover={true} />
           <h5>{titleOrLocation}</h5>
-          <span>{shortDescription}</span>
         </div>
       );
     });
@@ -60,14 +65,30 @@ const ProjectsSection = ({ projects }) => {
           <div className={styles.modalContents}>
             <h5>{activeProject.fields.titleOrLocation}</h5>
             <span>{activeProject.fields.shortDescription}</span>
+            {activeProject.fields.secondaryImages && (
+              <div className={styles.imagesContainer}>
+                {activeProject.fields.secondaryImages.map((image, i) => {
+                  return (
+                    <div
+                      className={styles.secondaryImage}
+                      key={`secondary-image-${i}`}
+                    >
+                      <ImageRender image={image} />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </ModalWrapper>
       )}
 
-      <section>
+      <section className={styles.projectsSection}>
         <Eyebrow eyebrowCopy={"Our Projects"} color={"black"} />
         <h2>Projects Section</h2>
-        {renderProjectCards()}
+        <div className={styles.projectCardsContainer}>
+          <SliderWrapper projects={true}>{renderProjectCards()}</SliderWrapper>
+        </div>
       </section>
     </Element>
   );

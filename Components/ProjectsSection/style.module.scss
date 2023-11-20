@@ -2,4 +2,48 @@
 
 .modalContents {
   height: 100%;
+  .imagesContainer {
+    width: 100%;
+    .secondaryImage {
+      width: vars.$five-twelfths;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.projectsSection {
+  .projectCardsContainer {
+    .projectCard {
+      @include vars.flexbox();
+      @include vars.justify-content(center);
+      @include vars.align-items(center);
+      height: 90vh;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.15s linear;
+      img {
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.25s linear;
+        width: 100%;
+      }
+      h5 {
+        color: vars.$white;
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+      }
+      &:hover {
+        border-radius: 30px;
+        cursor: pointer;
+        img {
+          height: 101%;
+          width: 101%;
+        }
+      }
+    }
+  }
 }
