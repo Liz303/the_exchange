@@ -1,20 +1,50 @@
 @use "../../../styles/vars";
 
 .header {
-  background-color: vars.$white;
-  position: sticky;
-  top: 0;
+  background-color: transparent;
   left: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s linear;
   width: 100vw;
   z-index: 1000;
+  &.invert {
+    background-color: vars.$white;
+    .headerContainer {
+      .logoContainer {
+        svg path {
+          fill: vars.$black;
+        }
+      }
+      .navItem {
+        color: vars.$black;
+      }
+    }
+    .mobileNavigation {
+      .logoContainer {
+        svg path {
+          fill: vars.$black;
+        }
+      }
+      .hamburger {
+        span {
+          background: vars.$black;
+        }
+      }
+    }
+  }
   .mobileNavigation {
     display: none;
+    border-bottom: 1px solid vars.$white;
     height: 60px;
     padding: 0;
     padding: 0 10px;
     width: vars.$full;
     @include vars.tablet-and-lower {
       @include vars.flexbox();
+    }
+    .logoContainer {
+      padding: 8px 0;
     }
     svg,
     a {
@@ -36,7 +66,7 @@
         right: 15px;
       }
       span {
-        background: vars.$black;
+        background: vars.$white;
         display: block;
         height: 2px;
         left: 0;
@@ -100,7 +130,7 @@
     @include vars.flex-flow(column);
     @include vars.justify-content(center);
     @include vars.align-items(center);
-    background: vars.$black;
+    background: vars.$blue;
     display: none;
     height: 100vh;
     left: 0px;
@@ -142,23 +172,35 @@
     @include vars.flexbox();
     @include vars.align-items(center);
     @include vars.justify-content(space-between);
-    border-bottom: 1px solid vars.$black;
-    height: 75px;
-    padding: 10px 30px;
+    border-bottom: 1px solid vars.$white;
+    height: 52px;
+    padding: 10px 60px;
     svg,
     a {
       height: 100%;
+    }
+    .logoContainer {
+      height: 100%;
+      margin-right: 8.5vw;
+      svg path {
+        fill: vars.$white;
+        transition: all 0.5s linear;
+      }
     }
     .navContainer {
       @include vars.flexbox();
       @include vars.align-items(center);
       @include vars.justify-content(space-between);
-      width: vars.$four-twelfths;
+      width: 100%;
     }
     .navItem {
-      color: vars.$black;
+      color: vars.$white;
       margin-right: 20px;
       text-transform: capitalize;
+      a {
+        font-size: 13pt !important;
+        font-weight: bold;
+      }
       &:last-child {
         margin-right: 0;
       }

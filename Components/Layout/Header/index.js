@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { useRef, useEffect } from "react";
 import Logo from "@/Components/SVGS/logo";
 
-const Header = () => {
+const Header = ({ changeHeader }) => {
   const [showDrawer, setShowDrawer] = useState(false);
 
   const navLinks = ["about", "projects", "team", "news", "connect"];
@@ -57,13 +57,18 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header} ref={headerRef}>
+    <header
+      className={`${styles.header} ${changeHeader && styles.invert}`}
+      ref={headerRef}
+    >
       <div
         className={`${styles.mobileNavigation} ${
           showDrawer ? `${styles.opened}` : `${styles.closed}`
         } `}
       >
-        <Logo />
+        <div className={styles.logoContainer}>
+          <Logo />
+        </div>
         <div
           className={styles.hamburger}
           ref={hamburgerRef}
@@ -83,7 +88,9 @@ const Header = () => {
         <div className={styles.navContainerMobile}>{renderNavLinks()}</div>
       </div>
       <nav className={styles.headerContainer} ref={headerContainer}>
-        <Logo />
+        <div className={styles.logoContainer}>
+          <Logo />
+        </div>
         <div className={styles.navContainer}>{renderNavLinks()}</div>
       </nav>
     </header>

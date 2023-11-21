@@ -6,13 +6,19 @@ import TeamSection from "@/Components/TeamSection";
 import ProjectsSection from "@/Components/ProjectsSection";
 import NewsSection from "@/Components/NewsSection";
 import CTASection from "@/Components/CTASection";
+import { useState } from "react";
 
 export default function Home({ homePageContent }) {
   const { bios, news, projects } = homePageContent.fields;
+  const [changeHeader, setChangeHeader] = useState(false);
+
+  const handleChange = (state) => {
+    setChangeHeader(state);
+  };
 
   return (
-    <Layout>
-      <IntroSection />
+    <Layout changeHeader={changeHeader}>
+      <IntroSection handleChange={handleChange} />
       <AboutSection />
       <ProjectsSection projects={projects} />
       <TeamSection bios={bios} />

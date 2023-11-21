@@ -1,10 +1,99 @@
 @use "../../styles/vars";
 
 .introSection {
-  .imageContainer {
-    height: 100vh;
-    img {
+  .headlineImageWrapper {
+    @include vars.flexbox();
+    @include vars.align-items(center);
+    @include vars.justify-content(center);
+    height: 120vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    @include vars.mobile {
+      height: 115vh;
+    }
+    @include vars.x-small {
+      height: 110vh;
+    }
+    .introHeadline {
+      @include vars.flexbox();
+      @include vars.flex-direction(column);
+      @include vars.align-items(center);
+      @include vars.justify-content(center);
+      @include vars.flex-wrap(wrap);
+      color: vars.$white;
+      position: absolute;
+      .headlineWrapper {
+        @include vars.flexbox();
+        @include vars.align-items(flex-end);
+        @include vars.justify-content(center);
+        @include vars.flex-wrap(wrap);
+        opacity: 0;
+        text-align: center;
+        width: vars.$ten-twelfths;
+      }
+      span {
+        @include vars.eyebrow-font();
+        font-size: 125pt;
+        font-size: calc(25pt + (140 - 25) * ((100vw - 300px) / (1600 - 300)));
+        line-height: 100%;
+        @include vars.tablet-and-lower {
+          font-size: calc(40pt + (140 - 40) * ((100vw - 300px) / (1600 - 300)));
+        }
+      }
+      .starContainer {
+        height: 200px;
+        margin-bottom: 20px;
+        opacity: 0;
+        svg {
+          height: 100%;
+        }
+      }
+    }
+    .imageContainer {
       height: 100%;
+      width: 100%;
+      img {
+        height: 100% !important;
+        width: 100%;
+      }
+    }
+  }
+  .introTextContainer {
+    @include vars.flexbox();
+    @include vars.flex-direction(column);
+    @include vars.justify-content(center);
+    background-color: vars.$lightblue;
+    min-height: 100vh;
+    padding: 165px vars.$one-twenty-fourth;
+    position: relative;
+    z-index: 10;
+    .slopeStarContainer {
+      position: absolute;
+      height: 320px;
+      top: -125px;
+      left: -40px;
+      svg {
+        height: 100%;
+      }
+      @include vars.mobile {
+        height: 250px;
+        top: -97px;
+        left: -80px;
+      }
+      @include vars.x-small {
+        height: 220px;
+        top: -86px;
+        left: -110px;
+      }
+    }
+    .introCopy {
+      @include vars.body-one();
+      opacity: 0;
+      max-width: 1000px;
+    }
+    @include vars.mobile {
+      padding: 100px vars.$one-twenty-fourth;
     }
   }
 }
