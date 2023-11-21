@@ -3,74 +3,84 @@
 .footer {
   @include vars.flexbox();
   @include vars.flex-direction(column);
-  @include vars.justify-content(space-between);
-  background-color: vars.$black;
+  background-color: vars.$blue;
   color: vars.$white;
-  padding: 60px;
+  padding: 120px 60px 60px;
   position: relative;
   z-index: 100;
-
-  .label {
-    margin-bottom: 40px;
+  @include vars.tablet-and-lower {
+    padding: 90px 30px 30px;
+  }
+  @include vars.x-small {
+    padding: 60px 30px 30px;
   }
 
-  .type {
-    margin-bottom: 10px;
-    margin-top: 0;
-    text-transform: capitalize;
+  .footerImage {
+    background: vars.$yellow;
+    height: 40vh;
+    width: 100%;
   }
 
-  .addressContainer {
-    padding-right: 80px;
-  }
-
-  .addressContainer,
-  .socialContainer {
-    margin-bottom: 60px;
-    @include vars.mobile {
-      margin-bottom: 30px;
-    }
-  }
-
-  .emailGroupContainer {
+  .detailsWrapper {
     @include vars.flexbox();
-    @include vars.tablet-and-lower {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
+    @include vars.justify-content(space-between);
+    margin-bottom: 85px;
     @include vars.mobile {
+      @include vars.flex-wrap(wrap);
+      justify-content: unset;
+    }
+    .contactGroupWrapper {
       @include vars.flexbox();
-      @include vars.flex-direction(column);
+      @include vars.justify-content(space-between);
+      width: vars.$five-twelfths;
+      @include vars.tablet-and-lower {
+        width: unset;
+      }
+      @include vars.mobile {
+        @include vars.flex-wrap(wrap);
+      }
+      .type {
+        margin-bottom: 35px;
+        @include vars.mobile {
+          margin-bottom: 10px;
+        }
+      }
+      .addressContainer,
+      .emailGroupContainer {
+        padding-right: 30px;
+        @include vars.tablet-and-lower {
+          padding-right: 90px;
+        }
+        @include vars.mobile {
+          margin-bottom: 30px;
+        }
+      }
     }
-    .emailGroup {
-      padding-bottom: 30px;
-      padding-right: 60px;
+    .socialContainer {
+      @include vars.flexbox();
+      @include vars.align-items(flex-end);
+      width: vars.$two-twelfths;
+      .social {
+        margin-bottom: 15px;
+        @include vars.mobile {
+          margin-bottom: 5px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      @include vars.mobile {
+        @include vars.align-items(flex-start);
+        width: unset;
+      }
     }
   }
-
-  .addressContainer {
-    .addressGroup {
-      padding-bottom: 5px;
-    }
-  }
-
-  // .socialContainer {
-  //   .socialLinkContainer {
-  //     .social {
-  //       margin-bottom: 15px;
-  //     }
-  //   }
-  // }
-
   .logoContainer {
-    height: 200px;
+    width: 100%;
     div,
-    svg,
-    a {
+    svg {
       height: 100%;
-    }
-    svg path {
-      fill: vars.$white;
+      width: 100%;
     }
   }
 }
