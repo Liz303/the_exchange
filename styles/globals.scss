@@ -114,6 +114,42 @@ p {
   margin-top: 0;
 }
 
+.star-icon {
+  path {
+    fill: $white;
+  }
+
+  &.blue {
+    path {
+      fill: $blue;
+    }
+  }
+
+  &.lightblue {
+    path {
+      fill: $lightblue;
+    }
+  }
+
+  &.yellow {
+    path {
+      fill: $yellow;
+    }
+  }
+
+  &.green {
+    path {
+      fill: $green;
+    }
+  }
+
+  &.black {
+    path {
+      fill: $black;
+    }
+  }
+}
+
 .address {
   @include subtitle-small();
 }
@@ -179,16 +215,9 @@ p {
   }
 }
 
-.eyebrow,
-.eyebrow p {
+.eyebrow {
   @include eyebrow();
   margin: 0;
-  span {
-    border: 3px solid $yellow;
-    border-radius: 30px;
-    display: inline-block;
-    padding: 2px 17px;
-  }
 }
 
 * {

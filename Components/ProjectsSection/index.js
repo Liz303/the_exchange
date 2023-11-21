@@ -3,6 +3,7 @@ import styles from "./style.module.scss";
 import { useState } from "react";
 import ModalWrapper from "../ModalWrapper";
 import { gsap } from "gsap";
+import Eyebrow from "../Eyebrow";
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 
 const ProjectsSection = ({ projects }) => {
@@ -64,7 +65,8 @@ const ProjectsSection = ({ projects }) => {
       )}
 
       <section>
-        <div>PROJECTS SECTION</div>
+        <Eyebrow eyebrowCopy={"Our Projects"} color={"black"} />
+        <h2>Projects Section</h2>
         {renderProjectCards()}
       </section>
     </Element>

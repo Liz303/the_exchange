@@ -2,6 +2,7 @@ import { Element } from "react-scroll";
 import styles from "./style.module.scss";
 import { SliderWrapper } from "../SliderWrapper";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Eyebrow from "../Eyebrow";
 
 const TeamSection = ({ bios }) => {
   const renderBios = () => {
@@ -20,7 +21,8 @@ const TeamSection = ({ bios }) => {
   return (
     <Element name="team" id="team">
       <section className={styles.teamSection}>
-        TEAM SECTION
+        <Eyebrow eyebrowCopy={"The Company"} color={"black"} />
+        <h2>Meet City Leisure Group</h2>
         <SliderWrapper length={bios.length}>{renderBios()}</SliderWrapper>
       </section>
     </Element>
