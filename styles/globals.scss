@@ -480,3 +480,17 @@ button.hamburger-wrapper {
     }
   }
 }
+
+// projects slider
+
+.projects-slider {
+  .slick-list {
+    padding-left: 30px;
+  }
+
+  .slick-slide {
+    div {
+      margin-right: 60px;
+    }
+  }
+}

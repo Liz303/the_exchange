@@ -22,27 +22,28 @@ const Arrow = ({ onClick, className, style, next }) => {
   );
 };
 
-export const SliderWrapper = ({ children, length }) => {
+export const SliderWrapper = ({ children, length, projects }) => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: length >= 4 ? 4 : length,
+    slidesToShow: length >= 4 ? 4 : projects ? 2 : length,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: <Arrow next={false} />,
     nextArrow: <Arrow next={true} />,
+    className: projects ? "projects-slider" : "bio-slider",
     responsive: [
       {
         breakpoint: 1439,
         settings: {
-          slidesToShow: length >= 3 ? 3 : length,
+          slidesToShow: length >= 3 ? 3 : projects ? 2 : length,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 820,
         settings: {
-          slidesToShow: length >= 2 ? 2 : length,
+          slidesToShow: length >= 2 ? 2 : projects ? 2 : length,
           slidesToScroll: 1,
         },
       },
