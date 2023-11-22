@@ -5,12 +5,10 @@
   @include vars.align-items(center);
   margin-bottom: 20px;
   .starContainer {
-    height: 20px;
     margin-right: 10px;
-    width: auto;
     svg {
-      height: 100%;
-      width: 100%;
+      height: 20px;
+      width: auto;
     }
   }
 }

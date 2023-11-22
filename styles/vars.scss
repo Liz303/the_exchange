@@ -67,25 +67,27 @@ $grayscale-60: #757474;
 
 @font-face {
   font-family: "BasierCircle-Medium";
-  src: url("../public/fonts/BasierCircle-Medium.otf") format("otf");
+  src: url("../public/fonts/BasierCircle-Medium.woff") format("woff"),
+  url("../public/fonts/BasierCircle-Medium.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "BasierCircle-Regular";
-  src: url("../public/fonts/BasierCircle-Regular.otf") format("otf");
+  src: url("../public/fonts/BasierCircle-Regular.woff") format("woff"), url("../public/fonts/BasierCircle-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "BasierCircle-SemiBold";
-  src: url("../public/fonts/BasierCircle-SemiBold.otf") format("otf");
+  src: url("../public/fonts/BasierCircle-SemiBold.woff") format("woff"),
+  url("../public/fonts/BasierCircle-SemiBold.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Sfizia-Regular";
-  src: url("../public/fonts/Sfizia-Regular.otf") format("otf");
+  src: url("../public/fonts/atipo-sfizia-regular.ttf") format("ttf");
   font-display: swap;
 }
 
@@ -98,8 +100,6 @@ $subhead-font-style: normal;
 $eyebrow-font-family: Sfizia-Regular, serif;
 
 $body-font-family: BasierCircle-Regular, sans-serif;
-$body-font-weight: 400;
-$body-bold-weight: 700;
 $body-font-style: normal;
 
 // OTHER SET STYLES
@@ -131,14 +131,9 @@ $full: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  padding: 0 89px;
-  @include medium-and-lower() {
-    padding: 0 60px;
-  }
+  grid-row-gap: 0em;
   @include small() {
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 30px;
   }
 }
 
@@ -189,6 +184,7 @@ $full: 100%;
 
 @mixin header-font() {
   font-family: $header-font-family;
+  font-weight: normal;
   line-height: 100%;
   letter-spacing: 0rem;
 }
@@ -202,12 +198,10 @@ $full: 100%;
 
 @mixin body-font() {
   font-family: $body-font-family;
-  font-weight: $body-font-weight;
   font-style: $body-font-style;
-  font-size: 16pt;
-  font-size: calc(10pt + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(12pt + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0rem;
-  line-height: 115%;
+  line-height: 150%;
   @include mobile {
     font-size: calc(12pt + (30 - 12) * ((100vw - 300px) / (1600 - 300)));
     line-height: 150%;
@@ -219,7 +213,6 @@ $full: 100%;
 
 @mixin body-bold() {
   font-family: $body-font-family;
-  font-weight: $body-bold-weight;
   font-style: $body-font-style;
 }
 
@@ -227,7 +220,6 @@ $full: 100%;
   font-family: $eyebrow-font-family;
 }
 
-//  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 
 @mixin h1() {
   @include header-font();
@@ -240,9 +232,8 @@ $full: 100%;
 }
 
 @mixin h2() {
-  @include subhead-font();
-  font-size: 64pt;
-  font-size: calc(30pt + (44 - 30) * ((100vw - 300px) / (1600 - 300)));
+  @include header-font();
+  font-size: calc(80pt + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
   @include x-small {
     font-size: 37pt;
@@ -251,13 +242,12 @@ $full: 100%;
 }
 
 @mixin h3() {
-  @include eyebrow-font();
-  font-size: 32pt;
-  font-size: calc(25pt + (45 - 25) * ((100vw - 300px) / (1600 - 300)));
+  @include header-font();
+  font-size: calc(45pt + (60 - 45) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
   @include x-small {
-    font-size: 34pt;
-    font-size: calc(20pt + (34 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-size: 37pt;
+    font-size: calc(26pt + (66 - 26) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 
@@ -329,8 +319,7 @@ $full: 100%;
 
 @mixin eyebrow() {
   @include eyebrow-font();
-  font-size: 16pt;
-  font-size: calc(15pt + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(16pt + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
   text-transform: capitalize;
   @include tablet-and-lower {
@@ -369,42 +358,16 @@ $full: 100%;
 // Buttons //
 @mixin button() {
   @include eyebrow-font();
-  background-color: $lightblue;
   border: none;
-  border-radius: 20px;
-  font-size: 13pt;
+  font-size: 18pt;
   line-height: 100%;
   padding: 5px 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   @include mobile {
     font-size: 18pt;
   }
   @include x-small {
     font-size: 16pt;
-  }
-}
-
-@mixin button-secondary() {
-  @include eyebrow-font();
-  background: $green;
-  border-radius: 20px;
-  border: 3px solid $green;
-  color: $yellow;
-  font-size: 22px;
-  line-height: 20px;
-  letter-spacing: 0rem;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background: $yellow;
-    border-radius: none;
-  }
-  @include tablet-and-lower {
-    font-size: 20px;
-  }
-  @include x-small {
-    font-size: 17px;
   }
 }
 

@@ -1,10 +1,21 @@
-const SecondaryButton = ({ button, link, buttonTitle, onClick }) => {
+const PrimaryButton = ({ button, link, buttonTitle, onClick }) => {
   const renderButtonInnards = (title) => {
     return (
-      <button className="btn-secondary">
+      <button className="btn-primary">
         <span className="button-text"> {title} </span>
         <div className={`arrow-container`}>
-          <div className={`arrow`}></div>
+          <svg viewBox="0 0 25 15">
+            <path
+              d="M0.350586 7.86133H23.9906"
+              stroke="#F2F2E9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M17.1406 0.810547L24.2006 7.88055L17.7506 14.3305"
+              stroke="#F2F2E9"
+              stroke-miterlimit="10"
+            />
+          </svg>
         </div>
       </button>
     );
@@ -57,4 +68,4 @@ const SecondaryButton = ({ button, link, buttonTitle, onClick }) => {
   }
 };
 
-export default SecondaryButton;
+export default PrimaryButton;

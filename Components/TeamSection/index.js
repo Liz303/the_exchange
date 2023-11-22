@@ -22,7 +22,7 @@ const TeamSection = ({ bios }) => {
     <Element name="team" id="team">
       <section className={styles.teamSection}>
         <Eyebrow eyebrowCopy={"The Company"} color={"black"} />
-        <h2>Meet City Leisure Group</h2>
+        <h3>Meet City Leisure Group</h3>
         <SliderWrapper length={bios.length}>{renderBios()}</SliderWrapper>
       </section>
     </Element>
