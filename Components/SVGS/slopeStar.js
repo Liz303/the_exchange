@@ -4,7 +4,7 @@ const SlopeStar = ({ color }) => {
     <svg
       viewBox="0 0 747 366"
       className={`${styles.slopeStar} ${
-        color === "lightblue" ? styles.lightblue : styles.darkBlue
+        color === "lightblue" ? styles.lightblue : styles.blue
       }`}
     >
       <path

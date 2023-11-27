@@ -1,19 +1,19 @@
-const PrimaryButton = ({ button, link, buttonTitle, onClick }) => {
+const PrimaryButton = ({ button, link, buttonTitle, onClick, color }) => {
   const renderButtonInnards = (title) => {
     return (
-      <button className="btn-primary">
+      <button className={`btn-primary ${color === "black" && "black"}`}>
         <span className="button-text"> {title} </span>
         <div className={`arrow-container`}>
           <svg viewBox="0 0 25 15">
             <path
               d="M0.350586 7.86133H23.9906"
               stroke="#F2F2E9"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
             />
             <path
               d="M17.1406 0.810547L24.2006 7.88055L17.7506 14.3305"
               stroke="#F2F2E9"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
             />
           </svg>
         </div>

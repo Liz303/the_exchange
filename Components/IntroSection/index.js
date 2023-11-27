@@ -53,7 +53,6 @@ const IntroSection = ({ handleChange }) => {
       end: "top 53px",
       onEnter: () => handleChange(true),
       onEnterBack: () => handleChange(false),
-      onRefresh: () => handleChange(false),
     });
   }, [headlineRef, introCopy, introCopyContainer, starRef]);
 

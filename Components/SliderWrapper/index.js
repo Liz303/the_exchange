@@ -18,14 +18,14 @@ const Arrow = ({ onClick, className, style, next }) => {
         <path
           d="M0 26.5415H85.6661"
           stroke="#F2F2E9"
-          stroke-width="2"
-          stroke-miterlimit="10"
+          strokeWidth="2"
+          strokeMiterlimit="10"
         />
         <path
           d="M60.8434 1.25391L86.4273 26.6104L63.0539 49.7434"
           stroke="#F2F2E9"
-          stroke-width="2"
-          stroke-miterlimit="10"
+          strokeWidth="2"
+          strokeMiterlimit="10"
         />
       </svg>
     </button>
@@ -41,10 +41,10 @@ export const SliderWrapper = ({ children, length, projects }) => {
     arrows: true,
     prevArrow: false,
     nextArrow: <Arrow next={true} />,
-    className: projects ? "projects-slider" : "bio-slider",
+    className: projects ? "projects-slider" : "bio-press-slider",
     responsive: [
       {
-        breakpoint: 1439,
+        breakpoint: 1079,
         settings: {
           slidesToShow: length >= 3 ? 3 : projects ? 2 : length,
           slidesToScroll: 1,

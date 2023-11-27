@@ -1,19 +1,18 @@
 import { Element } from "react-scroll";
 import styles from "./style.module.scss";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import ModalWrapper from "../ModalWrapper";
 import { gsap } from "gsap";
 import Eyebrow from "../Eyebrow";
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { SliderWrapper } from "../SliderWrapper";
 import ImageRender from "../Images/ImageRender";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import PrimaryButton from "../Buttons/PrimaryButton";
+import ActiveProject from "./activeProject";
 
 const ProjectsSection = ({ projects }) => {
   const [activeProject, setActiveProject] = useState();
-  const [showModal, setShowModal] = useState();
   gsap.registerPlugin(ScrollTrigger);
+  const sectionRef = useRef();
   const headlineRef = useRef();
   const copyRef = useRef();
   const projectsRef = useRef();
@@ -26,11 +25,26 @@ const ProjectsSection = ({ projects }) => {
     }
   };
 
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.to(sectionRef.current, {
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "bottom bottom",
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+    });
+    return () => ctx.revert();
+  }, []);
+
   useEffect(() => {
     if (headlineRef) {
       gsap.to(headlineRef.current, {
         opacity: 1,
         duration: 1,
+        delay: 0.5,
         scrollTrigger: {
           trigger: headlineRef.current,
           start: "top 60%",
@@ -41,7 +55,7 @@ const ProjectsSection = ({ projects }) => {
       gsap.to(copyRef.current, {
         opacity: 1,
         duration: 1,
-        delay: 0.5,
+        delay: 0.8,
         scrollTrigger: {
           trigger: copyRef.current,
           start: "top 60%",
@@ -56,33 +70,17 @@ const ProjectsSection = ({ projects }) => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: projectContainerRef.current,
-          start: "top 50%",
+          start: "top 60%",
         },
       });
     }
-  }, [headlineRef, copyRef]);
+  }, [headlineRef, copyRef, projectsRef, projectContainerRef, sectionRef]);
 
-  const handleOpenClose = (project) => {
-    if (project === null) {
-      setShowModal(false);
-      const body = document.body;
-      const scrollY = body.style.top;
-      body.style.position = "";
-      body.style.top = "";
+  const handleOpenClose = (content) => {
+    if (content) {
       ScrollTrigger.refresh();
-      window.scrollTo(0, parseInt(scrollY || "0") * -1);
-      setTimeout(() => {
-        setActiveProject(null);
-      }, 500);
-    } else {
-      setActiveProject(project);
-      const body = document.body;
-      body.style.top = `-${window.pageYOffset}px`;
-      body.style.position = "fixed";
-      setTimeout(() => {
-        setShowModal(true);
-      }, 500);
     }
+    setActiveProject(content);
   };
 
   const renderProjectCards = () => {
@@ -116,73 +114,40 @@ const ProjectsSection = ({ projects }) => {
   return (
     <Element name="projects" id="projects">
       {activeProject && (
-        <ModalWrapper handleOpenClose={handleOpenClose} showModal={showModal}>
-          <div className={styles.modalContents}>
-            <div className={styles.detailsBanner}>
-              <h2 className={styles.projectTitle}>
-                <span>This is:</span>
-                <span>&nbsp;</span>
-                <span>{activeProject.fields.titleOrLocation}</span>
-              </h2>
-              <div className={styles.buttonCopyContainer}>
-                <div className={`buttons-container ${styles.buttonsContainer}`}>
-                  {activeProject.fields.visitLink && (
-                    <PrimaryButton
-                      link={activeProject.fields.visitLink}
-                      buttonTitle={"See More"}
-                    />
-                  )}
-                </div>
-                <div className={styles.projectDescription}>
-                  {documentToReactComponents(
-                    activeProject.fields.shortDescription
-                  )}
-                </div>
-              </div>
-            </div>
-            <div className={styles.primaryImage}>
-              <ImageRender
-                image={activeProject.fields.primaryImage}
-                cover={true}
-              />
-            </div>
-            {activeProject.fields.secondaryImages && (
-              <div className={styles.imagesContainer}>
-                {activeProject.fields.secondaryImages.map((image, i) => {
-                  return (
-                    <div
-                      className={styles.secondaryImage}
-                      key={`secondary-image-${i}`}
-                    >
-                      <ImageRender image={image} />
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-          </div>
+        <ModalWrapper
+          handleOpenClose={handleOpenClose}
+          showModal={activeProject}
+        >
+          <ActiveProject activeProject={activeProject} />
         </ModalWrapper>
       )}
 
-      <section className={styles.projectsSection}>
-        <div className={styles.eyebrowContainer}>
-          <Eyebrow eyebrowCopy={"Our Projects"} color={"black"} />
-        </div>
-        <h3 className={styles.headline} ref={headlineRef}>
-          Lorem ipsum dolor sit amet.
-        </h3>
-        <div className={styles.projectsCopy} ref={copyRef}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit.
-          </p>
-        </div>
-        <div className={styles.projectCardsContainer} ref={projectContainerRef}>
-          <SliderWrapper projects={true}>{renderProjectCards()}</SliderWrapper>
-        </div>
-      </section>
+      <div>
+        <section className={styles.projectsSection} ref={sectionRef}>
+          <div className={styles.eyebrowContainer}>
+            <Eyebrow eyebrowCopy={"Our Projects"} color={"black"} />
+          </div>
+          <h3 className={styles.headline} ref={headlineRef}>
+            Lorem ipsum dolor sit amet.
+          </h3>
+          <div className={styles.projectsCopy} ref={copyRef}>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit.
+            </p>
+          </div>
+          <div
+            className={styles.projectCardsContainer}
+            ref={projectContainerRef}
+          >
+            <SliderWrapper projects={true}>
+              {renderProjectCards()}
+            </SliderWrapper>
+          </div>
+        </section>
+      </div>
     </Element>
   );
 };
