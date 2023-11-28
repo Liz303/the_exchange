@@ -6,7 +6,7 @@ const AboutSection = () => {
     <Element name="about" id="about">
       <section>
         <Eyebrow eyebrowCopy={"What we do"} color={"black"} />
-        <h2>About Section</h2>
+        <h3>About Section</h3>
       </section>
     </Element>
   );

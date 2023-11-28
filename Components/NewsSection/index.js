@@ -8,7 +8,7 @@ const NewsSection = ({ section }) => {
     <Element name="news" id="news">
       <section>
         <Eyebrow eyebrowCopy={"News"} color={"black"} />
-        <h2>In The Press</h2>
+        <h3>In The Press</h3>
       </section>
     </Element>
   );

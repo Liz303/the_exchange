@@ -14,9 +14,19 @@ const Arrow = ({ onClick, className, style, next }) => {
       className={className}
       style={{ ...style }}
     >
-      <svg viewBox="0 0 48 48">
-        <path d="M23.9914 47.9828C37.2415 47.9828 47.9828 37.2415 47.9828 23.9914C47.9828 10.7413 37.2415 0 23.9914 0C10.7413 0 0 10.7413 0 23.9914C0 37.2415 10.7413 47.9828 23.9914 47.9828Z" />
-        <path d="M24.1956 7.91162L22.6352 9.47113L35.9885 22.832L8.54312 22.8242L8.53032 25.0301L35.9757 25.0378L22.6271 38.379L24.1866 39.9394L40.205 23.93L24.1956 7.91162Z" />
+      <svg viewBox="0 0 89 51">
+        <path
+          d="M0 26.5415H85.6661"
+          stroke="#F2F2E9"
+          stroke-width="2"
+          stroke-miterlimit="10"
+        />
+        <path
+          d="M60.8434 1.25391L86.4273 26.6104L63.0539 49.7434"
+          stroke="#F2F2E9"
+          stroke-width="2"
+          stroke-miterlimit="10"
+        />
       </svg>
     </button>
   );
@@ -29,7 +39,7 @@ export const SliderWrapper = ({ children, length, projects }) => {
     slidesToShow: length >= 4 ? 4 : projects ? 2 : length,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: <Arrow next={false} />,
+    prevArrow: false,
     nextArrow: <Arrow next={true} />,
     className: projects ? "projects-slider" : "bio-slider",
     responsive: [
