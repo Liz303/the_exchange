@@ -43,7 +43,7 @@ const PrimaryButton = ({ button, link, buttonTitle, onClick, color }) => {
           href={downloadUrl}
           download
           className="button"
-          target={newWindow ? "_blank" : "_self"}
+          target={newWindow || downloadMedia ? "_blank" : "_self"}
           rel="noreferrer"
           title={linkTitle}
           aria-label={linkTitle}

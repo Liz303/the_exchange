@@ -410,9 +410,50 @@ button.hamburger-wrapper {
   }
 }
 
-// bio / press slider
+// news slider
 
-.bio-press-slider {
+.news-slider {
+  padding-left: $one-twenty-fourth;
+  padding-right: calc($one-twenty-fourth - 20px);
+  @include mobile {
+    padding-left: $one-twelfth;
+  }
+
+  .slick-next {
+    right: $one-twenty-fourth !important;
+    @include mobile {
+      right: $one-twelfth !important;
+    }
+    svg {
+      path {
+        stroke: $black;
+      }
+    }
+  }
+
+  .slick-list {
+    @include mobile {
+      margin-right: $one-twenty-fourth;
+    }
+  }
+
+  .slick-slide {
+    padding-right: 20px;
+    @include tablet-and-lower {
+      max-width: unset;
+    }
+    div:first-child {
+      @include mobile {
+        @include flexbox();
+        @include justify-content(center);
+      }
+    }
+  }
+}
+
+// bio slider
+
+.bio-slider {
   padding-left: $one-twenty-fourth;
 
   .slick-next {
