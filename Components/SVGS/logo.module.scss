@@ -2,7 +2,15 @@
 
 .logoContainer {
   height: 100%;
-  .logo path {
-    fill: vars.$black;
+  .logo {
+    transform: scale(1);
+    transition: all 0.25s linear;
+    path {
+      fill: vars.$white;
+      transition: all 0.5s linear;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

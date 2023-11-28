@@ -3,7 +3,9 @@
 .eyebrow {
   @include vars.flexbox();
   @include vars.align-items(center);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateX(-100%);
   .starContainer {
     margin-right: 10px;
     svg {

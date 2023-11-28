@@ -1,0 +1,14 @@
+@use "../../styles/vars";
+
+.slopeStar {
+  &.lightblue {
+    path {
+      fill: vars.$lightblue;
+    }
+  }
+  &.blue {
+    path {
+      fill: vars.$blue;
+    }
+  }
+}

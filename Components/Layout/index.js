@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, changeHeader }) => {
   return (
     <div className={styles.mainContainer}>
       <Head>
@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Header />
+      <Header changeHeader={changeHeader} />
       <main className={styles.mainContainer}>{children}</main>
       <Footer />
     </div>
