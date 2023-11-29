@@ -44,16 +44,13 @@
       @include vars.flexbox();
       @include vars.justify-content(center);
       @include vars.align-items(center);
-      height: 90vh;
+      height: calc(85vh - 60px);
       overflow: hidden;
       opacity: 0;
       outline: none;
       position: relative;
       transform: translateX(100%);
       transition: all 0.15s linear;
-      @include vars.tablet-and-lower {
-        height: 80vh;
-      }
       img {
         height: 100%;
         object-fit: cover;
