@@ -32,14 +32,8 @@
         text-align: center;
         width: vars.$ten-twelfths;
       }
-      span {
+      .passport {
         @include vars.eyebrow-font();
-        font-size: 125pt;
-        font-size: calc(25pt + (140 - 25) * ((100vw - 300px) / (1600 - 300)));
-        line-height: 100%;
-        @include vars.tablet-and-lower {
-          font-size: calc(40pt + (140 - 40) * ((100vw - 300px) / (1600 - 300)));
-        }
       }
       .starContainer {
         height: 200px;
