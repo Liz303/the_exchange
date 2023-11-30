@@ -36,30 +36,42 @@ export const SliderWrapper = ({ children, length, projects }) => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: length >= 4 ? 4 : projects ? 2 : length,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: false,
+    mobileFirst: true,
+    autoplay:true,
     nextArrow: <Arrow next={true} />,
     className: projects ? "projects-slider" : "bio-press-slider",
     responsive: [
       {
+        breakpoint: 10000,
+        settings: {
+          infinite: true,
+          slidesToShow: projects ? 2 : length >= 4 ? 4 : length,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 1079,
         settings: {
-          slidesToShow: length >= 3 ? 3 : projects ? 2 : length,
+          infinite: true,
+          slidesToShow: projects ? 2 : length >= 3 ? 3 : length,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 820,
         settings: {
-          slidesToShow: length >= 2 ? 2 : projects ? 2 : length,
+          infinite: true,
+          slidesToShow: projects ? 2 : length >= 2 ? 2 : length,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
+          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         },

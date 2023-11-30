@@ -441,11 +441,8 @@ button.hamburger-wrapper {
   }
 
   .slick-slide {
-    max-width: 350px;
     padding-right: $one-twenty-fourth;
-    @include tablet-and-lower {
-      max-width: 450px;
-    }
+
     @include mobile {
       display: flex !important;
       @include justify-content(center);
@@ -454,7 +451,6 @@ button.hamburger-wrapper {
     }
     div:first-child {
       @include mobile {
-        max-width: 450px;
         width: 100%;
       }
     }
