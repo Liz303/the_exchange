@@ -3,6 +3,7 @@
 .projectsSection {
   @include vars.grid-wrap();
   padding: 110px vars.$one-twenty-fourth 250px;
+
   .eyebrowContainer {
     grid-row: 1;
     grid-column: 1/13;

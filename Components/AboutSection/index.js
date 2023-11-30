@@ -4,7 +4,6 @@ import Eyebrow from "../Eyebrow";
 import { gsap } from "gsap";
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { useEffect, useRef } from "react";
-// import { useWindowDimensions } from "@/utils/useWindowDimensions";
 import BuildingOne from "../SVGS/buildingOne";
 import BuildingTwo from "../SVGS/buildingTwo";
 import BuildingThree from "../SVGS/buildingThree";
@@ -36,6 +35,7 @@ const AboutSection = () => {
   ];
 
   useEffect(() => {
+    ScrollTrigger.refresh();
     if (headlineRef) {
       gsap.to(headlineRef.current, {
         opacity: 1,

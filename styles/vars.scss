@@ -131,7 +131,7 @@ $full: 100%;
 @mixin grid-wrap {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 1em;
+  grid-column-gap: 0em;
   grid-row-gap: 0em;
   @include small() {
     grid-template-columns: repeat(4, 1fr);
@@ -243,7 +243,7 @@ $full: 100%;
 
 @mixin h3() {
   @include header-font();
-  font-size: calc(45pt + (60 - 45) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(40pt + (56 - 40) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
   @include x-small {
     font-size: 37pt;

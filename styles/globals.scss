@@ -380,6 +380,10 @@ button.hamburger-wrapper {
   display: none !important;
 }
 
+.slick-prev::before {
+  display: none !important;
+}
+
 .slick-next {
   right: 0 !important;
   top: -50px !important;
