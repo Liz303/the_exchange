@@ -40,7 +40,6 @@ export const SliderWrapper = ({ children, length, projects }) => {
     slidesToScroll: 1,
     arrows: true,
     mobileFirst: true,
-    autoplay:true,
     nextArrow: <Arrow next={true} />,
     className: projects ? "projects-slider" : "bio-press-slider",
     responsive: [

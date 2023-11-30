@@ -36,10 +36,14 @@
     }
   }
   .bioCard {
+    max-width: 350px;
     opacity: 0;
     transform: translateX(100%);
     transition: all 0.15s linear;
     width: 100%;
+    @include vars.tablet-and-lower {
+      max-width: 450px;
+    }
     .imageContainer {
       @include vars.flexbox();
       @include vars.justify-content(center);

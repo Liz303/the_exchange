@@ -442,7 +442,6 @@ button.hamburger-wrapper {
 
   .slick-slide {
     padding-right: $one-twenty-fourth;
-
     @include mobile {
       display: flex !important;
       @include justify-content(center);
