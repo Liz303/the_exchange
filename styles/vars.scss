@@ -252,15 +252,13 @@ $full: 100%;
 }
 
 @mixin h4() {
-  @include header-font();
-  font-size: 32pt;
-  font-size: calc(13pt + (17 - 13) * ((100vw - 300px) / (1600 - 300)));
+  @include eyebrow-font();
+  font-size: calc(45pt + (60 - 45) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: normal;
   line-height: 100%;
-  @include tablet-and-lower {
-    font-size: calc(15pt + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small() {
-    font-size: calc(14pt + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  @include x-small {
+    font-size: 37pt;
+    font-size: calc(26pt + (66 - 26) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 
@@ -371,15 +369,16 @@ $full: 100%;
 @mixin button() {
   @include eyebrow-font();
   border: none;
-  font-size: 18pt;
+  font-size: calc(12pt + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
   padding: 5px 20px;
   text-transform: capitalize;
   @include mobile {
-    font-size: 18pt;
+    font-size: calc(12pt + (30 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 150%;
   }
   @include x-small {
-    font-size: 16pt;
+    font-size: calc(11pt + (35 - 11) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 

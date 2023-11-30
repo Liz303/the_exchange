@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./style.module.scss";
 import { Link } from "react-scroll";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import Logo from "@/Components/SVGS/logo";
 
 const Header = ({ changeHeader }) => {
