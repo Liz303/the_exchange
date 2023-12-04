@@ -340,6 +340,15 @@ $full: 100%;
   }
 }
 
+@mixin body-four() {
+  @include body-font();
+  font-size: calc(10pt + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 100%;
+  @include mobile {
+    font-size: calc(12pt + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
 @mixin micro() {
   @include eyebrow-font();
   font-size: 10pt;

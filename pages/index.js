@@ -22,7 +22,7 @@ export default function Home({ homePageContent }) {
       <AboutSection />
       <ProjectsSection projects={projects} />
       <TeamSection bios={bios} />
-      <NewsSection section={news} />
+      <NewsSection news={news} />
       <CTASection />
     </Layout>
   );

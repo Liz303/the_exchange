@@ -32,7 +32,7 @@ const Arrow = ({ onClick, className, style, next }) => {
   );
 };
 
-export const SliderWrapper = ({ children, length, projects }) => {
+export const SliderWrapper = ({ children, length, projects, news }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -41,7 +41,11 @@ export const SliderWrapper = ({ children, length, projects }) => {
     arrows: true,
     mobileFirst: true,
     nextArrow: <Arrow next={true} />,
-    className: projects ? "projects-slider" : "bio-press-slider",
+    className: projects
+      ? "projects-slider"
+      : news
+      ? "news-slider"
+      : "bio-slider",
     responsive: [
       {
         breakpoint: 10000,
