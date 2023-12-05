@@ -65,9 +65,7 @@ const IntroSection = ({ handleChange }) => {
           </div>
           <div className={styles.headlineWrapper} ref={headlineRef}>
             <h1>Your</h1>
-            <span>&nbsp;</span>
-            <span>Passport</span>
-            <span>&nbsp;</span>
+            <h1 className={styles.passport}>&nbsp;Passport&nbsp;</h1>
             <h1>to Adventure</h1>
           </div>
         </div>

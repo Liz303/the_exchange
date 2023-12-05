@@ -18,6 +18,14 @@
       }
       .navItem {
         color: vars.$black;
+        a {
+          text-decoration: none;
+        }
+        &:hover {
+          a {
+            color: vars.$lightblue !important;
+          }
+        }
       }
     }
     .mobileNavigation {
@@ -164,6 +172,11 @@
           font-size: 1.5rem;
           text-transform: capitalize;
         }
+        &:hover {
+          a {
+            color: vars.$yellow;
+          }
+        }
       }
     }
   }
@@ -200,6 +213,7 @@
       a {
         font-size: 13pt !important;
         font-weight: bold;
+        text-decoration: none;
       }
       &:last-child {
         margin-right: 0;
