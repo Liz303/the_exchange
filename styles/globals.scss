@@ -84,6 +84,7 @@ h4 {
 
 h5 {
   @include h5();
+  font-weight: normal;
 }
 
 h6 {
@@ -218,6 +219,12 @@ p {
 /* Styles page */
 #styles {
   padding: 0 90px;
+}
+
+section {
+  &:not(.about-section):not(.intro-section) {
+    overflow-x: hidden;
+  }
 }
 
 /* BUTTONS */
@@ -392,9 +399,6 @@ button.hamburger-wrapper {
   @include tablet-and-lower {
     top: -45px !important;
   }
-  @include mobile {
-    right: $one-twenty-fourth !important;
-  }
   @include x-small {
     width: 60px !important;
   }
@@ -420,14 +424,11 @@ button.hamburger-wrapper {
   padding-left: $one-twenty-fourth;
   padding-right: calc($one-twenty-fourth - 20px);
   @include mobile {
-    padding-left: $one-twelfth;
+    padding-right: $one-twenty-fourth;
   }
 
   .slick-next {
     right: $one-twenty-fourth !important;
-    @include mobile {
-      right: $one-twelfth !important;
-    }
     svg {
       path {
         stroke: $black;
@@ -435,16 +436,10 @@ button.hamburger-wrapper {
     }
   }
 
-  .slick-list {
-    @include mobile {
-      margin-right: $one-twenty-fourth;
-    }
-  }
-
   .slick-slide {
     padding-right: 20px;
-    @include tablet-and-lower {
-      max-width: unset;
+    @include mobile {
+      padding-right: 0;
     }
     div:first-child {
       @include mobile {
@@ -462,9 +457,6 @@ button.hamburger-wrapper {
 
   .slick-next {
     right: $one-twenty-fourth !important;
-    @include mobile {
-      right: $one-twelfth !important;
-    }
     svg {
       path {
         stroke: $white;
@@ -495,6 +487,9 @@ button.hamburger-wrapper {
     }
     div:first-child {
       @include mobile {
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
         width: 100%;
       }
     }
@@ -504,14 +499,8 @@ button.hamburger-wrapper {
 // projects slider
 
 .projects-slider {
-  @include mobile {
-    padding-left: $one-twenty-fourth;
-  }
   .slick-list {
     margin-right: -30px;
-    @include mobile {
-      margin-right: 0;
-    }
   }
 
   .slick-slide {

@@ -13,4 +13,7 @@
       width: auto;
     }
   }
+  @include vars.mobile {
+    margin-bottom: 15px;
+  }
 }

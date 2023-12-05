@@ -25,6 +25,7 @@ const TeamSection = ({ bios }) => {
   };
 
   useEffect(() => {
+    ScrollTrigger.refresh();
     if (headlineRef) {
       gsap.to(headlineRef.current, {
         opacity: 1,

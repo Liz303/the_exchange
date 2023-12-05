@@ -33,11 +33,11 @@
       @include vars.flex-direction(column);
       @include vars.justify-content(space-between);
       @include vars.align-items(center);
-      height: calc(100vh - 65px);
+      height: calc(100vh - 75px);
       max-height: 800px;
       overflow: hidden;
       position: sticky;
-      top: 60px;
+      top: 70px;
       width: vars.$six-twelfths;
       .headlineWrapper {
         background-color: vars.$white;

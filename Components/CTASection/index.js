@@ -13,6 +13,7 @@ const CTASection = () => {
   const buttonRef = useRef();
 
   useEffect(() => {
+    ScrollTrigger.refresh();
     if (headlineRef) {
       gsap.to(headlineRef.current, {
         scrollTrigger: {

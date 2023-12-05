@@ -104,9 +104,10 @@ const ProjectsSection = ({ projects }) => {
         >
           <ImageRender image={primaryImage} cover={true} />
           <div className={styles.projectTitle}>
-            <span>This is:</span>
-            <span>&nbsp;</span>
-            <span> {titleOrLocation}</span>
+            <h5>
+              This is:
+              <span>&nbsp;{titleOrLocation}</span>
+            </h5>
           </div>
         </div>
       );

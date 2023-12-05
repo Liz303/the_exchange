@@ -57,7 +57,7 @@ const IntroSection = ({ handleChange }) => {
   }, [headlineRef, introCopy, introCopyContainer, starRef]);
 
   return (
-    <section className={styles.introSection}>
+    <section className={`intro-section ${styles.introSection}`}>
       <div className={styles.headlineImageWrapper}>
         <div className={styles.introHeadline}>
           <div className={styles.starContainer} ref={starRef}>

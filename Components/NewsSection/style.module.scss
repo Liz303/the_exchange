@@ -17,6 +17,12 @@
       padding-bottom: 5px;
       transform: translateX(100%);
       transition: all 0.15s linear;
+      @include vars.tablet-and-lower {
+        max-width: unset;
+      }
+      @include vars.mobile {
+        max-width: 450px;
+      }
       .imageContainer {
         height: 335px;
         margin-bottom: 30px;

@@ -223,21 +223,31 @@ $full: 100%;
 
 @mixin h1() {
   @include header-font();
-  font-size: 125pt;
-  font-size: calc(25pt + (125 - 25) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(75pt + (105 - 75) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
-  @include tablet-and-lower {
-    font-size: calc(36pt + (125 - 36) * ((100vw - 300px) / (1600 - 300)));
+  @include small {
+    font-size: calc(65pt + (95 - 65) * ((100vw - 300px) / (1600 - 300)));
+  }
+  @include mobile {
+    font-size: calc(58pt + (90 - 58) * ((100vw - 300px) / (1600 - 300)));
+  }
+  @include x-small {
+    font-size: calc(40pt + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 
 @mixin h2() {
   @include header-font();
-  font-size: calc(80pt + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(65pt + (85 - 65) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
+  @include small {
+    font-size: calc(55pt + (80 - 55) * ((100vw - 300px) / (1600 - 300)));
+  }
+  @include mobile {
+    font-size: calc(40pt + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+  }
   @include x-small {
-    font-size: 37pt;
-    font-size: calc(26pt + (66 - 26) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(36pt + (60 - 36) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 
@@ -245,6 +255,9 @@ $full: 100%;
   @include header-font();
   font-size: calc(40pt + (56 - 40) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
+  @include mobile {
+    font-size: calc(32pt + (50 - 32) * ((100vw - 300px) / (1600 - 300)));
+  }
   @include x-small {
     font-size: 37pt;
     font-size: calc(26pt + (66 - 26) * ((100vw - 300px) / (1600 - 300)));
@@ -253,9 +266,11 @@ $full: 100%;
 
 @mixin h4() {
   @include eyebrow-font();
-  font-size: calc(45pt + (60 - 45) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: normal;
+  font-size: calc(40pt + (56 - 40) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
+  @include mobile {
+    font-size: calc(32pt + (50 - 32) * ((100vw - 300px) / (1600 - 300)));
+  }
   @include x-small {
     font-size: 37pt;
     font-size: calc(26pt + (66 - 26) * ((100vw - 300px) / (1600 - 300)));
@@ -263,12 +278,13 @@ $full: 100%;
 }
 
 @mixin h5() {
-  font-size: 28pt;
   font-size: calc(15pt + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 120%;
+  line-height: 100%;
+  @include mobile {
+    font-size: calc(20pt + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
+  }
   @include x-small {
-    font-size: 26pt;
-    font-size: calc(15pt + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(22pt + (30 - 22) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 
@@ -323,9 +339,6 @@ $full: 100%;
   @include tablet-and-lower {
     font-size: calc(18pt + (23 - 18) * ((100vw - 300px) / (1600 - 300)));
   }
-  @include x-small {
-    font-size: calc(16pt + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
-  }
 }
 
 @mixin body-one() {
@@ -333,10 +346,7 @@ $full: 100%;
   font-size: calc(28pt + (47 - 28) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
   @include mobile {
-    font-size: calc(22pt + (36 - 22) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small {
-    font-size: calc(20pt + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(24pt + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 
