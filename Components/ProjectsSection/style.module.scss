@@ -3,6 +3,9 @@
 .projectsSection {
   @include vars.grid-wrap();
   padding: 110px vars.$one-twenty-fourth 250px;
+  @include vars.tablet-and-lower {
+    padding: 110px vars.$one-twenty-fourth;
+  }
 
   .eyebrowContainer {
     grid-row: 1;
@@ -83,6 +86,24 @@
         img {
           height: 101%;
           width: 101%;
+        }
+      }
+    }
+    .noSlider {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 20px;
+      @include vars.mobile {
+        @include vars.flexbox();
+        @include vars.flex-direction(column);
+      }
+      .projectCard {
+        height: calc(95vh - 60px);
+        @include vars.mobile {
+          margin-bottom: 50px;
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
