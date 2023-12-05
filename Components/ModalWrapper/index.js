@@ -13,7 +13,7 @@ const ModalWrapper = ({ children, handleOpenClose, showModal }) => {
         setModalVisible(true);
       }, 500);
     }
-  }, [showModal]);
+  }, [showModal, body.style]);
 
   const handleToggle = () => {
     setModalVisible(false);
