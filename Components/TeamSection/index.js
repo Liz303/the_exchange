@@ -98,9 +98,15 @@ const TeamSection = ({ bios }) => {
           </h3>
         </div>
         <div className={styles.biosContainer} ref={bioContainerRef}>
-          <SliderWrapper team={true} length={bios.length}>
-            {renderBios()}
-          </SliderWrapper>
+          {bios && bios.length >= 5 ? (
+            <SliderWrapper team={true} length={bios.length}>
+              {renderBios()}
+            </SliderWrapper>
+          ) : bios.length < 5 ? (
+            <div className={styles.noSlider}>{renderBios()}</div>
+          ) : (
+            ""
+          )}
         </div>
       </section>
     </Element>

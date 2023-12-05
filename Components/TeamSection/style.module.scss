@@ -36,57 +36,89 @@
       opacity: 0;
     }
   }
-  .bioCard {
-    max-width: 350px;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 0.15s linear;
-    width: 100%;
-    @include vars.tablet-and-lower {
-      max-width: 450px;
-    }
-    .imageContainer {
-      @include vars.flexbox();
-      @include vars.justify-content(center);
-      @include vars.align-items(center);
-      height: 380px;
-      margin-bottom: 40px;
+  .biosContainer {
+    .bioCard {
+      max-width: 350px;
+      opacity: 0;
+      transform: translateX(100%);
       transition: all 0.15s linear;
-      overflow: hidden;
       width: 100%;
-      img {
-        height: 100%;
-        width: 100%;
-        transition: all 0.25s linear;
-      }
       @include vars.tablet-and-lower {
-        height: 550px;
+        max-width: 450px;
       }
-      @include vars.x-small {
-        height: 400px;
-      }
-    }
-    .detailsWrapper {
-      @include vars.flexbox();
-      @include vars.flex-direction(column);
-      color: vars.$white;
-      transition: all 0.25s linear;
-      .name {
-        @include vars.eyebrow();
-        margin-bottom: 5px;
-      }
-    }
-    &:hover {
-      cursor: pointer;
       .imageContainer {
-        border-radius: 30px;
+        @include vars.flexbox();
+        @include vars.justify-content(center);
+        @include vars.align-items(center);
+        height: 380px;
+        margin-bottom: 40px;
+        transition: all 0.15s linear;
+        overflow: hidden;
+        width: 100%;
         img {
-          height: 104% !important;
-          width: 104% !important;
+          height: 100%;
+          width: 100%;
+          transition: all 0.25s linear;
+        }
+        @include vars.tablet-and-lower {
+          height: 550px;
+        }
+        @include vars.x-small {
+          height: 400px;
         }
       }
       .detailsWrapper {
-        color: vars.$yellow;
+        @include vars.flexbox();
+        @include vars.flex-direction(column);
+        color: vars.$white;
+        transition: all 0.25s linear;
+        .name {
+          @include vars.eyebrow();
+          margin-bottom: 5px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .imageContainer {
+          border-radius: 30px;
+          img {
+            height: 104% !important;
+            width: 104% !important;
+          }
+        }
+        .detailsWrapper {
+          color: vars.$yellow;
+        }
+      }
+    }
+    .noSlider {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 20px;
+      padding: 0 vars.$one-twenty-fourth;
+      @include vars.small {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include vars.tablet-and-lower {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include vars.mobile {
+        @include vars.flexbox();
+        @include vars.flex-direction(column);
+      }
+      .bioCard {
+        margin-bottom: 30px;
+        @include vars.mobile {
+          margin-bottom: 50px;
+          max-width: unset;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .imageContainer {
+            height: calc(80vh - 60px);
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }

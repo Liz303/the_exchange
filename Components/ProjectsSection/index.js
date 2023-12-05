@@ -140,7 +140,15 @@ const ProjectsSection = ({ projects }) => {
           </p>
         </div>
         <div className={styles.projectCardsContainer} ref={projectContainerRef}>
-          <SliderWrapper projects={true}>{renderProjectCards()}</SliderWrapper>
+          {projects && projects.length >= 3 ? (
+            <SliderWrapper projects={true}>
+              {renderProjectCards()}
+            </SliderWrapper>
+          ) : projects.length < 3 ? (
+            <div className={styles.noSlider}>{renderProjectCards()}</div>
+          ) : (
+            ""
+          )}
         </div>
       </section>
       <MapSection latLongList={latLongList} />
