@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import styles from "./style.module.scss";
-import { useState, useEffect, useRef, useLayoutEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ModalWrapper from "../ModalWrapper";
 import { gsap } from "gsap";
 import Eyebrow from "../Eyebrow";
@@ -8,9 +8,12 @@ const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { SliderWrapper } from "../SliderWrapper";
 import ImageRender from "../Images/ImageRender";
 import ActiveProject from "./activeProject";
+import MapSection from "./Map/mapSection";
 
 const ProjectsSection = ({ projects }) => {
   const [activeProject, setActiveProject] = useState();
+  const latLongList = [];
+
   gsap.registerPlugin(ScrollTrigger);
   const sectionRef = useRef();
   const headlineRef = useRef();
@@ -25,21 +28,8 @@ const ProjectsSection = ({ projects }) => {
     }
   };
 
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.to(sectionRef.current, {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "bottom bottom",
-          pin: true,
-          pinSpacing: false,
-        },
-      });
-    });
-    return () => ctx.revert();
-  }, []);
-
   useEffect(() => {
+    ScrollTrigger.refresh();
     if (headlineRef) {
       gsap.to(headlineRef.current, {
         opacity: 1,
@@ -74,7 +64,14 @@ const ProjectsSection = ({ projects }) => {
         },
       });
     }
-  }, [headlineRef, copyRef, projectsRef, projectContainerRef, sectionRef]);
+  }, [
+    headlineRef,
+    copyRef,
+    projectsRef,
+    projectContainerRef,
+    sectionRef,
+    latLongList,
+  ]);
 
   const handleOpenClose = (content) => {
     if (content) {
@@ -91,7 +88,12 @@ const ProjectsSection = ({ projects }) => {
         titleOrLocation,
         secondaryImages,
         visitLink,
+        location,
       } = project.fields;
+
+      if (location) {
+        latLongList.push(location);
+      }
 
       return (
         <div
@@ -122,32 +124,26 @@ const ProjectsSection = ({ projects }) => {
         </ModalWrapper>
       )}
 
-      <div>
-        <section className={styles.projectsSection} ref={sectionRef}>
-          <div className={styles.eyebrowContainer}>
-            <Eyebrow eyebrowCopy={"Our Projects"} color={"black"} />
-          </div>
-          <h3 className={styles.headline} ref={headlineRef}>
-            Lorem ipsum dolor sit amet.
-          </h3>
-          <div className={styles.projectsCopy} ref={copyRef}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit.
-            </p>
-          </div>
-          <div
-            className={styles.projectCardsContainer}
-            ref={projectContainerRef}
-          >
-            <SliderWrapper projects={true}>
-              {renderProjectCards()}
-            </SliderWrapper>
-          </div>
-        </section>
-      </div>
+      <section className={styles.projectsSection} ref={sectionRef}>
+        <div className={styles.eyebrowContainer}>
+          <Eyebrow eyebrowCopy={"Our Projects"} color={"black"} />
+        </div>
+        <h3 className={styles.headline} ref={headlineRef}>
+          Lorem ipsum dolor sit amet.
+        </h3>
+        <div className={styles.projectsCopy} ref={copyRef}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit.
+          </p>
+        </div>
+        <div className={styles.projectCardsContainer} ref={projectContainerRef}>
+          <SliderWrapper projects={true}>{renderProjectCards()}</SliderWrapper>
+        </div>
+      </section>
+      <MapSection latLongList={latLongList} />
     </Element>
   );
 };
