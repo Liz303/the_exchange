@@ -104,10 +104,7 @@ const ProjectsSection = ({ projects }) => {
         >
           <ImageRender image={primaryImage} cover={true} />
           <div className={styles.projectTitle}>
-            <h5>
-              This is:
-              <span>&nbsp;{titleOrLocation}</span>
-            </h5>
+            <h5>{titleOrLocation}</h5>
           </div>
         </div>
       );
@@ -130,14 +127,14 @@ const ProjectsSection = ({ projects }) => {
           <Eyebrow eyebrowCopy={"Our Projects"} color={"black"} />
         </div>
         <h3 className={styles.headline} ref={headlineRef}>
-          Lorem ipsum dolor sit amet.
+          Transforming travel entertainment
         </h3>
         <div className={styles.projectsCopy} ref={copyRef}>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit.
+            We&apos;ve partnered with highly-experienced companies to bring
+            unparalleled city entertainment experiences to major cities in
+            Europe. View our current projects and check back for what&apos;s
+            next.
           </p>
         </div>
         <div className={styles.projectCardsContainer} ref={projectContainerRef}>

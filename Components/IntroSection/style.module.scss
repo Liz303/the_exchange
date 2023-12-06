@@ -84,7 +84,7 @@
     .introCopy {
       @include vars.body-one();
       opacity: 0;
-      max-width: 1000px;
+      max-width: 1200px;
     }
     @include vars.mobile {
       padding: 100px vars.$one-twenty-fourth;

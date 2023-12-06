@@ -26,6 +26,9 @@
     opacity: 0;
     transform: translateX(-100%);
     @include vars.small {
+      grid-column: 1/3;
+    }
+    @include vars.tablet-and-lower {
       grid-column: 1/5;
     }
   }

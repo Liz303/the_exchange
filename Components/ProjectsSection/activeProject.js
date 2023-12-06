@@ -8,16 +8,12 @@ const ActiveProject = ({ activeProject }) => {
     <div className={styles.modalContents}>
       <div className={styles.detailsBanner}>
         <h2 className={styles.projectTitle}>
-          This is:
-          <span>&nbsp;{activeProject.fields.titleOrLocation}</span>
+          {activeProject.fields.titleOrLocation}
         </h2>
         <div className={styles.buttonCopyContainer}>
           <div className={`buttons-container ${styles.buttonsContainer}`}>
             {activeProject.fields.visitLink && (
-              <PrimaryButton
-                link={activeProject.fields.visitLink}
-                buttonTitle={"See More"}
-              />
+              <PrimaryButton button={activeProject.fields.visitLink} />
             )}
           </div>
           <div className={styles.projectDescription}>

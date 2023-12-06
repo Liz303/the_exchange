@@ -79,11 +79,11 @@ const Footer = () => {
           <div className={styles.addressContainer}>{renderAddress()}</div>
           <div className={styles.emailGroupContainer}>{renderEmails()}</div>
         </div>
-        {socials && socials.length > 0 && (
+        {/* {socials && socials.length > 0 && (
           <div className={styles.socialContainer}>
             <div className={styles.socialLinkContainer}>{renderSocials()}</div>
           </div>
-        )}
+        )} */}
       </div>
       <div className={styles.logoContainer}>
         <FooterLogo />

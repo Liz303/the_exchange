@@ -34,6 +34,10 @@
     padding: 0 vars.$one-twenty-fourth;
     .headline {
       opacity: 0;
+      width: vars.$six-twelfths;
+      @include vars.tablet-and-lower {
+        width: vars.$full;
+      }
     }
   }
   .biosContainer {

@@ -84,7 +84,6 @@ h4 {
 
 h5 {
   @include h5();
-  font-weight: normal;
 }
 
 h6 {
@@ -223,7 +222,7 @@ p {
 
 section {
   &:not(.about-section):not(.intro-section) {
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 }
 

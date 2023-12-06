@@ -52,13 +52,11 @@ const MapSection = ({ latLongList }) => {
     <div className={styles.mapSection} ref={containerRef}>
       <div className={styles.mapCopy}>
         <h3 className={styles.headline} ref={mapHeadlineRef}>
-          Headline Placeholder
+          Making our mark on city entertainment
         </h3>
         <p className={styles.copy} ref={mapCopyRef}>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit.
+          We do city entertainment like no one else, bring the best in
+          innovative attractions and immersive events to cities across Europe.
         </p>
       </div>
       <div className={styles.mapContainer}>

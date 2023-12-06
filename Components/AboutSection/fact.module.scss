@@ -1,9 +1,9 @@
 @use "../../styles/vars";
 
 .factWrapper {
-  padding-bottom: 70px;
+  padding-bottom: 180px;
   overflow: hidden;
-  @include vars.small {
+  @include vars.tablet-and-lower {
     padding-bottom: 40px;
   }
   .fact {

@@ -23,7 +23,9 @@ const Header = ({ changeHeader }) => {
 
   const toggleDrawer = () => {
     if (showDrawer) {
-      setShowDrawer(false);
+      setTimeout(() => {
+        setShowDrawer(false);
+      }, 500);
     } else {
       setShowDrawer(true);
     }

@@ -19,7 +19,11 @@
     grid-row: 2;
     margin-bottom: 50px;
     opacity: 0;
+    width: vars.$six-twelfths;
     @include vars.small {
+      grid-column: 1/3;
+    }
+    @include vars.tablet-and-lower {
       grid-column: 1/5;
     }
   }
@@ -48,6 +52,7 @@
       margin-top: 60px;
     }
     .projectCard {
+      border-radius: 0;
       height: calc(85vh - 60px);
       overflow: hidden;
       opacity: 0;
@@ -55,6 +60,12 @@
       position: relative;
       transform: translateX(100%);
       transition: all 0.15s linear;
+      @include vars.ipad-and-lower-portrait {
+        height: calc(60vh - 60px);
+      }
+      @include vars.mobile {
+        height: calc(80vh - 60px);
+      }
       img {
         height: 100%;
         object-fit: cover;
@@ -71,14 +82,13 @@
         text-align: center;
         width: 100%;
         h5 {
+          @include vars.eyebrow-font();
           border-bottom: 2px solid vars.$white;
           padding-bottom: 5px;
         }
-        span {
-          @include vars.eyebrow-font();
-        }
       }
-      &:hover {
+      &:hover,
+      &.active {
         border-radius: 50px;
         cursor: pointer;
         img {
@@ -97,7 +107,11 @@
       }
       .projectCard {
         height: calc(95vh - 60px);
+        @include vars.ipad-and-lower-portrait {
+          height: calc(60vh - 60px);
+        }
         @include vars.mobile {
+          height: calc(80vh - 60px);
           margin-bottom: 50px;
           &:last-child {
             margin-bottom: 0;

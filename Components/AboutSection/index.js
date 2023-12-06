@@ -25,13 +25,9 @@ const AboutSection = () => {
   const imageTabletRef = useRef();
 
   const facts = [
-    "Real flight experience with wind, movement and scent",
-    "See your city or state up close from a unique perspective",
-    "Up to 40 people can enjoy the ride in a modern 3d movement chair system",
-    "High resolution breathtaking video content",
-    "Exclusive footage of areas never seen from above",
-    "Partnership with several nature organizations",
-    "A complete one hour experience with a variety of pre and post shows",
+    "We invest in developing and operating city attraction projects",
+    "We have a proven track record in developing city attractions in Europe",
+    "We have partnered with TICA (This is City Attractions) to bring 5D theaters to prime locations in major European cities",
   ];
 
   useEffect(() => {
@@ -80,7 +76,7 @@ const AboutSection = () => {
         y: 0,
         scrollTrigger: {
           trigger: factsContainerRef.current,
-          start: "top 40%",
+          start: "top 45%",
           toggleActions: "play complete none reverse",
         },
       });
@@ -93,7 +89,7 @@ const AboutSection = () => {
         y: 0,
         scrollTrigger: {
           trigger: factsContainerRef.current,
-          start: "top 15%",
+          start: "top 25%",
           toggleActions: "play complete none reverse",
         },
       });
@@ -106,7 +102,7 @@ const AboutSection = () => {
         y: 0,
         scrollTrigger: {
           trigger: factsContainerRef.current,
-          start: "top -10%",
+          start: "top 5%",
           toggleActions: "play complete none reverse",
         },
       });
@@ -145,7 +141,7 @@ const AboutSection = () => {
         <div className={styles.headlineWrapperMobile}>
           <Eyebrow eyebrowCopy={"What we do"} color={"black"} />
           <h3 className={styles.headline} ref={headlineMobileRef}>
-            Lorem ipsum dolor sit amet.
+            Experiences as unique as their locations
           </h3>
         </div>
         <div className={styles.contentContainer}>
@@ -153,7 +149,7 @@ const AboutSection = () => {
             <div className={styles.headlineWrapper}>
               <Eyebrow eyebrowCopy={"What we do"} color={"black"} />
               <h3 className={styles.headline} ref={headlineRef}>
-                Lorem ipsum dolor sit amet.
+                Experiences as unique as their locations
               </h3>
             </div>
             <div
