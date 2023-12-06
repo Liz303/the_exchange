@@ -8,7 +8,12 @@ const Layout = ({ children, changeHeader }) => {
     <div className={styles.mainContainer}>
       <Head>
         <title>{"City Leisure Group"}</title>
-        <meta name="description" content={"page metadata placeholder"} />
+        <meta
+          name="description"
+          content={
+            "Experts in city-attraction entertainment partnered with global leaders in location-based, family entertainment to bring state-of-the art experiences to locations across Europe."
+          }
+        />
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, viewport-fit=cover"
@@ -17,8 +22,13 @@ const Layout = ({ children, changeHeader }) => {
 
         <meta property="og:image:height" content="1257" />
         <meta property="og:image:width" content="2400" />
-        <meta property="og:description" content={"page metadata placeholder"} />
-        <meta property="og:url" content={"CLG placeholder URL"} />
+        <meta
+          property="og:description"
+          content={
+            "Experts in city-attraction entertainment partnered with global leaders in location-based, family entertainment to bring state-of-the art experiences to locations across Europe."
+          }
+        />
+        <meta property="og:url" content={"city-leisuregroup.com"} />
         <meta property="og:image" content="/og-image.jpg" />
 
         <link

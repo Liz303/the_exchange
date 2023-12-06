@@ -79,10 +79,12 @@ const IntroSection = ({ handleChange }) => {
         </div>
         <Eyebrow eyebrowCopy={"Who We Are"} color={"black"} />
         <div className={styles.introCopy} ref={introCopy}>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit.
+          We are industry experts in city-attraction entertainment who have
+          partnered with global leaders in location-based, family entertainment
+          to bring state-of-the art experiences to locations across Europe. From
+          innovative attractions to immersive events, we deliver unforgettable
+          moments of joy and excitement for audiences of all ages and cultures.
+          Join us in creating an experience that’s truly unforgettable.
         </div>
       </div>
     </section>

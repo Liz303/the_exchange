@@ -93,7 +93,7 @@ const TeamSection = ({ bios }) => {
           <SlopeStar color={"blue"} />
         </div>
         <div className={styles.headlineWrapper}>
-          <Eyebrow eyebrowCopy={"The Company"} color={"white"} />
+          <Eyebrow eyebrowCopy={"Our Company"} color={"white"} />
           <h3 className={styles.headline} ref={headlineRef}>
             Meet City Leisure Group
           </h3>

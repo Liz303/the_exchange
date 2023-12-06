@@ -52,14 +52,12 @@ const CTASection = () => {
       <section className={styles.ctaSection} ref={sectionRef}>
         <div className={styles.imageBackground}></div>
         <h3 className={styles.headline} ref={headlineRef}>
-          Lorem ipsum dolor sit amet, consectetuer.
+          Let&apos;s create something unforgettable
         </h3>
         <div className={styles.ctaCopy}>
           <p ref={copyRef}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit.
+            Contact us today to create a city attraction experience like nothing
+            you&apos;ve ever seen before.
           </p>
           <div className={styles.buttonContainer} ref={buttonRef}>
             <PrimaryButton
