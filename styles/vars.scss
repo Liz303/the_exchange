@@ -94,7 +94,8 @@ $grayscale-60: #757474;
 
 @font-face {
   font-family: "Sfizia-Regular";
-  src: url("../public/fonts/atipo-sfizia-regular.ttf") format("ttf");
+  src: url("../public/fonts/sfizia-regular-webfont.woff") format("woff"),
+    url("../public/fonts/sfizia-regular-webfont.woff2") format("woff2");
   font-display: swap;
 }
 
