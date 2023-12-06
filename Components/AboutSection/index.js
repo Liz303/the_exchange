@@ -141,7 +141,7 @@ const AboutSection = () => {
 
   return (
     <Element name="about" id="about">
-      <section className={styles.aboutSection}>
+      <section className={`about-section ${styles.aboutSection}`}>
         <div className={styles.headlineWrapperMobile}>
           <Eyebrow eyebrowCopy={"What we do"} color={"black"} />
           <h3 className={styles.headline} ref={headlineMobileRef}>

@@ -40,6 +40,9 @@
     @include vars.tablet-and-lower {
       grid-column: 1/4;
     }
+    @include vars.mobile {
+      grid-column: 1/5;
+    }
     p {
       opacity: 0;
     }

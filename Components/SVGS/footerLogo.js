@@ -12,10 +12,11 @@ const FooterLogo = () => {
   const coRef = useRef();
 
   useEffect(() => {
+    ScrollTrigger.refresh();
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: logoRef.current,
-        start: "top 85%",
+        start: "bottom bottom",
       },
     });
     tl.to(cRef.current, { opacity: 1, duration: 1 }, 0)

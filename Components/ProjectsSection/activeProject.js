@@ -8,9 +8,8 @@ const ActiveProject = ({ activeProject }) => {
     <div className={styles.modalContents}>
       <div className={styles.detailsBanner}>
         <h2 className={styles.projectTitle}>
-          <span>This is:</span>
-          <span>&nbsp;</span>
-          <span>{activeProject.fields.titleOrLocation}</span>
+          This is:
+          <span>&nbsp;{activeProject.fields.titleOrLocation}</span>
         </h2>
         <div className={styles.buttonCopyContainer}>
           <div className={`buttons-container ${styles.buttonsContainer}`}>

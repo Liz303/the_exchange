@@ -1,6 +1,6 @@
 import MapMarker from "./mapMarker";
 import GoogleMapReact from "google-map-react";
-
+const MAP_URL = process.env.NEXT_PUBLIC_GOOGLE_API;
 function createMapOptions(maps) {
   return {
     zoomControl: false,
@@ -426,7 +426,7 @@ const GoogleMap = ({ latLongList }) => {
   return (
     <section className="map-section" style={{ height: "100%", width: "100%" }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyCNdTIYjSnHXIXcxZvD4aA3pMSeXeusCoI" }}
+        bootstrapURLKeys={{ key: MAP_URL }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
         options={createMapOptions}
