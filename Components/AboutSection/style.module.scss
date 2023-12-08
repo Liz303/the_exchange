@@ -2,9 +2,9 @@
 
 .aboutSection {
   @include vars.grid-wrap();
-  padding: 120px vars.$one-twenty-fourth;
-  @include vars.tablet-and-lower {
-    padding: 110px vars.$one-twenty-fourth;
+  padding: 110px vars.$one-twenty-fourth;
+  @include vars.x-small {
+    padding: 90px vars.$one-twenty-fourth;
   }
   .headlineWrapperMobile {
     display: none;
@@ -14,7 +14,7 @@
     @include vars.tablet-and-lower {
       display: block;
       grid-column: 1/5;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
     }
   }
 

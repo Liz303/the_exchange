@@ -9,11 +9,14 @@
     position: sticky;
     top: 0;
     width: 100%;
-    @include vars.mobile {
-      height: 115vh;
+    @include vars.ipad-pro-portrait {
+      height: 110vh;
+    }
+    @include vars.tablet-and-lower {
+      height: 112vh;
     }
     @include vars.x-small {
-      height: 110vh;
+      height: 115vh;
     }
     .introHeadline {
       @include vars.flexbox();

@@ -421,7 +421,6 @@ button.hamburger-wrapper {
 
 .news-slider {
   padding-left: $one-twenty-fourth;
-  padding-right: calc($one-twenty-fourth - 20px);
   @include mobile {
     padding-right: $one-twenty-fourth;
   }
@@ -436,7 +435,7 @@ button.hamburger-wrapper {
   }
 
   .slick-slide {
-    padding-right: 20px;
+    padding-right: $one-twenty-fourth;
     @include mobile {
       padding-right: 0;
     }
