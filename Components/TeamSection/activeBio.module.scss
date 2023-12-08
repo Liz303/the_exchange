@@ -4,7 +4,10 @@
   @include vars.grid-wrap();
   padding: 145px vars.$one-twenty-fourth 50px;
   @include vars.tablet-and-lower {
-    padding: 100px vars.$one-twenty-fourth 50px;
+    padding: 110px vars.$one-twenty-fourth 50px;
+  }
+  @include vars.x-small {
+    padding: 90px vars.$one-twenty-fourth 50px;
   }
   .name {
     grid-column: 1 / 6;

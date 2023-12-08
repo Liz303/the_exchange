@@ -3,8 +3,11 @@
 .projectsSection {
   @include vars.grid-wrap();
   padding: 110px vars.$one-twenty-fourth 250px;
-  @include vars.tablet-and-lower {
+  @include vars.small {
     padding: 110px vars.$one-twenty-fourth;
+  }
+  @include vars.x-small {
+    padding: 90px vars.$one-twenty-fourth;
   }
 
   .eyebrowContainer {
@@ -15,11 +18,10 @@
     }
   }
   .headline {
-    grid-column: 1 / 13;
+    grid-column: 1 / 7;
     grid-row: 2;
     margin-bottom: 50px;
     opacity: 0;
-    width: vars.$six-twelfths;
     @include vars.small {
       grid-column: 1/3;
     }

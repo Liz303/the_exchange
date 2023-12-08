@@ -1,7 +1,13 @@
 @use "../../styles/vars";
 
 .newsSection {
+  background-color: vars.$white;
   padding: 110px 0;
+  position: relative;
+  z-index: 10;
+  @include vars.x-small {
+    padding: 90px 0;
+  }
   .headlineWrapper {
     margin-bottom: 80px;
     padding: 0 vars.$one-twenty-fourth;
