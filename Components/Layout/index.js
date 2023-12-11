@@ -26,7 +26,7 @@ const Layout = ({ children, changeHeader }) => {
           property="og:description"
           content="Experts in city-attraction entertainment partnered with global leaders in location-based, family entertainment to bring state-of-the art experiences to locations across Europe."
         />
-        <meta property="og:url" content="city-leisuregroup.com" />
+        <meta property="og:url" content="www.city-leisuregroup.com" />
 
         <link
           rel="apple-touch-icon"
