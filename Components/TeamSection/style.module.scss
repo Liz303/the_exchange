@@ -93,6 +93,18 @@
         .detailsWrapper {
           color: vars.$yellow;
         }
+        @include vars.mobile {
+          .imageContainer {
+            border-radius: 0;
+            img {
+              height: 100% !important;
+              width: 100% !important;
+            }
+          }
+          .detailsWrapper {
+            color: vars.$white;
+          }
+        }
       }
     }
     .noSlider {
