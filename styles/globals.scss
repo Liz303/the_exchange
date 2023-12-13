@@ -220,11 +220,11 @@ p {
   padding: 0 90px;
 }
 
-section {
-  &:not(.about-section):not(.intro-section) {
-    overflow-x: clip;
-  }
-}
+// section {
+//   &:not(.about-section):not(.intro-section) {
+//     overflow-x: clip;
+//   }
+// }
 
 /* BUTTONS */
 
@@ -270,6 +270,7 @@ button {
       transition: all 0.3s linear;
       width: 28px;
       svg {
+        height: 100%;
         path {
           fill: transparent;
           stroke: $white;

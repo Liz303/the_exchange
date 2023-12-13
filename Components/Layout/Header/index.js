@@ -4,9 +4,8 @@ import { Link } from "react-scroll";
 import { useRef } from "react";
 import Logo from "@/Components/SVGS/logo";
 
-const Header = ({ changeHeader }) => {
+const Header = ({ changeHeader, isSafari }) => {
   const [showDrawer, setShowDrawer] = useState(false);
-
   const navLinks = ["about", "projects", "team", "news", "connect"];
 
   const headerRef = useRef();
@@ -60,7 +59,9 @@ const Header = ({ changeHeader }) => {
 
   return (
     <header
-      className={`${styles.header} ${changeHeader && styles.invert}`}
+      className={`${styles.header} ${
+        (changeHeader || isSafari) && styles.invert
+      }`}
       ref={headerRef}
     >
       <div

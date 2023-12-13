@@ -20,13 +20,14 @@
     }
   }
   .newsItemsContainer {
+    overflow-x: hidden;
+    width: 100%;
     .newsCard {
       max-width: 350px;
       opacity: 0;
       outline: none;
       padding-bottom: 5px;
       transform: translateX(100%);
-      transition: all 0.15s linear;
       @include vars.tablet-and-lower {
         max-width: unset;
       }
