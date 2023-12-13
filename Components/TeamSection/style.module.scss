@@ -45,7 +45,6 @@
       max-width: 350px;
       opacity: 0;
       transform: translateX(100%);
-      transition: all 0.15s linear;
       width: 100%;
       @include vars.tablet-and-lower {
         max-width: 450px;
@@ -54,15 +53,16 @@
         @include vars.flexbox();
         @include vars.justify-content(center);
         @include vars.align-items(center);
+        border-radius: 0;
         height: 380px;
         margin-bottom: 40px;
-        transition: all 0.15s linear;
+        transition: border-radius 0.15s linear;
         overflow: hidden;
         width: 100%;
         img {
           height: 100%;
           width: 100%;
-          transition: all 0.25s linear;
+          transition: all 0.15s linear;
         }
         @include vars.tablet-and-lower {
           height: 550px;

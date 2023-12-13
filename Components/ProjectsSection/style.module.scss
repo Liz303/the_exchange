@@ -47,6 +47,9 @@
     grid-column: 1/13;
     grid-row: 4;
     margin-top: 105px;
+    overflow-x: hidden;
+    width: 100%;
+
     @include vars.small {
       grid-column: 1/5;
     }
@@ -61,7 +64,7 @@
       outline: none;
       position: relative;
       transform: translateX(100%);
-      transition: all 0.15s linear;
+      transition: border-radius 0.15s linear;
       @include vars.ipad-and-lower-portrait {
         height: calc(60vh - 60px);
       }

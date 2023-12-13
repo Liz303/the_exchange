@@ -3,19 +3,20 @@ import ImageRender from "../Images/ImageRender";
 import introImage from "public/images/intro_image.jpg";
 import gsap from "gsap";
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Star from "../SVGS/star";
 import Eyebrow from "../Eyebrow";
 import SlopeStar from "../SVGS/slopeStar";
 
-const IntroSection = ({ handleChange }) => {
+const IntroSection = () => {
   gsap.registerPlugin(ScrollTrigger);
   const headlineRef = useRef();
-  const introCopyContainer = useRef();
+
   const introCopy = useRef();
   const starRef = useRef();
 
   useEffect(() => {
+    ScrollTrigger.refresh();
     if (starRef) {
       gsap.to(starRef.current, {
         delay: 0.5,
@@ -47,18 +48,11 @@ const IntroSection = ({ handleChange }) => {
       });
     }
 
-    ScrollTrigger.create({
-      trigger: introCopyContainer.current,
-      start: "top 52px",
-      end: "top 53px",
-      onEnter: () => handleChange(true),
-      onEnterBack: () => handleChange(false),
-    });
-  }, [headlineRef, introCopy, introCopyContainer, starRef]);
+  }, [headlineRef, introCopy, starRef]);
 
   return (
     <section className={`intro-section ${styles.introSection}`}>
-      <div className={styles.headlineImageWrapper}>
+      <div className={`intro-image-wrapper ${styles.headlineImageWrapper}`}>
         <div className={styles.introHeadline}>
           <div className={styles.starContainer} ref={starRef}>
             <Star color={"white"} />
@@ -73,7 +67,7 @@ const IntroSection = ({ handleChange }) => {
           <ImageRender image={introImage} cover={true} />
         </div>
       </div>
-      <div className={styles.introTextContainer} ref={introCopyContainer}>
+      <div className={styles.introTextContainer} >
         <div className={styles.slopeStarContainer}>
           <SlopeStar color={"lightblue"} />
         </div>
