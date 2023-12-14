@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 import { useEffect, useRef, useState } from "react";
 
-const ModalWrapper = ({ children, handleOpenClose, showModal }) => {
+const ModalWrapper = ({ children, handleOpenClose, showModal, isBio }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const body = document.body;
 
@@ -26,7 +26,10 @@ const ModalWrapper = ({ children, handleOpenClose, showModal }) => {
 
   return (
     <div className={`${styles.modalWrapper} ${modalVisible && styles.show}`}>
-      <div className={styles.close} onClick={() => handleToggle()}>
+      <div
+        className={`${styles.close} ${isBio && styles.isBio}`}
+        onClick={() => handleToggle()}
+      >
         <svg viewBox="0 0 25 25">
           <path d="M0.799805 0.799805L24.2 24.2"></path>
           <path d="M0.799805 24.2L24.2 0.799805"></path>

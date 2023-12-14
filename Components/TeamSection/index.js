@@ -83,7 +83,7 @@ const TeamSection = ({ bios }) => {
   return (
     <Element name="team" id="team">
       {activeBio && (
-        <ModalWrapper handleOpenClose={handleOpenClose} showModal={activeBio}>
+        <ModalWrapper handleOpenClose={handleOpenClose} showModal={activeBio} isBio={true}>
           <ActiveBio activeBio={activeBio} />
         </ModalWrapper>
       )}
