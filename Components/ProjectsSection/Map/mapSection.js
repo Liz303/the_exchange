@@ -3,12 +3,14 @@ import GoogleMap from "./map";
 import { useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
+import Star from "../../SVGS/star";
 
-const MapSection = ({ latLongList }) => {
+const MapSection = ({ latLongList, projects }) => {
   gsap.registerPlugin(ScrollTrigger);
   const containerRef = useRef();
   const mapHeadlineRef = useRef();
   const mapCopyRef = useRef();
+  const listRef = useRef();
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -46,7 +48,29 @@ const MapSection = ({ latLongList }) => {
         opacity: 1,
       });
     }
-  }, [containerRef, mapHeadlineRef, mapCopyRef]);
+    if (listRef) {
+      gsap.to(listRef.current, {
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 30%",
+        },
+        opacity: 1,
+      });
+    }
+  }, [containerRef, mapHeadlineRef, mapCopyRef, listRef]);
+
+  const renderLocations = () => {
+    return projects.map((project, i) => {
+      return (
+        <li className={styles.projectTitleWrapper} key={`project-title-${i}`}>
+          <div className={styles.title}>
+            <Star color={"black"} />
+            <span>{project.fields.titleOrLocation}</span>
+          </div>
+        </li>
+      );
+    });
+  };
 
   return (
     <div className={styles.mapSection} ref={containerRef}>
@@ -58,6 +82,12 @@ const MapSection = ({ latLongList }) => {
           We do city entertainment like no one else, bring the best in
           innovative attractions and immersive events to cities across Europe.
         </p>
+        {projects && projects.length > 0 && (
+          <ul className={styles.locationList} ref={listRef}>
+            Our current locations are:
+            {renderLocations()}
+          </ul>
+        )}
       </div>
       <div className={styles.mapContainer}>
         <GoogleMap latLongList={latLongList} />

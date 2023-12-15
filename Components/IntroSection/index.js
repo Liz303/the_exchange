@@ -47,7 +47,6 @@ const IntroSection = () => {
         },
       });
     }
-
   }, [headlineRef, introCopy, starRef]);
 
   return (
@@ -67,7 +66,7 @@ const IntroSection = () => {
           <ImageRender image={introImage} cover={true} />
         </div>
       </div>
-      <div className={styles.introTextContainer} >
+      <div className={styles.introTextContainer}>
         <div className={styles.slopeStarContainer}>
           <SlopeStar color={"lightblue"} />
         </div>
@@ -75,10 +74,12 @@ const IntroSection = () => {
         <div className={styles.introCopy} ref={introCopy}>
           We are industry experts in city-attraction entertainment who have
           partnered with global leaders in location-based, family entertainment
-          to bring state-of-the art experiences to locations across Europe. From
-          innovative attractions to immersive events, we deliver unforgettable
-          moments of joy and excitement for audiences of all ages and cultures.
-          Join us in creating an experience that’s truly unforgettable.
+          to bring state-of-the art experiences to locations across Europe.
+          <br></br>
+          <br></br>From innovative attractions to immersive events, we deliver
+          unforgettable moments of joy and excitement for audiences of all ages
+          and cultures.<br></br>
+          <br></br>Join us in creating an experience that’s truly unforgettable.
         </div>
       </div>
     </section>

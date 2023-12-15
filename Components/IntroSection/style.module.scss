@@ -61,7 +61,8 @@
     @include vars.flex-direction(column);
     @include vars.justify-content(center);
     background-color: vars.$lightblue;
-    min-height: 100vh;
+    min-height: calc(100vh + 330px);
+    height: auto;
     padding: 165px vars.$one-twenty-fourth;
     position: relative;
     z-index: 10;
