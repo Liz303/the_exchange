@@ -2,2155 +2,2864 @@ import styles from "./buildingTwo.module.scss";
 
 const BuildingTwo = () => {
   return (
-    <svg viewBox="0 0 2049.77 632.41">
+    <svg viewBox="0 0 2109.39 696.85">
+      <polygon
+        className={styles.cls7}
+        points="1434.55 321.18 1434.55 225.7 1493.99 187.59 1556.55 232.21 1556.55 321.18 1434.55 321.18"
+      />
+      <path
+        className={styles.cls4}
+        d="m1493.93,190.01l60.62,43.23v85.94h-118v-92.38l57.38-36.79m.12-4.83l-61.5,39.43v98.57h126v-92l-64.5-46h0Z"
+      />
+      <path
+        className={styles.cls5}
+        d="m1493.92,178.15l54.62,42.01v4.44l-52.39-40.29-2.48-1.91-2.45,1.95-48.68,38.75v-4.05l51.38-40.9m-.04-5.08l-55.34,44.06v14.28l55.17-43.92,58.83,45.24v-14.53l-58.67-45.12h0Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1494.05 167.18 1636.55 167.18 1648.55 215.18 1552.55 215.18 1494.05 167.18"
+      />
+      <rect
+        className={styles.cls4}
+        x="1630.55"
+        y="209.18"
+        width="90"
+        height="186"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1558.55 237.23 1558.55 240.73 1556.63 243.29 1552.55 240.23 1493.88 195.11 1438.55 239.17 1433.6 243.22 1432.55 241.94 1432.55 236.32 1438.55 231.41 1493.72 187.49 1552.55 232.73 1558.55 237.23"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1558.55 215.2 1558.55 218.69 1556.63 221.26 1552.55 218.2 1493.88 173.08 1438.55 217.13 1433.6 221.18 1432.55 219.91 1432.55 215.18 1431.44 215.18 1432.55 214.27 1438.55 209.36 1450.55 199.55 1493.72 165.46 1493.81 165.52 1496.01 167.18 1552.55 210.7 1558.53 215.18 1558.55 215.2"
+      />
+      <line
+        className={styles.cls1}
+        x1="1493.8"
+        y1="169.26"
+        x2="1493.8"
+        y2="125.18"
+      />
+      <line
+        className={styles.cls1}
+        x1="1477.27"
+        y1="141.71"
+        x2="1510.33"
+        y2="141.71"
+      />
+      <path
+        className={styles.cls4}
+        d="m1552.55,209.18v186h84v-186h-84Zm78,180h-72v-174h72v174Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1614.67,231.18v28h-40.12v-28h40.12m4-4h-48.12v36h48.12v-36h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1614.67,279.18v28h-40.12v-28h40.12m4-4h-48.12v36h48.12v-36h0Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1630.55 317.18 1558.55 317.18 1558.55 323.18 1630.55 323.18 1630.55 317.18 1630.55 317.18"
+      />
+      <path
+        className={styles.cls4}
+        d="m1588.55,347.18h12c6.62,0,12,5.38,12,12v36h-36v-36c0-6.62,5.38-12,12-12Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1614.55,231.18v10h-40v-10h40m4-4h-48v18h48v-18h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1614.55,279.18v10h-40v-10h40m4-4h-48v18h48v-18h0Z"
+      />
       <rect
         className={styles.cls3}
-        x="1542.76"
-        y="3.77"
+        x="1566.55"
+        y="187.18"
+        width="50"
+        height="24.16"
+      />
+      <path
+        className={styles.cls4}
+        d="m1614.55,189.18v20.16h-46v-20.16h46m4-4h-54v28.16h54v-28.16h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1420.55,149.18h-24v66h36l18-12v-15.85c0-21.07-12.76-38.15-30-38.15Z"
+      />
+      <rect
+        className={styles.cls8}
+        x="1368.55"
+        y="187.18"
+        width="50"
+        height="26"
+      />
+      <path
+        className={styles.cls4}
+        d="m1416.55,189.18v22h-46v-22h46m4-4h-54v30h54v-30h0Z"
+      />
+      <path
+        className={styles.cls7}
+        d="m1362.55,189.18v-18.08c0-10.99,8.94-19.92,19.92-19.92h22.15c10.99,0,19.92,8.94,19.92,19.92v18.08h-62Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1404.62,153.18c9.88,0,17.92,8.04,17.92,17.92v16.08h-58v-16.08c0-9.88,8.04-17.92,17.92-17.92h22.15m0-4h-22.15c-12.11,0-21.92,9.82-21.92,21.92v20.08h66v-20.08c0-12.11-9.82-21.92-21.92-21.92h0Z"
+      />
+      <line
+        className={styles.cls1}
+        x1="1396.55"
+        y1="155.18"
+        x2="1396.55"
+        y2="125.18"
+      />
+      <line
+        className={styles.cls1}
+        x1="1384.55"
+        y1="137.18"
+        x2="1408.55"
+        y2="137.18"
+      />
+      <path
+        className={styles.cls7}
+        d="m1560.55,192.78v-8.14c0-18,14.3-31.06,34-31.06s34,13.06,34,31.06v8.14h-68Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1594.55,155.58c18.54,0,32,12.22,32,29.06v6.14h-64v-6.14c0-16.84,13.46-29.06,32-29.06m0-4c-19.88,0-36,13.18-36,33.06v10.14h72v-10.14c0-19.88-16.12-33.06-36-33.06h0Z"
+      />
+      <line
+        className={styles.cls1}
+        x1="1594.55"
+        y1="155.18"
+        x2="1594.55"
+        y2="125.18"
+      />
+      <line
+        className={styles.cls1}
+        x1="1582.55"
+        y1="137.18"
+        x2="1606.55"
+        y2="137.18"
+      />
+      <rect
+        className={styles.cls6}
+        x="1356.55"
+        y="211.18"
+        width="80"
+        height="182"
+      />
+      <path
+        className={styles.cls4}
+        d="m1434.55,213.18v178h-76v-178h76m4-4h-84v186h84v-186h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="1372.55"
+        y="227.18"
+        width="48.12"
+        height="36"
+      />
+      <rect
+        className={styles.cls4}
+        x="1360.55"
+        y="317.18"
+        width="72"
+        height="6"
+      />
+      <path
+        className={styles.cls4}
+        d="m1390.55,347.18h12c6.62,0,12,5.38,12,12v36h-36v-36c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="1372.49"
+        y="275.18"
+        width="48.12"
+        height="36"
+      />
+      <rect
+        className={styles.cls7}
+        x="1374.49"
+        y="277.18"
+        width="44"
+        height="20"
+      />
+      <path
+        className={styles.cls4}
+        d="m1416.49,279.18v16h-40v-16h40m4-4h-48v24h48v-24h0Z"
+      />
+      <rect
+        className={styles.cls7}
+        x="1374.55"
+        y="229.18"
+        width="44"
+        height="20"
+      />
+      <path
+        className={styles.cls4}
+        d="m1416.55,231.18v16h-40v-16h40m4-4h-48v24h48v-24h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1618.55,149.18h-24v66h54v-27.85c0-21.07-12.76-38.15-30-38.15Z"
+      />
+      <rect
+        className={styles.cls8}
+        x="1566.55"
+        y="187.18"
+        width="50"
+        height="24.16"
+      />
+      <path
+        className={styles.cls4}
+        d="m1614.55,189.18v20.16h-46v-20.16h46m4-4h-54v28.16h54v-28.16h0Z"
+      />
+      <path
+        className={styles.cls7}
+        d="m1561,189.18v-18.15c0-10.94,8.9-19.85,19.85-19.85h21.85c10.94,0,19.85,8.9,19.85,19.85v18.15h-61.54Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1602.7,153.18c9.84,0,17.85,8.01,17.85,17.85v16.15h-57.54v-16.15c0-9.84,8.01-17.85,17.85-17.85h21.85m0-4h-21.85c-12.07,0-21.85,9.78-21.85,21.85v20.15h65.54v-20.15c0-12.07-9.78-21.85-21.85-21.85h0Z"
+      />
+      <line
+        className={styles.cls1}
+        x1="1594.55"
+        y1="155.18"
+        x2="1594.55"
+        y2="125.18"
+      />
+      <line
+        className={styles.cls1}
+        x1="1582.55"
+        y1="137.18"
+        x2="1606.55"
+        y2="137.18"
+      />
+      <rect
+        className={styles.cls6}
+        x="1554.55"
+        y="211.18"
+        width="80"
+        height="182"
+      />
+      <path
+        className={styles.cls4}
+        d="m1632.55,213.18v178h-76v-178h76m4-4h-84v186h84v-186h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="1558.55"
+        y="317.18"
+        width="72"
+        height="6"
+      />
+      <path
+        className={styles.cls4}
+        d="m1588.55,347.18h12c6.62,0,12,5.38,12,12v36h-36v-36c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="1570.49"
+        y="227.18"
+        width="48.12"
+        height="36"
+      />
+      <rect
+        className={styles.cls4}
+        x="1570.49"
+        y="275.18"
+        width="48.12"
+        height="36"
+      />
+      <rect
+        className={styles.cls7}
+        x="1572.49"
+        y="277.18"
+        width="44"
+        height="20"
+      />
+      <path
+        className={styles.cls4}
+        d="m1614.48,279.18v16h-40v-16h40m4-4h-48v24h48v-24h0Z"
+      />
+      <rect
+        className={styles.cls7}
+        x="1572.49"
+        y="229.18"
+        width="44"
+        height="20"
+      />
+      <path
+        className={styles.cls4}
+        d="m1614.48,231.18v16h-40v-16h40m4-4h-48v24h48v-24h0Z"
+      />
+      <rect
+        className={styles.cls9}
+        x="1434.55"
+        y="319.18"
+        width="122"
+        height="74"
+      />
+      <path
+        className={styles.cls4}
+        d="m1554.55,321.18v70h-118v-70h118m4-4h-126v78h126v-78h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1554.42,321.18v70h-117.88v-70h117.88m4-4h-125.88v78h125.88v-78h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1489.55,347.18h12c6.62,0,12,5.38,12,12v36h-36v-36c0-6.62,5.38-12,12-12Z"
+      />
+      <path
+        className={styles.cls9}
+        d="m1495.55,244.41c-8.01,0-14.53-6.52-14.53-14.53s6.52-14.53,14.53-14.53,14.53,6.52,14.53,14.53-6.52,14.53-14.53,14.53Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1495.55,217.34c6.91,0,12.53,5.62,12.53,12.53s-5.62,12.53-12.53,12.53-12.53-5.62-12.53-12.53,5.62-12.53,12.53-12.53m0-4c-9.13,0-16.53,7.4-16.53,16.53s7.4,16.53,16.53,16.53,16.53-7.4,16.53-16.53-7.4-16.53-16.53-16.53h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1489.55,263.18h12c6.62,0,12,5.38,12,12v48h-36v-48c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="872.44"
+        y="107.18"
+        width="36"
+        height="192"
+      />
+      <rect
+        className={styles.cls9}
+        x="814.44"
+        y="109.18"
+        width="56"
+        height="44"
+      />
+      <path
+        className={styles.cls4}
+        d="m868.44,111.18v40h-52v-40h52m4-4h-60v48h60v-48h0Z"
+      />
+      <line
+        className={styles.cls1}
+        x1="842.44"
+        y1="113.18"
+        x2="842.44"
+        y2="65.18"
+      />
+      <rect
+        className={styles.cls4}
+        x="884.44"
+        y="149.18"
+        width="48"
+        height="192"
+      />
+      <rect
+        className={styles.cls7}
+        x="796.44"
+        y="151.18"
+        width="92"
+        height="44"
+      />
+      <path
+        className={styles.cls4}
+        d="m886.44,153.18v40h-88v-40h88m4-4h-96v48h96v-48h0Z"
+      />
+      <rect
+        className={styles.cls6}
+        x="784.44"
+        y="193.18"
+        width="122"
+        height="176"
+      />
+      <path
+        className={styles.cls4}
+        d="m904.44,195.18v172h-118v-172h118m4-4h-126v180h126v-180h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m832.44,129.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m856.44,129.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m820.44,171.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m844.44,171.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m868.44,171.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m811.54,243.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m835.54,243.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m859.54,243.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m883.54,243.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m811.54,219.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m835.54,219.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m859.54,219.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m883.54,219.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m811.54,291.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m835.54,291.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m859.54,291.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m883.54,291.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m811.54,267.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m835.54,267.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m859.54,267.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m883.54,267.28v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m836.44,317.18h12c6.62,0,12,5.38,12,12v42h-36v-42c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="902.44"
+        y="191.18"
+        width="54"
+        height="180"
+      />
+      <rect
+        className={styles.cls6}
+        x="1219.38"
+        y="331.33"
+        width="1.88"
+        height="25.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1223.33 329.27 1217.33 329.27 1217.33 359.27 1223.33 359.27 1223.33 329.27 1223.33 329.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="1327.38"
+        y="331.33"
+        width="1.88"
+        height="25.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1331.33 329.27 1325.33 329.27 1325.33 359.27 1331.33 359.27 1331.33 329.27 1331.33 329.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="1195.38"
+        y="337.33"
+        width="133.88"
+        height="1.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1331.33 335.27 1193.33 335.27 1193.33 341.27 1331.33 341.27 1331.33 335.27 1331.33 335.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="1237.38"
+        y="331.33"
+        width="1.88"
+        height="25.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1241.33 329.27 1235.33 329.27 1235.33 359.27 1241.33 359.27 1241.33 329.27 1241.33 329.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="1255.38"
+        y="331.33"
+        width="1.88"
+        height="25.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1259.33 329.27 1253.33 329.27 1253.33 359.27 1259.33 359.27 1259.33 329.27 1259.33 329.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="1273.38"
+        y="331.33"
+        width="1.88"
+        height="25.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1277.33 329.27 1271.33 329.27 1271.33 359.27 1277.33 359.27 1277.33 329.27 1277.33 329.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="1291.38"
+        y="331.33"
+        width="1.88"
+        height="25.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1295.33 329.27 1289.33 329.27 1289.33 359.27 1295.33 359.27 1295.33 329.27 1295.33 329.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="1309.38"
+        y="331.33"
+        width="1.88"
+        height="25.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1313.33 329.27 1307.33 329.27 1307.33 359.27 1313.33 359.27 1313.33 329.27 1313.33 329.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="1327.38"
+        y="331.33"
+        width="1.88"
+        height="25.88"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1331.33 329.27 1325.33 329.27 1325.33 359.27 1331.33 359.27 1331.33 329.27 1331.33 329.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="949.38"
+        y="355.33"
+        width="283.88"
+        height="103.88"
+      />
+      <path
+        className={styles.cls4}
+        d="m1231.21,357.39v99.77h-279.77v-99.77h279.77m4.12-4.12h-288v108h288v-108h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1005.45,395.27h16.08c7.15,0,12.96,5.81,12.96,12.96v53.04h-42v-53.04c0-7.15,5.81-12.96,12.96-12.96Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1081.33"
+        y="427.27"
+        width="110"
+        height="2"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1193.33 425.27 1079.33 425.27 1079.33 431.27 1193.33 431.27 1193.33 425.27 1193.33 425.27"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1115.33 299.27 1109.33 299.27 1109.33 353.27 1115.33 353.27 1115.33 299.27 1115.33 299.27"
+      />
+      <rect
+        className={styles.cls4}
+        x="1229.33"
+        y="353.27"
+        width="102"
+        height="108"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1133.33 233.27 1031.33 233.27 1025.33 359.27 1205.33 359.27 1205.33 269.27 1133.33 233.27"
+      />
+      <polygon
+        className={styles.cls7}
+        points="949.33 357.27 949.33 272.34 1028.87 235.27 1036.87 235.27 1113.33 272.32 1113.33 357.27 949.33 357.27"
+      />
+      <path
+        className={styles.cls4}
+        d="m1036.41,237.27l74.92,36.31v81.69h-160v-81.65l77.99-36.35h7.09m.92-4h-8.9l-81.1,37.8v88.2h168v-88.2l-78-37.8h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="983.27"
+        y="290.27"
+        width="96"
+        height="48"
+      />
+      <rect
+        className={styles.cls9}
+        x="985.46"
+        y="292.46"
+        width="91.62"
+        height="31.62"
+      />
+      <path
+        className={styles.cls4}
+        d="m1074.89,294.65v27.24h-87.24v-27.24h87.24m4.38-4.38h-96v36h96v-36h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="1073.33"
+        y="419.27"
+        width="120"
+        height="42"
+      />
+      <rect
+        className={styles.cls7}
+        x="1075.69"
+        y="391.64"
+        width="115.27"
+        height="37.27"
+      />
+      <path
+        className={styles.cls4}
+        d="m1188.59,394v32.53h-110.53v-32.53h110.53m4.73-4.73h-120v42h120v-42h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="1271.33"
+        y="107.27"
+        width="36"
+        height="192"
+      />
+      <rect
+        className={styles.cls4}
+        x="1283.33"
+        y="149.27"
+        width="48"
+        height="192"
+      />
+      <rect
+        className={styles.cls6}
+        x="1177.33"
+        y="193.27"
+        width="128"
+        height="176"
+      />
+      <path
+        className={styles.cls4}
+        d="m1303.33,195.27v172h-124v-172h124m4-4h-132v180h132v-180h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1235.33,305.27h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1195.33"
+        y="199.27"
+        width="2"
+        height="170"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1199.33 197.27 1193.33 197.27 1193.33 371.27 1199.33 371.27 1199.33 197.27 1199.33 197.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1285.33"
+        y="199.27"
+        width="2"
+        height="170"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1289.33 197.27 1283.33 197.27 1283.33 371.27 1289.33 371.27 1289.33 197.27 1289.33 197.27"
+      />
+      <rect
+        className={styles.cls4}
+        x="1301.33"
+        y="191.27"
+        width="54"
+        height="180"
+      />
+      <rect
+        className={styles.cls7}
+        x="1195.33"
+        y="151.27"
+        width="92"
+        height="44"
+      />
+      <path
+        className={styles.cls4}
+        d="m1285.33,153.27v40h-88v-40h88m4-4h-96v48h96v-48h0Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1213.33"
+        y="151.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1217.33 149.27 1211.33 149.27 1211.33 371.27 1217.33 371.27 1217.33 149.27 1217.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1231.33"
+        y="151.27"
+        width="2"
+        height="164"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1235.33 149.27 1229.33 149.27 1229.33 317.27 1235.33 317.27 1235.33 149.27 1235.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1249.33"
+        y="151.27"
+        width="2"
+        height="164"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1253.33 149.27 1247.33 149.27 1247.33 317.27 1253.33 317.27 1253.33 149.27 1253.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1267.33"
+        y="151.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1271.33 149.27 1265.33 149.27 1265.33 371.27 1271.33 371.27 1271.33 149.27 1271.33 149.27"
+      />
+      <rect
+        className={styles.cls8}
+        x="1213.33"
+        y="109.27"
+        width="56"
+        height="44"
+      />
+      <path
+        className={styles.cls4}
+        d="m1267.33,111.27v40h-52v-40h52m4-4h-60v48h60v-48h0Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1213.33"
+        y="109.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1217.33 107.27 1211.33 107.27 1211.33 329.27 1217.33 329.27 1217.33 107.27 1217.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1231.33"
+        y="109.27"
+        width="2"
+        height="242"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1235.33 107.27 1229.33 107.27 1229.33 353.27 1235.33 353.27 1235.33 107.27 1235.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1249.33"
+        y="109.27"
+        width="2"
+        height="242"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1253.33 107.27 1247.33 107.27 1247.33 353.27 1253.33 353.27 1253.33 107.27 1253.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1267.33"
+        y="109.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1271.33 107.27 1265.33 107.27 1265.33 329.27 1271.33 329.27 1271.33 107.27 1271.33 107.27"
+      />
+      <line
+        className={styles.cls2}
+        x1="1241.33"
+        y1="107.27"
+        x2="1241.33"
+        y2="65.27"
+      />
+      <rect
+        className={styles.cls4}
+        x="1271.33"
+        y="107.27"
+        width="36"
+        height="192"
+      />
+      <rect
+        className={styles.cls4}
+        x="1283.33"
+        y="149.27"
+        width="48"
+        height="192"
+      />
+      <rect
+        className={styles.cls3}
+        x="1177.33"
+        y="193.27"
+        width="128"
+        height="176"
+      />
+      <path
+        className={styles.cls4}
+        d="m1303.33,195.27v172h-124v-172h124m4-4h-132v180h132v-180h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1235.33,305.27h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1195.33"
+        y="199.27"
+        width="2"
+        height="170"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1199.33 197.27 1193.33 197.27 1193.33 371.27 1199.33 371.27 1199.33 197.27 1199.33 197.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1285.33"
+        y="199.27"
+        width="2"
+        height="170"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1289.33 197.27 1283.33 197.27 1283.33 371.27 1289.33 371.27 1289.33 197.27 1289.33 197.27"
+      />
+      <rect
+        className={styles.cls4}
+        x="1301.33"
+        y="191.27"
+        width="54"
+        height="180"
+      />
+      <rect
+        className={styles.cls3}
+        x="1195.33"
+        y="151.27"
+        width="92"
+        height="44"
+      />
+      <path
+        className={styles.cls4}
+        d="m1285.33,153.27v40h-88v-40h88m4-4h-96v48h96v-48h0Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1213.33"
+        y="151.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1217.33 149.27 1211.33 149.27 1211.33 371.27 1217.33 371.27 1217.33 149.27 1217.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1231.33"
+        y="151.27"
+        width="2"
+        height="164"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1235.33 149.27 1229.33 149.27 1229.33 317.27 1235.33 317.27 1235.33 149.27 1235.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1249.33"
+        y="151.27"
+        width="2"
+        height="164"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1253.33 149.27 1247.33 149.27 1247.33 317.27 1253.33 317.27 1253.33 149.27 1253.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1267.33"
+        y="151.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1271.33 149.27 1265.33 149.27 1265.33 371.27 1271.33 371.27 1271.33 149.27 1271.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1213.33"
+        y="109.27"
+        width="56"
+        height="44"
+      />
+      <path
+        className={styles.cls4}
+        d="m1267.33,111.27v40h-52v-40h52m4-4h-60v48h60v-48h0Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1213.33"
+        y="109.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1217.33 107.27 1211.33 107.27 1211.33 329.27 1217.33 329.27 1217.33 107.27 1217.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1231.33"
+        y="109.27"
+        width="2"
+        height="242"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1235.33 107.27 1229.33 107.27 1229.33 353.27 1235.33 353.27 1235.33 107.27 1235.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1249.33"
+        y="109.27"
+        width="2"
+        height="242"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1253.33 107.27 1247.33 107.27 1247.33 353.27 1253.33 353.27 1253.33 107.27 1253.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1267.33"
+        y="109.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1271.33 107.27 1265.33 107.27 1265.33 329.27 1271.33 329.27 1271.33 107.27 1271.33 107.27"
+      />
+      <line
+        className={styles.cls2}
+        x1="1241.33"
+        y1="107.27"
+        x2="1241.33"
+        y2="65.27"
+      />
+      <rect
+        className={styles.cls4}
+        x="1271.33"
+        y="107.27"
+        width="36"
+        height="192"
+      />
+      <rect
+        className={styles.cls4}
+        x="1283.33"
+        y="149.27"
+        width="48"
+        height="192"
+      />
+      <rect
+        className={styles.cls7}
+        x="1177.33"
+        y="193.27"
+        width="128"
+        height="176"
+      />
+      <path
+        className={styles.cls4}
+        d="m1303.33,195.27v172h-124v-172h124m4-4h-132v180h132v-180h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1235.33,305.27h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1195.36"
+        y="193.3"
+        width="1.93"
+        height="175.93"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1199.33 191.27 1193.33 191.27 1193.33 371.27 1199.33 371.27 1199.33 191.27 1199.33 191.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1285.36"
+        y="193.3"
+        width="1.93"
+        height="175.93"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1289.33 191.27 1283.33 191.27 1283.33 371.27 1289.33 371.27 1289.33 191.27 1289.33 191.27"
+      />
+      <rect
+        className={styles.cls4}
+        x="1301.33"
+        y="191.27"
+        width="54"
+        height="180"
+      />
+      <rect
+        className={styles.cls6}
+        x="1195.53"
+        y="151.47"
+        width="91.6"
+        height="43.6"
+      />
+      <path
+        className={styles.cls4}
+        d="m1284.93,153.67v39.2h-87.2v-39.2h87.2m4.4-4.4h-96v48h96v-48h0Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1213.33"
+        y="151.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1217.33 149.27 1211.33 149.27 1211.33 371.27 1217.33 371.27 1217.33 149.27 1217.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1231.33"
+        y="151.27"
+        width="2"
+        height="164"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1235.33 149.27 1229.33 149.27 1229.33 317.27 1235.33 317.27 1235.33 149.27 1235.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1249.33"
+        y="151.27"
+        width="2"
+        height="164"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1253.33 149.27 1247.33 149.27 1247.33 317.27 1253.33 317.27 1253.33 149.27 1253.33 149.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1267.33"
+        y="151.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1271.33 149.27 1265.33 149.27 1265.33 371.27 1271.33 371.27 1271.33 149.27 1271.33 149.27"
+      />
+      <rect
+        className={styles.cls9}
+        x="1213.33"
+        y="109.27"
+        width="56"
+        height="44"
+      />
+      <path
+        className={styles.cls4}
+        d="m1267.33,111.27v40h-52v-40h52m4-4h-60v48h60v-48h0Z"
+      />
+      <rect
+        className={styles.cls3}
+        x="1213.33"
+        y="109.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1217.33 107.27 1211.33 107.27 1211.33 329.27 1217.33 329.27 1217.33 107.27 1217.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1231.33"
+        y="109.27"
+        width="2"
+        height="242"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1235.33 107.27 1229.33 107.27 1229.33 353.27 1235.33 353.27 1235.33 107.27 1235.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1249.33"
+        y="109.27"
+        width="2"
+        height="242"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1253.33 107.27 1247.33 107.27 1247.33 353.27 1253.33 353.27 1253.33 107.27 1253.33 107.27"
+      />
+      <rect
+        className={styles.cls3}
+        x="1267.33"
+        y="109.27"
+        width="2"
+        height="218"
+      />
+      <polygon
+        className={styles.cls4}
+        points="1271.33 107.27 1265.33 107.27 1265.33 329.27 1271.33 329.27 1271.33 107.27 1271.33 107.27"
+      />
+      <line
+        className={styles.cls2}
+        x1="1241.33"
+        y1="107.27"
+        x2="1241.33"
+        y2="65.27"
+      />
+      <rect
+        className={styles.cls6}
+        x="523.65"
+        y="343.27"
+        width="194"
+        height="230"
+      />
+      <path
+        className={styles.cls4}
+        d="m715.65,345.27v226h-190v-226h190m4-4h-198v234h198v-234h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m556.65,376.02v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m583.05,376.02v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m662.25,376.02v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m688.65,376.02v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m609.45,376.02v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m635.85,376.02v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m556.65,398.14v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m583.05,398.14v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m662.25,398.14v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m688.65,398.14v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m609.45,398.14v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m635.85,398.14v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m556.65,420.27v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m583.05,420.27v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m662.25,420.27v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m688.65,420.27v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m609.45,420.27v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m635.85,420.27v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m556.65,442.4v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m583.05,442.4v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m662.25,442.4v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m688.65,442.4v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m609.45,442.4v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m635.85,442.4v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m556.65,464.53v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m583.05,464.53v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m662.25,464.53v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m688.65,464.53v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m609.45,464.53v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m635.85,464.53v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="713.65 527.27 521.65 527.27 521.65 533.27 713.65 533.27 713.65 527.27 713.65 527.27"
+      />
+      <rect
+        className={styles.cls9}
+        x="523.65"
+        y="289.27"
+        width="194"
+        height="56"
+      />
+      <path
+        className={styles.cls4}
+        d="m715.65,291.27v52h-190v-52h190m4-4h-198v60h198v-60h0Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="551.65 287.27 545.65 287.27 545.65 347.27 551.65 347.27 551.65 287.27 551.65 287.27"
+      />
+      <polygon
+        className={styles.cls4}
+        points="575.65 287.27 569.65 287.27 569.65 347.27 575.65 347.27 575.65 287.27 575.65 287.27"
+      />
+      <polygon
+        className={styles.cls4}
+        points="599.65 287.27 593.65 287.27 593.65 347.27 599.65 347.27 599.65 287.27 599.65 287.27"
+      />
+      <polygon
+        className={styles.cls4}
+        points="623.65 287.27 617.65 287.27 617.65 347.27 623.65 347.27 623.65 287.27 623.65 287.27"
+      />
+      <polygon
+        className={styles.cls4}
+        points="647.65 287.27 641.65 287.27 641.65 347.27 647.65 347.27 647.65 287.27 647.65 287.27"
+      />
+      <polygon
+        className={styles.cls4}
+        points="671.65 287.27 665.65 287.27 665.65 347.27 671.65 347.27 671.65 287.27 671.65 287.27"
+      />
+      <polygon
+        className={styles.cls4}
+        points="695.65 287.27 689.65 287.27 689.65 347.27 695.65 347.27 695.65 287.27 695.65 287.27"
+      />
+      <polygon
+        className={styles.cls4}
+        points="719.65 497.27 521.65 497.27 521.65 503.27 719.65 503.27 719.65 497.27 719.65 497.27"
+      />
+      <rect
+        className={styles.cls4}
+        x="713.65"
+        y="287.27"
+        width="114"
+        height="288"
+      />
+      <rect
+        className={styles.cls7}
+        x="523.65"
+        y="499.27"
+        width="194"
+        height="74"
+      />
+      <path
+        className={styles.cls4}
+        d="m715.65,501.27v70h-190v-70h190m4-4h-198v78h198v-78h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m614.65,509.27h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m555.15,546.29v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m579.15,546.29v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m555.15,522.29v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m579.15,522.29v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m666.15,546.29v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m690.15,546.29v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m666.15,522.29v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m690.15,522.29v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <rect
+        className={styles.cls6}
+        x="27.49"
+        y="262.18"
+        width="116"
+        height="170"
+      />
+      <path
+        className={styles.cls4}
+        d="m141.49,264.18v166H29.49v-166h112m4-4H25.49v174h120v-174h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m79.4,366.76h12c6.62,0,12,5.38,12,12v55.42h-36v-55.42c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="68.19"
+        y="290.18"
+        width="36"
+        height="36"
+        rx="12"
+        ry="12"
+      />
+      <polygon
+        className={styles.cls4}
+        points="145.49 260.18 139.49 260.18 139.49 350.18 145.49 350.18 145.49 260.18 145.49 260.18"
+      />
+      <rect
+        className={styles.cls4}
+        x="355.49"
+        y="260.18"
+        width="114"
+        height="174"
+      />
+      <rect
+        className={styles.cls7}
+        x="141.49"
+        y="262.18"
+        width="218"
+        height="86"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,264.18v82h-214v-82h214m4-4h-222v90h222v-90h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="139.49"
+        y="260.18"
+        width="6"
+        height="174"
+      />
+      <rect
+        className={styles.cls9}
+        x="141.49"
+        y="346.18"
+        width="218"
+        height="86"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,348.18v82h-214v-82h214m4-4h-222v90h222v-90h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m171.49,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m195.49,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m219.49,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m243.49,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m267.49,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m291.49,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m315.49,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m339.49,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m171.49,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m195.49,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m219.49,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m243.49,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m267.49,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m291.49,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m315.49,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m339.49,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="169.49 260.18 163.49 260.18 163.49 344.18 169.49 344.18 169.49 260.18 169.49 260.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="193.49 260.18 187.49 260.18 187.49 350.18 193.49 350.18 193.49 260.18 193.49 260.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="217.49 260.18 211.49 260.18 211.49 350.18 217.49 350.18 217.49 260.18 217.49 260.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="241.49 260.18 235.49 260.18 235.49 344.18 241.49 344.18 241.49 260.18 241.49 260.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="265.49 260.18 259.49 260.18 259.49 350.18 265.49 350.18 265.49 260.18 265.49 260.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="289.49 260.18 283.49 260.18 283.49 350.18 289.49 350.18 289.49 260.18 289.49 260.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="313.49 260.18 307.49 260.18 307.49 350.18 313.49 350.18 313.49 260.18 313.49 260.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="337.49 260.18 331.49 260.18 331.49 350.18 337.49 350.18 337.49 260.18 337.49 260.18"
+      />
+      <rect
+        className={styles.cls4}
+        x="1780.55"
+        y="239.18"
+        width="312"
+        height="162"
+      />
+      <rect
+        className={styles.cls6}
+        x="1692.55"
+        y="307.18"
+        width="290"
+        height="92"
+      />
+      <path
+        className={styles.cls4}
+        d="m1980.55,309.18v88h-286v-88h286m4-4h-294v96h294v-96h0Z"
+      />
+      <polygon
+        className={styles.cls7}
+        points="1884.55 309.18 1884.55 294.31 1973.1 241.18 1982.55 241.18 1982.55 309.18 1884.55 309.18"
+      />
+      <path
+        className={styles.cls4}
+        d="m1980.55,243.18v64h-94v-11.74l87.11-52.26h6.89m4-4h-12l-90,54v18h102v-72h0Z"
+      />
+      <polygon
+        className={styles.cls7}
+        points="1788.55 309.18 1788.55 294.31 1877.1 241.18 1886.55 241.18 1886.55 309.18 1788.55 309.18"
+      />
+      <path
+        className={styles.cls4}
+        d="m1884.55,243.18v64h-94v-11.74l87.11-52.26h6.89m4-4h-12l-90,54v18h102v-72h0Z"
+      />
+      <polygon
+        className={styles.cls7}
+        points="1692.55 309.18 1692.55 294.31 1781.1 241.18 1790.55 241.18 1790.55 309.18 1692.55 309.18"
+      />
+      <path
+        className={styles.cls4}
+        d="m1788.55,243.18v64h-94v-11.74l87.11-52.26h6.89m4-4h-12l-90,54v18h102v-72h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1722.55,339.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1746.55,339.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1770.55,339.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1794.55,339.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1818.55,339.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1842.55,339.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1866.55,339.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <rect
+        className={styles.cls9}
+        x="1692.55"
+        y="367.18"
+        width="290"
+        height="14"
+      />
+      <path
+        className={styles.cls4}
+        d="m1980.55,369.18v10h-286v-10h286m4-4h-294v18h294v-18h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1900.55,329.18h12c6.62,0,12,5.38,12,12v60h-36v-60c0-6.62,5.38-12,12-12Z"
+      />
+      <rect
+        className={styles.cls6}
+        x="1560.73"
+        y="121.18"
         width="85.84"
         height="398"
       />
       <path
-        className={styles.cls1}
-        d="m1626.59,5.77v394h-81.84V5.77h81.84m4-4h-89.84v402h89.84V1.77h0Z"
+        className={styles.cls4}
+        d="m1644.56,123.18v394h-81.84V123.18h81.84m4-4h-89.84v402h89.84V119.18h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1578.59,334.92h14c7.73,0,14,6.27,14,14v54.84h-42v-54.84c0-7.73,6.27-14,14-14Z"
+        className={styles.cls4}
+        d="m1596.56,452.34h14c7.73,0,14,6.27,14,14v54.84h-42v-54.84c0-7.73,6.27-14,14-14Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,113.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,231.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,113.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,231.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,137.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,255.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,137.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,255.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,161.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,279.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,161.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,279.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,185.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,303.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,185.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,303.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,209.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,327.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,209.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,327.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,233.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,351.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,233.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,351.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,257.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,375.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,257.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,375.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,281.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,399.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,281.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,399.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1572.59,305.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1590.56,423.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1602.59,305.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1620.56,423.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <rect
-        className={styles.cls1}
-        x="1624.59"
-        y="1.77"
+        className={styles.cls4}
+        x="1642.56"
+        y="119.18"
         width="108"
         height="309.48"
       />
       <rect
-        className={styles.cls1}
-        x="1858.59"
-        y="259.77"
+        className={styles.cls4}
+        x="1876.56"
+        y="377.18"
         width="72"
         height="144"
       />
       <rect
-        className={styles.cls6}
-        x="1626.59"
-        y="261.77"
+        className={styles.cls7}
+        x="1644.56"
+        y="379.18"
         width="236"
         height="140"
       />
       <path
-        className={styles.cls1}
-        d="m1860.59,263.77v136h-232v-136h232m4-4h-240v144h240v-144h0Z"
+        className={styles.cls4}
+        d="m1878.56,381.18v136h-232v-136h232m4-4h-240v144h240v-144h0Z"
       />
       <polygon
-        className={styles.cls1}
-        points="1816.64 306.35 1636.72 306.35 1636.72 312.35 1816.64 312.35 1816.64 306.35 1816.64 306.35"
+        className={styles.cls4}
+        points="1834.61 423.76 1654.69 423.76 1654.69 429.76 1834.61 429.76 1834.61 423.76 1834.61 423.76"
       />
       <rect
-        className={styles.cls8}
-        x="1626.67"
-        y="261.77"
+        className={styles.cls9}
+        x="1644.64"
+        y="379.18"
         width="235.92"
         height="50"
       />
       <path
-        className={styles.cls1}
-        d="m1860.59,263.77v46h-231.92v-46h231.92m4-4h-239.92v54h239.92v-54h0Z"
+        className={styles.cls4}
+        d="m1878.56,381.18v46h-231.92v-46h231.92m4-4h-239.92v54h239.92v-54h0Z"
       />
       <polygon
-        className={styles.cls1}
-        points="1648.55 264.35 1642.55 264.35 1642.55 312.35 1648.55 312.35 1648.55 264.35 1648.55 264.35"
+        className={styles.cls4}
+        points="1666.52 381.76 1660.52 381.76 1660.52 429.76 1666.52 429.76 1666.52 381.76 1666.52 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1666.6 264.35 1660.6 264.35 1660.6 312.35 1666.6 312.35 1666.6 264.35 1666.6 264.35"
+        className={styles.cls4}
+        points="1684.57 381.76 1678.57 381.76 1678.57 429.76 1684.57 429.76 1684.57 381.76 1684.57 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1684.59 264.35 1678.6 264.35 1678.6 313.77 1684.59 313.77 1684.59 264.35 1684.59 264.35"
+        className={styles.cls4}
+        points="1702.56 381.76 1696.57 381.76 1696.57 431.18 1702.56 431.18 1702.56 381.76 1702.56 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1702.59 264.35 1696.59 264.35 1696.59 312.35 1702.59 312.35 1702.59 264.35 1702.59 264.35"
+        className={styles.cls4}
+        points="1720.56 381.76 1714.56 381.76 1714.56 429.76 1720.56 429.76 1720.56 381.76 1720.56 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1720.58 264.35 1714.58 264.35 1714.58 312.35 1720.58 312.35 1720.58 264.35 1720.58 264.35"
+        className={styles.cls4}
+        points="1738.55 381.76 1732.55 381.76 1732.55 429.76 1738.55 429.76 1738.55 381.76 1738.55 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1738.57 264.35 1732.57 264.35 1732.57 312.35 1738.57 312.35 1738.57 264.35 1738.57 264.35"
+        className={styles.cls4}
+        points="1756.54 381.76 1750.54 381.76 1750.54 429.76 1756.54 429.76 1756.54 381.76 1756.54 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1756.56 264.35 1750.57 264.35 1750.57 313.77 1756.56 313.77 1756.56 264.35 1756.56 264.35"
+        className={styles.cls4}
+        points="1774.53 381.76 1768.54 381.76 1768.54 431.18 1774.53 431.18 1774.53 381.76 1774.53 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1774.56 264.35 1768.56 264.35 1768.56 312.35 1774.56 312.35 1774.56 264.35 1774.56 264.35"
+        className={styles.cls4}
+        points="1792.53 381.76 1786.53 381.76 1786.53 429.76 1792.53 429.76 1792.53 381.76 1792.53 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1792.55 264.35 1786.55 264.35 1786.55 312.35 1792.55 312.35 1792.55 264.35 1792.55 264.35"
+        className={styles.cls4}
+        points="1810.52 381.76 1804.52 381.76 1804.52 429.76 1810.52 429.76 1810.52 381.76 1810.52 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1810.59 264.35 1804.59 264.35 1804.59 312.35 1810.59 312.35 1810.59 264.35 1810.59 264.35"
+        className={styles.cls4}
+        points="1828.56 381.76 1822.56 381.76 1822.56 429.76 1828.56 429.76 1828.56 381.76 1828.56 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1828.59 264.35 1822.59 264.35 1822.59 312.35 1828.59 312.35 1828.59 264.35 1828.59 264.35"
+        className={styles.cls4}
+        points="1846.56 381.76 1840.56 381.76 1840.56 429.76 1846.56 429.76 1846.56 381.76 1846.56 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1846.59 264.35 1840.59 264.35 1840.59 312.35 1846.59 312.35 1846.59 264.35 1846.59 264.35"
+        className={styles.cls4}
+        points="1864.56 381.76 1858.56 381.76 1858.56 429.76 1864.56 429.76 1864.56 381.76 1864.56 381.76"
       />
       <path
-        className={styles.cls1}
-        d="m1662.59,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1680.56,453.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1686.58,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1704.55,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1710.59,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1728.56,453.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1734.56,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1752.53,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1758.59,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1776.56,453.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1782.54,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1800.51,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1662.59,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1680.56,477.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1686.58,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1704.55,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1710.59,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1728.56,477.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1734.56,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1752.53,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1758.55,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1776.52,477.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1782.54,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1800.51,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1806.59,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1824.56,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1806.59,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1824.56,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1830.65,335.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1848.62,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1830.65,359.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1848.62,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <rect
-        className={styles.cls6}
-        x="1308.56"
-        y="261.77"
+        className={styles.cls7}
+        x="1326.53"
+        y="379.18"
         width="236"
         height="140"
       />
       <path
-        className={styles.cls1}
-        d="m1542.56,263.77v136h-232v-136h232m4-4h-240v144h240v-144h0Z"
+        className={styles.cls4}
+        d="m1560.53,381.18v136h-232v-136h232m4-4h-240v144h240v-144h0Z"
       />
       <polygon
-        className={styles.cls1}
-        points="1534.44 306.35 1354.51 306.35 1354.51 312.35 1534.44 312.35 1534.44 306.35 1534.44 306.35"
+        className={styles.cls4}
+        points="1552.41 423.76 1372.48 423.76 1372.48 429.76 1552.41 429.76 1552.41 423.76 1552.41 423.76"
       />
       <rect
-        className={styles.cls8}
-        x="1308.56"
-        y="261.77"
+        className={styles.cls9}
+        x="1326.53"
+        y="379.18"
         width="235.92"
         height="50"
       />
       <path
-        className={styles.cls1}
-        d="m1542.48,263.77v46h-231.92v-46h231.92m4-4h-239.92v54h239.92v-54h0Z"
+        className={styles.cls4}
+        d="m1560.45,381.18v46h-231.92v-46h231.92m4-4h-239.92v54h239.92v-54h0Z"
       />
       <polygon
-        className={styles.cls1}
-        points="1528.6 264.35 1522.61 264.35 1522.61 312.35 1528.6 312.35 1528.6 264.35 1528.6 264.35"
+        className={styles.cls4}
+        points="1546.57 381.76 1540.58 381.76 1540.58 429.76 1546.57 429.76 1546.57 381.76 1546.57 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1510.55 264.35 1504.55 264.35 1504.55 312.35 1510.55 312.35 1510.55 264.35 1510.55 264.35"
+        className={styles.cls4}
+        points="1528.52 381.76 1522.52 381.76 1522.52 429.76 1528.52 429.76 1528.52 381.76 1528.52 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1492.56 264.35 1486.56 264.35 1486.56 313.77 1492.56 313.77 1492.56 264.35 1492.56 264.35"
+        className={styles.cls4}
+        points="1510.53 381.76 1504.53 381.76 1504.53 431.18 1510.53 431.18 1510.53 381.76 1510.53 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1474.56 264.35 1468.57 264.35 1468.57 312.35 1474.56 312.35 1474.56 264.35 1474.56 264.35"
+        className={styles.cls4}
+        points="1492.53 381.76 1486.54 381.76 1486.54 429.76 1492.53 429.76 1492.53 381.76 1492.53 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1456.57 264.35 1450.57 264.35 1450.57 312.35 1456.57 312.35 1456.57 264.35 1456.57 264.35"
+        className={styles.cls4}
+        points="1474.54 381.76 1468.54 381.76 1468.54 429.76 1474.54 429.76 1474.54 381.76 1474.54 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1438.58 264.35 1432.58 264.35 1432.58 312.35 1438.58 312.35 1438.58 264.35 1438.58 264.35"
+        className={styles.cls4}
+        points="1456.55 381.76 1450.55 381.76 1450.55 429.76 1456.55 429.76 1456.55 381.76 1456.55 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1420.59 264.35 1414.59 264.35 1414.59 313.77 1420.59 313.77 1420.59 264.35 1420.59 264.35"
+        className={styles.cls4}
+        points="1438.56 381.76 1432.56 381.76 1432.56 431.18 1438.56 431.18 1438.56 381.76 1438.56 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1402.59 264.35 1396.6 264.35 1396.6 312.35 1402.59 312.35 1402.59 264.35 1402.59 264.35"
+        className={styles.cls4}
+        points="1420.56 381.76 1414.57 381.76 1414.57 429.76 1420.56 429.76 1420.56 381.76 1420.56 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1384.6 264.35 1378.6 264.35 1378.6 312.35 1384.6 312.35 1384.6 264.35 1384.6 264.35"
+        className={styles.cls4}
+        points="1402.57 381.76 1396.57 381.76 1396.57 429.76 1402.57 429.76 1402.57 381.76 1402.57 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1366.56 264.35 1360.56 264.35 1360.56 312.35 1366.56 312.35 1366.56 264.35 1366.56 264.35"
+        className={styles.cls4}
+        points="1384.53 381.76 1378.53 381.76 1378.53 429.76 1384.53 429.76 1384.53 381.76 1384.53 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1348.56 264.35 1342.56 264.35 1342.56 312.35 1348.56 312.35 1348.56 264.35 1348.56 264.35"
+        className={styles.cls4}
+        points="1366.53 381.76 1360.53 381.76 1360.53 429.76 1366.53 429.76 1366.53 381.76 1366.53 381.76"
       />
       <polygon
-        className={styles.cls1}
-        points="1330.56 264.35 1324.56 264.35 1324.56 312.35 1330.56 312.35 1330.56 264.35 1330.56 264.35"
+        className={styles.cls4}
+        points="1348.53 381.76 1342.53 381.76 1342.53 429.76 1348.53 429.76 1348.53 381.76 1348.53 381.76"
       />
       <path
-        className={styles.cls1}
-        d="m1512.56,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1530.53,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1488.57,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1506.54,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1464.56,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1482.53,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1440.59,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1458.56,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1416.56,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1434.53,453.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1392.61,335.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1410.58,453.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1512.56,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1530.53,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1488.57,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1506.54,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1464.56,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1482.53,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1440.59,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m1458.56,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1416.6,359.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1434.57,477.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1392.61,359.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1410.58,477.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1368.55,335.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1386.52,453.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1368.55,359.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1386.52,477.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1344.5,335.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1362.47,453.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1344.5,359.77v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
+        className={styles.cls4}
+        d="m1362.47,477.18v4h-3.99v-4h3.99m4-4h-11.99v12h11.99v-12h0Z"
       />
       <rect
-        className={styles.cls8}
-        x="1566.59"
-        y="39.77"
+        className={styles.cls9}
+        x="1584.56"
+        y="157.18"
         width="38"
         height="50"
         rx="12"
         ry="12"
       />
       <path
-        className={styles.cls1}
-        d="m1592.59,41.77c5.51,0,10,4.49,10,10v26c0,5.51-4.49,10-10,10h-14c-5.51,0-10-4.49-10-10v-26c0-5.51,4.49-10,10-10h14m0-4h-14c-7.73,0-14,6.27-14,14v26c0,7.73,6.27,14,14,14h14c7.73,0,14-6.27,14-14v-26c0-7.73-6.27-14-14-14h0Z"
+        className={styles.cls4}
+        d="m1610.56,159.18c5.51,0,10,4.49,10,10v26c0,5.51-4.49,10-10,10h-14c-5.51,0-10-4.49-10-10v-26c0-5.51,4.49-10,10-10h14m0-4h-14c-7.73,0-14,6.27-14,14v26c0,7.73,6.27,14,14,14h14c7.73,0,14-6.27,14-14v-26c0-7.73-6.27-14-14-14h0Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="680.99 514.86 620.99 466.86 512.99 466.86 512.99 598.86 680.99 598.86 680.99 514.86"
+      />
+      <polygon
+        className={styles.cls7}
+        points="454.99 596.86 454.99 515.83 512.99 469.42 570.99 515.83 570.99 596.86 454.99 596.86"
+      />
+      <path
+        className={styles.cls4}
+        d="m512.99,471.99l56,44.8v78.08h-112v-78.08l56-44.8m0-5.12l-60,48v84h120v-84l-60-48h0Z"
       />
       <rect
-        className={styles.cls5}
-        x="1737.58"
-        y="348.77"
-        width="194"
-        height="248"
-      />
-      <path
-        className={styles.cls1}
-        d="m1929.58,350.77v244h-190v-244h190m4-4h-198v252h198v-252h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1825.58,532.77h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1767.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1791.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1815.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1839.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1863.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1887.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1911.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 496.77 1735.58 496.77 1735.58 502.77 1933.58 502.77 1933.58 496.77 1933.58 496.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 466.77 1735.58 466.77 1735.58 472.77 1933.58 472.77 1933.58 466.77 1933.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1765.58 466.77 1759.58 466.77 1759.58 502.77 1765.58 502.77 1765.58 466.77 1765.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1789.58 466.77 1783.58 466.77 1783.58 502.77 1789.58 502.77 1789.58 466.77 1789.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1813.58 466.77 1807.58 466.77 1807.58 502.77 1813.58 502.77 1813.58 466.77 1813.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1837.58 466.77 1831.58 466.77 1831.58 502.77 1837.58 502.77 1837.58 466.77 1837.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1861.58 466.77 1855.58 466.77 1855.58 502.77 1861.58 502.77 1861.58 466.77 1861.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1885.58 466.77 1879.58 466.77 1879.58 502.77 1885.58 502.77 1885.58 466.77 1885.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1909.58 466.77 1903.58 466.77 1903.58 502.77 1909.58 502.77 1909.58 466.77 1909.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 466.77 1927.58 466.77 1927.58 502.77 1933.58 502.77 1933.58 466.77 1933.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 412.77 1735.58 412.77 1735.58 418.77 1933.58 418.77 1933.58 412.77 1933.58 412.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1765.58 346.77 1759.58 346.77 1759.58 418.77 1765.58 418.77 1765.58 346.77 1765.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1789.58 346.77 1783.58 346.77 1783.58 418.77 1789.58 418.77 1789.58 346.77 1789.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1813.58 346.77 1807.58 346.77 1807.58 418.77 1813.58 418.77 1813.58 346.77 1813.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1837.58 346.77 1831.58 346.77 1831.58 418.77 1837.58 418.77 1837.58 346.77 1837.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1861.58 346.77 1855.58 346.77 1855.58 418.77 1861.58 418.77 1861.58 346.77 1861.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1885.58 346.77 1879.58 346.77 1879.58 418.77 1885.58 418.77 1885.58 346.77 1885.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1909.58 346.77 1903.58 346.77 1903.58 418.77 1909.58 418.77 1909.58 346.77 1909.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 346.77 1927.58 346.77 1927.58 418.77 1933.58 418.77 1933.58 346.77 1933.58 346.77"
-      />
-      <rect
-        className={styles.cls1}
-        x="1927.58"
-        y="346.77"
+        className={styles.cls4}
+        x="566.99"
+        y="514.86"
         width="114"
-        height="252"
+        height="84"
       />
       <rect
-        className={styles.cls6}
-        x="1737.58"
-        y="348.77"
-        width="194"
-        height="248"
-      />
-      <path
-        className={styles.cls1}
-        d="m1929.58,350.77v244h-190v-244h190m4-4h-198v252h198v-252h0Z"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 496.77 1735.58 496.77 1735.58 502.77 1933.58 502.77 1933.58 496.77 1933.58 496.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 466.77 1735.58 466.77 1735.58 472.77 1933.58 472.77 1933.58 466.77 1933.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 466.77 1927.58 466.77 1927.58 502.77 1933.58 502.77 1933.58 466.77 1933.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 412.77 1735.58 412.77 1735.58 418.77 1933.58 418.77 1933.58 412.77 1933.58 412.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 346.77 1927.58 346.77 1927.58 418.77 1933.58 418.77 1933.58 346.77 1933.58 346.77"
-      />
-      <rect
-        className={styles.cls1}
-        x="1927.58"
-        y="346.77"
+        className={styles.cls4}
+        x="452.99"
+        y="514.86"
         width="114"
-        height="252"
-      />
-      <path
-        className={styles.cls1}
-        d="m1767.58,554.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1791.58,554.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1767.58,536.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1791.58,536.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1875.58,554.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1899.58,554.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1875.58,536.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1899.58,536.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <rect
-        className={styles.cls8}
-        x="1737.58"
-        y="348.77"
-        width="194"
-        height="68"
-      />
-      <path
-        className={styles.cls1}
-        d="m1929.58,350.77v64h-190v-64h190m4-4h-198v72h198v-72h0Z"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1765.58 346.77 1759.58 346.77 1759.58 418.77 1765.58 418.77 1765.58 346.77 1765.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1789.58 346.77 1783.58 346.77 1783.58 418.77 1789.58 418.77 1789.58 346.77 1789.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1813.58 346.77 1807.58 346.77 1807.58 418.77 1813.58 418.77 1813.58 346.77 1813.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1837.58 346.77 1831.58 346.77 1831.58 418.77 1837.58 418.77 1837.58 346.77 1837.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1861.58 346.77 1855.58 346.77 1855.58 418.77 1861.58 418.77 1861.58 346.77 1861.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1885.58 346.77 1879.58 346.77 1879.58 418.77 1885.58 418.77 1885.58 346.77 1885.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1909.58 346.77 1903.58 346.77 1903.58 418.77 1909.58 418.77 1909.58 346.77 1909.58 346.77"
+        height="6"
       />
       <rect
         className={styles.cls6}
-        x="1737.58"
-        y="414.77"
-        width="194"
-        height="56"
+        x="454.99"
+        y="516.86"
+        width="116"
+        height="80"
       />
       <path
-        className={styles.cls1}
-        d="m1929.58,416.77v52h-190v-52h190m4-4h-198v60h198v-60h0Z"
+        className={styles.cls4}
+        d="m568.99,518.86v76h-112v-76h112m4-4h-120v84h120v-84h0Z"
       />
       <path
-        className={styles.cls1}
-        d="m1767.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        d="m506.99,532.86h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="818.99 514.86 758.99 466.86 650.99 466.86 650.99 598.86 818.99 598.86 818.99 514.86"
+      />
+      <polygon
+        className={styles.cls7}
+        points="592.99 596.86 592.99 515.83 650.99 469.42 708.99 515.83 708.99 596.86 592.99 596.86"
       />
       <path
-        className={styles.cls1}
-        d="m1791.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1815.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1839.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1863.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1887.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1911.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1825.58,532.77h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+        className={styles.cls4}
+        d="m650.99,471.99l56,44.8v78.08h-112v-78.08l56-44.8m0-5.12l-60,48v84h120v-84l-60-48h0Z"
       />
       <rect
-        className={styles.cls8}
-        x="1737.58"
-        y="468.77"
-        width="194"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m1929.58,470.77v28h-190v-28h190m4-4h-198v36h198v-36h0Z"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1765.58 466.77 1759.58 466.77 1759.58 502.77 1765.58 502.77 1765.58 466.77 1765.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1789.58 466.77 1783.58 466.77 1783.58 502.77 1789.58 502.77 1789.58 466.77 1789.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1813.58 466.77 1807.58 466.77 1807.58 502.77 1813.58 502.77 1813.58 466.77 1813.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1837.58 466.77 1831.58 466.77 1831.58 502.77 1837.58 502.77 1837.58 466.77 1837.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1861.58 466.77 1855.58 466.77 1855.58 502.77 1861.58 502.77 1861.58 466.77 1861.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1885.58 466.77 1879.58 466.77 1879.58 502.77 1885.58 502.77 1885.58 466.77 1885.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1909.58 466.77 1903.58 466.77 1903.58 502.77 1909.58 502.77 1909.58 466.77 1909.58 466.77"
-      />
-      <rect
-        className={styles.cls1}
-        x="1867.58"
-        y="328.1"
-        width="6"
-        height="24.67"
-      />
-      <rect
-        className={styles.cls1}
-        x="1849.58"
-        y="328.1"
-        width="6"
-        height="24.67"
-      />
-      <rect
-        className={styles.cls1}
-        x="1831.58"
-        y="328.1"
-        width="6"
-        height="24.67"
-      />
-      <rect
-        className={styles.cls1}
-        x="1813.58"
-        y="328.1"
-        width="6"
-        height="24.67"
-      />
-      <rect
-        className={styles.cls1}
-        x="1795.58"
-        y="328.1"
-        width="6"
-        height="24.67"
-      />
-      <rect
-        className={styles.cls1}
-        x="1777.58"
-        y="328.1"
-        width="6"
-        height="24.67"
-      />
-      <rect
-        className={styles.cls1}
-        x="1759.58"
-        y="328.1"
-        width="6"
-        height="24.67"
-      />
-      <rect
-        className={styles.cls1}
-        x="1741.58"
-        y="328.1"
-        width="6"
-        height="24.67"
-      />
-      <rect
-        className={styles.cls1}
-        x="1828.58"
-        y="229.77"
-        width="6"
-        height="192"
-        transform="translate(2157.35 -1505.81) rotate(90)"
-      />
-      <rect
-        className={styles.cls1}
-        x="1939.58"
-        y="226.77"
-        width="6"
-        height="198"
-        transform="translate(2268.35 -1616.81) rotate(90)"
-      />
-      <rect
-        className={styles.cls1}
-        x="1885.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls1}
-        x="1903.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls1}
-        x="1921.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls1}
-        x="1939.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls1}
-        x="1957.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls1}
-        x="1975.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls1}
-        x="1993.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls1}
-        x="2011.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls1}
-        x="2029.58"
-        y="328.1"
-        width="6"
-        height="24"
-      />
-      <rect
-        className={styles.cls6}
-        x="1737.61"
-        y="348.8"
-        width="193.94"
-        height="67.94"
-      />
-      <path
-        className={styles.cls1}
-        d="m1929.51,350.83v63.88h-189.88v-63.88h189.88m4.06-4.06h-198v72h198v-72h0Z"
-      />
-      <rect
-        className={styles.cls8}
-        x="1737.61"
-        y="414.8"
-        width="193.94"
-        height="85.94"
-      />
-      <path
-        className={styles.cls1}
-        d="m1929.51,416.83v81.88h-189.88v-81.88h189.88m4.06-4.06h-198v90h198v-90h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1767.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1791.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1815.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1839.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1863.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1887.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1911.58,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="1737.58"
-        y="498.77"
-        width="194"
-        height="2"
-      />
-      <polygon
-        className={styles.cls2}
-        points="1933.58 496.77 1735.58 496.77 1735.58 502.77 1933.58 502.77 1933.58 496.77 1933.58 496.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1737.61"
-        y="468.8"
-        width="193.94"
-        height="1.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 466.77 1735.58 466.77 1735.58 472.77 1933.58 472.77 1933.58 466.77 1933.58 466.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1761.61"
-        y="468.8"
-        width="1.94"
-        height="31.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1765.58 466.77 1759.58 466.77 1759.58 502.77 1765.58 502.77 1765.58 466.77 1765.58 466.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1737.61"
-        y="468.8"
-        width="1.94"
-        height="31.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1741.58 466.77 1735.58 466.77 1735.58 502.77 1741.58 502.77 1741.58 466.77 1741.58 466.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1785.61"
-        y="468.8"
-        width="1.94"
-        height="31.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1789.58 466.77 1783.58 466.77 1783.58 502.77 1789.58 502.77 1789.58 466.77 1789.58 466.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1809.61"
-        y="468.8"
-        width="1.94"
-        height="31.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1813.58 466.77 1807.58 466.77 1807.58 502.77 1813.58 502.77 1813.58 466.77 1813.58 466.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1833.61"
-        y="468.8"
-        width="1.94"
-        height="31.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1837.58 466.77 1831.58 466.77 1831.58 502.77 1837.58 502.77 1837.58 466.77 1837.58 466.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1857.61"
-        y="468.8"
-        width="1.94"
-        height="31.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1861.58 466.77 1855.58 466.77 1855.58 502.77 1861.58 502.77 1861.58 466.77 1861.58 466.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1881.61"
-        y="468.8"
-        width="1.94"
-        height="31.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1885.58 466.77 1879.58 466.77 1879.58 502.77 1885.58 502.77 1885.58 466.77 1885.58 466.77"
-      />
-      <rect
-        className={styles.cls8}
-        x="1905.61"
-        y="468.8"
-        width="1.94"
-        height="31.94"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1909.58 466.77 1903.58 466.77 1903.58 502.77 1909.58 502.77 1909.58 466.77 1909.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 466.77 1927.58 466.77 1927.58 502.77 1933.58 502.77 1933.58 466.77 1933.58 466.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1765.58 346.77 1759.58 346.77 1759.58 412.77 1765.58 412.77 1765.58 346.77 1765.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1789.58 346.77 1783.58 346.77 1783.58 412.77 1789.58 412.77 1789.58 346.77 1789.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1813.58 346.77 1807.58 346.77 1807.58 412.77 1813.58 412.77 1813.58 346.77 1813.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1837.58 346.77 1831.58 346.77 1831.58 412.77 1837.58 412.77 1837.58 346.77 1837.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1861.58 346.77 1855.58 346.77 1855.58 412.77 1861.58 412.77 1861.58 346.77 1861.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1885.58 346.77 1879.58 346.77 1879.58 412.77 1885.58 412.77 1885.58 346.77 1885.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1909.58 346.77 1903.58 346.77 1903.58 412.77 1909.58 412.77 1909.58 346.77 1909.58 346.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1933.58 346.77 1927.58 346.77 1927.58 418.77 1933.58 418.77 1933.58 346.77 1933.58 346.77"
-      />
-      <rect
-        className={styles.cls1}
-        x="1927.58"
-        y="346.77"
+        className={styles.cls4}
+        x="704.99"
+        y="514.86"
         width="114"
-        height="252"
+        height="84"
       />
       <rect
-        className={styles.cls3}
-        x="1737.58"
-        y="498.77"
-        width="194"
-        height="98"
-      />
-      <path
-        className={styles.cls1}
-        d="m1929.58,500.77v94h-190v-94h190m4-4h-198v102h198v-102h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1825.58,532.77h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1767.58,560.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1791.58,560.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1767.58,536.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1791.58,536.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1875.58,560.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1899.58,560.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1875.58,536.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1899.58,536.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        className={styles.cls4}
+        x="590.99"
+        y="514.86"
+        width="114"
+        height="6"
       />
       <rect
         className={styles.cls6}
-        x="1276.36"
-        y="390.77"
+        x="592.99"
+        y="516.86"
+        width="116"
+        height="80"
+      />
+      <path
+        className={styles.cls4}
+        d="m706.99,518.86v76h-112v-76h112m4-4h-120v84h120v-84h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m644.99,532.86h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="956.99 514.86 896.99 466.86 788.99 466.86 788.99 598.86 956.99 598.86 956.99 514.86"
+      />
+      <polygon
+        className={styles.cls7}
+        points="730.99 596.86 730.99 515.83 788.99 469.42 846.99 515.83 846.99 596.86 730.99 596.86"
+      />
+      <path
+        className={styles.cls4}
+        d="m788.99,471.99l56,44.8v78.08h-112v-78.08l56-44.8m0-5.12l-60,48v84h120v-84l-60-48h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="842.99"
+        y="514.86"
+        width="114"
+        height="84"
+      />
+      <rect
+        className={styles.cls4}
+        x="728.99"
+        y="514.86"
+        width="114"
+        height="6"
+      />
+      <rect
+        className={styles.cls6}
+        x="730.99"
+        y="516.86"
+        width="116"
+        height="80"
+      />
+      <path
+        className={styles.cls4}
+        d="m844.99,518.86v76h-112v-76h112m4-4h-120v84h120v-84h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m782.99,532.86h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <polygon
+        className={styles.cls8}
+        points="1189.33 594.17 1189.33 345.34 1295.84 286.17 1305.33 286.17 1305.33 594.17 1189.33 594.17"
+      />
+      <path
+        className={styles.cls4}
+        d="m1303.33,288.17v304h-112v-245.65l105.04-58.35h6.96m4-4h-12l-108,60v252h120v-312h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1241.33,530.17h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1237.33,378.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1261.33,378.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1237.33,402.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1261.33,402.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1237.33,426.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1261.33,426.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1237.33,450.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1261.33,450.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1237.33,474.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1261.33,474.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1237.33,498.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m1261.33,498.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="1301.33"
+        y="284.17"
+        width="114"
+        height="312"
+      />
+      <rect
+        className={styles.cls7}
+        x="913.44"
+        y="292.18"
+        width="92"
+        height="254"
+      />
+      <path
+        className={styles.cls4}
+        d="m1003.44,294.18v250h-88v-250h88m4-4h-96v258h96v-258h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m953.44,482.18h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m973.44,324.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m973.44,348.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m973.44,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m973.44,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m949.44,324.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m949.44,348.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m949.44,372.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m949.44,396.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m973.44,420.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m949.44,420.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m973.44,444.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m949.44,444.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <rect
+        className={styles.cls6}
+        x="721.44"
+        y="358.18"
         width="194"
+        height="188"
+      />
+      <path
+        className={styles.cls4}
+        d="m913.44,360.18v184h-190v-184h190m4-4h-198v192h198v-192h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="1001.44"
+        y="290.18"
+        width="78"
+        height="258"
+      />
+      <polygon
+        className={styles.cls4}
+        points="917.44 518.18 719.44 518.18 719.44 524.18 917.44 524.18 917.44 518.18 917.44 518.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="917.44 494.18 719.44 494.18 719.44 500.18 917.44 500.18 917.44 494.18 917.44 494.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="749.44 494.18 743.44 494.18 743.44 548.18 749.44 548.18 749.44 494.18 749.44 494.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="773.44 494.18 767.44 494.18 767.44 548.18 773.44 548.18 773.44 494.18 773.44 494.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="797.44 494.18 791.44 494.18 791.44 548.18 797.44 548.18 797.44 494.18 797.44 494.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="821.44 494.18 815.44 494.18 815.44 548.18 821.44 548.18 821.44 494.18 821.44 494.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="845.44 494.18 839.44 494.18 839.44 548.18 845.44 548.18 845.44 494.18 845.44 494.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="869.44 494.18 863.44 494.18 863.44 548.18 869.44 548.18 869.44 494.18 869.44 494.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="893.44 494.18 887.44 494.18 887.44 548.18 893.44 548.18 893.44 494.18 893.44 494.18"
+      />
+      <path
+        className={styles.cls4}
+        d="m760.4,390.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m784.4,390.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m808.4,390.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m832.4,390.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m856.4,390.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m880.4,390.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m760.4,414.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m784.4,414.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m808.4,414.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m832.4,414.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m856.4,414.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m880.4,414.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m760.4,438.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m784.4,438.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m808.4,438.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m832.4,438.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m856.4,438.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m880.4,438.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m760.4,462.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m784.4,462.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m808.4,462.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m832.4,462.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m856.4,462.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m880.4,462.17v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <rect
+        className={styles.cls6}
+        x="72.49"
+        y="418.18"
+        width="191"
         height="182"
       />
       <path
-        className={styles.cls1}
-        d="m1468.36,392.77v178h-190v-178h190m4-4h-198v186h198v-186h0Z"
+        className={styles.cls4}
+        d="m261.49,420.18v178H74.49v-178h187m2-4H70.49v186h193c1.1,0,2-.9,2-2v-182c0-1.1-.9-2-2-2h0Z"
       />
       <rect
-        className={styles.cls8}
-        x="1174.36"
-        y="390.77"
-        width="104"
-        height="182"
-      />
-      <path
-        className={styles.cls1}
-        d="m1276.36,392.77v178h-100v-178h100m4-4h-108v186h108v-186h0Z"
-      />
-      <rect
-        className={styles.cls1}
-        x="1202.36"
-        y="418.77"
-        width="48"
-        height="48"
-        rx="16"
-        ry="16"
-      />
-      <rect
-        className={styles.cls1}
-        x="1466.36"
-        y="388.77"
-        width="108"
-        height="186"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1178.36 364.77 1172.36 364.77 1172.36 394.77 1178.36 394.77 1178.36 364.77 1178.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1286.36 364.77 1280.36 364.77 1280.36 394.77 1286.36 394.77 1286.36 364.77 1286.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1574.36 370.77 1172.36 370.77 1172.36 376.77 1574.36 376.77 1574.36 370.77 1574.36 370.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1196.36 364.77 1190.36 364.77 1190.36 394.77 1196.36 394.77 1196.36 364.77 1196.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1214.36 364.77 1208.36 364.77 1208.36 394.77 1214.36 394.77 1214.36 364.77 1214.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1232.36 364.77 1226.36 364.77 1226.36 394.77 1232.36 394.77 1232.36 364.77 1232.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1250.36 364.77 1244.36 364.77 1244.36 394.77 1250.36 394.77 1250.36 364.77 1250.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1268.36 364.77 1262.36 364.77 1262.36 394.77 1268.36 394.77 1268.36 364.77 1268.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1286.36 364.77 1280.36 364.77 1280.36 394.77 1286.36 394.77 1286.36 364.77 1286.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1304.36 364.77 1298.36 364.77 1298.36 394.77 1304.36 394.77 1304.36 364.77 1304.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1322.36 364.77 1316.36 364.77 1316.36 394.77 1322.36 394.77 1322.36 364.77 1322.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1340.36 364.77 1334.36 364.77 1334.36 394.77 1340.36 394.77 1340.36 364.77 1340.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1358.36 364.77 1352.36 364.77 1352.36 394.77 1358.36 394.77 1358.36 364.77 1358.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1376.36 364.77 1370.36 364.77 1370.36 394.77 1376.36 394.77 1376.36 364.77 1376.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1394.36 364.77 1388.36 364.77 1388.36 394.77 1394.36 394.77 1394.36 364.77 1394.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1412.36 364.77 1406.36 364.77 1406.36 394.77 1412.36 394.77 1412.36 364.77 1412.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1430.36 364.77 1424.36 364.77 1424.36 394.77 1430.36 394.77 1430.36 364.77 1430.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1448.36 364.77 1442.36 364.77 1442.36 394.77 1448.36 394.77 1448.36 364.77 1448.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1466.36 364.77 1460.36 364.77 1460.36 394.77 1466.36 394.77 1466.36 364.77 1466.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1484.36 364.77 1478.36 364.77 1478.36 394.77 1484.36 394.77 1484.36 364.77 1484.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1502.36 364.77 1496.36 364.77 1496.36 394.77 1502.36 394.77 1502.36 364.77 1502.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1520.36 364.77 1514.36 364.77 1514.36 394.77 1520.36 394.77 1520.36 364.77 1520.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1538.36 364.77 1532.36 364.77 1532.36 394.77 1538.36 394.77 1538.36 364.77 1538.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1556.36 364.77 1550.36 364.77 1550.36 394.77 1556.36 394.77 1556.36 364.77 1556.36 364.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1574.36 364.77 1568.36 364.77 1568.36 394.77 1574.36 394.77 1574.36 364.77 1574.36 364.77"
-      />
-      <path
-        className={styles.cls1}
-        d="m1220.36,508.77h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1472.36 520.77 1274.36 520.77 1274.36 526.77 1472.36 526.77 1472.36 520.77 1472.36 520.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1304.36 520.77 1298.36 520.77 1298.36 574.77 1304.36 574.77 1304.36 520.77 1304.36 520.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1328.36 520.77 1322.36 520.77 1322.36 574.77 1328.36 574.77 1328.36 520.77 1328.36 520.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1352.36 520.77 1346.36 520.77 1346.36 574.77 1352.36 574.77 1352.36 520.77 1352.36 520.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1376.36 520.77 1370.36 520.77 1370.36 574.77 1376.36 574.77 1376.36 520.77 1376.36 520.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1400.36 520.77 1394.36 520.77 1394.36 574.77 1400.36 574.77 1400.36 520.77 1400.36 520.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1424.36 520.77 1418.36 520.77 1418.36 574.77 1424.36 574.77 1424.36 520.77 1424.36 520.77"
-      />
-      <polygon
-        className={styles.cls1}
-        points="1448.36 520.77 1442.36 520.77 1442.36 574.77 1448.36 574.77 1448.36 520.77 1448.36 520.77"
-      />
-      <path
-        className={styles.cls1}
-        d="m1315.36,416.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1339.36,416.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1363.36,416.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1387.36,416.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1411.36,416.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1435.36,416.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1315.36,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1339.36,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1363.36,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1387.36,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1411.36,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1435.36,440.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1315.36,464.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1339.36,464.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1363.36,464.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1387.36,464.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1411.36,464.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1435.36,464.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1315.36,488.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1339.36,488.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1363.36,488.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1387.36,488.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1411.36,488.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1435.36,488.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <polygon
-        className={styles.cls1}
-        points="845.47 360.2 755.47 360.2 755.47 432.2 869.47 432.2 869.47 390.2 845.47 360.2"
-      />
-      <rect
-        className={styles.cls3}
-        x="625.47"
-        y="524.2"
-        width="254"
-        height="92"
-      />
-      <path
-        className={styles.cls1}
-        d="m877.47,526.2v88h-250v-88h250m4-4h-258v96h258v-96h0Z"
-      />
-      <rect
-        className={styles.cls6}
-        x="625.47"
-        y="428.2"
-        width="254"
-        height="98"
-      />
-      <path
-        className={styles.cls1}
-        d="m877.47,430.2v94h-250v-94h250m4-4h-258v102h258v-102h0Z"
-      />
-      <polygon
-        className={styles.cls1}
-        points="720.91 426.2 714.91 426.2 714.91 522.2 720.91 522.2 720.91 426.2 720.91 426.2"
-      />
-      <rect
-        className={styles.cls8}
-        x="715.47"
-        y="398.2"
-        width="74"
-        height="218"
-      />
-      <path
-        className={styles.cls1}
-        d="m787.47,400.2v214h-70v-214h70m4-4h-78v222h78v-222h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m745.47,414.2h14c7.73,0,14,6.27,14,14v40h-42v-40c0-7.73,6.27-14,14-14Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m663.47,546.2h10c5.52,0,10,4.48,10,10v38h-30v-38c0-5.52,4.48-10,10-10Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m825.47,546.2h10c5.52,0,10,4.48,10,10v38h-30v-38c0-5.52,4.48-10,10-10Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m744.43,552.2h16.08c7.15,0,12.96,5.81,12.96,12.96v53.04h-42v-53.04c0-7.15,5.81-12.96,12.96-12.96Z"
-      />
-      <polygon
         className={styles.cls7}
-        points="715.47 400.2 715.47 391.14 750.19 362.2 754.74 362.2 789.47 391.14 789.47 400.2 715.47 400.2"
+        x="252.49"
+        y="208.18"
+        width="158"
+        height="392"
       />
       <path
-        className={styles.cls1}
-        d="m754.02,364.2l33.45,27.87v6.13h-70v-6.13l33.45-27.87h3.1m1.45-4h-6l-36,30v12h78v-12l-36-30h0Z"
+        className={styles.cls4}
+        d="m408.49,210.18v388h-154V210.18h154m4-4h-162v396h162V206.18h0Z"
+      />
+      <polygon
+        className={styles.cls4}
+        points="448.49 188.18 442.49 188.18 442.49 212.18 448.49 212.18 448.49 188.18 448.49 188.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="394.49 188.18 388.49 188.18 388.49 212.18 394.49 212.18 394.49 188.18 394.49 188.18"
+      />
+      <polygon
+        className={styles.cls4}
+        points="334.49 188.18 328.49 188.18 328.49 212.18 334.49 212.18 334.49 188.18 334.49 188.18"
       />
       <rect
-        className={styles.cls1}
-        x="875.47"
-        y="426.2"
+        className={styles.cls9}
+        x="276.49"
+        y="112.18"
+        width="224"
+        height="80"
+        rx="26"
+        ry="26"
+      />
+      <path
+        className={styles.cls4}
+        d="m474.49,114.18c13.23,0,24,10.77,24,24v28c0,13.23-10.77,24-24,24h-172c-13.23,0-24-10.77-24-24v-28c0-13.23,10.77-24,24-24h172m0-4h-172c-15.46,0-28,12.54-28,28v28c0,15.46,12.54,28,28,28h172c15.46,0,28-12.54,28-28v-28c0-15.46-12.54-28-28-28h0Z"
+      />
+      <rect
+        className={styles.cls4}
+        x="406.49"
+        y="206.18"
         width="114"
-        height="192"
+        height="396"
       />
-      <rect
+      <polygon
         className={styles.cls4}
-        x="643.47"
-        y="428.2"
-        width="2"
-        height="80"
+        points="70.49 398.18 70.49 404.18 256.49 404.18 256.49 398.18 70.49 398.18 70.49 398.18"
       />
-      <polygon
-        className={styles.cls1}
-        points="647.47 426.2 641.47 426.2 641.47 510.2 647.47 510.2 647.47 426.2 647.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="661.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m157.49,536.18h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="665.47 426.2 659.47 426.2 659.47 510.2 665.47 510.2 665.47 426.2 665.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="679.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m105.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="683.47 426.2 677.47 426.2 677.47 510.2 683.47 510.2 683.47 426.2 683.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="805.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m129.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="809.47 426.2 803.47 426.2 803.47 510.2 809.47 510.2 809.47 426.2 809.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="823.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m153.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="827.47 426.2 821.47 426.2 821.47 510.2 827.47 510.2 827.47 426.2 827.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="841.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m177.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="845.47 426.2 839.47 426.2 839.47 510.2 845.47 510.2 845.47 426.2 845.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="859.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m201.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="863.47 426.2 857.47 426.2 857.47 510.2 863.47 510.2 863.47 426.2 863.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="877.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m225.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="881.47 426.2 875.47 426.2 875.47 510.2 881.47 510.2 881.47 426.2 881.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="697.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m105.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="701.47 426.2 695.47 426.2 695.47 510.2 701.47 510.2 701.47 426.2 701.47 426.2"
-      />
-      <rect
+      <path
         className={styles.cls4}
-        x="715.47"
-        y="428.2"
-        width="2"
-        height="80"
+        d="m129.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="719.47 426.2 713.47 426.2 713.47 510.2 719.47 510.2 719.47 426.2 719.47 426.2"
+      <path
+        className={styles.cls4}
+        d="m153.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="714.91 504.2 624.91 504.2 624.91 510.2 714.91 510.2 714.91 504.2 714.91 504.2"
+      <path
+        className={styles.cls4}
+        d="m177.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
-      <polygon
-        className={styles.cls1}
-        points="876.91 504.2 786.91 504.2 786.91 510.2 876.91 510.2 876.91 504.2 876.91 504.2"
+      <path
+        className={styles.cls4}
+        d="m201.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m225.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m105.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m129.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m153.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m177.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m201.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m225.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m325.49,536.18h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,330.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,354.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,378.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,402.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,426.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,330.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,354.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,378.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,402.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,426.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,330.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,354.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,282.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,306.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,282.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,306.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,282.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,306.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,258.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,258.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,258.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,234.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,234.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,234.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,378.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,402.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,426.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,450.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,474.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m357.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m333.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      />
+      <path
+        className={styles.cls4}
+        d="m309.49,498.18v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
       />
       <rect
         className={styles.cls7}
-        x="625.47"
-        y="506.2"
-        width="92"
+        x="72.49"
+        y="400.18"
+        width="2"
         height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m715.47,508.2v16h-88v-16h88m4-4h-96v24h96v-24h0Z"
+      <polygon
+        className={styles.cls4}
+        points="76.49 398.18 70.49 398.18 70.49 422.18 76.49 422.18 76.49 398.18 76.49 398.18"
       />
       <rect
         className={styles.cls7}
-        x="787.47"
-        y="506.2"
-        width="92"
+        x="90.49"
+        y="400.18"
+        width="2"
         height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m877.47,508.2v16h-88v-16h88m4-4h-96v24h96v-24h0Z"
+      <polygon
+        className={styles.cls4}
+        points="94.49 398.18 88.49 398.18 88.49 422.18 94.49 422.18 94.49 398.18 94.49 398.18"
       />
       <rect
         className={styles.cls7}
-        x="649.47"
-        y="584.2"
-        width="38"
-        height="14"
-      />
-      <path
-        className={styles.cls1}
-        d="m685.47,586.2v10h-34v-10h34m4-4h-42v18h42v-18h0Z"
-      />
-      <rect
-        className={styles.cls7}
-        x="811.47"
-        y="584.2"
-        width="38"
-        height="14"
-      />
-      <path
-        className={styles.cls1}
-        d="m847.47,586.2v10h-34v-10h34m4-4h-42v18h42v-18h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="715.47"
-        y="464.2"
-        width="74"
-        height="14"
-      />
-      <path
-        className={styles.cls1}
-        d="m787.47,466.2v10h-70v-10h70m4-4h-78v18h78v-18h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="952.36"
-        y="303.77"
-        width="116"
-        height="290"
-      />
-      <path
-        className={styles.cls1}
-        d="m1066.36,305.77v286h-112v-286h112m4-4h-120v294h120v-294h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m976.36,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1000.36,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m976.36,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1000.36,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m976.36,383.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1000.36,383.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m976.36,407.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1000.36,407.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m976.36,431.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1000.36,431.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m976.36,455.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m976.36,479.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1000.36,455.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1000.36,479.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1024.36,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1024.36,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1024.36,383.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1024.36,407.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1024.36,431.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1024.36,455.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1024.36,479.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1048.36,335.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1048.36,359.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1048.36,383.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1048.36,407.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1048.36,431.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1048.36,455.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1048.36,479.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+        x="108.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
       <polygon
-        className={styles.cls8}
-        points="898.36 521.77 898.36 512.52 939.26 465.77 954.36 465.77 954.36 521.77 898.36 521.77"
-      />
-      <path
-        className={styles.cls1}
-        d="m952.36,467.77v52h-52v-6.5l39.82-45.5h12.18m4-4h-18l-42,48v12h60v-60h0Z"
+        className={styles.cls4}
+        points="112.49 398.18 106.49 398.18 106.49 422.18 112.49 422.18 112.49 398.18 112.49 398.18"
       />
       <rect
         className={styles.cls7}
-        x="904.36"
-        y="519.77"
-        width="50"
-        height="74"
-      />
-      <path
-        className={styles.cls1}
-        d="m952.36,521.77v70h-46v-70h46m4-4h-54v78h54v-78h0Z"
-      />
-      <path
-        className={styles.cls6}
-        d="m940.36,539.77c-3.31,0-6-2.69-6-6v-14h20v14c0,3.31-2.69,6-6,6h-8Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m952.36,521.77v12c0,2.21-1.79,4-4,4h-8c-2.21,0-4-1.79-4-4v-12h16m4-4h-24v16c0,4.42,3.58,8,8,8h8c4.42,0,8-3.58,8-8v-16h0Z"
-      />
-      <path
-        className={styles.cls6}
-        d="m922.36,539.77c-3.31,0-6-2.69-6-6v-14h20v14c0,3.31-2.69,6-6,6h-8Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m934.36,521.77v12c0,2.21-1.79,4-4,4h-8c-2.21,0-4-1.79-4-4v-12h16m4-4h-24v16c0,4.42,3.58,8,8,8h8c4.42,0,8-3.58,8-8v-16h0Z"
-      />
-      <path
-        className={styles.cls6}
-        d="m904.36,539.77c-3.31,0-6-2.69-6-6v-14h20v14c0,3.31-2.69,6-6,6h-8Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m916.36,521.77v12c0,2.21-1.79,4-4,4h-8c-2.21,0-4-1.79-4-4v-12h16m4-4h-24v16c0,4.42,3.58,8,8,8h8c4.42,0,8-3.58,8-8v-16h0Z"
-      />
-      <rect
-        className={styles.cls1}
-        x="1064.36"
-        y="301.77"
-        width="114"
-        height="294"
-      />
-      <rect
-        className={styles.cls8}
-        x="952.36"
-        y="567.77"
-        width="116"
-        height="26"
-      />
-      <path
-        className={styles.cls1}
-        d="m1066.36,569.77v22h-112v-22h112m4-4h-120v30h120v-30h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m1004.36,529.77h12c6.62,0,12,5.38,12,12v54h-36v-54c0-6.62,5.38-12,12-12Z"
-      />
-      <rect
-        className={styles.cls1}
-        x="551.47"
-        y="479.08"
-        width="132"
-        height="149.72"
-      />
-      <rect
-        className={styles.cls1}
-        x="575.47"
-        y="448.74"
-        width="24"
-        height="36.33"
-        transform="translate(1174.93 933.82) rotate(-180)"
-      />
-      <rect
-        className={styles.cls1}
-        x="617.47"
-        y="448.74"
-        width="24"
-        height="36.33"
-        transform="translate(1258.93 933.82) rotate(-180)"
-      />
-      <rect
-        className={styles.cls1}
-        x="659.47"
-        y="448.74"
-        width="24"
-        height="36.33"
-        transform="translate(1342.93 933.82) rotate(-180)"
-      />
-      <rect
-        className={styles.cls6}
-        x="228.81"
-        y="480.74"
-        width="104"
-        height="146.05"
-      />
-      <path
-        className={styles.cls1}
-        d="m330.81,482.74v142.05h-100v-142.05h100m4-4h-108v150.05h108v-150.05h0Z"
-      />
-      <rect
-        className={styles.cls6}
-        x="13.47"
-        y="480.74"
-        width="194"
-        height="74"
-      />
-      <path
-        className={styles.cls1}
-        d="m205.47,482.74v70H15.47v-70h190m4-4H11.47v78h198v-78h0Z"
-      />
-      <rect
-        className={styles.cls6}
-        x="355.47"
-        y="480.74"
-        width="194"
-        height="74"
-      />
-      <path
-        className={styles.cls1}
-        d="m547.47,482.74v70h-190v-70h190m4-4h-198v78h198v-78h0Z"
-      />
-      <rect
-        className={styles.cls6}
-        x="13.47"
-        y="552.74"
-        width="194"
-        height="74.05"
-      />
-      <path
-        className={styles.cls1}
-        d="m205.47,554.74v70.05H15.47v-70.05h190m4-4H11.47v78.05h198v-78.05h0Z"
-      />
-      <rect
-        className={styles.cls6}
-        x="355.47"
-        y="552.74"
-        width="194"
-        height="74.05"
-      />
-      <path
-        className={styles.cls1}
-        d="m547.47,554.74v70.05h-190v-70.05h190m4-4h-198v78.05h198v-78.05h0Z"
-      />
-      <path
-        className={styles.cls7}
-        d="m265.47,626.79v-46.05c0-5.51,4.49-10,10-10h12c5.51,0,10,4.49,10,10v46.05h-32Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m287.47,572.74c4.41,0,8,3.59,8,8v44.05h-28v-44.05c0-4.41,3.59-8,8-8h12m0-4h-12c-6.63,0-12,5.37-12,12v48.05h36v-48.05c0-6.63-5.37-12-12-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m40.2,515.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m64.2,515.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m88.2,515.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m112.2,515.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m136.2,515.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m160.2,515.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m184.2,515.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls7}
-        d="m275.47,498.74h12c5.52,0,10,4.48,10,10v12c0,5.52-4.48,10-10,10h-12c-5.52,0-10-4.48-10-10v-12c0-5.52,4.48-10,10-10Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m287.47,500.74c4.41,0,8,3.59,8,8v12c0,4.41-3.59,8-8,8h-12c-4.41,0-8-3.59-8-8v-12c0-4.41,3.59-8,8-8h12m0-4h-12c-6.63,0-12,5.37-12,12v12c0,6.63,5.37,12,12,12h12c6.63,0,12-5.37,12-12v-12c0-6.63-5.37-12-12-12h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="331.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m355.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="379.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m403.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="427.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m451.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="475.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m499.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="523.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m547.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="13.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m37.47,452.74v28H15.47v-28h22m4-4H11.47v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="61.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m85.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="109.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m133.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="157.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m181.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
-      />
-      <rect
-        className={styles.cls3}
-        x="205.47"
-        y="450.74"
-        width="26"
-        height="32"
-      />
-      <path
-        className={styles.cls1}
-        d="m229.47,452.74v28h-22v-28h22m4-4h-30v36h30v-36h0Z"
+        x="126.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
       <polygon
-        className={styles.cls1}
-        points="551.47 478.74 11.47 478.74 11.47 484.74 551.47 484.74 551.47 478.74 551.47 478.74"
+        className={styles.cls4}
+        points="130.49 398.18 124.49 398.18 124.49 422.18 130.49 422.18 130.49 398.18 130.49 398.18"
       />
       <rect
-        className={styles.cls3}
-        x="205.47"
-        y="480.74"
-        width="26"
-        height="146.05"
+        className={styles.cls7}
+        x="144.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m229.47,482.74v142.05h-22v-142.05h22m4-4h-30v150.05h30v-150.05h0Z"
+      <polygon
+        className={styles.cls4}
+        points="148.49 398.18 142.49 398.18 142.49 422.18 148.49 422.18 148.49 398.18 148.49 398.18"
       />
       <rect
-        className={styles.cls3}
-        x="331.47"
-        y="480.74"
-        width="26"
-        height="146.05"
+        className={styles.cls7}
+        x="162.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m355.47,482.74v142.05h-22v-142.05h22m4-4h-30v150.05h30v-150.05h0Z"
+      <polygon
+        className={styles.cls4}
+        points="166.49 398.18 160.49 398.18 160.49 422.18 166.49 422.18 166.49 398.18 166.49 398.18"
       />
-      <path
-        className={styles.cls1}
-        d="m331.47,482.74v64h-100v-64h100m4-4h-108v72h108v-72h0Z"
+      <rect
+        className={styles.cls7}
+        x="180.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m40.47,587.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <polygon
+        className={styles.cls4}
+        points="184.49 398.18 178.49 398.18 178.49 422.18 184.49 422.18 184.49 398.18 184.49 398.18"
       />
-      <path
-        className={styles.cls1}
-        d="m64.47,587.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <rect
+        className={styles.cls7}
+        x="198.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m88.47,587.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <polygon
+        className={styles.cls4}
+        points="202.49 398.18 196.49 398.18 196.49 422.18 202.49 422.18 202.49 398.18 202.49 398.18"
       />
-      <path
-        className={styles.cls1}
-        d="m112.47,587.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <rect
+        className={styles.cls7}
+        x="216.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m136.47,587.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <polygon
+        className={styles.cls4}
+        points="220.49 398.18 214.49 398.18 214.49 422.18 220.49 422.18 220.49 398.18 220.49 398.18"
       />
-      <path
-        className={styles.cls1}
-        d="m160.47,587.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <rect
+        className={styles.cls7}
+        x="234.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m184.47,587.74v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <polygon
+        className={styles.cls4}
+        points="238.49 398.18 232.49 398.18 232.49 422.18 238.49 422.18 238.49 398.18 238.49 398.18"
       />
-      <path
-        className={styles.cls1}
-        d="m382.33,515.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <rect
+        className={styles.cls7}
+        x="252.49"
+        y="400.18"
+        width="2"
+        height="20"
       />
-      <path
-        className={styles.cls1}
-        d="m406.33,515.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m430.33,515.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m454.33,515.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m478.33,515.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m502.33,515.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m526.33,515.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m382.6,587.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m406.6,587.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m430.6,587.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m454.6,587.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m478.6,587.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m502.6,587.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
-      />
-      <path
-        className={styles.cls1}
-        d="m526.6,587.77v4h-4v-4h4m4-4h-12v12h12v-12h0Z"
+      <polygon
+        className={styles.cls4}
+        points="256.49 398.18 250.49 398.18 250.49 422.18 256.49 422.18 256.49 398.18 256.49 398.18"
       />
     </svg>
   );

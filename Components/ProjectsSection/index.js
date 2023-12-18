@@ -149,7 +149,7 @@ const ProjectsSection = ({ projects }) => {
           )}
         </div>
       </section>
-      <MapSection latLongList={latLongList} />
+      <MapSection latLongList={latLongList} projects={projects} />
     </Element>
   );
 };

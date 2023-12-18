@@ -32,6 +32,30 @@
     .copy {
       opacity: 0;
     }
+    .locationList {
+      opacity: 0;
+      .projectTitleWrapper {
+        margin: 10px 0 10px 15px;
+        .title {
+          @include vars.flexbox();
+          @include vars.align-items(flex-start);
+          svg {
+            height: 15px;
+            margin-top: 8px;
+            min-width: 15px;
+            @include vars.tablet-and-lower {
+              margin-top: 5px;
+            }
+            @include vars.x-small {
+              margin-top: 3px;
+            }
+          }
+          span {
+            margin: 0 0 0 5px;
+          }
+        }
+      }
+    }
   }
   .mapContainer {
     grid-column: 6/13;

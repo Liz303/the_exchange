@@ -1,36 +1,45 @@
 @use "../../styles/vars";
 
 .cls1 {
-  fill: #071636;
+  fill: none;
+  stroke-width: 4px;
 }
 .cls1,
+.cls2 {
+  stroke: #071636;
+  stroke-miterlimit: 10;
+}
+.cls2 {
+  stroke-width: 3.74px;
+}
 .cls2,
-.cls3,
+.cls3 {
+  fill: #fff;
+}
+.cls4 {
+  fill: #071636;
+}
 .cls4,
 .cls5,
 .cls6,
+.cls3,
 .cls7,
-.cls8 {
+.cls8,
+.cls9 {
   stroke-width: 0px;
 }
-.cls2 {
-  fill: #e1a185;
-}
-.cls3 {
-  fill: #b72429;
-}
-.cls4 {
-  fill: #fffdfc;
-}
 .cls5 {
-  fill: #fff;
+  fill: #a5b2df;
 }
 .cls6 {
-  fill: #f0d600;
+  fill: #b72429;
 }
 .cls7 {
-  fill: #f0f0e7;
+  fill: #f0d600;
 }
 .cls8 {
+  fill: #f0f0e7;
+}
+.cls9 {
   fill: #6992b3;
 }

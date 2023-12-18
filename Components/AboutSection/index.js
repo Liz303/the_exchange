@@ -7,7 +7,6 @@ import { useEffect, useRef } from "react";
 import BuildingOne from "../SVGS/buildingOne";
 import BuildingTwo from "../SVGS/buildingTwo";
 import BuildingThree from "../SVGS/buildingThree";
-import BuildingFour from "../SVGS/buildingFour";
 import building from "public/images/building.png";
 import ImageRender from "../Images/ImageRender";
 import Fact from "./fact";
@@ -18,7 +17,6 @@ const AboutSection = () => {
   const buildingOneRef = useRef();
   const buildingTwoRef = useRef();
   const buildingThreeRef = useRef();
-  const buildingFourRef = useRef();
   const headlineMobileRef = useRef();
   const headlineRef = useRef();
   const imageRef = useRef();
@@ -63,7 +61,7 @@ const AboutSection = () => {
         y: 0,
         scrollTrigger: {
           trigger: factsContainerRef.current,
-          start: "top 65%",
+          start: "top 80%",
           toggleActions: "play complete none reverse",
         },
       });
@@ -76,7 +74,7 @@ const AboutSection = () => {
         y: 0,
         scrollTrigger: {
           trigger: factsContainerRef.current,
-          start: "top 45%",
+          start: "top 40%",
           toggleActions: "play complete none reverse",
         },
       });
@@ -89,20 +87,7 @@ const AboutSection = () => {
         y: 0,
         scrollTrigger: {
           trigger: factsContainerRef.current,
-          start: "top 25%",
-          toggleActions: "play complete none reverse",
-        },
-      });
-    }
-
-    if (buildingFourRef) {
-      gsap.to(buildingFourRef.current, {
-        opacity: 1,
-        duration: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: factsContainerRef.current,
-          start: "top 5%",
+          start: "top 15%",
           toggleActions: "play complete none reverse",
         },
       });
@@ -126,7 +111,6 @@ const AboutSection = () => {
     buildingOneRef,
     buildingTwoRef,
     buildingThreeRef,
-    buildingFourRef,
   ]);
 
   const renderFacts = () => {
@@ -169,12 +153,6 @@ const AboutSection = () => {
               ref={buildingThreeRef}
             >
               <BuildingThree />
-            </div>
-            <div
-              className={`${styles.buildingContainer} ${styles.four}`}
-              ref={buildingFourRef}
-            >
-              <BuildingFour />
             </div>
           </div>
           <div className={styles.imageWrapperTablet} ref={imageTabletRef}>
