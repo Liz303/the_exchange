@@ -6,18 +6,18 @@ import TeamSection from "@/Components/TeamSection";
 import ProjectsSection from "@/Components/ProjectsSection";
 import NewsSection from "@/Components/NewsSection";
 import CTASection from "@/Components/CTASection";
-import { useEffect, useState } from "react";
 
 export default function Home({ homePageContent }) {
   const { bios, news, projects } = homePageContent.fields;
- 
+  const hasNews = news && news.length > 0;
+
   return (
-    <Layout>
+    <Layout hasNews={hasNews}>
       <IntroSection />
       <AboutSection />
       <ProjectsSection projects={projects} />
       <TeamSection bios={bios} />
-      <NewsSection news={news} />
+      {hasNews && <NewsSection news={news} />}
       <CTASection />
     </Layout>
   );

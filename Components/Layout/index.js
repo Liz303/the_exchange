@@ -2,21 +2,22 @@ import styles from "./style.module.scss";
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
-import gsap from "gsap";
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { useEffect, useRef, useState } from "react";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hasNews }) => {
   const mainContainer = useRef();
   const [changeHeader, setChangeHeader] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      let introHeight = document.getElementsByClassName('intro-image-wrapper')[0].clientHeight;
+      let introHeight = document.getElementsByClassName(
+        "intro-image-wrapper"
+      )[0].clientHeight;
       ScrollTrigger.create({
         trigger: mainContainer.current,
         start: `${introHeight}px 52px`,
-        onEnter: () => { 
+        onEnter: () => {
           setChangeHeader(true);
         },
         onLeaveBack: () => {
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
       });
     }
   }, []);
+
   return (
     <div className={styles.mainContainer}>
       <Head>
@@ -70,8 +72,10 @@ const Layout = ({ children }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Header changeHeader={changeHeader} />
-      <main className={styles.mainContainer}ref={mainContainer}>{children}</main>
+      <Header changeHeader={changeHeader} hasNews={hasNews} />
+      <main className={styles.mainContainer} ref={mainContainer}>
+        {children}
+      </main>
       <Footer />
     </div>
   );
