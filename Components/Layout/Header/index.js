@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 import { Link } from "react-scroll";
 import { useRef } from "react";
 import Logo from "@/Components/SVGS/logo";
 
-const Header = ({ changeHeader, isSafari }) => {
+const Header = ({ changeHeader, isSafari, hasNews }) => {
   const [showDrawer, setShowDrawer] = useState(false);
-  const navLinks = ["about", "projects", "team", "news", "connect"];
+  const [navLinks, setNavLinks] = useState();
 
   const headerRef = useRef();
   const hamburgerRef = useRef();
@@ -20,6 +20,14 @@ const Header = ({ changeHeader, isSafari }) => {
     }
   };
 
+  useEffect(() => {
+    if (hasNews) {
+      setNavLinks(["about", "projects", "team", "news", "connect"]);
+    } else {
+      setNavLinks(["about", "projects", "team", "connect"]);
+    }
+  }, [hasNews]);
+
   const toggleDrawer = () => {
     if (showDrawer) {
       setTimeout(() => {
@@ -31,30 +39,32 @@ const Header = ({ changeHeader, isSafari }) => {
   };
 
   const renderNavLinks = () => {
-    return navLinks.map((link, index) => {
-      return (
-        <div
-          className={styles.navItem}
-          ref={addToRefs}
-          key={`nav-item-${index}`}
-        >
-          <Link
-            activeClass="active"
-            to={link}
-            spy={true}
-            offset={-75}
-            smooth={true}
-            duration={500}
-            onClick={() => {
-              toggleDrawer();
-            }}
-            className={styles.nav}
+    if (navLinks && navLinks.length > 0) {
+      return navLinks.map((link, index) => {
+        return (
+          <div
+            className={styles.navItem}
+            ref={addToRefs}
+            key={`nav-item-${index}`}
           >
-            {link}
-          </Link>
-        </div>
-      );
-    });
+            <Link
+              activeClass="active"
+              to={link}
+              spy={true}
+              offset={-75}
+              smooth={true}
+              duration={500}
+              onClick={() => {
+                toggleDrawer();
+              }}
+              className={styles.nav}
+            >
+              {link}
+            </Link>
+          </div>
+        );
+      });
+    }
   };
 
   return (
