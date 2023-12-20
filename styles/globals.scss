@@ -392,6 +392,7 @@ button.hamburger-wrapper {
 }
 
 .slick-next {
+  height: 45px !important;
   right: 0 !important;
   top: -50px !important;
   width: 75px !important;
@@ -498,12 +499,43 @@ button.hamburger-wrapper {
 // projects slider
 
 .projects-slider {
+  padding: 0 90px;
+  @include small {
+    padding: 60px;
+  }
+  @include mobile {
+    padding: 0;
+  }
+  .slick-next {
+    top: 50% !important;
+    right: -10px !important;
+    @include small {
+      right: -20px !important;
+      width: 60px !important;
+    }
+    @include mobile {
+      right: 0 !important;
+      top: -45px !important;
+    }
+  }
   .slick-list {
-    margin-right: -30px;
+    margin-right: -90px;
+    @include small {
+      margin-right: -60px;
+    }
+    @include tablet-and-lower {
+      margin-right: -30px;
+    }
   }
 
   .slick-slide {
-    padding-right: 30px;
+    padding-right: 90px;
+    @include small {
+      padding-right: 60px;
+    }
+    @include tablet-and-lower {
+      padding-right: 30px;
+    }
     div:first-child {
       @include mobile {
         @include flexbox();

@@ -47,7 +47,6 @@
     grid-column: 1/13;
     grid-row: 4;
     margin-top: 105px;
-    overflow-x: hidden;
     width: 100%;
 
     @include vars.small {
@@ -58,7 +57,7 @@
     }
     .projectCard {
       border-radius: 0;
-      height: calc(85vh - 60px);
+      height: calc(95vh - 60px);
       overflow: hidden;
       opacity: 0;
       outline: none;
@@ -69,6 +68,9 @@
         height: calc(60vh - 60px);
       }
       @include vars.mobile {
+        height: calc(90vh - 60px);
+      }
+      @include vars.x-small {
         height: calc(80vh - 60px);
       }
       img {
@@ -111,7 +113,15 @@
     .noSlider {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 20px;
+      grid-column-gap: 90px;
+      padding: 0 90px;
+      @include vars.medium-and-lower {
+        grid-column-gap: 60px;
+        padding: 0;
+      }
+      @include vars.small {
+        grid-column-gap: 40px;
+      }
       @include vars.mobile {
         @include vars.flexbox();
         @include vars.flex-direction(column);
@@ -122,11 +132,14 @@
           height: calc(60vh - 60px);
         }
         @include vars.mobile {
-          height: calc(80vh - 60px);
+          height: calc(90vh - 60px);
           margin-bottom: 50px;
           &:last-child {
             margin-bottom: 0;
           }
+        }
+        @include vars.x-small {
+          height: calc(80vh - 60px);
         }
       }
     }
