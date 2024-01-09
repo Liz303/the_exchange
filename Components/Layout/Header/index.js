@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { useRef } from "react";
 import Logo from "@/Components/SVGS/logo";
 
-const Header = ({ changeHeader, isSafari, hasNews }) => {
+const Header = () => {
   const [showDrawer, setShowDrawer] = useState(false);
   const [navLinks, setNavLinks] = useState();
 
@@ -21,12 +21,8 @@ const Header = ({ changeHeader, isSafari, hasNews }) => {
   };
 
   useEffect(() => {
-    if (hasNews) {
-      setNavLinks(["about", "projects", "team", "news", "connect"]);
-    } else {
-      setNavLinks(["about", "projects", "team", "connect"]);
-    }
-  }, [hasNews]);
+   
+  }, []);
 
   const toggleDrawer = () => {
     if (showDrawer) {
@@ -69,9 +65,7 @@ const Header = ({ changeHeader, isSafari, hasNews }) => {
 
   return (
     <header
-      className={`${styles.header} ${
-        (changeHeader || isSafari) && styles.invert
-      }`}
+      className={styles.header}
       ref={headerRef}
     >
       <div

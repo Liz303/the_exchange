@@ -1,4 +1,3 @@
-import FooterLogo from "@/Components/SVGS/footerLogo";
 import styles from "./style.module.scss";
 
 const Footer = () => {
@@ -85,9 +84,7 @@ const Footer = () => {
           </div>
         )} */}
       </div>
-      <div className={styles.logoContainer}>
-        <FooterLogo />
-      </div>
+     
     </div>
   );
 };
