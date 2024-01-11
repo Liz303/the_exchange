@@ -1,8 +1,10 @@
 import styles from "./style.module.scss";
-import Canvas from "../Canvas";
+
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
+import IntroSection from "../IntroSection";
+
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { useEffect, useRef, useState } from "react";
 

@@ -1,8 +1,9 @@
+import styles from "./style.module.scss";
 import React, { useRef, useEffect } from 'react'
 
 const IntroSection = () => {
     return (
-        <div>
+        <div className={styles.introSection}>
             <p>
                 A certain Wolf could not get enough to eat because of the watchfulness of the Shepherds. But one night he found a sheep skin that had been cast aside and forgotten. The next day, dressed in the skin, the Wolf strolled into the pasture with the Sheep. Soon a little Lamb was following him about and was quickly led away to slaughter.
             </p>
