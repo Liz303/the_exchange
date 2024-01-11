@@ -1,4 +1,5 @@
 import styles from "./style.module.scss";
+import Canvas from "../Canvas";
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -6,35 +7,28 @@ const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { useEffect, useRef, useState } from "react";
 
 const Layout = ({ children, hasNews }) => {
-  const mainContainer = useRef();
-  const [changeHeader, setChangeHeader] = useState(false);
+
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      let introHeight = document.getElementsByClassName(
-        "intro-image-wrapper"
-      )[0].clientHeight;
-      ScrollTrigger.create({
-        trigger: mainContainer.current,
-        start: `${introHeight}px 52px`,
-        onEnter: () => {
-          setChangeHeader(true);
-        },
-        onLeaveBack: () => {
-          setChangeHeader(false);
-        },
-      });
-    }
+   
   }, []);
 
+  const draw = (ctx, frameCount) => {
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    ctx.fillStyle = '#ffffff';
+    ctx.beginPath();
+    ctx.arc(50, 100, 20*Math.sin(frameCount*0.05)**2, 0, 2*Math.PI);
+    ctx.fill();
+  }
+
   return (
-    <div className={styles.mainContainer}>
+    <div >
       <Head>
-        <title>{"City Leisure Group"}</title>
+        <title>{"Wolf's Tailor"}</title>
         <meta
           name="description"
           content={
-            "Experts in city-attraction entertainment partnered with global leaders in location-based, family entertainment to bring state-of-the art experiences to locations across Europe."
+            "A tribute to the artisans who crafted sheep’s attire for the cunning wolf. The innovative, multi-course tasting experience at the Wolf’s Tailor revolves around two prominent seasons: warmer months spotlight garden-fresh produce, while cooler months feature imaginative spins on local grains and fermentation. "
           }
         />
         <meta
@@ -47,9 +41,9 @@ const Layout = ({ children, hasNews }) => {
         <meta property="og:title" content="City Leisure Group" />
         <meta
           property="og:description"
-          content="Experts in city-attraction entertainment partnered with global leaders in location-based, family entertainment to bring state-of-the art experiences to locations across Europe."
+          content="A tribute to the artisans who crafted sheep’s attire for the cunning wolf. The innovative, multi-course tasting experience at the Wolf’s Tailor revolves around two prominent seasons: warmer months spotlight garden-fresh produce, while cooler months feature imaginative spins on local grains and fermentation."
         />
-        <meta property="og:url" content="www.city-leisuregroup.com" />
+        <meta property="og:url" content="www.thewolfstailor.com" />
 
         <link
           rel="apple-touch-icon"
@@ -72,8 +66,9 @@ const Layout = ({ children, hasNews }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Header changeHeader={changeHeader} hasNews={hasNews} />
-      <main className={styles.mainContainer} ref={mainContainer}>
+      <Header />
+      <main className={styles.mainContainer}>
+        <Canvas draw={draw} />
         {children}
       </main>
       <Footer />
