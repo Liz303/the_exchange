@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 import IntroSection from "../IntroSection";
+import IntroSectionSvg from "../IntroSectionSvg";
 
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { useEffect, useRef, useState } from "react";
@@ -63,7 +64,8 @@ const Layout = ({ children, hasNews }) => {
       </Head>
       <Header />
       <main className={styles.mainContainer}>
-        <IntroSection/>
+        {/* <IntroSection/> */}
+        <IntroSectionSvg/>
         {children}
       </main>
       <Footer />
