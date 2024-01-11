@@ -2,29 +2,30 @@ import React, { useRef, useEffect } from 'react'
 
 const Canvas = () => {
     const canvasRef = useRef(null);
-
-
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
         let coord = { x: 0, y: 0 };
-        // let frameCount = 0;
-        // let animationFrameId;
-
+ 
         const reposition = (event) => {
             coord.x = event.clientX - canvas.offsetLeft;
             coord.y = event.clientY - canvas.offsetTop;
         }
         
         const draw = (event) => {
+  
             ctx.beginPath();
-            ctx.lineWidth = 30;
-            ctx.lineCap = "round";
-            ctx.strokeStyle = "#ffffff";
+
+            ctx.font = "30px Arial";
+            ctx.fillStyle = "#ffffff";
             ctx.moveTo(coord.x, coord.y);
-            reposition(event);
-            ctx.lineTo(coord.x, coord.y);
-            ctx.stroke();
+            if ( Math.abs(event.clientX - canvas.offsetLeft - coord.x) > 50 || Math.abs(event.clientY - canvas.offsetTop - coord.y) > 50 ) {
+                reposition(event);
+                ctx.fillText("hi", coord.x, coord.y);
+            }
+            // ctx.stroke();
+            // console.log("coordx ", coord.x);
+    
         }
 
         const resize = () => {
@@ -39,6 +40,12 @@ const Canvas = () => {
         }
 
         const stop = () => {
+            console.log("STOP");
+           
+    
+
+
+            // ctx.clearRect(0, 0, canvas.width, canvas.height);
             document.removeEventListener("mousemove", draw);
         }
 
@@ -47,17 +54,6 @@ const Canvas = () => {
         window.addEventListener("resize", resize);
         
         resize();
-
-        // const render = () => {
-        //     frameCount++;
-        //     draw(context, frameCount);
-        //     animationFrameId = window.requestAnimationFrame(render);
-        // }
-        // render();
-    
-        // return () => {
-        // window.cancelAnimationFrame(animationFrameId);
-        // }
       })
 
     return (
