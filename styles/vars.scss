@@ -71,43 +71,18 @@ $grayscale-60: #757474;
 // FONTS
 /* Import your fonts here */
 
-@font-face {
-  font-family: "BasierCircle-Medium";
-  src: url("../public/fonts/BasierCircle-Medium.woff") format("woff"),
-    url("../public/fonts/BasierCircle-Medium.woff2") format("woff2");
-  font-display: swap;
-}
+@import url("https://use.typekit.net/sry1mxk.css");
 
-@font-face {
-  font-family: "BasierCircle-Regular";
-  src: url("../public/fonts/BasierCircle-Regular.woff") format("woff"),
-    url("../public/fonts/BasierCircle-Regular.woff2") format("woff2");
-  font-display: swap;
-}
+$header-font-family: "vendetta", serif;
 
-@font-face {
-  font-family: "BasierCircle-SemiBold";
-  src: url("../public/fonts/BasierCircle-SemiBold.woff") format("woff"),
-    url("../public/fonts/BasierCircle-SemiBold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Sfizia-Regular";
-  src: url("../public/fonts/sfizia-regular-webfont.woff") format("woff"),
-    url("../public/fonts/sfizia-regular-webfont.woff2") format("woff2");
-  font-display: swap;
-}
-
-$header-font-family: BasierCircle-SemiBold, sans-serif;
-
-$subhead-font-family: BasierCircle-Regular, sans-serif;
-$subhead-font-weight: 400;
+$subhead-font-family: "vendetta", serif;
+$subhead-font-weight: 500;
 $subhead-font-style: normal;
 
 $eyebrow-font-family: Sfizia-Regular, serif;
 
-$body-font-family: BasierCircle-Regular, sans-serif;
+$body-font-family: "vendetta", serif;
+$body-font-weight: 500;
 $body-font-style: normal;
 
 // OTHER SET STYLES

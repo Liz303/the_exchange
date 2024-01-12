@@ -1,8 +1,11 @@
 import styles from "./style.module.scss";
-import Canvas from "../Canvas";
+
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
+import IntroSection from "../IntroSection";
+import IntroSectionSvg from "../IntroSectionSvg";
+
 const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { useEffect, useRef, useState } from "react";
 
@@ -13,13 +16,6 @@ const Layout = ({ children, hasNews }) => {
    
   }, []);
 
-  const draw = (ctx, frameCount) => {
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    ctx.fillStyle = '#ffffff';
-    ctx.beginPath();
-    ctx.arc(50, 100, 20*Math.sin(frameCount*0.05)**2, 0, 2*Math.PI);
-    ctx.fill();
-  }
 
   return (
     <div >
@@ -68,7 +64,8 @@ const Layout = ({ children, hasNews }) => {
       </Head>
       <Header />
       <main className={styles.mainContainer}>
-        <Canvas draw={draw} />
+        {/* <IntroSection/> */}
+        <IntroSectionSvg/>
         {children}
       </main>
       <Footer />
