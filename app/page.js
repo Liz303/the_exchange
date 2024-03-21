@@ -13,9 +13,8 @@ export default async function Home() {
     <main>
       <Intro data={introData} />
       <Info data={infoData} />
-      {/* <Info data={infoData} />
       <Ethos data={ethosData} />
-      <Contact data={contactData} /> */}
+      <Contact data={contactData} />
     </main>
   );
 }
