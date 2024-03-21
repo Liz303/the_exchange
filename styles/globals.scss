@@ -130,3 +130,17 @@ button {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.pin-spacer {
+  position: relative;
+  z-index: 1;
+}
+
+.pin-style {
+  color: white;
+  height: 100vh;
+  overscroll-behavior: none;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 500%;
+}
