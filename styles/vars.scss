@@ -1,5 +1,5 @@
 @mixin x-small() {
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 428px) {
     @content;
   }
 }
@@ -16,14 +16,14 @@
   }
 }
 
-@mixin ipad-and-lower-portrait {
-  @media (max-width: 1024px) and (orientation: portrait) {
+@mixin ipad-pro-portrait() {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     @content;
   }
 }
 
-@mixin ipad-pro-portrait() {
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@mixin ipad-mini() {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
     @content;
   }
 }
@@ -58,334 +58,123 @@
   }
 }
 
+@mixin x-large() {
+  @media only screen and (min-width: 1999px) {
+    @content;
+  }
+}
+
 // COLORS
 /* Put in your brand colors here */
-$black: #1e1e1e;
-$lightblue: #6894b5;
-$blue: #061636;
-$white: #f2f2e9;
-$yellow: #f1d800;
-$green: #2e4d36;
-$grayscale-60: #757474;
+$black: #000000;
+$white: #ffffff;
 
 // FONTS
 /* Import your fonts here */
-
 @import url("https://use.typekit.net/sry1mxk.css");
 
-$header-font-family: "vendetta", serif;
-
-$subhead-font-family: "vendetta", serif;
-$subhead-font-weight: 500;
-$subhead-font-style: normal;
-
-$eyebrow-font-family: Sfizia-Regular, serif;
-
-$body-font-family: "vendetta", serif;
-$body-font-weight: 500;
-$body-font-style: normal;
+$font-vendetta: "vendetta, serif";
 
 // OTHER SET STYLES
-$border: 5px solid $black;
-$border-width: 5px;
-
-// TRANSITIONS
-/*
-$transition: 0.5s linear;
-$background-transition: background $transition;
-*/
-
-// GRID
-$one-twenty-fourth: calc(100vw / 24);
-$one-twelfth: calc(100vw / 12);
-$two-twelfths: calc(100vw * 2 / 12);
-$three-twelfths: calc(100vw * 3 / 12);
-$four-twelfths: calc(100vw * 4 / 12);
-$five-twelfths: calc(100vw * 5 / 12);
-$six-twelfths: calc(100vw * 6 / 12);
-$seven-twelfths: calc(100vw * 7 / 12);
-$eight-twelfths: calc(100vw * 8 / 12);
-$nine-twelfths: calc(100vw * 9 / 12);
-$ten-twelfths: calc(100vw * 10 / 12);
-$eleven-twelfths: calc(100vw * 11 / 12);
-$full: 100%;
+$border: 3px solid $black;
+$border-width: 3px;
 
 @mixin grid-wrap {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 0em;
-  grid-row-gap: 0em;
-  @include small() {
-    grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr); /* Creates 12 columns */
+  grid-template-rows: repeat(12, 1fr); /* Creates 12 rows */
+  width: 100%; /* Adjust based on your needs */
+  height: 100vh; /* Adjust based on your needs */
+  @include mobile() {
+    grid-template-rows: unset;
+    height: auto;
   }
 }
 
-@mixin one-twelfth {
-  grid-column: span 1;
-}
-@mixin two-twelfths {
-  grid-column: span 2;
-}
-@mixin three-twelfths {
-  grid-column: span 3;
-}
-@mixin four-twelfths {
-  grid-column: span 4;
-}
-@mixin five-twelfths {
-  grid-column: span 5;
-}
-@mixin six-twelfths {
-  grid-column: span 6;
-}
-@mixin seven-twelfths {
-  grid-column: span 7;
-}
-@mixin eight-twelfths {
-  grid-column: span 8;
-}
-@mixin nine-twelfths {
-  grid-column: span 9;
-}
-@mixin ten-twelfths {
-  grid-column: span 10;
-}
-@mixin eleven-twelfths {
-  grid-column: span 11;
-}
-@mixin full {
-  grid-column: span 12;
-  @include small() {
-    grid-column: span 4;
-  }
-  @include x-small() {
-    grid-column: span 4;
-  }
+@mixin grid-info($col-start, $col-end, $row-start, $row-end) {
+  grid-column-start: $col-start;
+  grid-column-end: $col-end;
+  grid-row-start: $row-start;
+  grid-row-end: $row-end;
 }
 
 // MIXINS FOR FONTS
 
+@mixin title-font() {
+  font-size: 100px;
+  font-family: $font-vendetta;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font-manrope() {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 300;
+  font-style: normal;
+}
+
 @mixin header-font() {
-  font-family: $header-font-family;
-  font-weight: normal;
-  line-height: 100%;
-  letter-spacing: 0rem;
+  font-family: $font-vendetta;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  color: $white;
+  @include small() {
+    font-size: 49px;
+    line-height: 60px;
+  }
 }
 
 @mixin subhead-font() {
-  font-family: $subhead-font-family;
-  font-weight: $subhead-font-weight;
-  font-style: $subhead-font-style;
-  letter-spacing: 0rem;
+  font-family: $font-vendetta;
+  font-size: 38px;
+  line-height: 50px;
+  color: $white;
+  @include x-small {
+    font-size: 25px;
+    line-height: 32px;
+  }
 }
 
 @mixin body-font() {
-  font-family: $body-font-family;
-  font-style: $body-font-style;
-  font-size: calc(12pt + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 13pt;
   letter-spacing: 0rem;
-  line-height: 140%;
-  @include mobile {
-    font-size: calc(12pt + (30 - 12) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small {
-    font-size: calc(11pt + (35 - 11) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 18pt;
+  color: $white;
+  @include small() {
+    font-weight: 400;
   }
 }
 
-@mixin body-bold() {
-  font-family: $body-font-family;
-  font-style: $body-font-style;
-}
-
-@mixin eyebrow-font() {
-  font-family: $eyebrow-font-family;
-  font-weight: normal;
-}
-
-@mixin h1() {
-  @include header-font();
-  font-size: calc(75pt + (105 - 75) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include small {
-    font-size: calc(65pt + (95 - 65) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include mobile {
-    font-size: calc(58pt + (90 - 58) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small {
-    font-size: calc(40pt + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin h2() {
-  @include header-font();
-  font-size: calc(65pt + (85 - 65) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include small {
-    font-size: calc(55pt + (80 - 55) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include mobile {
-    font-size: calc(40pt + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small {
-    font-size: calc(36pt + (60 - 36) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin h3() {
-  @include header-font();
-  font-size: calc(40pt + (56 - 40) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include small {
-    font-size: calc(32pt + (50 - 32) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small {
-    font-size: 37pt;
-    font-size: calc(26pt + (66 - 26) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin h4() {
-  @include eyebrow-font();
-  font-size: calc(40pt + (56 - 40) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include mobile {
-    font-size: calc(32pt + (50 - 32) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small {
-    font-size: 37pt;
-    font-size: calc(26pt + (66 - 26) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin h5() {
-  font-size: calc(15pt + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include mobile {
-    font-size: calc(20pt + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small {
-    font-size: calc(22pt + (30 - 22) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin h6() {
-  font-size: 25pt;
-  font-size: calc(20pt + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include x-small {
-    font-size: 24pt;
-    font-size: calc(17pt + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 100%;
-  }
-}
-
-@mixin subtitle-regular() {
-  @include subhead-font();
-  font-size: 24pt;
-  font-size: calc(18pt + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
+@mixin list-font() {
+  font-family: $font-manrope;
+  font-size: 14pt;
   letter-spacing: 0rem;
-  line-height: 110%;
-  @include x-small {
-    font-size: 30pt;
-    font-size: calc(16pt + (30 - 16) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 110%;
-  }
-}
-
-@mixin subtitle-small() {
-  @include subhead-font();
-  font-size: 21pt;
-  font-size: calc(12pt + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
-  letter-spacing: 0rem;
-  line-height: 130%;
-  text-transform: none;
-  @include mobile {
-    font-size: 14pt;
-    font-size: calc(14pt + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 150%;
-  }
-  @include x-small {
-    font-size: 14pt;
-    font-size: calc(12pt + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 110%;
-  }
-}
-
-@mixin eyebrow() {
-  @include eyebrow-font();
-  font-size: calc(16pt + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  text-transform: capitalize;
-  @include tablet-and-lower {
-    font-size: calc(18pt + (23 - 18) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin body-one() {
-  @include body-font();
-  font-size: calc(28pt + (45 - 28) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include small {
-    font-size: calc(26pt + (42 - 26) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include mobile {
-    font-size: calc(24pt + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
-  }
-  @include x-small {
-    font-size: calc(22pt + (34 - 22) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin body-four() {
-  @include body-font();
-  font-size: calc(10pt + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include mobile {
-    font-size: calc(12pt + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin micro() {
-  @include eyebrow-font();
-  font-size: 10pt;
-  font-size: calc(8pt + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  text-transform: uppercase;
-}
-
-// SHADOWS //
-@mixin primary-default-shadow() {
-  box-shadow: 0px 4px 32px rgba(79, 10, 13, 0.1);
-}
-
-@mixin primary-hover-shadow() {
-  box-shadow: 0px 8px 40px rgba(79, 10, 13, 0.15);
-}
-
-@mixin secondary-default-shadow() {
-  box-shadow: 0px 4px 16px rgba(23, 45, 23, 0.15);
-}
-
-@mixin secondary-default-hover-shadow() {
-  box-shadow: 0px 8px 24px rgba(23, 45, 23, 0.2);
+  line-height: 18pt;
+  // @include mobile() {
+  //   font-size: 16pt;
+  // }
 }
 
 // Buttons //
 @mixin button() {
-  @include eyebrow-font();
-  border: none;
-  font-size: calc(12pt + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  padding: 5px 20px;
-  text-transform: capitalize;
-  @include mobile {
-    font-size: calc(12pt + (30 - 12) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 150%;
+  font-family: $font-manrope;
+  font-size: 33px;
+  line-height: 42px;
+  border: 3px solid $black;
+  padding: 8px 20px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: $black;
+    color: $white;
   }
   @include x-small {
-    font-size: calc(11pt + (35 - 11) * ((100vw - 300px) / (1600 - 300)));
+    font-size: 25px;
+    line-height: 33px;
   }
 }
 
