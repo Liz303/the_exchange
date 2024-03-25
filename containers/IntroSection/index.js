@@ -1,8 +1,11 @@
 "use client";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 export default function Intro({ data }) {
+  const {season, aboutText, collage, collageElement2Small, illustrationOne, illustrationTwo} = data.introSection;
+
   return (
     <section>
       <Scrollytelling.Root
@@ -39,7 +42,7 @@ export default function Intro({ data }) {
                   ],
                 }}
               >
-                <h1 className={s.title}>The Wolf's Taylor </h1>
+                <h1 className={s.title}>The Wolf's Tailor </h1>
               </Scrollytelling.Animation>
               <Scrollytelling.Animation
                 tween={{
@@ -51,10 +54,9 @@ export default function Intro({ data }) {
                   ],
                 }}
               >
-                <p className={s.introText}>
-                  This element will stay pinned at its initial position while
-                  the rest of the content scrolls underneath it.
-                </p>
+                <div className={s.introText}>
+                  {aboutText && aboutText.json ? documentToReactComponents(aboutText.json) : ""}
+                </div>
               </Scrollytelling.Animation>
             </div>
           </Scrollytelling.Pin>

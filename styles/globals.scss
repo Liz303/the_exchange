@@ -3,45 +3,22 @@
 html,
 body {
   @include body-font();
-  // background: $red;
-  color: $black;
+  background: $black;
+  color: $pureWhite;
 }
 
 body {
   margin: 0;
   overflow-x: clip;
-  background: $black;
-  color: $white;
   @include mobile {
     position: relative;
   }
 }
 
 h1 {
-  @include header-font();
-  text-transform: capitalize;
+  @include h1();
 }
 
-h2 {
-  @include subhead-font();
-}
-
-h3 {
-  @include subhead-font();
-  white-space: normal;
-}
-
-h4 {
-  @include subhead-font();
-}
-
-h5 {
-  @include subhead-font();
-}
-
-h6 {
-  @include subhead-font();
-}
 
 p {
   @include body-font();
@@ -49,78 +26,17 @@ p {
   padding: 0;
 }
 
-p b {
-  @include body-font();
-  font-weight: 700 !important;
-  line-height: 22.5px !important;
-}
-
-label {
-  font-size: 12px;
-  line-height: 1rem;
-  @include x-small() {
-    font-size: 8px;
-  }
-}
-
-ul {
-  list-style: none;
-  margin: 0 0 20px 0;
-  padding: 0;
-  p {
-    margin-bottom: 0;
-  }
-  li {
-    margin-bottom: 5px;
-    padding-left: 25px;
-    position: relative;
-    &:before {
-      content: "+";
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: 10px;
-      width: 10px;
-    }
-  }
-}
-
-p {
-  @include body-font();
-  margin-bottom: 20px;
+a {
+  color: $white;
+  text-decoration: none;
+  text-decoration: none;
+  -webkit-text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
 }
 
-a {
-  color: $black;
-  text-decoration: none;
-
-  text-decoration: none;
-  -webkit-text-decoration: none;
-
-  &:hover {
-    font-style: italic;
-    color: $white;
-  }
-}
-
-button {
-  text-decoration: none;
-  -webkit-text-decoration: none;
-}
-
-.hideOnHome > * {
-  opacity: 0;
-}
-
-button {
-  &:focus-visible {
-    outline: none;
-  }
-}
 
 *::-webkit-scrollbar {
   display: none;
