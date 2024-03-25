@@ -1,8 +1,23 @@
 @mixin x-small() {
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 430px)
+ {
     @content;
   }
 }
+
+
+@mixin tablet-and-lower() {
+  @media only screen and (max-width: 820px) {
+    @content;
+  }
+}
+  
+@mixin mobile() {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 
 @mixin small() {
   @media only screen and (max-width: 1079px) {
@@ -10,26 +25,9 @@
   }
 }
 
-@mixin mobile() {
-  @media only screen and (max-width: 768px) {
-    @content;
-  }
-}
 
-@mixin ipad-pro-portrait() {
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    @content;
-  }
-}
-
-@mixin ipad-mini() {
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
-    @content;
-  }
-}
-
-@mixin tablet-and-lower() {
-  @media only screen and (max-width: 820px) {
+@mixin ipad-pro-and-smaller() {
+  @media only screen and (max-width:1024px)  and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  {
     @content;
   }
 }
@@ -40,17 +38,6 @@
   }
 }
 
-@mixin medium() {
-  @media only screen and (max-width: 1439px) {
-    @content;
-  }
-}
-
-@mixin medium-and-higher() {
-  @media only screen and (min-width: 1080px) {
-    @content;
-  }
-}
 
 @mixin large() {
   @media only screen and (min-width: 1440px) and (max-width: 1999px) {
@@ -66,28 +53,64 @@
 
 // COLORS
 /* Put in your brand colors here */
-$black: #000000;
-$white: #ffffff;
+$black: #222224;
+$white: #E8E5E2;
+$pureWhite: #ffffff;
+$gold: #978F38;
 
 // FONTS
 /* Import your fonts here */
 @import url("https://use.typekit.net/sry1mxk.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-$font-vendetta: "vendetta, serif";
+$header-font-family: vendetta, serif;
+$header-font-weight: 500;
+$header-font-style: italic;
+
+$subhead-font-family: "Manrope", sans-serif;
+$subhead-font-weight: 400;
+$subhead-font-style: normal;
+
+$body-font-family: "Manrope", sans-serif;
+$body-font-weight: 200;
+$body-font-style: normal;
 
 // OTHER SET STYLES
-$border: 3px solid $black;
-$border-width: 3px;
+$border: 1px solid $black;
+$border-width: 5px;
+
+// TRANSITIONS
+$textStartPos: translateY(200%) rotate3d(0.5, 0, 0, 100deg);
+
+// GRID
+$one-twelfth: calc(100vw / 12);
+$two-twelfths: calc(100vw * 2 / 12);
+$three-twelfths: calc(100vw * 3 / 12);
+$four-twelfths: calc(100vw * 4 / 12);
+$five-twelfths: calc(100vw * 5 / 12);
+$six-twelfths: calc(100vw * 6 / 12);
+$seven-twelfths: calc(100vw * 7 / 12);
+$eight-twelfths: calc(100vw * 8 / 12);
+$nine-twelfths: calc(100vw * 9 / 12);
+$ten-twelfths: calc(100vw * 10 / 12);
+$eleven-twelfths: calc(100vw * 11 / 12);
+$full: 100%;
+$one-fourth: calc(100vw * 1 / 4);
+$two-fourths: calc(100vw * 2 / 4);
+$three-fourths: calc(100vw * 3 / 4);
 
 @mixin grid-wrap {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* Creates 12 columns */
-  grid-template-rows: repeat(12, 1fr); /* Creates 12 rows */
-  width: 100%; /* Adjust based on your needs */
-  height: 100vh; /* Adjust based on your needs */
-  @include mobile() {
-    grid-template-rows: unset;
-    height: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  padding: 0 89px;
+  @include medium-and-lower() {
+    padding: 0 60px;
+  }
+  @include small() {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 30px;
   }
 }
 
@@ -98,84 +121,112 @@ $border-width: 3px;
   grid-row-end: $row-end;
 }
 
+@mixin one-twelfth {
+  grid-column: span 1;
+}
+@mixin two-twelfths {
+  grid-column: span 2;
+}
+@mixin three-twelfths {
+  grid-column: span 3;
+}
+@mixin four-twelfths {
+  grid-column: span 4;
+}
+@mixin five-twelfths {
+  grid-column: span 5;
+}
+@mixin six-twelfths {
+  grid-column: span 6;
+}
+@mixin seven-twelfths {
+  grid-column: span 7;
+}
+@mixin eight-twelfths {
+  grid-column: span 8;
+}
+@mixin nine-twelfths {
+  grid-column: span 9;
+}
+@mixin ten-twelfths {
+  grid-column: span 10;
+}
+@mixin eleven-twelfths {
+  grid-column: span 11;
+}
+@mixin full {
+  grid-column: span 12;
+  @include small() {
+    grid-column: span 4;
+  }
+  @include x-small() {
+    grid-column: span 4;
+  }
+}
+
 // MIXINS FOR FONTS
 
-@mixin title-font() {
-  font-size: 100px;
-  font-family: $font-vendetta;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@mixin font-manrope() {
-  font-size: 60px;
-  line-height: 70px;
-  font-weight: 300;
-  font-style: normal;
-}
-
 @mixin header-font() {
-  font-family: $font-vendetta;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 60px;
-  margin: 0;
-  color: $white;
-  @include small() {
-    font-size: 49px;
-    line-height: 60px;
-  }
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  font-style: $header-font-style;
+  font-weight: 400;
 }
 
 @mixin subhead-font() {
-  font-family: $font-vendetta;
-  font-size: 38px;
-  line-height: 50px;
-  color: $white;
-  @include x-small {
-    font-size: 25px;
-    line-height: 32px;
-  }
+  font-family: $subhead-font-family;
+  font-optical-sizing: auto;
+  font-weight: $subhead-font-weight;
+  font-style: $subhead-font-style;
 }
 
 @mixin body-font() {
-  font-size: 13pt;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-style: $body-font-style;
+  font-size: 16pt;
+  font-size: calc(32pt + (35 - 32) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0rem;
-  line-height: 18pt;
-  color: $white;
-  @include small() {
-    font-weight: 400;
+  line-height: 100%;
+}
+
+//  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+@mixin h1() {
+  @include header-font();
+  font-size: 125pt;
+  font-size: calc(100pt + (150 - 100) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 100%;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@mixin mirco() {
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  
+  &.header {
+      font-family: $subhead-font-family;
   }
 }
 
-@mixin list-font() {
-  font-family: $font-manrope;
-  font-size: 14pt;
-  letter-spacing: 0rem;
-  line-height: 18pt;
-  // @include mobile() {
-  //   font-size: 16pt;
-  // }
+@mixin script() {
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  font-style: $header-font-style;
 }
 
+@mixin label() {
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+}
+
+  
 // Buttons //
 @mixin button() {
-  font-family: $font-manrope;
-  font-size: 33px;
-  line-height: 42px;
-  border: 3px solid $black;
-  padding: 8px 20px;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s;
-  &:hover {
-    background: $black;
-    color: $white;
-  }
-  @include x-small {
-    font-size: 25px;
-    line-height: 33px;
-  }
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  font-style: $header-font-style;
 }
 
 // Flexbox// --------------------------------------------------
@@ -327,17 +378,4 @@ $border-width: 3px;
   -ms-transform: $transform-list;
   -o-transform: $transform-list;
   transform: $transform-list;
-}
-
-@mixin rotated-text(
-  $num-letters: 100,
-  $angle-span: 180deg,
-  $angle-offset: 0deg
-) {
-  $angle-per-char: $angle-span / $num-letters;
-  @for $i from 1 through $num-letters {
-    .char#{$i} {
-      @include transform(rotate($angle-offset + $angle-per-char * $i));
-    }
-  }
 }

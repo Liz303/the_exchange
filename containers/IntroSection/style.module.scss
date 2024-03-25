@@ -1,24 +1,19 @@
 @use "@styles/vars";
 
 .introContentWrap {
+  @include vars.grid-wrap();
+  grid-row-gap: 0;
   width: 100%;
   height: 100%;
-  padding-top: 150px;
-  padding: 100px 20px;
+  padding-top: 130px;
 }
 .title {
-  width: 100%;
+  @include vars.full();
   text-align: center;
-  font-size: 190px;
-  font-weight: 700;
-  color: vars.$white;
-  margin-bottom: 90px;
 }
 
 .introText {
-  font-size: 80px;
-  line-height: 90px;
-  color: vars.$white;
+  @include vars.full();
   margin-bottom: 20px;
 }
 
