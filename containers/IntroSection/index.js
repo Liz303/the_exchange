@@ -9,40 +9,36 @@ export default function Intro({ data }) {
         scrub={true}
         start={"top top"}
         end={"bottom bottom"}
-        callbacks={{
-          onEnterBack: (st) => {
-            st.animation.seek(0).play();
-          },
-        }}
+        style={{ height: "500vh" }}
       >
         <div
           style={{
-            height: "600vh",
+            height: "100%",
             position: "relative",
-            // alignItems: "center",
-            // flexDirection: "column",
           }}
         >
           <Scrollytelling.Pin
             childHeight={"100vh"}
-            pinSpacerHeight={"600vh"}
+            pinSpacerHeight={"500vh"}
             top={0}
           >
             <div className={s.introContentWrap}>
-              <Scrollytelling.Animation
+              <Scrollytelling.Waypoint
+                at={0}
                 tween={{
-                  start: 0,
-                  end: 10,
-                  fromTo: [
-                    { opacity: 0, scale: 0.95 },
-                    { opacity: 1, scale: 1 },
-                  ],
+                  target: ["#main-title"],
+                  to: [{ opacity: 1, scale: 1 }],
+                  duration: 0.5,
+                  delay: 1,
                 }}
-              >
-                <h1 className={s.title}>The Wolf's Taylor </h1>
-              </Scrollytelling.Animation>
+              />
+
+              <h1 className={s.title} id="main-title">
+                The Wolf's Taylor
+              </h1>
               <Scrollytelling.Animation
                 tween={{
+                  scrub: true,
                   start: 10,
                   end: 20,
                   fromTo: [
@@ -59,17 +55,31 @@ export default function Intro({ data }) {
             </div>
           </Scrollytelling.Pin>
           <Scrollytelling.Animation
-            tween={{ start: 20, end: 90, to: { top: 0 } }}
+            tween={{ scrub: true, start: 10, end: 100, to: { top: "100vh" } }}
           >
             <div className={s.absolute}>
               <p>first</p>
             </div>
           </Scrollytelling.Animation>
           <Scrollytelling.Animation
-            tween={{ start: 15, end: 100, to: { top: "50%" } }}
+            tween={{ scrub: true, start: 15, end: 100, to: { top: "100vh" } }}
           >
             <div className={s.absolute2}>
               <p>second</p>
+            </div>
+          </Scrollytelling.Animation>
+          <Scrollytelling.Animation
+            tween={{ scrub: true, start: 25, end: 60, to: { top: "100vh" } }}
+          >
+            <div className={s.absolute}>
+              <p>third</p>
+            </div>
+          </Scrollytelling.Animation>
+          <Scrollytelling.Animation
+            tween={{ scrub: true, start: 25, end: 100, to: { top: "100vh" } }}
+          >
+            <div className={s.absolute2}>
+              <p>fourth</p>
             </div>
           </Scrollytelling.Animation>
         </div>
