@@ -13,13 +13,15 @@ export default function Intro({ data }) {
     illustrationTwo,
   } = data.introSection;
 
+  console.log({ data });
   return (
     <section>
       <Scrollytelling.Root
         scrub={true}
         start={"top top"}
         end={"bottom bottom"}
-        style={{ height: "500vh" }}
+        style={{ height: "200vh" }}
+        debug={true}
       >
         <div
           style={{
@@ -27,29 +29,28 @@ export default function Intro({ data }) {
             position: "relative",
           }}
         >
+          <Scrollytelling.Waypoint
+            at={0}
+            tween={{
+              target: ["#main-title"],
+              to: { opacity: 1, scale: 1 },
+              duration: 0.5,
+              delay: 1,
+            }}
+          />
+          <h1 className={s.title} id="main-title">
+            The Wolf's Taylor
+          </h1>
           <Scrollytelling.Pin
             childHeight={"100vh"}
-            pinSpacerHeight={"500vh"}
+            pinSpacerHeight={"150vh"}
             top={0}
           >
             <div className={s.introContentWrap}>
-              <Scrollytelling.Waypoint
-                at={0}
-                tween={{
-                  target: ["#main-title"],
-                  to: [{ opacity: 1, scale: 1 }],
-                  duration: 0.5,
-                  delay: 1,
-                }}
-              />
-
-              <h1 className={s.title} id="main-title">
-                The Wolf's Taylor
-              </h1>
               <Scrollytelling.Animation
                 tween={{
                   scrub: true,
-                  start: 10,
+                  start: 0,
                   end: 20,
                   fromTo: [
                     { opacity: 0, y: 50 },
@@ -64,33 +65,48 @@ export default function Intro({ data }) {
                 </div>
               </Scrollytelling.Animation>
             </div>
+
+            <Scrollytelling.Waypoint
+              at={40}
+              tween={{
+                target: ["#illustration-one"],
+                to: { opacity: 1, scale: 1 },
+                duration: 0.25,
+                scrub: true,
+              }}
+            />
+            <Scrollytelling.Waypoint
+              at={50}
+              tween={{
+                target: ["#illustration-two"],
+                to: { opacity: 1, scale: 1 },
+                duration: 0.5,
+                scrub: true,
+              }}
+            />
+
+            <div className={s.illustratioOne} id="illustration-one">
+              <img src={illustrationOne.url} alt={illustrationOne.title} />
+            </div>
+            <div className={s.illustrationTwo} id="illustration-two">
+              <img src={illustrationTwo.url} alt={illustrationTwo.title} />
+            </div>
           </Scrollytelling.Pin>
           <Scrollytelling.Animation
-            tween={{ scrub: true, start: 10, end: 100, to: { top: "100vh" } }}
+            tween={{ scrub: true, start: 10, end: 90, to: { top: 0 } }}
           >
             <div className={s.absolute}>
-              <p>first</p>
+              <img src={collage.url} alt={collage.title} />
             </div>
           </Scrollytelling.Animation>
           <Scrollytelling.Animation
-            tween={{ scrub: true, start: 15, end: 100, to: { top: "100vh" } }}
+            tween={{ scrub: true, start: 30, end: 70, to: { top: 0 } }}
           >
             <div className={s.absolute2}>
-              <p>second</p>
-            </div>
-          </Scrollytelling.Animation>
-          <Scrollytelling.Animation
-            tween={{ scrub: true, start: 25, end: 60, to: { top: "100vh" } }}
-          >
-            <div className={s.absolute}>
-              <p>third</p>
-            </div>
-          </Scrollytelling.Animation>
-          <Scrollytelling.Animation
-            tween={{ scrub: true, start: 25, end: 100, to: { top: "100vh" } }}
-          >
-            <div className={s.absolute2}>
-              <p>fourth</p>
+              <img
+                src={collageElement2Small.url}
+                alt={collageElement2Small.title}
+              />
             </div>
           </Scrollytelling.Animation>
         </div>
