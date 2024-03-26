@@ -43,7 +43,7 @@ export default function Intro({ data }) {
           </h1>
           <Scrollytelling.Pin
             childHeight={"100vh"}
-            pinSpacerHeight={"150vh"}
+            pinSpacerHeight={"200vh"}
             top={0}
           >
             <div className={s.introContentWrap}>
@@ -67,7 +67,7 @@ export default function Intro({ data }) {
             </div>
 
             <Scrollytelling.Waypoint
-              at={40}
+              at={15}
               tween={{
                 target: ["#illustration-one"],
                 to: { opacity: 1, scale: 1 },
@@ -76,7 +76,7 @@ export default function Intro({ data }) {
               }}
             />
             <Scrollytelling.Waypoint
-              at={50}
+              at={30}
               tween={{
                 target: ["#illustration-two"],
                 to: { opacity: 1, scale: 1 },
@@ -96,17 +96,17 @@ export default function Intro({ data }) {
             tween={{ scrub: true, start: 10, end: 90, to: { top: 0 } }}
           >
             <div className={s.absolute}>
-              <img src={collage.url} alt={collage.title} />
+              <img
+                src={collageElement2Small.url}
+                alt={collageElement2Small.title}
+              />
             </div>
           </Scrollytelling.Animation>
           <Scrollytelling.Animation
             tween={{ scrub: true, start: 30, end: 70, to: { top: 0 } }}
           >
             <div className={s.absolute2}>
-              <img
-                src={collageElement2Small.url}
-                alt={collageElement2Small.title}
-              />
+              <img src={collage.url} alt={collage.title} />
             </div>
           </Scrollytelling.Animation>
         </div>
