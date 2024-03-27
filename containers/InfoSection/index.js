@@ -1,9 +1,9 @@
 "use client";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 
-export default function Info() {
+export default function Info({ data }) {
   return (
-    <section className="section orange">
+    <section id="info">
       <Scrollytelling.Root
         scrub={false}
         callbacks={{
@@ -18,10 +18,9 @@ export default function Info() {
             height: "100vh",
           }}
         >
-        <h1> Placeholder</h1>
+          <h1> Placeholder</h1>
         </div>
       </Scrollytelling.Root>
     </section>
-
   );
 }

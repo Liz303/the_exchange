@@ -40,28 +40,16 @@ export default function Ethos() {
 
   return (
     <Scrollytelling.Root defaults={{ ease: "none" }} scrub={1} end="+=3500">
-      <section>
-
-        <Scrollytelling.Animation
-          tween={{ start: 0, end: 1, to: { rotate: 360 } }}
+      <section id="ethos">
+        <Scrollytelling.Pin
+          childHeight={"100vh"}
+          pinSpacerHeight={"500vh"}
+          pinSpacerClassName={"pin-spacer"}
+          childClassName={"pin-style"}
+          ref={containerRef}
         >
-          <h1>This element will spin.</h1>
-        </Scrollytelling.Animation>
-    
-          <Scrollytelling.Pin
-            childHeight={"100vh"}
-            pinSpacerHeight={"500vh"}
-            pinSpacerClassName={"pin-spacer"}
-            childClassName={"pin-style"}
-            ref={containerRef}
-          >
-            {sectionElements}
-          </Scrollytelling.Pin>
-
-        <div className="header">
-          <h1>End of horizontal scroll</h1>
-        </div>
-
+          {sectionElements}
+        </Scrollytelling.Pin>
       </section>
     </Scrollytelling.Root>
   );
