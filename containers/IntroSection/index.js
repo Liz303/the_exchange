@@ -4,9 +4,15 @@ import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 export default function Intro({ data }) {
-  const {season, aboutText, collage, collageElement2Small, illustrationOne, illustrationTwo} = data.introSection;
+  const {
+    season,
+    aboutText,
+    collage,
+    collageElement2Small,
+    illustrationOne,
+    illustrationTwo,
+  } = data.introSection;
 
-    
   const renderIllustrationOne = () => {
     return (
       <div className={s.illustratioOne} id="illustration-one">
@@ -21,8 +27,8 @@ export default function Intro({ data }) {
         />
         <img src={illustrationOne.url} alt={illustrationOne.title} />
       </div>
-    )
-  }
+    );
+  };
 
   const renderIllustrationTwo = () => {
     return (
@@ -38,11 +44,11 @@ export default function Intro({ data }) {
         />
         <img src={illustrationTwo.url} alt={illustrationTwo.title} />
       </div>
-    )
-  }
+    );
+  };
 
   const renderPinnedTextContainer = () => {
-    return (    
+    return (
       <div className={s.pinnedTextContainer}>
         <Scrollytelling.Waypoint
           at={0}
@@ -64,24 +70,26 @@ export default function Intro({ data }) {
               end: 100,
               fromTo: [
                 { opacity: 1, y: 0 },
-                { opacity: 0, y:-100 },
+                { opacity: 0, y: -100 },
               ],
             }}
           >
-
-            <div 
-              id="intro-text"
-              className={s.introText}>
-                {aboutText && aboutText.json ? documentToReactComponents(aboutText.json) : ""}
+            <div id="intro-text" className={s.introText}>
+              {aboutText && aboutText.json
+                ? documentToReactComponents(aboutText.json)
+                : ""}
             </div>
           </Scrollytelling.Animation>
-          {illustrationOne && illustrationOne.url ? renderIllustrationOne() : ""}
-          {illustrationTwo && illustrationTwo.url ? renderIllustrationTwo() : ""}
-
+          {illustrationOne && illustrationOne.url
+            ? renderIllustrationOne()
+            : ""}
+          {illustrationTwo && illustrationTwo.url
+            ? renderIllustrationTwo()
+            : ""}
         </Scrollytelling.Pin>
       </div>
-    )
-  }
+    );
+  };
 
   const renderCollageElement2 = () => {
     return (
@@ -95,9 +103,8 @@ export default function Intro({ data }) {
           />
         </div>
       </Scrollytelling.Animation>
-    )
-
-  }
+    );
+  };
 
   const renderCollage = () => {
     return (
@@ -107,9 +114,9 @@ export default function Intro({ data }) {
         <div className={s.absolute2}>
           <img src={collage.url} alt={collage.title} />
         </div>
-    </Scrollytelling.Animation>
+      </Scrollytelling.Animation>
     );
-  }
+  };
 
   return (
     <section>
@@ -149,15 +156,15 @@ export default function Intro({ data }) {
                 ],
               }}
             >
-               <h1 
-                className={s.title}
-                id="main-title">
-                  The Wolf's Tailor 
+              <h1 className={s.title} id="main-title">
+                The Wolf's Tailor
               </h1>
             </Scrollytelling.Animation>
             {renderPinnedTextContainer()}
           </div>
-          {collageElement2Small && collageElement2Small.url ? renderCollageElement2() : ""}
+          {collageElement2Small && collageElement2Small.url
+            ? renderCollageElement2()
+            : ""}
           {collage && collage.url ? renderCollage() : ""}
         </div>
       </Scrollytelling.Root>
