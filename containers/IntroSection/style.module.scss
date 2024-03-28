@@ -20,9 +20,29 @@
   margin-bottom: 20px;
   .introText {
     opacity: 0;
+    position: relative;
     scale: 0.95;
     text-align: justify;
+    .seasonsText {
+      bottom: -77px;
+      left: 0;
+      max-width: 350px;;
+      position: absolute;
+      width: vars.$four-twelfths;
+      svg {
+        fill: none;
+        stroke: vars.$white;
+        stroke-width: 1;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+       
+      }
+  
+    }
   }
+  
 }
 
 .absolute {

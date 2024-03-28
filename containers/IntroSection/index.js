@@ -2,6 +2,7 @@
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Spring24 from "@/components/IntroSVGs/Spring/Spring_24";
 
 export default function Intro({ data }) {
   const {
@@ -74,11 +75,14 @@ export default function Intro({ data }) {
               ],
             }}
           >
-            <div id="intro-text" className={s.introText}>
-              {aboutText && aboutText.json
-                ? documentToReactComponents(aboutText.json)
-                : ""}
+
+            <div 
+              id="intro-text"
+              className={s.introText}>
+                {aboutText && aboutText.json ? documentToReactComponents(aboutText.json) : ""}
+               <Spring24 />
             </div>
+        
           </Scrollytelling.Animation>
           {illustrationOne && illustrationOne.url
             ? renderIllustrationOne()
