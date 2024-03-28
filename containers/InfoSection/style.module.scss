@@ -1,0 +1,47 @@
+@use "@styles/vars";
+
+.infoSection {
+    @include vars.grid-wrap();
+
+    .colOne {
+        @include vars.flexbox();
+        @include vars.flex-flow(row wrap);
+        border-right: 50px solid transparent;
+        border-image: url(../../public/images/1_Line_1.svg) 100 stretch;
+        height: 100vh;
+        @include vars.four-twelfths();
+        .top {
+            .iconWrap {
+                max-width: 40px;
+                margin: 0 auto;
+            }
+            
+        }
+        .bottom {
+            .accoladeTitle {
+                @include vars.label();
+            }
+        }
+        p {
+            @include vars.micro();
+        }
+
+    }
+    .colTwo {
+        @include vars.three-twelfths();
+        border-right: 50px solid transparent;
+        border-image: url(../../public/images/1_Line_1.svg) 100 stretch;
+        margin-left: -50px;
+        margin-top: 30px;
+        padding-right: 30px;
+        .fableWrap p {
+            @include vars.script();
+            text-align: justify;
+        }
+    }
+    .colThree {
+        @include vars.flexbox();
+        @include vars.flex-flow(row wrap);
+        @include vars.four-twelfths();
+    }
+}
