@@ -220,6 +220,13 @@ $three-fourths: calc(100vw * 3 / 4);
   }
 }
 
+@mixin infoText() {
+  font-family: $header-font-family;
+  font-weight: 100;
+  font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
+  text-transform: uppercase;
+}
+
 @mixin script() {
   font-family: $header-font-family;
   font-weight: $header-font-weight;
