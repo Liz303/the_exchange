@@ -2,6 +2,7 @@
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Spring24 from "@/components/IntroSVGs/Spring/Spring_24";
 
 export default function Intro({ data }) {
   const {
@@ -61,7 +62,7 @@ export default function Intro({ data }) {
         />
         <Scrollytelling.Pin
           childHeight={"100vh"}
-          pinSpacerHeight={"500vh"}
+          pinSpacerHeight={"250vh"}
           top={180}
         >
           <Scrollytelling.Animation
@@ -74,11 +75,14 @@ export default function Intro({ data }) {
               ],
             }}
           >
-            <div id="intro-text" className={s.introText}>
-              {aboutText && aboutText.json
-                ? documentToReactComponents(aboutText.json)
-                : ""}
+
+            <div 
+              id="intro-text"
+              className={s.introText}>
+                {aboutText && aboutText.json ? documentToReactComponents(aboutText.json) : ""}
+               <Spring24 />
             </div>
+        
           </Scrollytelling.Animation>
           {illustrationOne && illustrationOne.url
             ? renderIllustrationOne()
@@ -132,7 +136,7 @@ export default function Intro({ data }) {
       >
         <div
           style={{
-            height: "500vh",
+            height: "300vh",
             position: "relative",
           }}
         >

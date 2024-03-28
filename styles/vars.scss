@@ -201,24 +201,46 @@ $three-fourths: calc(100vw * 3 / 4);
   text-transform: uppercase;
 }
 
-@mixin mirco() {
+@mixin h2() {
+  @include body-font();
+  font-size: 16pt;
+  font-size: calc(32pt + (35 - 32) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 0rem;
+  line-height: 100%;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@mixin micro() {
   font-family: $header-font-family;
   font-weight: $header-font-weight;
-  
+  font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
   &.header {
       font-family: $subhead-font-family;
   }
+}
+
+@mixin infoText() {
+  font-family: $header-font-family;
+  font-weight: 100;
+  font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
+  text-transform: uppercase;
 }
 
 @mixin script() {
   font-family: $header-font-family;
   font-weight: $header-font-weight;
   font-style: $header-font-style;
+  font-size: calc(22pt + (27 - 22) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 100%;
+  font-weight: 400;
 }
 
 @mixin label() {
   font-family: $body-font-family;
   font-weight: $body-font-weight;
+  font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 100%;
 }
 
   
@@ -241,6 +263,7 @@ $three-fourths: calc(100vw * 3 / 4);
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+
 }
 
 // The 'flex' shorthand
