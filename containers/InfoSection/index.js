@@ -45,75 +45,104 @@ export default function Info({ data }) {
 
   return (
     <Scrollytelling.Root
-    scrub={false}
-    callbacks={{
-      onEnterBack: (st) => {
-        st.animation.seek(0).play();
-      },
-    }}
-  >
-    <section className={s.infoSection}>
-        <div className={s.colOne}>
+      scrub={true}
+      start={"top top"}
+      end={"bottom bottom"}
+      callbacks={{
+        onEnterBack: (st) => {
+          st.animation.seek(0).play();
+        },
+      }}
+    >
+      <div
+        style={{
+          height: "300vh",
+          position: "relative",
+        }}
+      >
+      <section className={s.infoSection}>
+          <div className={s.colOne}>
 
-          <div className={s.top}>
-            <div className={s.iconWrap}>
-            <SheepBug/>
+            <div className={s.top}>
+              <div className={s.iconWrap}>
+              <SheepBug/>
+              </div>
+              <p>
+                  Copyright @2018 The Wolf's Tailor <br/>
+                  All rights reserved <br/>
+                  Including the right to reproduction <br/>
+                  In whole or in part in any form <br/>
+                  Published by <i> The Wolf's Tailor </i><br/>
+                  {hoursArray && hoursArray.length > 0 ? renderHours() : "" }
+                  
+              </p>
+              <p>
+                <i> In Defense of The Maker</i>
+              </p>
+
+              {accoladesArray && accoladesArray.length > 0 ? 
+                (<p>
+                Grateful acknowledgments for recognition from: 
+                </p>)   
+                : ""
+              }
+              {accoladesArray && accoladesArray.length > 0 ? renderAccolades() : ""}
+              
+
             </div>
-            <p>
-                Copyright @2018 The Wolf's Tailor <br/>
-                All rights reserved <br/>
-                Including the right to reproduction <br/>
-                In whole or in part in any form <br/>
-                Published by <i> The Wolf's Tailor </i><br/>
-                {hoursArray && hoursArray.length > 0 ? renderHours() : "" }
+            <div className={s.bottom}>
+              {accoladesTitle &&
+                (
+                  <div className={s.accoladeTitle}>
+                    {accoladesTitle}
+                  </div>
+                )
+              }
+              <p>
+              {accoladesCopyBlock && accoladesCopyBlock.json ? documentToReactComponents(accoladesCopyBlock.json) : ""}
+              </p>
+            </div>
+          </div>
+          <div className={s.colTwo}>
+            <div className={s.fableWrap}>
+              <p>
+                {fableText && fableText}
+              </p>
+            </div>
+          </div>
+          <div className={s.colThree}>
+            <div className={s.largeCollageContainer}>
+              {infoCollageElement2 && infoCollageElement2.url ? (
                 
-            </p>
-            <p>
-              <i> In Defense of The Maker</i>
-            </p>
-
-            {accoladesArray && accoladesArray.length > 0 ? 
-              (<p>
-              Grateful acknowledgments for recognition from: 
-              </p>)   
-              : ""
-            }
-            {accoladesArray && accoladesArray.length > 0 ? renderAccolades() : ""}
-            
-
-          </div>
-          <div className={s.bottom}>
-            {accoladesTitle &&
-              (
-                <div className={s.accoladeTitle}>
-                  {accoladesTitle}
+                <div id="collage-large" className={s.largeCollage}>
+                  <Scrollytelling.Waypoint
+                    at={1}
+                    tween={{
+                      target: ["#collage-large"],
+                      to: { x: 0, rotate: 0 },
+                      duration: 1.5
+                    }}
+                  />
+                    <img
+                      src={infoCollageElement2.url}
+                      alt={infoCollageElement2.title}
+                    />
+    
                 </div>
-              )
-            }
-            <p>
-            {accoladesCopyBlock && accoladesCopyBlock.json ? documentToReactComponents(accoladesCopyBlock.json) : ""}
-            </p>
+                ) : "" }
+            </div>
+            <a href="#">
+              <h2> 
+                4058 Tejon St <br/>
+                Denver, CO 80211 
+              </h2>
+            </a>
           </div>
-        </div>
-        <div className={s.colTwo}>
-          <div className={s.fableWrap}>
-            <p>
-              {fableText && fableText}
-            </p>
-          </div>
-        </div>
-        <div className={s.colThree}>
-          <a href="#">
-            <h2> 
-              4058 Tejon St <br/>
-              Denver, CO 80211 
-            </h2>
-          </a>
-        </div>
-        <div className={s.colFour}>
+          <div className={s.colFour}>
 
-        </div>
-    </section>
+          </div>
+      </section>
+      </div>
     </Scrollytelling.Root>
 
   );

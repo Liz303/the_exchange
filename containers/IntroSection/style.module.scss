@@ -1,45 +1,31 @@
 @use "@styles/vars";
 
 .introContentWrap {
-  @include vars.grid-wrap();
-  grid-row-gap: 0;
-  width: 100%;
+  @include vars.flexbox();
+  @include vars.flex-flow(row wrap);
   height: 100%;
+  padding: 0 89px;
+  width: 100%;
 }
 
 .title {
-  @include vars.full();
   text-align: center;
   margin-top: 130px;
   opacity: 0;
   scale: 0.95;
+  width: vars.$full;
 }
 
 .pinnedTextContainer {
-  @include vars.full();
   margin-bottom: 20px;
+  width: vars.$full;
   .introText {
     opacity: 0;
     position: relative;
     scale: 0.95;
     text-align: justify;
-    .seasonsText {
-      bottom: -77px;
-      left: 0;
-      max-width: 350px;;
-      position: absolute;
-      width: vars.$four-twelfths;
-      svg {
-        fill: none;
-        stroke: vars.$white;
-        stroke-width: 1;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-        stroke-dasharray: 500;
-        stroke-dashoffset: 500;
-       
-      }
-  
+    p {
+      margin: 0;
     }
   }
   

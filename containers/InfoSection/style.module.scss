@@ -42,6 +42,21 @@
     .colThree {
         @include vars.flexbox();
         @include vars.flex-flow(row wrap);
+        @include vars.align-items(space-between);
         @include vars.four-twelfths();
+        .largeCollageContainer {
+            height: 60vh;
+            width: 100%;
+            .largeCollage {
+                height: auto;
+                transform: translate(100vw) rotate(45deg);       
+                width: 100%;
+                img {
+                    height: auto;
+                    object-fit: contain;
+                    width: 100%;  
+                }
+            }
+        }
     }
 }
