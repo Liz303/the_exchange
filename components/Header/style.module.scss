@@ -13,11 +13,10 @@
 }
 
 .link {
-  @include vars.button();
+  @include vars.script();
   background: transparent;
   border: none;
   color: white;
-  font-size: 48px;
   cursor: pointer;
 }
 

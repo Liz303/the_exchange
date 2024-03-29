@@ -156,7 +156,7 @@ export default function Info({ data }) {
                       </Scrollytelling.Animation>
                       ) : "" }
                   </div>
-                  <a href="#">
+                  <a className="glitch" href="#">
                     <h2> 
                       4058 Tejon St <br/>
                       Denver, CO 80211 
