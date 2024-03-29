@@ -7,18 +7,25 @@
         .colOne {
             @include vars.flexbox();
             @include vars.flex-flow(row wrap);
+            @include vars.four-twelfths();
             border-right: 50px solid transparent;
             border-image: url(../../public/images/1_Line_1.svg) 100 stretch;
             height: 100vh;
-            @include vars.four-twelfths();
             .top {
                 .iconWrap {
                     max-width: 40px;
                     margin: 0 auto;
                 }
+
+                p  {
+                    opacity: 0;
+                    transform: translateY(100px);
+                }
                 
             }
             .bottom {
+                opacity: 0;
+                transform: translateY(100px);
                 .accoladeTitle {
                     @include vars.label();
                 }
@@ -43,16 +50,20 @@
             @include vars.three-twelfths();
             border-right: 50px solid transparent;
             border-image: url(../../public/images/1_Line_2.svg) 100 stretch;
+            height: 100vh;
+            overflow: hidden;
             margin-left: -50px;
             margin-top: 30px;
             padding-right: 30px;
-            .fableWrap p {
-                @include vars.script();
-                text-align: justify;
+            .fableWrap {
+                transform: translateY(100vh);
+                p {
+                    @include vars.script();
+                    text-align: justify;
+                }
             }
         }
         .colThree {
-       
             @include vars.four-twelfths();
             border-right: 50px solid transparent;
             border-image: url(../../public/images/1_Line_3.svg) 100 stretch;
@@ -78,7 +89,10 @@
                 @include vars.align-items(flex-end);
                 cursor: pointer;
                 margin-top: 60px;
-               
+               &.address {
+                opacity: 0;
+                transform: translateY(100px);
+               }
             }
         }
         .colFour {
@@ -88,27 +102,23 @@
             width: vars.$one-twelfth;
             position: relative;
             .instagramContainer, .phoneContainer {
-            
                 @include vars.infoText();
                 height: 100px;
                 width: 250px;
                 transform: rotate(-90deg);
-             
-                
-              
+                opacity: 0;
+                right: -100px;
             }
             .instagramContainer {
                 background-image: url(../../public/images/1_Square.svg);
                 background-position: 0px -28px;
                 background-repeat: no-repeat;
                 position: absolute;
-                right: -50px;
                 top: 200px;
                 overflow: visible;
                 a {
                     padding-left: 30px;;
-                }
-         
+                }        
             }
             .phoneContainer {
                 background-image: url(../../public/images/1_Circle.svg);
@@ -116,7 +126,6 @@
                 background-repeat: no-repeat;
                 bottom: 100px;
                 position: absolute;
-                right: -50px;
                 height: 128px;
                 padding-top: 25px;
                 a {
@@ -127,6 +136,16 @@
            
         }
        
+    }
+    .one {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        width: 50px;
+        img {
+            height: auto;
+            width: 100%;
+        }
     }
     .infoCollageElement1 {
         left: vars.$five-twelfths;

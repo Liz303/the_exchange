@@ -29,11 +29,22 @@ p {
   padding: 0;
 }
 
+
 a, button {
   color: $white;
   text-decoration: none;
   text-decoration: none;
   -webkit-text-decoration: none;
+  &.glitch-no-underline {
+    display: block;
+    position: relative;
+    &:hover {
+      span {
+        animation: glitchText 0.4s linear; 
+        color: $gold;
+      }
+    }
+  }
   &.glitch {
     position: relative;
     &:before {
