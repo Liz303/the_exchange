@@ -213,8 +213,17 @@ $three-fourths: calc(100vw * 3 / 4);
 
 @mixin micro() {
   font-family: $header-font-family;
-  font-weight: $header-font-weight;
+  font-weight: 100;
   font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+  &.header {
+      font-family: $subhead-font-family;
+  }
+}
+
+@mixin link() {
+  font-family: $header-font-family;
+  font-weight: 100;
+  font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
   &.header {
       font-family: $subhead-font-family;
   }
@@ -229,11 +238,10 @@ $three-fourths: calc(100vw * 3 / 4);
 
 @mixin script() {
   font-family: $header-font-family;
-  font-weight: $header-font-weight;
+  font-weight: 100;
   font-style: $header-font-style;
-  font-size: calc(22pt + (27 - 22) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
-  font-weight: 400;
 }
 
 @mixin label() {

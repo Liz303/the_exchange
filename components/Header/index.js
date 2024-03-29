@@ -51,19 +51,19 @@ const Header = () => {
   return (
     <>
       <div className={s.header} ref={headerRef}>
-        <button onClick={() => onClick("info")} className={s.link}>
-          INFO
+        <button onClick={() => onClick("info")} className={`${s.link} glitch`}>
+         <span> INFO </span>
         </button>
-        <a className={s.reserve} href="/" alt="Reserve">
-          {`{RESERVE}`}
+        <a className={`${s.reserve} glitch`} href="/" alt="Reserve">
+          <span>{`{RESERVE}`}</span>
         </a>
-        <button onClick={() => onClick("ethos")} className={s.link}>
-          ETHOS
+        <button onClick={() => onClick("ethos")} className={`${s.link} glitch`}>
+          <span> ETHOS </span>
         </button>
       </div>
       <div className={s.reserveBottom} ref={reserveRef}>
-        <a href="/" alt="Reserve" className={s.reserve}>
-          {`{RESERVE}`}
+        <a href="/" alt="Reserve" className={`${s.reserve} glitch`}>
+          <span>{`{RESERVE}`}</span>
         </a>
       </div>
     </>
