@@ -18,13 +18,13 @@
 .pinnedTextContainer {
   @include vars.full();
   margin-bottom: 20px;
-  .introText {
-    opacity: 0;
-    scale: 0.95;
-    text-align: justify;
-  }
 }
 
+.introText {
+  // opacity: 0;
+  // scale: 0.95;
+  text-align: justify;
+}
 .absolute {
   position: absolute;
   top: 150vh;
@@ -53,7 +53,7 @@
 
 .illustratioOne {
   height: auto;
-  max-width: 300px;;
+  max-width: 300px;
   opacity: 0;
   position: absolute;
   right: 0;
