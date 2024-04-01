@@ -1,14 +1,23 @@
 "use client";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import NewsletterSubscribe from "@/components/NewsletterSubscribe";
 import s from "./style.module.scss";
 
+import WorkSvg from "@/components/ContactSVGs/WorkSvg";
+import GiftCardSvg from "@/components/ContactSVGs/GiftCardSvg";
+
 export default function Contact({ data }) {
+  const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
+
+  const { outroImage, outroCollageImage } = data?.outroSection || {};
   console.log({ data });
   return (
     <section>
       <Scrollytelling.Root
-        scrub={false}
-        // debug={{ markers: true, vizualizer: true }}
+        scrub={true}
+        start={"top bottom"}
+        debug={{ markers: true, vizualizer: true }}
       >
         <div
           className="wrapper"
@@ -17,23 +26,78 @@ export default function Contact({ data }) {
             padding: "200px 80px ",
           }}
         >
-          <div className={s.left}></div>
+          <div className={s.left}>
+            <Scrollytelling.Stagger
+              overlap={0.2}
+              tween={{
+                start: 30,
+                end: 70,
+                to: { opacity: 1, y: 0 },
+              }}
+            >
+              {/* <div className={s.ethosImage}>
+                <img src={ethosImage.url} alt={ethosImage.title} />
+              </div> */}
+              <div className={s.outroImage}>
+                <img src={outroImage.url} alt={outroImage.title} />
+              </div>
+              <div className={s.outroCollageImage}>
+                <img
+                  src={outroCollageImage.url}
+                  alt={outroCollageImage.title}
+                />
+              </div>
+            </Scrollytelling.Stagger>
+          </div>
           <div className={s.right}>
-            <div>
-              <p>
-                Sign up to receive updates on reservations, events and
-                happenings
-              </p>
-              <h3>form</h3>
-            </div>
-            <div>
-              <p> If interested in collaborating, please reach out</p>
-              <h3>work with us</h3>
-            </div>
-            <div>
-              <p>Give a gift</p>
-              <h3>gift card</h3>
-            </div>
+            <Scrollytelling.Stagger
+              overlap={0.2}
+              tween={{
+                start: 10,
+                end: 70,
+                fromTo: [
+                  { opacity: 0, y: 20 },
+                  { opacity: 1, y: 0 },
+                ],
+                duration: 2,
+              }}
+            >
+              <div>
+                <MailchimpSubscribe
+                  url={MAILCHIMP_URL}
+                  render={(props) => {
+                    const { subscribe, status, message } = props || {};
+                    return (
+                      <div>
+                        <NewsletterSubscribe
+                          status={status}
+                          message={message}
+                          onValidated={(formData) => subscribe(formData)}
+                        />
+                      </div>
+                    );
+                  }}
+                />
+              </div>
+              <div>
+                <p> If interested in collaborating, please reach out</p>
+                <a href="#" target="blank" className="glitch-no-underline">
+                  <span>
+                    <i>Work with us </i>
+                  </span>
+                  <WorkSvg />
+                </a>
+              </div>
+              <div>
+                <p>Give a gift</p>
+                <a href="#" target="blank" className="glitch-no-underline">
+                  <span>
+                    <i>Gift Card </i>
+                  </span>
+                  <GiftCardSvg />
+                </a>
+              </div>
+            </Scrollytelling.Stagger>
           </div>
         </div>
       </Scrollytelling.Root>

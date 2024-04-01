@@ -1,0 +1,89 @@
+@use "@/styles/vars";
+
+.newsletterWrap {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 130px;
+  p {
+    font-size: 24px;
+    width: 70%;
+  }
+
+  @include vars.small {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include vars.x-small {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+.form {
+  @include vars.flexbox();
+  @include vars.align-items(center);
+  gap: 20px;
+  align-items: center;
+}
+
+.input {
+  @include vars.subhead-font;
+  background: transparent;
+  border: none;
+  font-size: 62px;
+  min-width: 805px;
+  color: white;
+
+  &::placeholder {
+    color: vars.$pureWhite;
+  }
+  &:focus,
+  &:active {
+    outline: none;
+  }
+  @include vars.mobile {
+    min-width: 300px;
+  }
+  @include vars.x-small {
+    font-size: 20px;
+  }
+}
+
+.inputWrap {
+  width: 100%;
+}
+.inputBorder {
+  width: 100%;
+  svg {
+    width: 100%;
+  }
+}
+
+.button {
+  svg {
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 100%;
+    min-width: 216px;
+    height: auto;
+  }
+
+  background: transparent;
+  span {
+    @include vars.infoText();
+    text-transform: none;
+    font-size: 48px;
+  }
+  width: 216px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  border: none;
+  color: vars.$pureWhite;
+  cursor: pointer;
+  text-decoration: none;
+}

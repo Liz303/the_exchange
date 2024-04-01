@@ -1,3 +1,5 @@
+@use "@styles/vars";
+
 .opacity {
   opacity: 0;
   transform: translateY(50px);
@@ -10,4 +12,51 @@
 .right {
   width: 60%;
   float: right;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 100px;
+  p {
+    font-size: 24px;
+  }
+  a {
+    width: auto;
+    @include vars.infoText();
+    font-size: 48px;
+    span {
+      text-transform: none;
+    }
+    svg {
+      display: block;
+      max-width: 270px;
+    }
+  }
+}
+
+.outroImage {
+  position: absolute;
+  top: 20vh;
+  left: 60vw;
+  width: 600px;
+  height: auto;
+  z-index: 2;
+  opacity: 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.outroCollageImage {
+  position: absolute;
+  top: 25vh;
+  left: 70vw;
+  width: 600px;
+  height: auto;
+  z-index: 2;
+  opacity: 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

@@ -11,7 +11,6 @@ export default function Ethos({ data }) {
       defaults={{ ease: "none" }}
       // debug={{ markers: true, vizualizer: true }}
       scrub={true}
-      // end="+=4000"
     >
       <section id="ethos">
         <Scrollytelling.Waypoint
