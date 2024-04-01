@@ -55,16 +55,7 @@ export default function Info({ data }) {
   };
 
   return (
-    <Scrollytelling.Root
-      scrub={true}
-      start={"top top"}
-      end={"bottom bottom"}
-      callbacks={{
-        onEnterBack: (st) => {
-          st.animation.seek(0).play();
-        },
-      }}
-    >
+    <Scrollytelling.Root scrub={true} start={"top top"} end={"bottom bottom"}>
       <section className={s.sectionWrap}>
         <div
           style={{

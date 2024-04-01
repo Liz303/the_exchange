@@ -75,14 +75,12 @@ export default function Intro({ data }) {
               ],
             }}
           >
-
-            <div 
-              id="intro-text"
-              className={s.introText}>
-                {aboutText && aboutText.json ? documentToReactComponents(aboutText.json) : ""}
-               <Spring24 />
+            <div id="intro-text" className={s.introText}>
+              {aboutText && aboutText.json
+                ? documentToReactComponents(aboutText.json)
+                : ""}
+              <Spring24 />
             </div>
-        
           </Scrollytelling.Animation>
           {illustrationOne && illustrationOne.url
             ? renderIllustrationOne()
@@ -124,16 +122,7 @@ export default function Intro({ data }) {
 
   return (
     <section>
-      <Scrollytelling.Root
-        scrub={true}
-        start={"top top"}
-        end={"bottom bottom"}
-        callbacks={{
-          onEnterBack: (st) => {
-            st.animation.seek(0).play();
-          },
-        }}
-      >
+      <Scrollytelling.Root scrub={true} start={"top top"} end={"bottom bottom"}>
         <div
           style={{
             height: "300vh",
