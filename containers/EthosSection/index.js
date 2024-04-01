@@ -1,54 +1,36 @@
 "use client";
 import { useMemo, useRef } from "react";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
+import s from "./style.module.scss";
+import SectionOne from "./SectionOne";
+import SectionTwo from "./SectionTwo";
 
-export default function Ethos() {
-  const containerRef = useRef(null);
-
-  const sectionData = [
-    { label: "SECTION 1" },
-    { label: "SECTION 2" },
-    { label: "SECTION 3" },
-  ];
-
-  const horizontalScrollTween = useMemo(() => {
-    return { xPercent: -100 * (sectionData.length - 1), ease: "none" };
-  }, [sectionData.length]);
-
-  const sectionElements = sectionData.map((section, index) => (
-    <Scrollytelling.Animation
-      key={index}
-      tween={{
-        start: 0,
-        end: 100,
-        to: horizontalScrollTween,
-      }}
-    >
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h2>{section.label}</h2>
-      </div>
-    </Scrollytelling.Animation>
-  ));
-
+export default function Ethos({ data }) {
   return (
-    <Scrollytelling.Root defaults={{ ease: "none" }} scrub={1} end="+=3500">
+    <Scrollytelling.Root
+      defaults={{ ease: "none" }}
+      // debug={{ markers: true, vizualizer: true }}
+      scrub={true}
+      // end="+=4000"
+    >
       <section id="ethos">
+        <Scrollytelling.Waypoint
+          at={99}
+          onCall={() =>
+            document.body.classList.replace("light-theme", "dark-theme")
+          }
+          onReverseCall={() =>
+            document.body.classList.replace("dark-theme", "light-theme")
+          }
+        />
         <Scrollytelling.Pin
           childHeight={"100vh"}
-          pinSpacerHeight={"500vh"}
+          pinSpacerHeight={"600vh"}
           pinSpacerClassName={"pin-spacer"}
           childClassName={"pin-style"}
-          ref={containerRef}
         >
-          {sectionElements}
+          <SectionOne data={data?.ethosSection} />
+          <SectionTwo data={data?.ethosSection} />
         </Scrollytelling.Pin>
       </section>
     </Scrollytelling.Root>

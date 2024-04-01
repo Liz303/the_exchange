@@ -1,34 +1,41 @@
 @use "@styles/vars";
 
-.introContentWrap {
-  @include vars.grid-wrap();
-  grid-row-gap: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.title {
-  @include vars.full();
-  text-align: center;
-  margin-top: 130px;
+.introText {
   opacity: 0;
   scale: 0.95;
+  text-align: justify;
 }
 
-.pinnedTextContainer {
-  @include vars.full();
-  margin-bottom: 20px;
-  .introText {
-    opacity: 0;
-    scale: 0.95;
-    text-align: justify;
+.ethosIllistration {
+  position: absolute;
+  top: 80vh;
+  left: 85vw;
+  width: 212px;
+  height: auto;
+  z-index: 2;
+  opacity: 0;
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
-.absolute {
+.ethosCollageOne {
   position: absolute;
-  top: 150vh;
-  left: 20%;
+  top: 120vh;
+  left: 60px;
+  width: 575px;
+  height: auto;
+  z-index: 2;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.ethosCollageTwo {
+  position: absolute;
+  top: 120vh;
+  left: 70vw;
   width: 372px;
   height: auto;
   z-index: 2;
@@ -38,46 +45,86 @@
   }
 }
 
-.absolute2 {
+.gridContainer {
+  display: grid;
+  width: 600px;
+  grid-template-columns: repeat(2, 300px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.gridItem {
+  opacity: 0;
+  transform: translateY(20px);
+  p {
+    font-size: 15px !important;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  &:nth-child(3) {
+    grid-column: 2;
+  }
+  &:nth-child(n + 5) {
+    grid-column: 1 / span 2;
+  }
+}
+
+.ethosImage {
   position: absolute;
-  top: 150vh;
-  left: 60%;
-  width: 575px;
+  top: 60vh;
+  left: 50vw;
+  width: 600px;
   height: auto;
   z-index: 2;
+  opacity: 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.illustration2 {
+  position: absolute;
+  top: 20vh;
+  left: 60vw;
+  width: 600px;
+  height: auto;
+  z-index: 2;
+  opacity: 0;
   img {
     width: 100%;
     height: auto;
   }
 }
 
-.illustratioOne {
-  height: auto;
-  max-width: 300px;;
-  opacity: 0;
+.ethosCollageElement3 {
   position: absolute;
-  right: 0;
-  scale: 0.95;
-  top: -180px;
-  width: vars.$three-twelfths;
+  top: 25vh;
+  left: 70vw;
+  width: 600px;
+  height: auto;
   z-index: 2;
+  opacity: 0;
   img {
     width: 100%;
     height: auto;
   }
 }
 
-.illustrationTwo {
+.pullTextWrap {
   position: absolute;
-  top: 40vh;
-  right: 0;
-  width: 417px;
-  height: auto;
-  z-index: 2;
-  opacity: 0;
-  scale: 0.95;
+  bottom: 50px;
+  left: 100px;
+  width: 50%;
+  height: 80px;
+  overflow: hidden;
   img {
     width: 100%;
     height: auto;
   }
+}
+.pullTextCopy {
+  transform: translateY(200%);
+  font-size: 80px;
 }

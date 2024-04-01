@@ -1,47 +1,42 @@
 "use client";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
+import s from "./style.module.scss";
 
-export default function Contact() {
+export default function Contact({ data }) {
+  console.log({ data });
   return (
     <section>
-      <section className="section">
-        <div className="wrapper">
-          <h1>Section1</h1>
-        </div>
-      </section>
-
-      <section className="section orange">
-        <Scrollytelling.Root
-          scrub={false}
-          callbacks={{
-            onEnterBack: (st) => {
-              st.animation.seek(0).play();
-            },
+      <Scrollytelling.Root
+        scrub={false}
+        // debug={{ markers: true, vizualizer: true }}
+      >
+        <div
+          className="wrapper"
+          style={{
+            minHeight: "100vh",
+            padding: "200px 80px ",
           }}
         >
-          <div
-            className="wrapper"
-            style={{
-              height: "100vh",
-            }}
-          >
-            <Scrollytelling.Animation
-              tween={{ start: 0, end: 1, to: { rotate: 360 } }}
-            >
-              <h1>This element will spin.</h1>
-            </Scrollytelling.Animation>
-            <Scrollytelling.Animation
-              tween={{
-                start: 0.25,
-                end: 0.75,
-                to: { scale: 1.5, yoyo: true, repeat: -1 },
-              }}
-            >
-              <h1>Yoyo Text</h1>
-            </Scrollytelling.Animation>
+          <div className={s.left}></div>
+          <div className={s.right}>
+            <div>
+              <p>
+                Sign up to receive updates on reservations, events and
+                happenings
+              </p>
+              <h3>form</h3>
+            </div>
+            <div>
+              <p> If interested in collaborating, please reach out</p>
+              <h3>work with us</h3>
+            </div>
+            <div>
+              <p>Give a gift</p>
+              <h3>gift card</h3>
+            </div>
           </div>
-        </Scrollytelling.Root>
-      </section>
+        </div>
+      </Scrollytelling.Root>
     </section>
   );
 }
