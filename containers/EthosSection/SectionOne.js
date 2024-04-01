@@ -62,7 +62,7 @@ const SectionOne = ({ data }) => {
         </div>
       </Scrollytelling.Animation>
       <Scrollytelling.Animation
-        tween={{ scrub: true, start: 10, end: 50, to: { top: "-50%" } }}
+        tween={{ scrub: true, start: 10, end: 100, to: { left: "-50%", top: "-10vh" } }}
       >
         <div className={s.ethosCollageOne}>
           <img
@@ -72,7 +72,7 @@ const SectionOne = ({ data }) => {
         </div>
       </Scrollytelling.Animation>
       <Scrollytelling.Animation
-        tween={{ scrub: true, start: 20, end: 40, to: { top: "-20%" } }}
+        tween={{ scrub: true, start: 20, end: 60, to: { top: "-50%" } }}
       >
         <div className={s.ethosCollageTwo}>
           <img

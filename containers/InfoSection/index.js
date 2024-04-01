@@ -198,10 +198,10 @@ export default function Info({ data }) {
                   }}
                 >
                   <a className={`glitch ${s.address}`} href="#">
-                    <h2>
+                    <h3>
                       4058 Tejon St <br />
                       Denver, CO 80211
-                    </h2>
+                    </h3>
                   </a>
                 </Scrollytelling.Animation>
               </div>

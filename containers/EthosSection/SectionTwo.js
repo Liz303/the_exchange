@@ -1,6 +1,7 @@
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { numberArray } from "@/hooks/numbersArray";
 
 const SectionTwo = ({ data }) => {
   const {
@@ -36,18 +37,30 @@ const SectionTwo = ({ data }) => {
             }}
           >
             {annotationsCollection?.items?.map((annotation, index) => {
+      
+  
               return (
                 <div key={index} className={s.gridItem}>
+                    <div className={s.number}>
+                    <img
+                      src={numberArray[index].src}
+                      alt={`number-${index + 1}`}
+                    />
+                    </div>
                   <div>
+               
                     {documentToReactComponents(
                       annotation?.annotationCopy?.json
                     )}
                   </div>
+                 
                   {annotation?.annotationImage && (
-                    <img
-                      src={annotation.annotationImage.url}
-                      alt={annotation.annotationImage.title}
-                    />
+                    <div className={s.annotationImage}>
+                      <img
+                        src={annotation.annotationImage.url}
+                        alt={annotation.annotationImage.title}
+                      />
+                    </div>
                   )}
                 </div>
               );
@@ -82,11 +95,13 @@ const SectionTwo = ({ data }) => {
             tween={{
               start: 55,
               end: 80,
-              to: { y: 10 },
+              to: { y: 0 },
             }}
           >
             <div className={s.pullTextCopy}>
-              {largePullText && largePullText}
+              <h2>
+                {largePullText && largePullText}
+              </h2>
             </div>
           </Scrollytelling.Animation>
         </div>
