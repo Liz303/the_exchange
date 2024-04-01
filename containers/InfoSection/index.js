@@ -55,7 +55,12 @@ export default function Info({ data }) {
   };
 
   return (
-    <Scrollytelling.Root scrub={true} start={"top top"} end={"bottom bottom"}>
+    <Scrollytelling.Root
+      scrub={true}
+      start={"top 30%"}
+      end={"bottom bottom"}
+      // debug={{ markers: true, visualizer: true }}
+    >
       <section className={s.sectionWrap}>
         <div
           style={{
