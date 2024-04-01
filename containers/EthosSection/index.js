@@ -11,12 +11,21 @@ export default function Ethos({ data }) {
       defaults={{ ease: "none" }}
       // debug={{ markers: true, vizualizer: true }}
       scrub={true}
-      end="+=6500"
+      // end="+=4000"
     >
       <section id="ethos">
+        <Scrollytelling.Waypoint
+          at={99}
+          onCall={() =>
+            document.body.classList.replace("light-theme", "dark-theme")
+          }
+          onReverseCall={() =>
+            document.body.classList.replace("dark-theme", "light-theme")
+          }
+        />
         <Scrollytelling.Pin
           childHeight={"100vh"}
-          pinSpacerHeight={"1200vh"}
+          pinSpacerHeight={"600vh"}
           pinSpacerClassName={"pin-spacer"}
           childClassName={"pin-style"}
         >

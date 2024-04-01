@@ -13,11 +13,7 @@ export default function Contact() {
       <section className="section orange">
         <Scrollytelling.Root
           scrub={false}
-          callbacks={{
-            onEnterBack: (st) => {
-              st.animation.seek(0).play();
-            },
-          }}
+          // debug={{ markers: true, vizualizer: true }}
         >
           <div
             className="wrapper"

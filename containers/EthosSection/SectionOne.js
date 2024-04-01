@@ -56,7 +56,7 @@ const SectionOne = ({ data }) => {
             }}
           >
             <div className={s.introText} id="ethos-text">
-              {documentToReactComponents(copyBlock.json)}
+              {documentToReactComponents(copyBlock?.json)}
             </div>
           </Scrollytelling.Animation>
         </div>
@@ -64,7 +64,7 @@ const SectionOne = ({ data }) => {
       <Scrollytelling.Animation
         tween={{ scrub: true, start: 10, end: 50, to: { top: "-50%" } }}
       >
-        <div className={s.absolute2}>
+        <div className={s.ethosCollageOne}>
           <img
             src={ethosCollageElement1.url}
             alt={ethosCollageElement1.title}
@@ -74,7 +74,7 @@ const SectionOne = ({ data }) => {
       <Scrollytelling.Animation
         tween={{ scrub: true, start: 20, end: 40, to: { top: "-20%" } }}
       >
-        <div className={s.absolute}>
+        <div className={s.ethosCollageTwo}>
           <img
             src={ethosCollageElement2.url}
             alt={ethosCollageElement2.title}
