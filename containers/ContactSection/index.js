@@ -17,7 +17,7 @@ export default function Contact({ data }) {
       <Scrollytelling.Root
         scrub={true}
         start={"top bottom"}
-        debug={{ markers: true, vizualizer: true }}
+        // debug={{ markers: true, vizualizer: true }}
       >
         <div
           className="wrapper"
@@ -53,8 +53,8 @@ export default function Contact({ data }) {
             <Scrollytelling.Stagger
               overlap={0.2}
               tween={{
-                start: 10,
-                end: 70,
+                start: 60,
+                end: 90,
                 fromTo: [
                   { opacity: 0, y: 20 },
                   { opacity: 1, y: 0 },
