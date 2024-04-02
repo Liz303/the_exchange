@@ -57,7 +57,7 @@ export default function Info({ data }) {
   return (
     <Scrollytelling.Root
       scrub={true}
-      start={"top 30%"}
+      start={"top 45%"}
       end={"bottom bottom"}
       // debug={{ markers: true, visualizer: true }}
     >

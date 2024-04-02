@@ -30,9 +30,9 @@ export default function Contact({ data }) {
             <Scrollytelling.Stagger
               overlap={0.2}
               tween={{
-                start: 80,
+                start: 0,
                 end: 100,
-                to: { opacity: 1, top: 50 },
+                to: { opacity: 1, top: "-20%" },
               }}
             >
               {/* <div className={s.ethosImage}>
