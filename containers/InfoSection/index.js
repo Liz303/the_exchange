@@ -231,15 +231,15 @@ export default function Info({ data }) {
           <Scrollytelling.Waypoint
             at={15}
             tween={{
-              target: ["#roman-1"],
-              to: { top: "-100px", left: "25vw" },
-              duration: 0.5,
+              target: ["#roman-one"],
+              to: { top: "-100px", left: "5vw" },
+              duration: 2,
               scrub: true,
             }}
           />
 
           <div className={s.one} id="roman-one">
-            <img src="/images/1_I.png" alt="Roman numeral I" />
+            <img src="/images/I.png" alt="Roman numeral I" />
           </div>
           {infoCollageElement1 && infoCollageElement1.url ? (
             <Scrollytelling.Animation

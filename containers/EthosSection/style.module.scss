@@ -6,6 +6,18 @@
   text-align: justify;
 }
 
+.two {
+  left: 70vw;
+  position: absolute;
+  top: 30vh;
+  width: 50px;
+  z-index: 100;
+  img {
+      height: auto;
+      width: 100%;
+  }
+}
+
 .ethosIllistration {
   position: absolute;
   top: 80vh;

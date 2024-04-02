@@ -61,6 +61,19 @@ const SectionOne = ({ data }) => {
           </Scrollytelling.Animation>
         </div>
       </Scrollytelling.Animation>
+      <Scrollytelling.Waypoint
+            at={5}
+            tween={{
+              target: ["#roman-two"],
+              to: { top: "-100px", left: "100vw" },
+              duration: 2,
+              scrub: true,
+            }}
+          />
+
+          <div className={s.two} id="roman-two">
+            <img src="/images/II.png" alt="Roman numeral II" />
+          </div>
       <Scrollytelling.Animation
         tween={{ scrub: true, start: 10, end: 100, to: { left: "-50%", top: "-10vh" } }}
       >
