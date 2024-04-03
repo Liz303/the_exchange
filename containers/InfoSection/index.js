@@ -25,7 +25,7 @@ export default function Info({ data }) {
         {hoursArray.map((hours, i) => {
           const { altText, startDay, endDay, startTime, endTime } = hours;
           return (
-            <span>
+            <span key={`hours-${i}`}>
               {" "}
               {altText && <i> {altText} </i>} {startDay && startDay}{" "}
               {endDay && `through ${endDay}`} {startTime && startTime}{" "}
@@ -43,7 +43,7 @@ export default function Info({ data }) {
         {accoladesArray.map((accolade, i) => {
           const { accoladeTitle } = accolade;
           return (
-            <span>
+            <span key={`accolade-${i}`}>
               {accoladeTitle} <br />
             </span>
           );
@@ -122,11 +122,11 @@ export default function Info({ data }) {
                     {accoladesTitle && (
                       <div className={s.accoladeTitle}>{accoladesTitle}</div>
                     )}
-                    <p>
-                      {accoladesCopyBlock && accoladesCopyBlock.json
-                        ? documentToReactComponents(accoladesCopyBlock.json)
-                        : ""}
-                    </p>
+              
+                    {accoladesCopyBlock && accoladesCopyBlock.json
+                      ? documentToReactComponents(accoladesCopyBlock.json)
+                      : ""}
+              
                     {accoladesImage && accoladesImage.url ? (
                       <Scrollytelling.Animation
                         tween={{
