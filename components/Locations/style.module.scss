@@ -4,7 +4,6 @@
   position: absolute;
   top: -100px;
   right: 0;
-  //   height: 400px;
   width: 315px;
   opacity: 0;
   z-index: 2;
@@ -19,22 +18,20 @@
 .contentWrap {
   position: absolute;
   top: 120px;
-  right: 0px;
+  left: 40px;
   z-index: 3;
   width: 80%;
 }
 
 .locations {
   cursor: pointer;
-  z-index: 3;
-  display: grid !important;
-  grid-template-columns: 20px 1fr 1fr !important;
-  //   justify-content: space-between;
-  gap: 10px;
-  font-size: 12px;
-  line-height: 14px;
   color: vars.$black !important;
-  width: 100%;
+  display: grid !important;
   font-family: vars.$header-font-family;
-  font-style: vars.$header-font-style;
+  font-size: 20px;
+  line-height: 110%;
+  grid-template-columns: 20px 2fr 1fr !important;
+  gap: 10px;
+  width: 100%;
+  z-index: 3;
 }

@@ -1,0 +1,16 @@
+@use "@styles/vars";
+.fromText {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    width: vars.$two-twelfths;
+    svg {
+      fill: none;
+      stroke: vars.$white;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+    }
+  }

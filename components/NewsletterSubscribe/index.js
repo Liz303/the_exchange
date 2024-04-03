@@ -44,7 +44,7 @@ const NewsletterSubscribe = ({ status, message, onValidated }) => {
             <input
               className={styles.input}
               type="email"
-              placeholder="yourname@email.com"
+              placeholder="your email here"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required

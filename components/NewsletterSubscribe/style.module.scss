@@ -7,8 +7,8 @@
   gap: 5px;
   margin-bottom: 130px;
   p {
-    font-size: 24px;
     width: 70%;
+    margin-bottom: 0;
   }
 
   @include vars.small {
@@ -32,8 +32,7 @@
   @include vars.body-font;
   background: transparent;
   border: none;
-  font-size: 62px;
-  min-width: 805px;
+  font-size: 42px;
   color: white;
 
   &::placeholder {
@@ -52,11 +51,12 @@
 }
 
 .inputWrap {
-  width: 100%;
+  width: 70%;
 }
 .inputBorder {
   width: 100%;
   svg {
+    display: block;
     width: 100%;
   }
 }
@@ -65,7 +65,7 @@
   svg {
     position: absolute;
     top: -20%;
-    left: -10%;
+    left: 0;
     width: 100%;
     min-width: 216px;
     height: auto;
