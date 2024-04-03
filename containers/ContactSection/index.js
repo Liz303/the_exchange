@@ -6,6 +6,7 @@ import s from "./style.module.scss";
 
 import WorkSvg from "@/components/ContactSVGs/WorkSvg";
 import GiftCardSvg from "@/components/ContactSVGs/GiftCardSvg";
+import Locations from "@components/Locations";
 
 export default function Contact({ data }) {
   const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
@@ -27,27 +28,35 @@ export default function Contact({ data }) {
           }}
         >
           <div className={s.left}>
-            <Scrollytelling.Stagger
-              overlap={0.2}
-              tween={{
-                start: 0,
-                end: 100,
-                to: { opacity: 1, top: "-20%" },
-              }}
-            >
-              {/* <div className={s.ethosImage}>
+            {/* <div className={s.ethosImage}>
                 <img src={ethosImage.url} alt={ethosImage.title} />
               </div> */}
+            <Scrollytelling.Animation
+              tween={{
+                start: 60,
+                end: 90,
+                to: { opacity: 1, top: 20 },
+              }}
+            >
               <div className={s.outroImage}>
                 <img src={outroImage.url} alt={outroImage.title} />
               </div>
+            </Scrollytelling.Animation>
+            <Locations />
+            <Scrollytelling.Animation
+              tween={{
+                start: 80,
+                end: 100,
+                to: { opacity: 1, top: "500px" },
+              }}
+            >
               <div className={s.outroCollageImage}>
                 <img
                   src={outroCollageImage.url}
                   alt={outroCollageImage.title}
                 />
               </div>
-            </Scrollytelling.Stagger>
+            </Scrollytelling.Animation>
           </div>
           <div className={s.right}>
             <Scrollytelling.Stagger
