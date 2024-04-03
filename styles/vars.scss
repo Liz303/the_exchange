@@ -223,7 +223,7 @@ $three-fourths: calc(100vw * 3 / 4);
 
 @mixin micro() {
   font-family: $header-font-family;
-  font-weight: 100;
+  font-weight: 500;
   font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
   &.header {
       font-family: $subhead-font-family;
@@ -232,13 +232,13 @@ $three-fourths: calc(100vw * 3 / 4);
 
 @mixin annoText() {
   font-family: $header-font-family;
-  font-weight: 100;
+  font-weight: 500;
   font-size: calc(8pt + (12 - 8) * ((100vw - 300px) / (1600 - 300)));
 }
 
 @mixin link() {
   font-family: $header-font-family;
-  font-weight: 100;
+  font-weight: 500;
   font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
   &.header {
       font-family: $subhead-font-family;
@@ -254,9 +254,10 @@ $three-fourths: calc(100vw * 3 / 4);
 
 @mixin script() {
   font-family: $header-font-family;
-  font-weight: 100;
+  font-weight: 300;
   font-style: $header-font-style;
   font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 0.025em;
   line-height: 100%;
 }
 
