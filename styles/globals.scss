@@ -76,6 +76,17 @@ button {
       }
     }
   }
+  &.glitch-no-underline-white {
+    color: $black;
+    display: block;
+    position: relative;
+    &:hover {
+      span {
+        animation: glitchText 0.4s linear;
+        color: $gold;
+      }
+    }
+  }
   &.glitch {
     position: relative;
     &:before {
