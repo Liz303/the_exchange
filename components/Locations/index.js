@@ -17,7 +17,7 @@ const Locations = () => {
       tween={{
         start: 30,
         end: 80,
-        to: { opacity: 1, top: 70 },
+        to: { opacity: 1, top: 20 },
       }}
     >
       <div className={s.locationWrap}>
