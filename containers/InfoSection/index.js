@@ -61,7 +61,7 @@ export default function Info({ data }) {
       end={"bottom bottom"}
       // debug={{ markers: true, visualizer: true }}
     >
-      <section className={s.sectionWrap}>
+      <section className={s.sectionWrap} id="info">
         <div
           style={{
             height: "250vh",
@@ -235,10 +235,10 @@ export default function Info({ data }) {
           </Scrollytelling.Pin>
           <Scrollytelling.Animation
             tween={{
-              start: 10, 
-              end: 50, 
+              start: 10,
+              end: 50,
               to: { top: "-100px", left: "20vw" },
-              scrub: true, 
+              scrub: true,
             }}
           >
             <div className={s.one}>
