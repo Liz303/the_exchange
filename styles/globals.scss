@@ -29,6 +29,10 @@ h3 {
 p {
   @include body-font();
   padding: 0;
+  sup {
+    font-size: 0.6rem;
+    line-height: 0rem;
+  }
 }
 
 body {
