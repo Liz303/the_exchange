@@ -27,6 +27,7 @@ const SectionTwo = ({ data }) => {
           height: "100%",
           padding: "10px 80px",
           position: "relative",
+          overflow: "hidden",
         }}
       >
         <div className={s.gridContainer}>

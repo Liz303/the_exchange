@@ -5,11 +5,11 @@ body {
   @include body-font();
   background: $black;
   color: $pureWhite;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
-  overflow-x: clip;
   @include mobile {
     position: relative;
   }
@@ -136,11 +136,12 @@ button {
 }
 
 .pin-style {
-  height: 100vh;
+  // height: 100vh;
   overscroll-behavior: none;
   display: flex;
   flex-wrap: nowrap;
-  width: 1000vh;
+  width: 200vw;
+  overflow: hidden;
 }
 
 // Animations
