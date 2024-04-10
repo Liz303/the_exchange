@@ -20,16 +20,6 @@ const SectionOne = ({ data }) => {
   return (
     <div className={s.sectionOne}>
       <Scrollytelling.Waypoint
-        at={10}
-        scrub={true}
-        tween={{
-          target: ["#ethos-text"],
-          to: { opacity: 1, scale: 1 },
-          duration: 0.75,
-          scrub: true,
-        }}
-      />
-      <Scrollytelling.Waypoint
         at={8}
         scrub={true}
         tween={{
@@ -63,11 +53,18 @@ const SectionOne = ({ data }) => {
           >
             <div>
               <Scrollytelling.Animation
-                tween={{
-                  start: 20,
-                  end: 50,
-                  to: { y: height > 600 ? "-100%" : 0 },
-                }}
+                tween={[
+                  {
+                    start: 10,
+                    end: 20,
+                    to: { opacity: 1, scale: 1 },
+                  },
+                  {
+                    start: 20,
+                    end: 50,
+                    to: { y: height > 600 ? "-100%" : 0 },
+                  },
+                ]}
               >
                 <div className={s.introText} id="ethos-text" ref={textRef}>
                   {documentToReactComponents(copyBlock?.json)}
