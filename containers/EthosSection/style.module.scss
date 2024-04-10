@@ -1,5 +1,7 @@
 @use "@styles/vars";
-
+.sectionOne {
+  position: relative;
+}
 .introText {
   opacity: 0;
   scale: 0.95;
@@ -7,7 +9,7 @@
 }
 
 .two {
-  left: 70vw;
+  right: -50px;
   position: absolute;
   top: 30vh;
   width: 50px;
@@ -55,6 +57,18 @@
     width: 100%;
     height: auto;
   }
+}
+
+.two {
+  right: -10vw;
+  position: absolute;
+  top: 60vh;
+  width: 80px;
+  img {
+      height: auto;
+      width: 100%;
+  }
+
 }
 
 .gridContainer {

@@ -19,7 +19,7 @@ const SectionOne = ({ data }) => {
 
   console.log({ heh: textRef?.current?.clientHeight });
   return (
-    <>
+    <div className={s.sectionOne}>
       <Scrollytelling.Waypoint
         at={5}
         scrub={true}
@@ -78,19 +78,7 @@ const SectionOne = ({ data }) => {
           </Scrollytelling.Animation>
         </div>
       </Scrollytelling.Animation>
-      <Scrollytelling.Waypoint
-        at={5}
-        tween={{
-          target: ["#roman-two"],
-          to: { top: "-100px", left: "100vw" },
-          duration: 2,
-          scrub: true,
-        }}
-      />
-
-      <div className={s.two} id="roman-two">
-        <img src="/images/II.png" alt="Roman numeral II" />
-      </div>
+      
       <Scrollytelling.Animation
         tween={{
           scrub: true,
@@ -107,7 +95,19 @@ const SectionOne = ({ data }) => {
         </div>
       </Scrollytelling.Animation>
       <Scrollytelling.Animation
-        tween={{ scrub: true, start: 20, end: 60, to: { top: "-50%" } }}
+        tween={{
+          start: 0, 
+          end: 50, 
+          to: { top: "-30%", right: "40vw" },
+          scrub: true, 
+        }}
+      >
+        <div className={s.two}>
+          <img src="/images/II.png" alt="Roman numeral II" />
+        </div>
+      </Scrollytelling.Animation>
+      <Scrollytelling.Animation
+        tween={{ scrub: true, start: 32, end: 60, to: { top: "-50%" } }}
       >
         <div className={s.ethosCollageTwo}>
           <img
@@ -128,7 +128,7 @@ const SectionOne = ({ data }) => {
           <img src={illustration1.url} alt={illustration1.title} />
         </div>
       </Scrollytelling.Animation>
-    </>
+    </div>
   );
 };
 
