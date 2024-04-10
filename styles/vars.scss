@@ -182,7 +182,7 @@ $three-fourths: calc(100vw * 3 / 4);
   font-size: 16pt;
   font-size: calc(32pt + (35 - 32) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0rem;
-  line-height: 100%;
+  line-height: 110%;
 }
 
 //  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
