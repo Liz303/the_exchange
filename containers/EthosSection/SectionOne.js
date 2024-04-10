@@ -118,8 +118,8 @@ const SectionOne = ({ data }) => {
       <Scrollytelling.Animation
         tween={{
           scrub: true,
-          start: 18,
-          end: 50,
+          start: 50,
+          end: 60,
           to: { opacity: 0 },
         }}
       >
