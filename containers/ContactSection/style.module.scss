@@ -17,9 +17,10 @@
 }
 
 .left {
- @include vars.five-twelfths();
- min-height: calc(100vh - 100px);
+  @include vars.five-twelfths();
+  min-height: calc(100vh - 100px);
   position: relative;
+  
 }
 
 .right {

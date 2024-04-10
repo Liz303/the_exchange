@@ -13,6 +13,8 @@
       stroke-miterlimit: 10;
       stroke-dasharray: 500;
       stroke-dashoffset: 500;
-     
+      .hidden {
+        display: none;
+      }
     }
   }

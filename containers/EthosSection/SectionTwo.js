@@ -5,14 +5,13 @@ import { numberArray } from "@/hooks/numbersArray";
 import getSeasonContent from "@/utils/getSeasonContent";
 import PlateSketch from "@/components/EthosSVGs/PlateSketch";
 
-const SectionTwo = ({ data }) => {
+const SectionTwo = ({ data, season }) => {
   const {
     annotationsCollection,
     illustration2,
     ethosCollageElement3,
     ethosImage,
-    largePullText,
-    season,
+    largePullText
   } = data;
   return (
     <Scrollytelling.Animation
