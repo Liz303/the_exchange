@@ -12,7 +12,7 @@ export default function Ethos({ data }) {
       // debug={{ markers: true, vizualizer: true }}
       scrub={true}
     >
-      <section id="ethos">
+      <section id="ethos" className={s.ethosSection}>
         <Scrollytelling.Waypoint
           at={99}
           onCall={() =>

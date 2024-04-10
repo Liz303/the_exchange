@@ -117,10 +117,21 @@ export default function Contact({ data }) {
                   <SheepHeadSvg />
                 </div>
                 </Scrollytelling.Animation>
-             
-             
-              <FromSvg />
+                <FromSvg />
+                <Scrollytelling.Animation
+                  tween={{
+                    start: 70, 
+                    end: 100, 
+                    to: { top: "-120px", right: "9.5vw" },
+                    scrub: true, 
+                  }}
+                >
+                  <div className={s.three}>
+                    <img src="/images/III.png" alt="Roman numeral III" />
+                  </div>
+                </Scrollytelling.Animation>
             </div>
+           
           </div>
         </div>
       </Scrollytelling.Root>

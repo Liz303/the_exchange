@@ -56,6 +56,16 @@
         }
       }
     }
+    .three {
+      right: -60vw;
+      position: absolute;
+      top: 60vh;
+      width: 70px;
+      img {
+          height: auto;
+          width: 100%;
+      }
+    }
   }
 }
 

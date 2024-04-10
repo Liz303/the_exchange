@@ -233,19 +233,18 @@ export default function Info({ data }) {
               </div>
             </div>
           </Scrollytelling.Pin>
-          <Scrollytelling.Waypoint
-            at={15}
+          <Scrollytelling.Animation
             tween={{
-              target: ["#roman-one"],
-              to: { top: "-100px", left: "5vw" },
-              duration: 2,
-              scrub: true,
+              start: 10, 
+              end: 50, 
+              to: { top: "-100px", left: "20vw" },
+              scrub: true, 
             }}
-          />
-
-          <div className={s.one} id="roman-one">
-            <img src="/images/I.png" alt="Roman numeral I" />
-          </div>
+          >
+            <div className={s.one}>
+              <img src="/images/I.png" alt="Roman numeral I" />
+            </div>
+          </Scrollytelling.Animation>
           {infoCollageElement1 && infoCollageElement1.url ? (
             <Scrollytelling.Animation
               tween={{
