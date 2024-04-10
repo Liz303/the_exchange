@@ -63,17 +63,17 @@ const NewsletterSubscribe = ({ status, message, onValidated }) => {
             </span>
           </button>
         </form>
+        {status === "sending" && <p>Sending...</p>}
+        {status === "error" || error ? (
+          <p
+            className="newsletter-form-error"
+            dangerouslySetInnerHTML={{ __html: error || getMessage(message) }}
+          />
+        ) : null}
+        {status === "success" && status !== "error" && !error && (
+          <p dangerouslySetInnerHTML={{ __html: decode(message) }} />
+        )}
       </div>
-      {status === "sending" && <p>Sending...</p>}
-      {status === "error" || error ? (
-        <p
-          className="newsletter-form-error"
-          dangerouslySetInnerHTML={{ __html: error || getMessage(message) }}
-        />
-      ) : null}
-      {status === "success" && status !== "error" && !error && (
-        <p dangerouslySetInnerHTML={{ __html: decode(message) }} />
-      )}
     </div>
   );
 };
