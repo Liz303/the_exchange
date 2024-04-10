@@ -23,7 +23,7 @@ export default function Contact({ data }) {
       >
         <div
           className={s.contactWrapper}
-          style={{ minHeight: "100vh"}}
+          style={{ minHeight: "100vh", paddingTop: "50vh" }}
         >
           <div className={s.left}>
             {/* <div className={s.ethosImage}>
@@ -112,26 +112,25 @@ export default function Contact({ data }) {
                   end: 90,
                   to: { opacity: 1, top: "-120px", right: 0 },
                 }}
-                >
+              >
                 <div className={s.sheepSvgContainer}>
                   <SheepHeadSvg />
                 </div>
-                </Scrollytelling.Animation>
-                <FromSvg />
-                <Scrollytelling.Animation
-                  tween={{
-                    start: 70, 
-                    end: 100, 
-                    to: { top: "-120px", right: "9.5vw" },
-                    scrub: true, 
-                  }}
-                >
-                  <div className={s.three}>
-                    <img src="/images/III.png" alt="Roman numeral III" />
-                  </div>
-                </Scrollytelling.Animation>
+              </Scrollytelling.Animation>
+              <FromSvg />
+              <Scrollytelling.Animation
+                tween={{
+                  start: 70,
+                  end: 100,
+                  to: { top: "-120px", right: "9.5vw" },
+                  scrub: true,
+                }}
+              >
+                <div className={s.three}>
+                  <img src="/images/III.png" alt="Roman numeral III" />
+                </div>
+              </Scrollytelling.Animation>
             </div>
-           
           </div>
         </div>
       </Scrollytelling.Root>

@@ -20,7 +20,7 @@ const SectionOne = ({ data }) => {
   return (
     <div className={s.sectionOne}>
       <Scrollytelling.Waypoint
-        at={5}
+        at={10}
         scrub={true}
         tween={{
           target: ["#ethos-text"],
@@ -30,7 +30,7 @@ const SectionOne = ({ data }) => {
         }}
       />
       <Scrollytelling.Waypoint
-        at={5}
+        at={8}
         scrub={true}
         tween={{
           target: ["#ethos-illustration"],

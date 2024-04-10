@@ -64,7 +64,7 @@ export default function Info({ data }) {
       <section className={s.sectionWrap} id="info">
         <div
           style={{
-            height: "250vh",
+            height: "300vh",
             position: "relative",
           }}
         >

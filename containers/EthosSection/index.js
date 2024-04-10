@@ -24,7 +24,7 @@ export default function Ethos({ data }) {
         />
         <Scrollytelling.Pin
           childHeight={"100vh"}
-          pinSpacerHeight={"600vh"}
+          pinSpacerHeight={"650vh"}
           pinSpacerClassName={"pin-spacer"}
           childClassName={"pin-style"}
         >
