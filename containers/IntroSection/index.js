@@ -123,7 +123,7 @@ export default function Intro({ data }) {
   };
 
   return (
-    <section>
+    <section id="intro">
       <Scrollytelling.Root scrub={true} start={"top top"} end={"bottom bottom"}>
         <div
           style={{

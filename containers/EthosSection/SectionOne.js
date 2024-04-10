@@ -17,7 +17,6 @@ const SectionOne = ({ data }) => {
 
   const height = textRef?.current?.clientHeight;
 
-  console.log({ heh: textRef?.current?.clientHeight });
   return (
     <div className={s.sectionOne}>
       <Scrollytelling.Waypoint
@@ -78,7 +77,7 @@ const SectionOne = ({ data }) => {
           </Scrollytelling.Animation>
         </div>
       </Scrollytelling.Animation>
-      
+
       <Scrollytelling.Animation
         tween={{
           scrub: true,
@@ -96,10 +95,10 @@ const SectionOne = ({ data }) => {
       </Scrollytelling.Animation>
       <Scrollytelling.Animation
         tween={{
-          start: 0, 
-          end: 50, 
+          start: 0,
+          end: 50,
           to: { top: "-30%", right: "40vw" },
-          scrub: true, 
+          scrub: true,
         }}
       >
         <div className={s.two}>
