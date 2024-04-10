@@ -4,6 +4,8 @@ import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Spring24 from "@/components/IntroSVGs/Spring/Spring_24";
 
+import getSeasonContent from "@/utils/getSeasonContent";
+
 export default function Intro({ data }) {
   const {
     season,
@@ -79,7 +81,7 @@ export default function Intro({ data }) {
               {aboutText && aboutText.json
                 ? documentToReactComponents(aboutText.json)
                 : ""}
-              <Spring24 />
+              {getSeasonContent("intro", season)}
             </div>
           </Scrollytelling.Animation>
           {illustrationOne && illustrationOne.url

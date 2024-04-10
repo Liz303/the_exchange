@@ -122,11 +122,11 @@ export default function Info({ data }) {
                     {accoladesTitle && (
                       <div className={s.accoladeTitle}>{accoladesTitle}</div>
                     )}
-              
+
                     {accoladesCopyBlock && accoladesCopyBlock.json
                       ? documentToReactComponents(accoladesCopyBlock.json)
                       : ""}
-              
+
                     {accoladesImage && accoladesImage.url ? (
                       <Scrollytelling.Animation
                         tween={{

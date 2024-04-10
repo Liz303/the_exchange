@@ -52,7 +52,7 @@ const Header = () => {
     <>
       <div className={s.header} ref={headerRef}>
         <button onClick={() => onClick("info")} className={`${s.link} glitch`}>
-         <span> INFO </span>
+          <span> INFO </span>
         </button>
         <a className={`${s.reserve} glitch`} href="/" alt="Reserve">
           <span>{`{RESERVE}`}</span>

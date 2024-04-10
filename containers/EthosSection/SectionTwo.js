@@ -2,6 +2,7 @@ import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { numberArray } from "@/hooks/numbersArray";
+import getSeasonContent from "@/utils/getSeasonContent";
 
 const SectionTwo = ({ data }) => {
   const {
@@ -10,6 +11,7 @@ const SectionTwo = ({ data }) => {
     ethosCollageElement3,
     ethosImage,
     largePullText,
+    season,
   } = data;
   return (
     <Scrollytelling.Animation
@@ -37,23 +39,20 @@ const SectionTwo = ({ data }) => {
             }}
           >
             {annotationsCollection?.items?.map((annotation, index) => {
-      
-  
               return (
                 <div key={index} className={s.gridItem}>
-                    <div className={s.number}>
+                  <div className={s.number}>
                     <img
                       src={numberArray[index].src}
                       alt={`number-${index + 1}`}
                     />
-                    </div>
+                  </div>
                   <div>
-               
                     {documentToReactComponents(
                       annotation?.annotationCopy?.json
                     )}
                   </div>
-                 
+
                   {annotation?.annotationImage && (
                     <div className={s.annotationImage}>
                       <img
@@ -79,29 +78,36 @@ const SectionTwo = ({ data }) => {
           <div className={s.ethosImage}>
             <img src={ethosImage.url} alt={ethosImage.title} />
           </div>
+          <div className={s.illustration2}>
+            <img src={illustration2.url} alt={illustration2.title} />
+          </div>
+          <div className={s.seasonImg}>{getSeasonContent("ethos", season)}</div>
+        </Scrollytelling.Stagger>
+        <Scrollytelling.Animation
+          tween={{
+            start: 70,
+            end: 99,
+            to: { top: 0, left: "50%", rotate: 0 },
+          }}
+        >
           <div className={s.ethosCollageElement3}>
             <img
               src={ethosCollageElement3.url}
               alt={ethosCollageElement3.title}
             />
           </div>
-          <div className={s.illustration2}>
-            <img src={illustration2.url} alt={illustration2.title} />
-          </div>
-        </Scrollytelling.Stagger>
+        </Scrollytelling.Animation>
 
         <div className={s.pullTextWrap}>
           <Scrollytelling.Animation
             tween={{
               start: 55,
               end: 80,
-              to: { y: 0 },
+              to: { opacity: 1, y: 0 },
             }}
           >
             <div className={s.pullTextCopy}>
-              <h2>
-                {largePullText && largePullText}
-              </h2>
+              <h2>{largePullText && largePullText}</h2>
             </div>
           </Scrollytelling.Animation>
         </div>
