@@ -141,20 +141,10 @@ export default function Intro({ data }) {
                 delay: 1,
               }}
             />
-            <Scrollytelling.Animation
-              tween={{
-                start: 2,
-                end: 10,
-                fromTo: [
-                  { opacity: 1, scale: 1 },
-                  { opacity: 0, scale: 0.75 },
-                ],
-              }}
-            >
-              <h1 className={s.title} id="main-title">
-                The Wolf's Tailor
-              </h1>
-            </Scrollytelling.Animation>
+
+            <h1 className={s.title} id="main-title">
+              The Wolf's Tailor
+            </h1>
             {renderPinnedTextContainer()}
           </div>
           {collageElement2Small && collageElement2Small.url
