@@ -12,6 +12,12 @@ const SectionOne = ({ data }) => {
     ethosCollageElement2,
     illustration1,
   } = data;
+
+  const textRef = useRef(null);
+
+  const height = textRef?.current?.clientHeight;
+
+  console.log({ heh: textRef?.current?.clientHeight });
   return (
     <>
       <Scrollytelling.Waypoint
@@ -45,7 +51,7 @@ const SectionOne = ({ data }) => {
           style={{
             width: "100vw",
             padding: "80px 90px",
-            overflow: "hidden",
+            height: "auto",
           }}
         >
           <FlipperTitle />
@@ -56,8 +62,18 @@ const SectionOne = ({ data }) => {
               to: { opacity: 0, y: 50 },
             }}
           >
-            <div className={s.introText} id="ethos-text">
-              {documentToReactComponents(copyBlock?.json)}
+            <div>
+              <Scrollytelling.Animation
+                tween={{
+                  start: 20,
+                  end: 50,
+                  to: { y: height > 600 ? "-100%" : 0 },
+                }}
+              >
+                <div className={s.introText} id="ethos-text" ref={textRef}>
+                  {documentToReactComponents(copyBlock?.json)}
+                </div>
+              </Scrollytelling.Animation>
             </div>
           </Scrollytelling.Animation>
         </div>
