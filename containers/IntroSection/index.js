@@ -14,7 +14,7 @@ export default function Intro({ data }) {
     collageElement2Small,
     illustrationOne,
     illustrationTwo,
-  } = data.introSection;
+  } = data;
 
   const renderIllustrationOne = () => {
     return (

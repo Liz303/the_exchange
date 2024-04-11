@@ -5,7 +5,7 @@ import s from "./style.module.scss";
 import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
 
-export default function Ethos({ data, season }) {
+export default function Ethos({ data }) {
   return (
     <Scrollytelling.Root
       defaults={{ ease: "none" }}
@@ -28,8 +28,8 @@ export default function Ethos({ data, season }) {
           pinSpacerClassName={"pin-spacer"}
           childClassName={"pin-style"}
         >
-          <SectionOne data={data?.ethosSection} />
-          <SectionTwo data={data?.ethosSection} season={season} />
+          <SectionOne data={data} />
+          <SectionTwo data={data} />
         </Scrollytelling.Pin>
       </section>
     </Scrollytelling.Root>

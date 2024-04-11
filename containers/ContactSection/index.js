@@ -10,11 +10,10 @@ import Locations from "@components/Locations";
 import SheepHeadSvg from "@/components/ContactSVGs/SheepHeadSvg";
 import FromSvg from "@/components/ContactSVGs/From/from";
 
-
 export default function Contact({ data }) {
   const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
 
-  const { outroImage, outroCollageImage } = data?.outroSection || {};
+  const { outroImage, outroCollageImage } = data || {};
   return (
     <section>
       <Scrollytelling.Root
@@ -41,9 +40,9 @@ export default function Contact({ data }) {
                 <img src={outroImage.url} alt={outroImage.title} />
               </div>
             </Scrollytelling.Animation>
-              
+
             <Locations />
-            
+
             <Scrollytelling.Animation
               tween={{
                 start: 80,
