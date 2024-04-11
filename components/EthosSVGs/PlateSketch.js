@@ -15,8 +15,8 @@ export default function PlateSketch() {
           <Scrollytelling.Stagger
             overlap={0.2}
             tween={{
-              start: 70,
-              end: 75,
+              start: 90,
+              end: 95,
               to: { strokeDashoffset: 0 },
               duration: 2,
             }}
@@ -67,8 +67,8 @@ export default function PlateSketch() {
           <Scrollytelling.Stagger
             overlap={0.2}
             tween={{
-              start: 75,
-              end: 80,
+              start: 90,
+              end: 95,
               to: { strokeDashoffset: 0 },
               duration: 2,
             }}
