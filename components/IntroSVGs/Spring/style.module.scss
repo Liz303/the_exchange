@@ -17,4 +17,8 @@
         display: none;
       }
     }
+    @include vars.x-small {
+      max-width: unset;
+      width: vars.$seven-twelfths;
+    }
   }

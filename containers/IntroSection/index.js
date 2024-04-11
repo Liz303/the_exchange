@@ -2,9 +2,9 @@
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import Spring24 from "@/components/IntroSVGs/Spring/Spring_24";
 
 import getSeasonContent from "@/utils/getSeasonContent";
+import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
 export default function Intro({ data }) {
   const {
@@ -15,6 +15,7 @@ export default function Intro({ data }) {
     illustrationOne,
     illustrationTwo,
   } = data;
+  const { winWidth } = useWindowDimensions();
 
   const renderIllustrationOne = () => {
     return (
@@ -65,7 +66,7 @@ export default function Intro({ data }) {
         <Scrollytelling.Pin
           childHeight={"100vh"}
           pinSpacerHeight={"250vh"}
-          top={180}
+          top={winWidth < 430 ? 90 : winWidth < 820 ? 120 : 180}
         >
           <Scrollytelling.Animation
             tween={{
