@@ -9,7 +9,7 @@ export default function Ethos({ data }) {
   return (
     <Scrollytelling.Root
       defaults={{ ease: "none" }}
-      debug={{ markers: true, vizualizer: true }}
+      // debug={{ markers: true, vizualizer: true }}
       scrub={true}
     >
       <section id="ethos" className={s.ethosSection}>
