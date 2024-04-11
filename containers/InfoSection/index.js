@@ -6,7 +6,7 @@ import SheepBug from "@/components/InfoSVGs/sheep_bug";
 
 export default function Info({ data }) {
   const {
-    fableText,
+    fableTextNew,
     infoCollageElement1,
     infoCollageElement2,
     accoladesSection,
@@ -17,6 +17,14 @@ export default function Info({ data }) {
   const accoladesArray = accoladesSection?.accoladesCollection?.items;
   const accoladesImage = accoladesSection?.accoladesImage;
   const hoursArray = hoursOfOperationCollection?.items;
+
+  const fableTextLength = () => {
+    let textLength = 0;
+    fableTextNew.json.forEach(paragraph => {
+      textLength += paragraph[0].value.length;
+    });
+    return textLength;
+  }
 
   const renderHours = () => {
     return (
@@ -159,10 +167,14 @@ export default function Info({ data }) {
                   }}
                 >
                   <div className={s.fableWrap}>
-                    <p>{fableText && fableText}</p>
-                    <p>{fableText && fableText}</p>
-                    <p>{fableText && fableText}</p>
-                    <p>{fableText && fableText}</p>
+                  {documentToReactComponents(fableTextNew.json)}
+                  {documentToReactComponents(fableTextNew.json)}
+                  {fableTextLength < 400 && 
+                  documentToReactComponents(fableTextNew.json)
+                  }
+                  {fableTextLength < 400 && 
+                  documentToReactComponents(fableTextNew.json)
+                  }
                   </div>
                 </Scrollytelling.Animation>
               </div>
