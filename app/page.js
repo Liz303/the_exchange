@@ -12,8 +12,8 @@ export default async function Home() {
     <main>
       <Intro data={introData} />
       <Info data={infoData} />
-      <Ethos data={ethosData} />
-      <Contact data={contactData} />
+      <Ethos data={ethosData} season={introData.introSection.season} />
+      <Contact data={contactData}/>
     </main>
   );
 }

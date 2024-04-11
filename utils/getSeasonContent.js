@@ -1,32 +1,38 @@
 /* eslint-disable @next/next/no-img-element */
 import Spring24 from "@/components/IntroSVGs/Spring/Spring_24";
-
-const IMAGE_MAP = {
-  intro: {
-    spring: <Spring24 />,
-    summer: <Spring24 />,
-    winter: <Spring24 />,
-    autumn: <Spring24 />,
-  },
-  ethos: {
-    spring: <img src="/images/Spring.png" alt="Spring" />,
-    summer: <img src="/images/Spring.png" alt="Spring" />,
-    winter: <img src="/images/Spring.png" alt="Spring" />,
-    autumn: <img src="/images/Spring.png" alt="Spring" />,
-  },
-};
+import Summer24 from "@/components/IntroSVGs/Spring/Summer";
+import Fall24 from "@/components/IntroSVGs/Spring/Fall";
+import Winter24 from "@/components/IntroSVGs/Spring/Winter";
 
 export default function getSeasonContent(type, season) {
-  if (IMAGE_MAP[type] && IMAGE_MAP[type][season]) {
-    return IMAGE_MAP[type][season];
-  } else {
-    switch (type) {
-      case "intro":
-        return <Spring24 />;
-      case "ethos":
-        return <img src="/images/Spring.png" alt="Spring" />;
-      default:
-        return "Image not found";
+
+    if (type == "intro") {
+      switch(season) {
+        case "Spring":
+          return <Spring24 type={type}/>;
+        case "Summer":
+          return <Summer24 type={type} />;
+        case "Fall":
+          return <Fall24 type={type} />;
+        case "Winter":
+          return <Winter24 type={type}/>;
+        default:
+          return "Image not found";
+      }
+    } else if (type  ==  "ethos") {
+      switch(season) {
+        case "Spring":
+          return <img src="/images/Spring.png" alt="Spring" />;
+        case "Summer":
+          return <img src="/images/Spring.png" alt="Spring" />;
+        case "Fall":
+          return <img src="/images/Spring.png" alt="Spring" />;
+        case "Winter":
+          return <img src="/images/Spring.png" alt="Spring" />;
+        default:
+          return "Image not found";
+      }
+    } else {
+      return "Image not found";
     }
   }
-}
