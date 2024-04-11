@@ -183,17 +183,27 @@ $three-fourths: calc(100vw * 3 / 4);
   font-size: calc(32pt + (35 - 32) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0rem;
   line-height: 100%;
+  @include tablet-and-lower() {
+    font-size: calc(28pt + (30 - 28) * ((100vw - 300px) / (1600 - 300)));
+  }
+  @include mobile() {
+    font-size: calc(18pt + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+  }
 }
-
-//  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 
 @mixin h1() {
   @include header-font();
   font-size: 125pt;
   font-size: calc(100pt + (150 - 100) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
+  line-height: 76%;
   margin: 0;
   text-transform: uppercase;
+  @include tablet-and-lower() {
+    font-size: calc(100pt + (130 - 100) * ((100vw - 300px) / (1600 - 300)));
+  }
+  @include mobile() {
+    font-size: calc(80pt + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
+  }
 }
 
 @mixin h2() {
