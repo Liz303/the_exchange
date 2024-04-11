@@ -11,7 +11,7 @@ export default function Info({ data }) {
     infoCollageElement2,
     accoladesSection,
     hoursOfOperationCollection,
-  } = data.infoSection;
+  } = data;
   const accoladesTitle = accoladesSection?.title;
   const accoladesCopyBlock = accoladesSection?.copyBlock;
   const accoladesArray = accoladesSection?.accoladesCollection?.items;
