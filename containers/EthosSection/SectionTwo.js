@@ -3,6 +3,7 @@ import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { numberArray } from "@/hooks/numbersArray";
 import getSeasonContent from "@/utils/getSeasonContent";
+import PlateSketch from "@/components/EthosSVGs/PlateSketch";
 
 const SectionTwo = ({ data }) => {
   const {
@@ -98,6 +99,9 @@ const SectionTwo = ({ data }) => {
             />
           </div>
         </Scrollytelling.Animation>
+        <div className={s.ethosSketch}>
+          <PlateSketch />
+        </div>
 
         <div className={s.pullTextWrap}>
           <Scrollytelling.Animation

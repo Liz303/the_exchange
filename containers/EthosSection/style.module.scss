@@ -156,9 +156,9 @@
 }
 .illustration2 {
   position: absolute;
-  top: 20vh;
-  left: 60vw;
-  width: 600px;
+  bottom: 50px;
+  right: 50px;
+  width: 450px;
   height: auto;
   z-index: 2;
   opacity: 0;
@@ -179,6 +179,16 @@
     width: 100%;
     height: auto;
   }
+}
+
+.ethosSketch {
+  position: absolute;
+  top: 10vh;
+  left: 60vw;
+  width: 260px;
+  display: flex;
+  height: auto;
+  z-index: 2;
 }
 
 .seasonImg {

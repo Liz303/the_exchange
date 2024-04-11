@@ -1,0 +1,10 @@
+@use "@styles/vars";
+.plateSketch {
+  fill: none;
+  stroke: vars.$black;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
