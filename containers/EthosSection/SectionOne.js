@@ -4,6 +4,7 @@ import s from "./style.module.scss";
 import FlipperTitle from "@/components/FlipperTitle";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
 const SectionOne = ({ data }) => {
   const {
@@ -13,6 +14,7 @@ const SectionOne = ({ data }) => {
     illustration1,
   } = data;
 
+  const { winWidth, winHeight } = useWindowDimensions();
   const textRef = useRef(null);
 
   const height = textRef?.current?.clientHeight;
@@ -31,55 +33,73 @@ const SectionOne = ({ data }) => {
       />
       <Scrollytelling.Animation
         tween={{
-          start: 50,
-          end: 100,
+          start: 40,
+          end: 90,
           to: { xPercent: -100, ease: "none" },
         }}
       >
         <div
           style={{
             width: "100vw",
-            padding: "80px 90px",
-            height: "auto",
+            height: "100vh",
+            position: "relative",
+            boxSizing: "border-box",
           }}
         >
-          <FlipperTitle />
-          <Scrollytelling.Animation
-            tween={{
-              start: 50,
-              end: 60,
-              to: { opacity: 0, y: 50 },
-            }}
-          >
-            <div>
-              <Scrollytelling.Animation
-                tween={[
-                  {
-                    start: 10,
-                    end: 20,
-                    to: { opacity: 1, scale: 1 },
+          <div>
+            <Scrollytelling.Animation
+              tween={[
+                {
+                  start: 15,
+                  end: 30,
+                  to: {
+                    top:
+                      textRef?.current?.clientHeight > winHeight
+                        ? -textRef?.current?.clientHeight / 2
+                        : 0,
                   },
-                  {
-                    start: 20,
-                    end: 50,
-                    to: { y: height > 600 ? "-100%" : 0 },
-                  },
-                ]}
+                },
+                {
+                  start: 50,
+                  end: 60,
+                  to: { opacity: 0, y: 50 },
+                },
+              ]}
+            >
+              <div
+                ref={textRef}
+                style={{
+                  position: "absolute",
+                  padding: "80px 90px",
+                  width: "100%",
+                  top: 0,
+                  left: 0,
+                }}
               >
-                <div className={s.introText} id="ethos-text" ref={textRef}>
-                  {documentToReactComponents(copyBlock?.json)}
-                </div>
-              </Scrollytelling.Animation>
-            </div>
-          </Scrollytelling.Animation>
+                <FlipperTitle />
+                <Scrollytelling.Animation
+                  tween={[
+                    {
+                      start: 12,
+                      end: 15,
+                      to: { opacity: 1, scale: 1 },
+                    },
+                  ]}
+                >
+                  <div className={s.introText} id="ethos-text">
+                    {documentToReactComponents(copyBlock?.json)}
+                  </div>
+                </Scrollytelling.Animation>
+              </div>
+            </Scrollytelling.Animation>
+          </div>
         </div>
       </Scrollytelling.Animation>
-
       <Scrollytelling.Animation
         tween={{
           scrub: true,
-          start: 10,
-          end: 100,
+          start: 20,
+          end: 50,
           to: { left: "-50%", top: "-10vh" },
         }}
       >

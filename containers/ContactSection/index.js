@@ -18,7 +18,7 @@ export default function Contact({ data }) {
     <section>
       <Scrollytelling.Root
         scrub={true}
-        start={"top bottom"}
+        start={"top 80%"}
         // debug={{ markers: true, vizualizer: true }}
       >
         <div

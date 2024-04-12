@@ -18,7 +18,7 @@ const SectionTwo = ({ data }) => {
     <Scrollytelling.Animation
       tween={{
         start: 50,
-        end: 100,
+        end: 80,
         to: { xPercent: -100, ease: "none" },
       }}
     >
@@ -35,8 +35,8 @@ const SectionTwo = ({ data }) => {
           <Scrollytelling.Stagger
             overlap={0.2}
             tween={{
-              start: 65,
-              end: 85,
+              start: 55,
+              end: 70,
               to: { opacity: 1, y: 0 },
             }}
           >
@@ -72,23 +72,23 @@ const SectionTwo = ({ data }) => {
         <Scrollytelling.Stagger
           overlap={0.2}
           tween={{
-            start: 95,
-            end: 100,
+            start: 76,
+            end: 85,
             to: { opacity: 1, y: 0 },
           }}
         >
+          <div className={s.seasonImg}>{getSeasonContent("ethos", season)}</div>
           <div className={s.ethosImage}>
             <img src={ethosImage.url} alt={ethosImage.title} />
           </div>
           <div className={s.illustration2}>
             <img src={illustration2.url} alt={illustration2.title} />
           </div>
-          <div className={s.seasonImg}>{getSeasonContent("ethos", season)}</div>
         </Scrollytelling.Stagger>
         <Scrollytelling.Animation
           tween={{
-            start: 70,
-            end: 99,
+            start: 60,
+            end: 90,
             to: { top: 0, left: "50%", rotate: 0 },
           }}
         >
@@ -106,8 +106,8 @@ const SectionTwo = ({ data }) => {
         <div className={s.pullTextWrap}>
           <Scrollytelling.Animation
             tween={{
-              start: 55,
-              end: 80,
+              start: 80,
+              end: 90,
               to: { opacity: 1, y: 0 },
             }}
           >

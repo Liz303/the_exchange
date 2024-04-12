@@ -10,6 +10,7 @@ export default function Ethos({ data }) {
     <Scrollytelling.Root
       defaults={{ ease: "none" }}
       // debug={{ markers: true, vizualizer: true }}
+      end="bottom 20%"
       scrub={true}
     >
       <section id="ethos" className={s.ethosSection}>
@@ -24,7 +25,7 @@ export default function Ethos({ data }) {
         />
         <Scrollytelling.Pin
           childHeight={"100vh"}
-          pinSpacerHeight={"650vh"}
+          pinSpacerHeight={"800vh"}
           pinSpacerClassName={"pin-spacer"}
           childClassName={"pin-style"}
         >
