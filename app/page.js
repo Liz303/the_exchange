@@ -10,8 +10,8 @@ export default async function Home() {
   const { introData, infoData, ethosData, contactData } = content;
   return (
     <main>
-      <Intro data={introData} />
-      <Info data={infoData} />
+      {/* <Intro data={introData} /> */}
+      {/* <Info data={infoData} /> */}
       <Ethos data={ethosData} />
       <Contact data={contactData} />
     </main>

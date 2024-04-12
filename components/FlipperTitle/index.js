@@ -6,7 +6,7 @@ import s from "./style.module.scss";
 
 const FlipperTitle = () => {
   return (
-    <div style={{ height: "300px", paddingBottom: "80px" }}>
+    <div>
       <div className={s.wrap}>
         <div className={s.top}>
           <Scrollytelling.Waypoint

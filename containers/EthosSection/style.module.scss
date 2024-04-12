@@ -1,4 +1,5 @@
 @use "@styles/vars";
+
 .sectionOne {
   position: relative;
 }
@@ -114,6 +115,10 @@
       width: auto;
       object-fit: contain;
     }
+
+    @include vars.medium-and-lower() {
+      height: 20vh;
+    }
   }
 
   &:nth-child(1) {
@@ -139,6 +144,24 @@
     grid-column: 1;
     grid-row: 3;
   }
+
+  @include vars.medium-and-lower() {
+    padding: 13px 36px 13px 60px;
+
+    .number {
+      height: auto;
+      left: 10px;
+      position: absolute;
+      top: 20px;
+      width: 32px;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .ethosImage {
@@ -153,6 +176,9 @@
     width: 100%;
     height: auto;
   }
+  @include vars.medium-and-lower() {
+    width: 40vw;
+  }
 }
 .illustration2 {
   position: absolute;
@@ -165,6 +191,9 @@
   img {
     width: 100%;
     height: auto;
+  }
+  @include vars.medium-and-lower() {
+    width: 15vw;
   }
 }
 
@@ -179,6 +208,9 @@
     width: 100%;
     height: auto;
   }
+  @include vars.medium-and-lower() {
+    width: 35vw;
+  }
 }
 
 .ethosSketch {
@@ -189,6 +221,9 @@
   display: flex;
   height: auto;
   z-index: 2;
+  @include vars.medium-and-lower() {
+    width: 15vw;
+  }
 }
 
 .seasonImg {
@@ -220,4 +255,81 @@
 }
 .pullTextCopy {
   transform: translateY(200%);
+}
+
+.mobileFlipperWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  padding: 40px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.mobileIntroText {
+  padding: 36px;
+  margin-top: -40vh;
+  opacity: 0;
+  scale: 0.95;
+  text-align: justify;
+  p {
+    line-height: 110%;
+  }
+}
+
+.mobileCollage1 {
+  position: absolute;
+  top: 150%;
+  left: -20%;
+  width: 70%;
+  img {
+    max-width: 100%;
+  }
+}
+
+.mobileCollage2 {
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  width: 70%;
+  position: relative;
+  img {
+    max-width: 100%;
+  }
+}
+
+.mobileTwo {
+  left: -10vw;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.mobileWolf {
+  width: 60%;
+  padding-left: 20px;
+  opacity: 0;
+  scale: 0.95;
+  img {
+    z-index: 2;
+    width: 100%;
+  }
+}
+
+.mobileEthosImg {
+  width: 100%;
+  opacity: 0;
+  scale: 0.95;
+  img {
+    z-index: 1;
+    width: 100%;
+  }
 }

@@ -2,7 +2,7 @@
 
 .contactWrapper {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  @include vars.grid-wrap();
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   padding: 120px 90px 0 90px;
@@ -20,11 +20,19 @@
   @include vars.five-twelfths();
   min-height: calc(100vh - 100px);
   position: relative;
-  
+  @include vars.medium-and-lower() {
+    @include vars.full();
+    order: 2;
+  }
 }
 
 .right {
   @include vars.seven-twelfths();
+  @include vars.medium-and-lower() {
+    @include vars.full();
+    order: 1;
+  }
+
   a {
     width: auto;
     @include vars.infoText();
@@ -63,8 +71,8 @@
       top: 60vh;
       width: 70px;
       img {
-          height: auto;
-          width: 100%;
+        height: auto;
+        width: 100%;
       }
     }
   }
