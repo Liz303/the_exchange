@@ -1,9 +1,26 @@
 @use "@styles/vars";
 .sectionWrap {
     position: relative;
+    .hideMobile {
+        @include vars.x-small {
+             display: none;
+        }
+     }
+     .showMobile {
+        @include vars.micro();
+        display: none;
+        font-weight: 300;
+        @include vars.x-small() {
+            display: block;
+        }
+    }
     .infoSection {
         @include vars.grid-wrap();
         padding-right: 0;
+        @include vars.x-small {
+            @include vars.flexbox();
+            @include vars.flex-flow(row wrap)
+        }
         .colOne {
             @include vars.flexbox();
             @include vars.flex-flow(row wrap);
@@ -11,10 +28,15 @@
             border-right: 50px solid transparent;
             border-image: url(../../public/images/1_Line_1.svg) 100 stretch;
             height: 100vh;
+          
             .top {
                 .iconWrap {
                     max-width: 40px;
                     margin: 0 auto;
+                    @include vars.x-small {
+                        max-width: 100px;
+                        margin-bottom: 60px;
+                    }
                 }
 
                 p  {
@@ -37,13 +59,26 @@
                         height: auto;
                         object-fit: contain;
                         width: 100%;
-
+                    }
+                    @include vars.x-small() {
+                    width: vars.$eight-twelfths;
                     }
                 }
+              
             }
             p {
                 @include vars.micro();
             }
+            @include vars.small() {
+                @include vars.five-twelfths();
+            }
+            @include vars.x-small {
+                border: none;
+                height: auto;
+                margin-top: 30px;
+                order: 3;
+            }
+            
     
         }
         .colTwo {
@@ -61,6 +96,9 @@
                     @include vars.script();
                     text-align: justify;
                 }
+            }
+            @include vars.small() {
+                display: none;
             }
         }
         .colThree {
@@ -82,6 +120,9 @@
                         object-fit: contain;
                         width: 100%;  
                     }
+                    @include vars.x-small() {
+                        transform: translate(120vw) rotate(45deg);    
+                    }
                 }
             }
             a {
@@ -93,11 +134,33 @@
                 opacity: 0;
                 transform: translateY(100px);
                }
+               @include vars.x-small {
+                margin-top: 0;
+               }
             }
+            @include vars.small() {
+                @include vars.six-twelfths();
+            }
+            @include vars.x-small() {
+                border: none;
+                margin-left: 0;
+                order: 1;
+                width: 100%;
+                .address {
+                    display: block; 
+                    margin-top: 30px;
+                    
+                }
+            }
+            .mobileHours {
+                margin-top: 30px;
+                i {
+                    font-style: normal !important;
+                }
+            }
+            
         }
         .colFour {
-            // @include vars.flexbox();
-            // @include vars.flex-flow(row wrap);
             margin-left: -50px;
             width: vars.$one-twelfth;
             position: relative;
@@ -133,7 +196,29 @@
                 }
                
             }
-           
+           @include vars.x-small {
+            margin-top: 60px;
+            margin-left: 0;
+            order: 2;
+            width: 100%;
+            .instagramContainer, .phoneContainer {
+                background: none;
+                bottom: unset;
+                height: auto;
+                position: relative;
+                top: unset;
+                right: unset;
+                transform: rotate(0);
+                width: auto;
+                a {
+                    padding-left: 0px;;
+                }        
+            }
+            .phoneContainer {
+                margin-top: 30px;
+            }
+            
+           }
         }
        
     }
@@ -155,6 +240,12 @@
         img {
             height: auto;
             width: 100%;
+        }
+        @include vars.tablet-and-lower {
+            width: vars.$six-twelfths;
+        }
+        @include vars.x-small {
+            width: vars.$ten-twelfths;
         }
     }
 }

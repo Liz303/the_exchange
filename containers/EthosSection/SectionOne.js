@@ -17,6 +17,11 @@ const SectionOne = ({ data }) => {
   const { winHeight } = useWindowDimensions();
   const textRef = useRef(null);
 
+  const height = textRef?.current?.clientHeight - 80;
+
+  console.log("height ", height);
+  console.log("winHeight ", winHeight);
+
   return (
     <div className={s.sectionOne}>
       <Scrollytelling.Waypoint
@@ -51,10 +56,7 @@ const SectionOne = ({ data }) => {
                   start: 15,
                   end: 30,
                   to: {
-                    top:
-                      textRef?.current?.clientHeight > winHeight
-                        ? -textRef?.current?.clientHeight / 2
-                        : 0,
+                    top: height > winHeight ? -height / 2 : 0,
                   },
                 },
                 {

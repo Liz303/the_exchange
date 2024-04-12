@@ -5,8 +5,8 @@ import "../styles/globals.scss";
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Wolfs Taylor",
-  description: "Wolfs Taylor",
+  title: "The Wolf's Tailor",
+  description: "A tribute to the artisans who crafted sheep’s attire for the cunning wolf. The innovative, multi-course tasting experience at the Wolf’s Tailor revolves around two prominent seasons: warmer months spotlight garden-fresh produce, while cooler months feature imaginative spins on local grains and fermentation. Accompanying our offerings are thoughtfully curated wine, mixed beverage, and zero-proof pairings, crafted from scratch ingredients and conscious spirits. Our ambitious culinary and beverage choices reflect a zero-waste ethos in both kitchen and bar, encompassing skillful techniques and compelling narratives inspired by our team’s journeys and influences.",
   icons: {
     icon: [
       { url: "/favicon-32x32.png" },
@@ -22,15 +22,15 @@ export const metadata = {
   manifest: "https://www.www.thewolfstailor.com/site.webmanifest",
   twitter: {
     card: "summary_large_image",
-    title: "Wolfs Taylor",
-    description: "Wolfs Taylor",
+    title: "The Wolf's Tailor",
+    description: "A tribute to the artisans who crafted sheep’s attire for the cunning wolf. The innovative, multi-course tasting experience at the Wolf’s Tailor revolves around two prominent seasons: warmer months spotlight garden-fresh produce, while cooler months feature imaginative spins on local grains and fermentation. Accompanying our offerings are thoughtfully curated wine, mixed beverage, and zero-proof pairings, crafted from scratch ingredients and conscious spirits. Our ambitious culinary and beverage choices reflect a zero-waste ethos in both kitchen and bar, encompassing skillful techniques and compelling narratives inspired by our team’s journeys and influences.",
     images: ["https://www.www.thewolfstailor.com/og-image.jpg"],
   },
   openGraph: {
-    title: "Wolfs Taylor",
-    description: "Wolfs Taylor",
+    title: "The Wolf's Tailor",
+    description: "A tribute to the artisans who crafted sheep’s attire for the cunning wolf. The innovative, multi-course tasting experience at the Wolf’s Tailor revolves around two prominent seasons: warmer months spotlight garden-fresh produce, while cooler months feature imaginative spins on local grains and fermentation. Accompanying our offerings are thoughtfully curated wine, mixed beverage, and zero-proof pairings, crafted from scratch ingredients and conscious spirits. Our ambitious culinary and beverage choices reflect a zero-waste ethos in both kitchen and bar, encompassing skillful techniques and compelling narratives inspired by our team’s journeys and influences.",
     url: "https://www.www.thewolfstailor.com/",
-    siteName: "Wolfs Taylor",
+    siteName: "The Wolf's Tailor",
     images: [
       {
         url: "https://www.www.thewolfstailor.com/og-image.jpg",
