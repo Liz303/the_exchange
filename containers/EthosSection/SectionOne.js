@@ -17,7 +17,12 @@ const SectionOne = ({ data }) => {
   const { winWidth, winHeight } = useWindowDimensions();
   const textRef = useRef(null);
 
-  const height = textRef?.current?.clientHeight;
+  const height = textRef?.current?.clientHeight - 80;
+
+  console.log("height ", height);
+  console.log("winHeight ", winHeight);
+
+
 
   return (
     <div className={s.sectionOne}>
@@ -54,8 +59,8 @@ const SectionOne = ({ data }) => {
                   end: 30,
                   to: {
                     top:
-                      textRef?.current?.clientHeight > winHeight
-                        ? -textRef?.current?.clientHeight / 2
+                      height > winHeight
+                        ? -height / 2
                         : 0,
                   },
                 },
