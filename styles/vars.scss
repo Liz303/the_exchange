@@ -103,7 +103,7 @@ $three-fourths: calc(100vw * 3 / 4);
   @include medium-and-lower() {
     padding: 0 60px;
   }
-  @include small() {
+  @include x-small() {
     grid-template-columns: repeat(4, 1fr);
     padding: 0 30px;
   }
@@ -224,6 +224,9 @@ $three-fourths: calc(100vw * 3 / 4);
   line-height: 100%;
   margin: 0;
   text-transform: uppercase;
+  @include x-small {
+    text-transform: capitalize;
+  }
 }
 
 @mixin micro() {
@@ -232,6 +235,10 @@ $three-fourths: calc(100vw * 3 / 4);
   font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
   &.header {
     font-family: $subhead-font-family;
+  }
+  @include x-small() {
+    font-weight: 100;
+    font-size: calc(15pt + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   }
 }
 
@@ -268,9 +275,12 @@ $three-fourths: calc(100vw * 3 / 4);
 
 @mixin label() {
   font-family: $body-font-family;
-  font-weight: $body-font-weight;
+  font-weight: 100;
   font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
+  @include x-small() {
+    font-size: calc(12pt + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+  }
 }
 
 // Buttons //
