@@ -31,7 +31,7 @@ const MobileEthos = ({ data }) => {
       <Scrollytelling.Root
         defaults={{ ease: "none" }}
         // debug={{ markers: true, vizualizer: true }}
-        end="bottom 20%"
+        end="bottom 80%"
         scrub={true}
       >
         <section>
@@ -148,9 +148,9 @@ const MobileEthos = ({ data }) => {
             </Scrollytelling.Animation>
 
             <Scrollytelling.Pin
-              childHeight={"70vh"}
-              pinSpacerHeight={"120vh"}
-              top={150}
+              childHeight={"100vh"}
+              pinSpacerHeight={"150vh"}
+              top={50}
             >
               <Scrollytelling.Stagger
                 overlap={0.2}
@@ -204,20 +204,19 @@ const MobileEthos = ({ data }) => {
                 </div>
               </Scrollytelling.Animation>
             </Scrollytelling.Pin>
-
-            <Scrollytelling.Animation
-              tween={{
-                scrub: true,
-                start: 75,
-                end: 85,
-                to: { opacity: 1, scale: 1 },
-              }}
-            >
-              <div className={s.mobileWolf}>
-                <img src={illustration2.url} alt={illustration2.title} />
-              </div>
-            </Scrollytelling.Animation>
           </div>
+          <Scrollytelling.Animation
+            tween={{
+              scrub: true,
+              start: 80,
+              end: 95,
+              to: { opacity: 1, scale: 1 },
+            }}
+          >
+            <div className={s.mobileIllustration}>
+              <img src={illustration2.url} alt={illustration2.title} />
+            </div>
+          </Scrollytelling.Animation>
         </section>
       </Scrollytelling.Root>
     </div>
