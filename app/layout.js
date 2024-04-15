@@ -1,4 +1,5 @@
 import { Manrope } from "next/font/google";
+
 import Header from "@components/Header";
 import "../styles/globals.scss";
 
@@ -71,3 +72,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
