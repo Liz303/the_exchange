@@ -5,7 +5,6 @@ import { numberArray } from "@/hooks/numbersArray";
 
 import FlipperTitle from "@/components/FlipperTitle";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
-import getSeasonContent from "@/utils/getSeasonContent";
 
 import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
@@ -19,8 +18,6 @@ const MobileEthos = ({ data }) => {
     illustration2,
     ethosCollageElement3,
     ethosImage,
-    largePullText,
-    season,
   } = data;
 
   const { winHeight } = useWindowDimensions();

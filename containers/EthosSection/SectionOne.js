@@ -19,9 +19,6 @@ const SectionOne = ({ data }) => {
 
   const height = textRef?.current?.clientHeight - 80;
 
-  console.log("height ", height);
-  console.log("winHeight ", winHeight);
-
   return (
     <div className={s.sectionOne}>
       <Scrollytelling.Waypoint
