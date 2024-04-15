@@ -10,17 +10,17 @@ import Locations from "@components/Locations";
 import SheepHeadSvg from "@/components/ContactSVGs/SheepHeadSvg";
 import FromSvg from "@/components/ContactSVGs/From/from";
 
+import { useWindowDimensions } from "@/hooks/useWindowDimensions";
+
 export default function Contact({ data }) {
   const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
+
+  const { ethosSwap } = useWindowDimensions();
 
   const { outroImage, outroCollageImage } = data || {};
   return (
     <section>
-      <Scrollytelling.Root
-        scrub={true}
-        start={"top 80%"}
-        // debug={{ markers: true, vizualizer: true }}
-      >
+      <Scrollytelling.Root scrub={true} start={"top 80%"}>
         <div
           className={s.contactWrapper}
           style={{ minHeight: "100vh", paddingTop: "50vh" }}
@@ -62,8 +62,8 @@ export default function Contact({ data }) {
             <Scrollytelling.Stagger
               overlap={0.4}
               tween={{
-                start: 65,
-                end: 90,
+                start: ethosSwap ? 25 : 65,
+                end: ethosSwap ? 75 : 90,
                 fromTo: [
                   { opacity: 0, y: 20 },
                   { opacity: 1, y: 0 },

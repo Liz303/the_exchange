@@ -1,4 +1,4 @@
-import { useMemo, useRef } from "react";
+import { useRef } from "react";
 import s from "./style.module.scss";
 
 import FlipperTitle from "@/components/FlipperTitle";
@@ -14,15 +14,13 @@ const SectionOne = ({ data }) => {
     illustration1,
   } = data;
 
-  const { winWidth, winHeight } = useWindowDimensions();
+  const { winHeight } = useWindowDimensions();
   const textRef = useRef(null);
 
   const height = textRef?.current?.clientHeight - 80;
 
   console.log("height ", height);
   console.log("winHeight ", winHeight);
-
-
 
   return (
     <div className={s.sectionOne}>
@@ -58,10 +56,7 @@ const SectionOne = ({ data }) => {
                   start: 15,
                   end: 30,
                   to: {
-                    top:
-                      height > winHeight
-                        ? -height / 2
-                        : 0,
+                    top: height > winHeight ? -height / 2 : 0,
                   },
                 },
                 {
@@ -105,7 +100,7 @@ const SectionOne = ({ data }) => {
           scrub: true,
           start: 20,
           end: 50,
-          to: { left: "-50%", top: "-10vh" },
+          to: { left: "-70%", top: "-50vh" },
         }}
       >
         <div className={s.ethosCollageOne}>

@@ -14,6 +14,7 @@ export const useWindowDimensions = () => {
       winHeight: window.innerHeight,
       isMobile: window.innerWidth <= 768 && window.innerWidth > 430,
       isXSmall: window.innerWidth <= 430,
+      ethosSwap: window.innerWidth <= 1079,
     });
   };
   useEffect(() => {

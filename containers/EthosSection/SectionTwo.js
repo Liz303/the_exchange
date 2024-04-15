@@ -106,8 +106,8 @@ const SectionTwo = ({ data }) => {
         <div className={s.pullTextWrap}>
           <Scrollytelling.Animation
             tween={{
-              start: 80,
-              end: 90,
+              start: 75,
+              end: 85,
               to: { opacity: 1, y: 0 },
             }}
           >
