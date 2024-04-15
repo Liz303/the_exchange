@@ -45,12 +45,6 @@
   }
 }
 
-@mixin x-large() {
-  @media only screen and (min-width: 1999px) {
-    @content;
-  }
-}
-
 // COLORS
 /* Put in your brand colors here */
 $black: #000000;
