@@ -1,5 +1,5 @@
-import Header from "@components/Header";
 import "../styles/globals.scss";
+import Header from "@components/Header";
 
 export const metadata = {
   title: "The Wolf's Tailor",
