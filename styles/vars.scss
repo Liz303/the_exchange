@@ -1,3 +1,8 @@
+// FONTS
+/* Import your fonts here */
+@import url("https://use.typekit.net/sry1mxk.css");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 @mixin x-small() {
   @media only screen and (max-width: 430px) {
     @content;
@@ -52,11 +57,6 @@ $black: #000000;
 $white: #e8e5e2;
 $pureWhite: #ffffff;
 $gold: #978f38;
-
-// FONTS
-/* Import your fonts here */
-@import url("https://use.typekit.net/sry1mxk.css");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 $header-font-family: vendetta, serif;
 $header-font-weight: 500;
