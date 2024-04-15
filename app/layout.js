@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 import Header from "@components/Header";
-import Script from "next/script";
+import Head from 'next/head'
 
 export const metadata = {
   title: "The Wolf's Tailor",
@@ -65,28 +65,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-<link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" as="style" />
-
-<style dangerouslySetInnerHTML={ {
-  __html: `</style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"
-      media="print"
-      onload="this.media='all';"
-    />
-    <style>`
-} }></style>
-
-<noscript>
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
-</noscript>
+      <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+      </Head>
       <body className={` dark-theme`}>
         <Header />
         {children}
