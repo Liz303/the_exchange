@@ -1,5 +1,10 @@
-import "../styles/globals.scss";
+import { Manrope } from "next/font/google";
 import Header from "@components/Header";
+
+import "../styles/globals.scss";
+import "../styles/vars.scss";
+
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 export const metadata = {
   title: "The Wolf's Tailor",
@@ -43,7 +48,7 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.www.thewolfstailor.com/"),
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
@@ -64,7 +69,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` dark-theme`}>
+      <body className={`${manrope.variable} dark-theme`}>
         <Header />
         {children}
       </body>

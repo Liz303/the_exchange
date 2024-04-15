@@ -1,7 +1,7 @@
 // FONTS
 /* Import your fonts here */
 @import url("https://use.typekit.net/sry1mxk.css");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800");
+// @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800");
 
 @mixin x-small() {
   @media only screen and (max-width: 430px) {
@@ -62,11 +62,11 @@ $header-font-family: vendetta, serif;
 $header-font-weight: 500;
 $header-font-style: italic;
 
-$subhead-font-family: "Manrope", sans-serif;
+$subhead-font-family: var(--font-manrope), sans-serif;
 $subhead-font-weight: 400;
 $subhead-font-style: normal;
 
-$body-font-family: "Manrope", sans-serif;
+$body-font-family: var(--font-manrope), sans-serif;
 $body-font-weight: 200;
 $body-font-style: normal;
 
