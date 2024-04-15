@@ -5,6 +5,7 @@ import "../styles/globals.scss";
 import "../styles/vars.scss";
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
+import Head from "next/head";
 
 export const metadata = {
   title: "The Wolf's Tailor",
@@ -69,6 +70,44 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+          as="style"
+        />
+
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `</style>
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+              media="print"
+              onload="this.media='all';"
+            />
+            <style>`,
+          }}
+        ></style>
+
+        <noscript>
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+          />
+        </noscript>
+      </Head>
       <body className={`${manrope.variable} dark-theme`}>
         <Header />
         {children}
