@@ -237,7 +237,7 @@ $three-fourths: calc(100vw * 3 / 4);
     font-family: $subhead-font-family;
   }
   @include x-small() {
-    font-weight: 100;
+    font-weight: 300;
     font-size: calc(15pt + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   }
 }
@@ -259,7 +259,7 @@ $three-fourths: calc(100vw * 3 / 4);
 
 @mixin infoText() {
   font-family: $header-font-family;
-  font-weight: 100;
+  font-weight: 300;
   font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
   text-transform: uppercase;
 }
