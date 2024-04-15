@@ -77,7 +77,6 @@ export default function Info({ data }) {
             <div className={s.iconWrap}>
               <SheepBug />
             </div>
-
             <Scrollytelling.Stagger
               overlap={0.2}
               tween={{
