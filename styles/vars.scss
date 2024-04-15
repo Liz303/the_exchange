@@ -173,6 +173,7 @@ $three-fourths: calc(100vw * 3 / 4);
   font-optical-sizing: auto;
   font-weight: $subhead-font-weight;
   font-style: $subhead-font-style;
+  font-variation-settings: "wght" $subhead-font-weight;
 }
 
 @mixin body-font() {
@@ -183,6 +184,7 @@ $three-fourths: calc(100vw * 3 / 4);
   font-size: calc(32pt + (35 - 32) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0rem;
   line-height: 100%;
+  font-variation-settings: "wght" $body-font-weight;
   @include tablet-and-lower() {
     font-size: calc(28pt + (30 - 28) * ((100vw - 300px) / (1600 - 300)));
   }
@@ -235,6 +237,7 @@ $three-fourths: calc(100vw * 3 / 4);
   font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
   &.header {
     font-family: $subhead-font-family;
+    font-variation-settings: "wght" $subhead-font-weight;
   }
   @include x-small() {
     font-weight: 100;
@@ -254,6 +257,7 @@ $three-fourths: calc(100vw * 3 / 4);
   font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
   &.header {
     font-family: $subhead-font-family;
+    font-variation-settings: "wght" $subhead-font-weight;
   }
 }
 
@@ -276,6 +280,7 @@ $three-fourths: calc(100vw * 3 / 4);
 @mixin label() {
   font-family: $body-font-family;
   font-weight: 100;
+  font-variation-settings: "wght" $body-font-weight;
   font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
   @include x-small() {
