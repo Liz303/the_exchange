@@ -19,10 +19,11 @@ export default function Contact({ data }) {
 
   const { outroImage, outroCollageImage } = data || {};
   return (
-    <section>
+    <section style={{ position: "relative" }}>
       <Scrollytelling.Root
         scrub={true}
         start={isXSmall || isMobile ? "top bottom" : "top 80%"}
+        // debug={{ markers: true, vizualizer: false }}
       >
         <div className={s.contactWrapper}>
           <div className={s.left}>
@@ -59,8 +60,8 @@ export default function Contact({ data }) {
             <Scrollytelling.Stagger
               overlap={isXSmall || isMobile ? 0 : 0.4}
               tween={{
-                start: isXSmall || isMobile ? (isMobile ? 30 : 20) : 65,
-                end: isXSmall || isMobile ? (isMobile ? 95 : 50) : 90,
+                start: isXSmall || isMobile ? (isMobile ? 10 : 10) : 65,
+                end: isXSmall || isMobile ? (isMobile ? 70 : 70) : 90,
                 fromTo: [
                   { opacity: 0, y: 20 },
                   { opacity: 1, y: 0 },

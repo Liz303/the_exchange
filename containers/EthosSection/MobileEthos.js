@@ -23,12 +23,13 @@ const MobileEthos = ({ data }) => {
   const { winHeight, vh } = useWindowDimensions();
   const textRef = useRef(null);
 
+  console.log({ vh });
   return (
     <div id="ethos" style={{ position: "relative", maxWidth: "100vw" }}>
       <Scrollytelling.Root
         defaults={{ ease: "none" }}
         // debug={{ markers: true, vizualizer: true }}
-        end="bottom 80%"
+        // end="bottom 80%"
         scrub={true}
       >
         <section>
