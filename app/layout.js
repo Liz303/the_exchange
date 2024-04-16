@@ -1,6 +1,7 @@
 import "../styles/imports.css";
 import { Manrope } from "next/font/google";
 import Header from "@components/Header";
+import Loader from "@components/Loader";
 
 import "../styles/globals.scss";
 import "../styles/vars.scss";
@@ -71,8 +72,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${manrope.variable} dark-theme`}>
-        <Header />
-        {children}
+        <Loader>
+          <Header />
+          {children}
+        </Loader>
       </body>
     </html>
   );

@@ -29,7 +29,7 @@ const MobileEthos = ({ data }) => {
       <Scrollytelling.Root
         defaults={{ ease: "none" }}
         // debug={{ markers: true, vizualizer: true }}
-        // end="bottom 80%"
+        end="bottom 60%"
         scrub={true}
       >
         <section>
@@ -128,8 +128,8 @@ const MobileEthos = ({ data }) => {
             <Scrollytelling.Animation
               tween={{
                 scrub: true,
-                start: 35,
-                end: 45,
+                start: 55,
+                end: 60,
                 to: { opacity: 1, scale: 1 },
               }}
             >
@@ -141,8 +141,8 @@ const MobileEthos = ({ data }) => {
             <Scrollytelling.Animation
               tween={{
                 scrub: true,
-                start: 45,
-                end: 55,
+                start: 60,
+                end: 65,
                 to: { opacity: 1, scale: 1, y: -50 },
               }}
             >
@@ -151,63 +151,41 @@ const MobileEthos = ({ data }) => {
               </div>
             </Scrollytelling.Animation>
 
-            <Scrollytelling.Pin
-              childHeight={`${100 * vh}px`}
-              pinSpacerHeight={`${150 * vh}px`}
-              top={50}
+            <Scrollytelling.Stagger
+              // overlap={0.2}
+              tween={{
+                start: 70,
+                end: 95,
+                to: { opacity: 1, y: 0 },
+              }}
             >
-              <Scrollytelling.Stagger
-                overlap={0.2}
-                tween={{
-                  start: 50,
-                  end: 75,
-                  to: { opacity: 1, y: 0 },
-                }}
-              >
-                {annotationsCollection?.items?.map((annotation, index) => {
-                  return (
-                    <div key={index} className={s.gridItem}>
-                      <div className={s.number}>
-                        <img
-                          src={numberArray[index].src}
-                          alt={`number-${index + 1}`}
-                        />
-                      </div>
-                      <div>
-                        {documentToReactComponents(
-                          annotation?.annotationCopy?.json
-                        )}
-                      </div>
-
-                      {annotation?.annotationImage && (
-                        <div className={s.annotationImage}>
-                          <img
-                            src={annotation.annotationImage.url}
-                            alt={annotation.annotationImage.title}
-                          />
-                        </div>
+              {annotationsCollection?.items?.map((annotation, index) => {
+                return (
+                  <div key={index} className={s.gridItem}>
+                    <div className={s.number}>
+                      <img
+                        src={numberArray[index].src}
+                        alt={`number-${index + 1}`}
+                      />
+                    </div>
+                    <div>
+                      {documentToReactComponents(
+                        annotation?.annotationCopy?.json
                       )}
                     </div>
-                  );
-                })}
-              </Scrollytelling.Stagger>
 
-              <Scrollytelling.Animation
-                tween={{
-                  scrub: true,
-                  start: 60,
-                  end: 80,
-                  to: { left: "110%", top: "-100%" },
-                }}
-              >
-                <div className={s.mobileCollage1}>
-                  <img
-                    src={ethosCollageElement3.url}
-                    alt={ethosCollageElement3.title}
-                  />
-                </div>
-              </Scrollytelling.Animation>
-            </Scrollytelling.Pin>
+                    {annotation?.annotationImage && (
+                      <div className={s.annotationImage}>
+                        <img
+                          src={annotation.annotationImage.url}
+                          alt={annotation.annotationImage.title}
+                        />
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </Scrollytelling.Stagger>
           </div>
           <Scrollytelling.Animation
             tween={{

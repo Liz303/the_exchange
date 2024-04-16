@@ -22,7 +22,7 @@ export default function Contact({ data }) {
     <section style={{ position: "relative" }}>
       <Scrollytelling.Root
         scrub={true}
-        start={isXSmall || isMobile ? "top bottom" : "top 80%"}
+        start={isXSmall || isMobile ? "top 80%" : "top 80%"}
         // debug={{ markers: true, vizualizer: false }}
       >
         <div className={s.contactWrapper}>
