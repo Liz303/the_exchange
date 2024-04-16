@@ -66,7 +66,7 @@ export default function Intro({ data }) {
         />
         <Scrollytelling.Pin
           childHeight={"100vh"}
-          pinSpacerHeight={ isMobile ? "150vh" : "250vh"}
+          pinSpacerHeight={isMobile ? "150vh" : "250vh"}
           top={winWidth < 430 ? 90 : winWidth < 820 ? 120 : 180}
         >
           <Scrollytelling.Animation

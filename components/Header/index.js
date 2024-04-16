@@ -15,10 +15,12 @@ const Header = () => {
   useEffect(() => {
     const introSection = document.getElementById("intro");
     const checkIntroVisibility = () => {
-      const { top, bottom } = introSection.getBoundingClientRect();
+      if (!introSection) return;
+      const { top, bottom } = introSection?.getBoundingClientRect();
       setIsIntroVisible(top < window.innerHeight && bottom > 500);
     };
 
+    gsap.set(headerRef.current, { y: -50, opacity: 0 });
     gsap.fromTo(
       headerRef.current,
       { y: -50, opacity: 0 },

@@ -1,12 +1,12 @@
 @use "@styles/vars";
 
 .contactWrapper {
+  position: relative;
   display: grid;
   @include vars.grid-wrap();
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   padding: 120px 90px 0 90px;
-  position: relative;
   p {
     font-size: 24px;
   }
@@ -24,7 +24,7 @@
   @include vars.five-twelfths();
   min-height: calc(100vh - 100px);
   position: relative;
-  @include vars.small() {
+  @include vars.x-small() {
     @include vars.full();
     order: 2;
   }
@@ -41,7 +41,7 @@
   }
 
   @include vars.seven-twelfths();
-  @include vars.small() {
+  @include vars.x-small() {
     @include vars.full();
     order: 1;
     padding-bottom: 200px;

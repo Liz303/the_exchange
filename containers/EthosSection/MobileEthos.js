@@ -20,7 +20,7 @@ const MobileEthos = ({ data }) => {
     ethosImage,
   } = data;
 
-  const { winHeight } = useWindowDimensions();
+  const { winHeight, vh } = useWindowDimensions();
   const textRef = useRef(null);
 
   return (
@@ -28,7 +28,7 @@ const MobileEthos = ({ data }) => {
       <Scrollytelling.Root
         defaults={{ ease: "none" }}
         // debug={{ markers: true, vizualizer: true }}
-        end="bottom 80%"
+        end="bottom 50%"
         scrub={true}
       >
         <section>
@@ -41,12 +41,18 @@ const MobileEthos = ({ data }) => {
               document.body.classList.replace("dark-theme", "light-theme")
             }
           />
-          <Scrollytelling.Pin childHeight={"100vh"} pinSpacerHeight={"150vh"}>
+          <Scrollytelling.Pin
+            childHeight={`${100 * vh}px`}
+            pinSpacerHeight={`${150 * vh}px`}
+          >
             <div className={s.mobileFlipperWrap}>
               <FlipperTitle />
             </div>
           </Scrollytelling.Pin>
-          <Scrollytelling.Pin childHeight={"70vh"} pinSpacerHeight={"120vh"}>
+          <Scrollytelling.Pin
+            childHeight={`${100 * vh}px`}
+            pinSpacerHeight={`${150 * vh}px`}
+          >
             <Scrollytelling.Animation
               tween={[
                 {
@@ -121,8 +127,8 @@ const MobileEthos = ({ data }) => {
             <Scrollytelling.Animation
               tween={{
                 scrub: true,
-                start: 35,
-                end: 45,
+                start: 55,
+                end: 60,
                 to: { opacity: 1, scale: 1 },
               }}
             >
@@ -134,8 +140,8 @@ const MobileEthos = ({ data }) => {
             <Scrollytelling.Animation
               tween={{
                 scrub: true,
-                start: 45,
-                end: 55,
+                start: 60,
+                end: 65,
                 to: { opacity: 1, scale: 1, y: -50 },
               }}
             >
@@ -144,16 +150,12 @@ const MobileEthos = ({ data }) => {
               </div>
             </Scrollytelling.Animation>
 
-            <Scrollytelling.Pin
-              childHeight={"100vh"}
-              pinSpacerHeight={"150vh"}
-              top={50}
-            >
+            <div className={s.gridContainer}>
               <Scrollytelling.Stagger
-                overlap={0.2}
+                // overlap={0.2}
                 tween={{
-                  start: 50,
-                  end: 75,
+                  start: 70,
+                  end: 80,
                   to: { opacity: 1, y: 0 },
                 }}
               >
@@ -184,23 +186,7 @@ const MobileEthos = ({ data }) => {
                   );
                 })}
               </Scrollytelling.Stagger>
-
-              <Scrollytelling.Animation
-                tween={{
-                  scrub: true,
-                  start: 60,
-                  end: 80,
-                  to: { left: "110%", top: "-100%" },
-                }}
-              >
-                <div className={s.mobileCollage1}>
-                  <img
-                    src={ethosCollageElement3.url}
-                    alt={ethosCollageElement3.title}
-                  />
-                </div>
-              </Scrollytelling.Animation>
-            </Scrollytelling.Pin>
+            </div>
           </div>
           <Scrollytelling.Animation
             tween={{

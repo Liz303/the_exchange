@@ -15,20 +15,18 @@ import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 export default function Contact({ data }) {
   const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
 
-  const { ethosSwap } = useWindowDimensions();
+  const { ethosSwap, isXSmall, isMobile, vh } = useWindowDimensions();
 
   const { outroImage, outroCollageImage } = data || {};
   return (
-    <section>
-      <Scrollytelling.Root scrub={true} start={"top 80%"}>
-        <div
-          className={s.contactWrapper}
-          style={{ minHeight: "100vh", paddingTop: "50vh" }}
-        >
+    <div style={{ position: "relative" }}>
+      <Scrollytelling.Root
+        scrub={true}
+        start={ethosSwap || isXSmall || isMobile ? "top 50%" : "top 80%"}
+        // debug={{ markers: true, vizualizer: false }}
+      >
+        <div className={s.contactWrapper}>
           <div className={s.left}>
-            {/* <div className={s.ethosImage}>
-                <img src={ethosImage.url} alt={ethosImage.title} />
-              </div> */}
             <Scrollytelling.Animation
               tween={{
                 start: 60,
@@ -60,15 +58,14 @@ export default function Contact({ data }) {
           </div>
           <div className={s.right}>
             <Scrollytelling.Stagger
-              overlap={0.4}
+              overlap={isXSmall || isMobile ? 0 : 0.4}
               tween={{
-                start: ethosSwap ? 25 : 65,
-                end: ethosSwap ? 75 : 90,
+                start: isXSmall || isMobile ? (isMobile ? 10 : 10) : 65,
+                end: isXSmall || isMobile ? (isMobile ? 50 : 50) : 90,
                 fromTo: [
                   { opacity: 0, y: 20 },
                   { opacity: 1, y: 0 },
                 ],
-                duration: 2,
               }}
             >
               <div>
@@ -136,6 +133,6 @@ export default function Contact({ data }) {
           </div>
         </div>
       </Scrollytelling.Root>
-    </section>
+    </div>
   );
 }
