@@ -28,7 +28,7 @@ const MobileEthos = ({ data }) => {
       <Scrollytelling.Root
         defaults={{ ease: "none" }}
         // debug={{ markers: true, vizualizer: true }}
-        end="bottom 60%"
+        end="bottom 50%"
         scrub={true}
       >
         <section>
@@ -150,41 +150,43 @@ const MobileEthos = ({ data }) => {
               </div>
             </Scrollytelling.Animation>
 
-            <Scrollytelling.Stagger
-              // overlap={0.2}
-              tween={{
-                start: 70,
-                end: 95,
-                to: { opacity: 1, y: 0 },
-              }}
-            >
-              {annotationsCollection?.items?.map((annotation, index) => {
-                return (
-                  <div key={index} className={s.gridItem}>
-                    <div className={s.number}>
-                      <img
-                        src={numberArray[index].src}
-                        alt={`number-${index + 1}`}
-                      />
-                    </div>
-                    <div>
-                      {documentToReactComponents(
-                        annotation?.annotationCopy?.json
-                      )}
-                    </div>
-
-                    {annotation?.annotationImage && (
-                      <div className={s.annotationImage}>
+            <div className={s.gridContainer}>
+              <Scrollytelling.Stagger
+                // overlap={0.2}
+                tween={{
+                  start: 70,
+                  end: 80,
+                  to: { opacity: 1, y: 0 },
+                }}
+              >
+                {annotationsCollection?.items?.map((annotation, index) => {
+                  return (
+                    <div key={index} className={s.gridItem}>
+                      <div className={s.number}>
                         <img
-                          src={annotation.annotationImage.url}
-                          alt={annotation.annotationImage.title}
+                          src={numberArray[index].src}
+                          alt={`number-${index + 1}`}
                         />
                       </div>
-                    )}
-                  </div>
-                );
-              })}
-            </Scrollytelling.Stagger>
+                      <div>
+                        {documentToReactComponents(
+                          annotation?.annotationCopy?.json
+                        )}
+                      </div>
+
+                      {annotation?.annotationImage && (
+                        <div className={s.annotationImage}>
+                          <img
+                            src={annotation.annotationImage.url}
+                            alt={annotation.annotationImage.title}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </Scrollytelling.Stagger>
+            </div>
           </div>
           <Scrollytelling.Animation
             tween={{

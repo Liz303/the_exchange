@@ -15,14 +15,14 @@ import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 export default function Contact({ data }) {
   const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
 
-  const { isXSmall, isMobile, vh } = useWindowDimensions();
+  const { ethosSwap, isXSmall, isMobile, vh } = useWindowDimensions();
 
   const { outroImage, outroCollageImage } = data || {};
   return (
-    <section style={{ position: "relative" }}>
+    <div style={{ position: "relative" }}>
       <Scrollytelling.Root
         scrub={true}
-        start={isXSmall || isMobile ? "top 80%" : "top 80%"}
+        start={ethosSwap || isXSmall || isMobile ? "top 50%" : "top 80%"}
         // debug={{ markers: true, vizualizer: false }}
       >
         <div className={s.contactWrapper}>
@@ -61,7 +61,7 @@ export default function Contact({ data }) {
               overlap={isXSmall || isMobile ? 0 : 0.4}
               tween={{
                 start: isXSmall || isMobile ? (isMobile ? 10 : 10) : 65,
-                end: isXSmall || isMobile ? (isMobile ? 70 : 70) : 90,
+                end: isXSmall || isMobile ? (isMobile ? 50 : 50) : 90,
                 fromTo: [
                   { opacity: 0, y: 20 },
                   { opacity: 1, y: 0 },
@@ -133,6 +133,6 @@ export default function Contact({ data }) {
           </div>
         </div>
       </Scrollytelling.Root>
-    </section>
+    </div>
   );
 }
