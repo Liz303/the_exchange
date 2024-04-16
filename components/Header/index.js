@@ -13,9 +13,8 @@ const Header = () => {
   const [isIntroVisible, setIsIntroVisible] = useState(true);
 
   useEffect(() => {
+    const introSection = document.getElementById("intro");
     const checkIntroVisibility = () => {
-      const introSection = document.getElementById("intro");
-      console.log({ introSection });
       if (!introSection) return;
       const { top, bottom } = introSection?.getBoundingClientRect();
       setIsIntroVisible(top < window.innerHeight && bottom > 500);
