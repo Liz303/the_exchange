@@ -20,7 +20,7 @@ const MobileEthos = ({ data }) => {
     ethosImage,
   } = data;
 
-  const { winHeight } = useWindowDimensions();
+  const { winHeight, vh } = useWindowDimensions();
   const textRef = useRef(null);
 
   return (
@@ -41,12 +41,18 @@ const MobileEthos = ({ data }) => {
               document.body.classList.replace("dark-theme", "light-theme")
             }
           />
-          <Scrollytelling.Pin childHeight={"100vh"} pinSpacerHeight={"150vh"}>
+          <Scrollytelling.Pin
+            childHeight={`${100 * vh}px`}
+            pinSpacerHeight={`${150 * vh}px`}
+          >
             <div className={s.mobileFlipperWrap}>
               <FlipperTitle />
             </div>
           </Scrollytelling.Pin>
-          <Scrollytelling.Pin childHeight={"70vh"} pinSpacerHeight={"120vh"}>
+          <Scrollytelling.Pin
+            childHeight={`${100 * vh}px`}
+            pinSpacerHeight={`${150 * vh}px`}
+          >
             <Scrollytelling.Animation
               tween={[
                 {
@@ -145,8 +151,8 @@ const MobileEthos = ({ data }) => {
             </Scrollytelling.Animation>
 
             <Scrollytelling.Pin
-              childHeight={"100vh"}
-              pinSpacerHeight={"150vh"}
+              childHeight={`${100 * vh}px`}
+              pinSpacerHeight={`${150 * vh}px`}
               top={50}
             >
               <Scrollytelling.Stagger

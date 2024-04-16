@@ -1,12 +1,12 @@
 @use "@styles/vars";
 
 .contactWrapper {
+  position: relative;
   display: grid;
   @include vars.grid-wrap();
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   padding: 120px 90px 0 90px;
-  position: relative;
   p {
     font-size: 24px;
   }

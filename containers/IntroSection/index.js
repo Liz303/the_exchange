@@ -15,7 +15,7 @@ export default function Intro({ data }) {
     illustrationOne,
     illustrationTwo,
   } = data;
-  const { winWidth } = useWindowDimensions();
+  const { winWidth, vh } = useWindowDimensions();
   const isMobile = winWidth < 430;
 
   const renderIllustrationOne = () => {
@@ -66,7 +66,7 @@ export default function Intro({ data }) {
         />
         <Scrollytelling.Pin
           childHeight={"100vh"}
-          pinSpacerHeight={ isMobile ? "150vh" : "250vh"}
+          pinSpacerHeight={isMobile ? `${150 * vh}px` : `${250 * vh}px`}
           top={winWidth < 430 ? 90 : winWidth < 820 ? 120 : 180}
         >
           <Scrollytelling.Animation
@@ -129,7 +129,7 @@ export default function Intro({ data }) {
       <Scrollytelling.Root scrub={true} start={"top top"} end={"bottom bottom"}>
         <div
           style={{
-            height: isMobile ? "200vh" : "300vh",
+            height: isMobile ? `${200 * vh}px` : `${300 * vh}px`,
             position: "relative",
           }}
         >
