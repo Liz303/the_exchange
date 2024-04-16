@@ -98,3 +98,21 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+.button svg path {
+  stroke-dasharray: 1006;
+  stroke-dashoffset: 0;
+}
+
+.button:hover svg path {
+  animation: drawSvg 0.75s ease-in-out;
+}
+
+@keyframes drawSvg {
+  0% {
+    stroke-dashoffset: 1006;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

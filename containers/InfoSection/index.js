@@ -4,6 +4,8 @@ import * as Scrollytelling from "@bsmnt/scrollytelling";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import SheepBug from "@/components/InfoSVGs/sheep_bug";
 import { useWindowDimensions } from "@/hooks/useWindowDimensions";
+import InstagramSvg from "@/components/InfoSVGs/InstagramSvg";
+import PhoneSvg from "@/components/InfoSVGs/PhoneSvg";
 
 export default function Info({ data }) {
   const {
@@ -25,16 +27,16 @@ export default function Info({ data }) {
 
   const fableTextLength = () => {
     let textLength = 0;
-    fableTextNew.json.forEach(paragraph => {
+    fableTextNew.json.forEach((paragraph) => {
       textLength += paragraph[0].value.length;
     });
     return textLength;
-  }
+  };
 
   const renderHours = () => {
     return (
       <span className={s.hours}>
-       <span className={s.hideMobile}> Weekly hours:{" "}</span>
+        <span className={s.hideMobile}> Weekly hours: </span>
         {hoursArray.map((hours, i) => {
           const { altText, startDay, endDay, startTime, endTime } = hours;
           return (
@@ -63,7 +65,7 @@ export default function Info({ data }) {
         })}
         <br />
         <span className={s.hideMobile}>
-        Library of Congress Cataloging in Publication Data
+          Library of Congress Cataloging in Publication Data
         </span>
       </p>
     );
@@ -131,15 +133,15 @@ export default function Info({ data }) {
                     scrub: true,
                     start: isMobile ? 50 : 10,
                     end: isMobile ? 100 : 50,
-                    to: { top:
-                      isMobile ? "-70vh" : isTablet ? "0vh" : "-10vh", left: "25vw", rotate: 0 },
+                    to: {
+                      top: isMobile ? "-70vh" : isTablet ? "0vh" : "-10vh",
+                      left: "25vw",
+                      rotate: 0,
+                    },
                   }}
                 >
                   <div className={s.accoladesImage}>
-                    <img
-                      src={accoladesImage.url}
-                      alt={accoladesImage.title}
-                    />
+                    <img src={accoladesImage.url} alt={accoladesImage.title} />
                   </div>
                 </Scrollytelling.Animation>
               ) : (
@@ -158,14 +160,12 @@ export default function Info({ data }) {
             }}
           >
             <div className={s.fableWrap}>
-            {documentToReactComponents(fableTextNew.json)}
-            {documentToReactComponents(fableTextNew.json)}
-            {fableTextLength < 400 && 
-            documentToReactComponents(fableTextNew.json)
-            }
-            {fableTextLength < 400 && 
-            documentToReactComponents(fableTextNew.json)
-            }
+              {documentToReactComponents(fableTextNew.json)}
+              {documentToReactComponents(fableTextNew.json)}
+              {fableTextLength < 400 &&
+                documentToReactComponents(fableTextNew.json)}
+              {fableTextLength < 400 &&
+                documentToReactComponents(fableTextNew.json)}
             </div>
           </Scrollytelling.Animation>
         </div>
@@ -192,8 +192,7 @@ export default function Info({ data }) {
               ""
             )}
           </div>
-      
-              
+
           <Scrollytelling.Animation
             tween={{
               start: 20,
@@ -202,7 +201,7 @@ export default function Info({ data }) {
               to: { y: 0, opacity: 1 },
             }}
           >
-              <span className={s.address}>
+            <span className={s.address}>
               <label className={s.showMobile}> Address </label>
               <a className={`glitch`} href="#">
                 <h3>
@@ -210,13 +209,12 @@ export default function Info({ data }) {
                   Denver, CO 80211
                 </h3>
               </a>
-              </span>
+            </span>
           </Scrollytelling.Animation>
           <div className={`${s.showMobile} ${s.mobileHours}`}>
-            <label> Hours </label><br/>
-            <h3>
-              {hoursArray && hoursArray.length > 0 ? renderHours() : ""}
-            </h3>
+            <label> Hours </label>
+            <br />
+            <h3>{hoursArray && hoursArray.length > 0 ? renderHours() : ""}</h3>
           </div>
         </div>
         <div className={s.colFour}>
@@ -225,7 +223,16 @@ export default function Info({ data }) {
             tween={{
               start: 20,
               end: 30,
-              to: { right: isMobile ? "0" : isTablet ? "-20vw" : isSmall ? " -12vw" : "-50px", opacity: 1 },
+              to: {
+                right: isMobile
+                  ? "0"
+                  : isTablet
+                  ? "-20vw"
+                  : isSmall
+                  ? " -12vw"
+                  : "-50px",
+                opacity: 1,
+              },
             }}
           >
             <div className={s.instagramContainer}>
@@ -235,44 +242,42 @@ export default function Info({ data }) {
                 className="glitch-no-underline"
               >
                 <span> @thewolfstailor </span>
+                <InstagramSvg />
               </a>
             </div>
 
             <div className={s.phoneContainer}>
               <a href="tel:720.456.6705" className="glitch-no-underline">
                 <span> 720.456.6705 </span>
+                <PhoneSvg />
               </a>
             </div>
           </Scrollytelling.Stagger>
         </div>
       </div>
     );
-  }
+  };
   return (
-    <Scrollytelling.Root
-      scrub={true}
-      start={"top 45%"}
-      end={"bottom bottom"}
-    >
+    <Scrollytelling.Root scrub={true} start={"top 45%"} end={"bottom bottom"}>
       <section className={s.sectionWrap} id="info">
         <div
           style={{
-            height: isMobile ? 'auto' : "300vh",
+            height: isMobile ? "auto" : "300vh",
             position: "relative",
           }}
         >
-          {isMobile ? (<>
-          {renderInfoSection()}</>) : (
-          <Scrollytelling.Pin
-          childHeight={"100vh"}
-          pinSpacerHeight={"250vh"}
-          top={20}
-          >
-          {renderInfoSection()}
-          
-          </Scrollytelling.Pin>
+          {isMobile ? (
+            <>{renderInfoSection()}</>
+          ) : (
+            <Scrollytelling.Pin
+              childHeight={"100vh"}
+              pinSpacerHeight={"250vh"}
+              top={20}
+            >
+              {renderInfoSection()}
+            </Scrollytelling.Pin>
           )}
-         
+
           <Scrollytelling.Animation
             tween={{
               start: isMobile ? 0 : 10,
