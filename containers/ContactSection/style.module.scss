@@ -24,7 +24,7 @@
   @include vars.five-twelfths();
   min-height: calc(100vh - 100px);
   position: relative;
-  @include vars.small() {
+  @include vars.x-small() {
     @include vars.full();
     order: 2;
   }
@@ -32,7 +32,7 @@
 
 .right {
   @include vars.seven-twelfths();
-  @include vars.small() {
+  @include vars.x-small() {
     @include vars.full();
     order: 1;
     padding-bottom: 200px;
