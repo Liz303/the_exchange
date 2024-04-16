@@ -20,6 +20,7 @@ const Header = () => {
       setIsIntroVisible(top < window.innerHeight && bottom > 500);
     };
 
+    gsap.set(headerRef.current, { y: -50, opacity: 0 });
     gsap.fromTo(
       headerRef.current,
       { y: -50, opacity: 0 },
