@@ -4,6 +4,7 @@ import Intro from "@/containers/IntroSection";
 import Info from "@/containers/InfoSection";
 import Ethos from "@/containers/EthosSection";
 import Contact from "@/containers/ContactSection";
+import Loader from "@/components/Loader";
 
 export default async function Home() {
   const content = await getAllContent();
@@ -15,11 +16,13 @@ export default async function Home() {
   };
 
   return (
-    <main>
-      <Intro data={introData} />
-      <Info data={infoData} />
-      <Ethos data={ethosWSeason} />
-      <Contact data={contactData} />
-    </main>
+    <Loader>
+      <main>
+        <Intro data={introData} />
+        <Info data={infoData} />
+        <Ethos data={ethosWSeason} />
+        <Contact data={contactData} />
+      </main>
+    </Loader>
   );
 }
