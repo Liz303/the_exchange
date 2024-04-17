@@ -7,6 +7,7 @@
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   padding: 120px 90px 0 90px;
+  height: auto;
   p {
     font-size: 24px;
   }
@@ -27,6 +28,7 @@
   @include vars.x-small() {
     @include vars.full();
     order: 2;
+    min-height: 100vh;
   }
 }
 
@@ -45,6 +47,7 @@
     @include vars.full();
     order: 1;
     padding-bottom: 200px;
+    min-height: 100vh;
   }
 
   a {
@@ -107,6 +110,10 @@
   img {
     width: 100%;
     height: auto;
+  }
+  @include vars.x-small() {
+    width: vars.$full;
+    left: 0;
   }
 }
 

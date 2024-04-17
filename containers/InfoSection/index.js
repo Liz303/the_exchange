@@ -91,8 +91,8 @@ export default function Info({ data }) {
             <Scrollytelling.Stagger
               overlap={0.2}
               tween={{
-                start: 5,
-                end: 15,
+                start: isMobile ? 50 : 5,
+                end: isMobile ? 90 : 15,
                 to: { opacity: 1, y: 0 },
               }}
             >
@@ -122,8 +122,8 @@ export default function Info({ data }) {
           <Scrollytelling.Animation
             tween={{
               scrub: true,
-              start: 15,
-              end: 25,
+              start: isMobile ? 80 : 5,
+              end: isMobile ? 100 : 15,
               to: { opacity: 1, y: 0 },
             }}
           >
@@ -204,8 +204,8 @@ export default function Info({ data }) {
 
           <Scrollytelling.Animation
             tween={{
-              start: 20,
-              end: 30,
+              start: isMobile ? 35 : 20,
+              end: isMobile ? 50 : 30,
               scrub: true,
               to: { y: 0, opacity: 1 },
             }}
@@ -230,8 +230,8 @@ export default function Info({ data }) {
           <Scrollytelling.Stagger
             overlap={0.2}
             tween={{
-              start: 20,
-              end: 30,
+              start: isMobile ? 35 : 20,
+              end: isMobile ? 50 : 30,
               to: {
                 right: isMobile
                   ? "0"
