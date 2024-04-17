@@ -73,12 +73,13 @@
 }
 
 .button {
+  position: relative;
   svg {
     position: absolute;
-    top: -20%;
+    top: -15px;
     left: 0;
     width: 100%;
-    min-width: 216px;
+    width: 216px;
     height: auto;
   }
 
@@ -97,6 +98,7 @@
   color: vars.$pureWhite;
   cursor: pointer;
   text-decoration: none;
+  // transition: hover 0.5s ease-in-out;
 }
 
 .button svg path {
@@ -106,6 +108,9 @@
 
 .button:hover svg path {
   animation: drawSvg 0.75s ease-in-out;
+}
+.button:hover {
+  color: vars.$gold;
 }
 
 @keyframes drawSvg {

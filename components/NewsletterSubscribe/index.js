@@ -53,10 +53,7 @@ const NewsletterSubscribe = ({ status, message, onValidated }) => {
               <EmailFormSvg />
             </div>
           </div>
-          <button
-            type="submit"
-            className={`${styles.button} glitch-no-underline`}
-          >
+          <button type="submit" className={`${styles.button}`}>
             <SubmitSvg />
             <span>
               <i>Submit</i>
