@@ -76,9 +76,18 @@ export default function Info({ data }) {
       <div className={s.infoSection}>
         <div className={s.colOne}>
           <div className={s.top}>
-            <div className={s.iconWrap}>
-              <SheepBug />
-            </div>
+            <Scrollytelling.Animation
+              tween={{
+                scrub: true,
+                start: 0,
+                end: 5,
+                to: { scale: 1, opacity: 1 },
+              }}
+            >
+              <div className={s.iconWrap}>
+                <SheepBug />
+              </div>
+            </Scrollytelling.Animation>
             <Scrollytelling.Stagger
               overlap={0.2}
               tween={{

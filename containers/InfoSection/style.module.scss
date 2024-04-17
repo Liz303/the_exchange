@@ -33,6 +33,8 @@
         .iconWrap {
           max-width: 40px;
           margin: 0 auto;
+          transform: scale(4);
+          opacity: 0.5;
           @include vars.x-small {
             max-width: 100px;
             margin-bottom: 60px;
