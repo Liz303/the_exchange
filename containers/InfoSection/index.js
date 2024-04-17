@@ -236,18 +236,14 @@ export default function Info({ data }) {
             }}
           >
             <div className={s.instagramContainer}>
-              <a
-                href="https://www.instagram.com/thewolfstailor"
-                target="blank"
-                className="glitch-no-underline"
-              >
+              <a href="https://www.instagram.com/thewolfstailor" target="blank">
                 <span> @thewolfstailor </span>
                 <InstagramSvg />
               </a>
             </div>
 
             <div className={s.phoneContainer}>
-              <a href="tel:720.456.6705" className="glitch-no-underline">
+              <a href="tel:720.456.6705">
                 <span> 720.456.6705 </span>
                 <PhoneSvg />
               </a>
