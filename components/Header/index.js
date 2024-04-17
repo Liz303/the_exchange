@@ -20,18 +20,20 @@ const Header = () => {
       setIsIntroVisible(top < window.innerHeight && bottom > 500);
     };
 
-    gsap.set(headerRef.current, { y: -50, opacity: 0 });
-    gsap.fromTo(
-      headerRef.current,
-      { y: -50, opacity: 0 },
-      { opacity: 1, y: 0, duration: 0.5, delay: 1, ease: "power2.out" }
-    );
+    gsap.to(headerRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 0.5,
+      delay: 1,
+      ease: "power2.out",
+    });
 
-    gsap.fromTo(
-      reserveRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.5, delay: 1, ease: "power2.out" }
-    );
+    gsap.to(reserveRef.current, {
+      opacity: 1,
+      duration: 0.5,
+      delay: 1,
+      ease: "power2.out",
+    });
 
     window.addEventListener("scroll", checkIntroVisibility);
 

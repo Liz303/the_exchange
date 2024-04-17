@@ -76,9 +76,18 @@ export default function Info({ data }) {
       <div className={s.infoSection}>
         <div className={s.colOne}>
           <div className={s.top}>
-            <div className={s.iconWrap}>
-              <SheepBug />
-            </div>
+            <Scrollytelling.Animation
+              tween={{
+                scrub: true,
+                start: 0,
+                end: 5,
+                to: { scale: 1, opacity: 1 },
+              }}
+            >
+              <div className={s.iconWrap}>
+                <SheepBug />
+              </div>
+            </Scrollytelling.Animation>
             <Scrollytelling.Stagger
               overlap={0.2}
               tween={{
@@ -236,18 +245,14 @@ export default function Info({ data }) {
             }}
           >
             <div className={s.instagramContainer}>
-              <a
-                href="https://www.instagram.com/thewolfstailor"
-                target="blank"
-                className="glitch-no-underline"
-              >
+              <a href="https://www.instagram.com/thewolfstailor" target="blank">
                 <span> @thewolfstailor </span>
                 <InstagramSvg />
               </a>
             </div>
 
             <div className={s.phoneContainer}>
-              <a href="tel:720.456.6705" className="glitch-no-underline">
+              <a href="tel:720.456.6705">
                 <span> 720.456.6705 </span>
                 <PhoneSvg />
               </a>

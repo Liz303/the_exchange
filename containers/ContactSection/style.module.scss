@@ -58,6 +58,10 @@
       display: block;
       max-width: 270px;
     }
+    transition: hover 0.5s ease-in-out;
+  }
+  a:hover {
+    color: vars.$gold;
   }
   .giftLink {
     margin-top: 90px;

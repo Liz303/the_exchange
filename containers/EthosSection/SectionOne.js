@@ -59,7 +59,7 @@ const SectionOne = ({ data }) => {
                 {
                   start: 50,
                   end: 60,
-                  to: { opacity: 0, y: 50 },
+                  to: { opacity: 0 },
                 },
               ]}
             >

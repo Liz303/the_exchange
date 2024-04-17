@@ -7,9 +7,10 @@ const LOCATIONS = [
   { name: "bruto", year: "2018", link: "https://www.brutodenver.com/" },
   { name: "dry storage", year: "2019", link: "https://drystorageco.com/" },
   { name: "hey kiddo/ok yeah", year: "2023", link: "https://www.hk-oy.com/" },
+  { name: "new new", year: "2024", link: "https://www.hk-oy.com/" },
 ];
 
-const ROMAN = ["i.", "ii.", "iii.", "iv.", "v."];
+const ROMAN = ["i.", "ii.", "iii.", "iv.", "v.", "vi."];
 
 const Locations = () => {
   return (
