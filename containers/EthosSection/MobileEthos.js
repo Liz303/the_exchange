@@ -51,7 +51,9 @@ const MobileEthos = ({ data }) => {
           </Scrollytelling.Pin>
           <Scrollytelling.Pin
             childHeight={`${100 * vh}px`}
-            pinSpacerHeight={`${150 * vh}px`}
+            pinSpacerHeight={`${200 * vh}px`}
+            pinSpacerClassName={"mobile-pin-spacer"}
+            childClassName={"mobile-pin-style"}
           >
             <Scrollytelling.Animation
               tween={[
@@ -154,7 +156,7 @@ const MobileEthos = ({ data }) => {
               <Scrollytelling.Stagger
                 // overlap={0.2}
                 tween={{
-                  start: 70,
+                  start: 65,
                   end: 80,
                   to: { opacity: 1, y: 0 },
                 }}

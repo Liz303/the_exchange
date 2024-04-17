@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -17,6 +18,14 @@ export default function Intro({ data }) {
   } = data;
   const { winWidth } = useWindowDimensions();
   const isMobile = winWidth < 430;
+
+  const [allowScroll, setAllowScroll] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAllowScroll(false);
+    }, 1000);
+  }, []);
 
   const renderIllustrationOne = () => {
     return (
@@ -71,12 +80,9 @@ export default function Intro({ data }) {
         >
           <Scrollytelling.Animation
             tween={{
-              start: 90,
+              start: isMobile ? 80 : 90,
               end: 100,
-              fromTo: [
-                { opacity: 1, y: 0 },
-                { opacity: 0, y: -100 },
-              ],
+              to: { opacity: 0, y: -100 },
             }}
           >
             <div id="intro-text" className={s.introText}>
@@ -126,7 +132,12 @@ export default function Intro({ data }) {
 
   return (
     <section id="intro">
-      <Scrollytelling.Root scrub={true} start={"top top"} end={"bottom bottom"}>
+      <Scrollytelling.Root
+        scrub={true}
+        start={"top top"}
+        end={"bottom bottom"}
+        disabled={allowScroll}
+      >
         <div
           style={{
             height: isMobile ? "200vh" : "300vh",

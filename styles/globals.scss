@@ -148,6 +148,15 @@ button {
   overflow: hidden;
 }
 
+.mobile-pin-spacer {
+  position: relative;
+  z-index: 1;
+  margin-top: -40vh;
+}
+.mobile-pin-style {
+  overflow: hidden;
+}
+
 // Animations
 @keyframes glitchLine {
   0% {

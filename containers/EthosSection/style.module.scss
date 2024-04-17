@@ -281,10 +281,12 @@
 
 .mobileIntroText {
   padding: 36px;
-  margin-top: -40vh;
+  // margin-top: -40vh;
   opacity: 0;
   scale: 0.95;
   text-align: justify;
+  height: 100%;
+  z-index: 2;
   p {
     line-height: 110%;
   }
