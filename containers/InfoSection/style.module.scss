@@ -54,7 +54,7 @@
         }
         .accoladesImage {
           position: absolute;
-          width: vars.$three-twelfths;
+          width: vars.$four-twelfths;
           transform: rotate(15deg);
           img {
             height: auto;
@@ -271,7 +271,7 @@
     left: vars.$five-twelfths;
     position: absolute;
     top: 100vh;
-    width: vars.$four-twelfths;
+    width: vars.$five-twelfths;
     img {
       height: auto;
       width: 100%;
