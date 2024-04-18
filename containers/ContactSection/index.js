@@ -22,6 +22,9 @@ export default function Contact({ data }) {
     <Scrollytelling.Root
       scrub={true}
       start={ethosSwap || isXSmall || isMobile ? "top 80%" : "top 80%"}
+      callbacks={{
+        refreshPriority: 4,
+      }}
       // debug={{ markers: true, vizualizer: false }}
     >
       <div className={s.contactWrapper}>

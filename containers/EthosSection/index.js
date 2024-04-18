@@ -19,6 +19,9 @@ export default function Ethos({ data }) {
           // debug={{ markers: true, vizualizer: true }}
           end="bottom 20%"
           scrub={true}
+          callbacks={{
+            refreshPriority: 3,
+          }}
         >
           <section id="ethos" className={s.ethosSection}>
             <Scrollytelling.Waypoint
