@@ -137,6 +137,9 @@ export default function Intro({ data }) {
         start={"top top"}
         end={"bottom bottom"}
         disabled={allowScroll}
+        callbacks={{
+          refreshPriority: 1,
+        }}
       >
         <div
           style={{

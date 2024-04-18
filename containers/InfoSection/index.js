@@ -263,7 +263,14 @@ export default function Info({ data }) {
     );
   };
   return (
-    <Scrollytelling.Root scrub={true} start={"top 45%"} end={"bottom bottom"}>
+    <Scrollytelling.Root
+      scrub={true}
+      start={"top 45%"}
+      end={"bottom bottom"}
+      callbacks={{
+        refreshPriority: 2,
+      }}
+    >
       <section className={s.sectionWrap} id="info">
         <div
           style={{

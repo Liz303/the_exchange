@@ -30,6 +30,9 @@ const MobileEthos = ({ data }) => {
         // debug={{ markers: true, vizualizer: true }}
         end="bottom 50%"
         scrub={true}
+        callbacks={{
+          refreshPriority: 3,
+        }}
       >
         <section>
           <Scrollytelling.Waypoint
