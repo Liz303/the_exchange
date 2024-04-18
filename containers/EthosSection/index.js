@@ -21,6 +21,7 @@ export default function Ethos({ data }) {
           scrub={true}
           callbacks={{
             refreshPriority: 3,
+            invalidateOnRefresh: true,
           }}
         >
           <section id="ethos" className={s.ethosSection}>

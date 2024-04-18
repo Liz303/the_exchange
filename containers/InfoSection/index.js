@@ -269,6 +269,7 @@ export default function Info({ data }) {
       end={"bottom bottom"}
       callbacks={{
         refreshPriority: 2,
+        invalidateOnRefresh: true,
       }}
     >
       <section className={s.sectionWrap} id="info">

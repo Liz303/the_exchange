@@ -139,6 +139,7 @@ export default function Intro({ data }) {
         disabled={allowScroll}
         callbacks={{
           refreshPriority: 1,
+          invalidateOnRefresh: true,
         }}
       >
         <div
