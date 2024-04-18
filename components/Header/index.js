@@ -58,7 +58,12 @@ const Header = () => {
         >
           <span> INFO </span>
         </button>
-        <a className={`${s.reserve} glitch`} href="/" alt="Reserve">
+        <a
+          className={`${s.reserve} glitch`}
+          target="_blank"
+          href="https://www.exploretock.com/wolfstailor/"
+          alt="Reserve"
+        >
           <span>{`{RESERVE}`}</span>
         </a>
         <button
@@ -69,7 +74,12 @@ const Header = () => {
         </button>
       </div>
       <div className={s.reserveBottom} ref={reserveRef}>
-        <a href="/" alt="Reserve" className={`${s.reserve} glitch`}>
+        <a
+          href="https://www.exploretock.com/wolfstailor/"
+          alt="Reserve"
+          target="_blank"
+          className={`${s.reserve} glitch`}
+        >
           <span>{`{RESERVE}`}</span>
         </a>
       </div>

@@ -87,7 +87,7 @@ export default function Contact({ data }) {
             </div>
             <div>
               <p> If interested in collaborating, please reach out</p>
-              <a href="#" target="blank">
+              <a href="https://iehospitality.com/work-with-us" target="_blank">
                 <span>
                   <i>Work with us </i>
                 </span>
@@ -96,7 +96,10 @@ export default function Contact({ data }) {
             </div>
             <div className={s.giftLink}>
               <p>Give a gift</p>
-              <a href="#" target="blank">
+              <a
+                href="https://www.toasttab.com/thewolfstailor/giftcards"
+                target="_blank"
+              >
                 <span>
                   <i>Gift Card </i>
                 </span>
