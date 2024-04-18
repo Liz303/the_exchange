@@ -24,6 +24,7 @@ export default function Contact({ data }) {
       start={ethosSwap || isXSmall || isMobile ? "top 80%" : "top 80%"}
       callbacks={{
         refreshPriority: 4,
+        invalidateOnRefresh: true,
       }}
       // debug={{ markers: true, vizualizer: false }}
     >
