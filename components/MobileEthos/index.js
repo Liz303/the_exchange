@@ -38,7 +38,7 @@ const MobileEthos = ({ data }) => {
         //   invalidateOnRefresh: true,
         // }}
       >
-        <section>
+        <section id="ethos">
           <Scrollytelling.Waypoint
             at={99}
             onCall={() =>

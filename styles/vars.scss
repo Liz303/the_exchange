@@ -240,7 +240,7 @@ $three-fourths: calc(100vw * 3 / 4);
 @mixin annoText() {
   font-family: $header-font-family;
   font-weight: 500;
-  font-size: calc(8pt + (12 - 8) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(9pt + (12 - 9) * ((100vw - 300px) / (1600 - 300)));
 }
 
 @mixin link() {

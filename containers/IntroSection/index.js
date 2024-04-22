@@ -71,15 +71,6 @@ export default function Intro({ data }) {
   const renderPinnedTextContainer = () => {
     return (
       <div className={s.pinnedTextContainer}>
-        {/* <Scrollytelling.Waypoint
-          at={0}
-          tween={{
-            target: ["#intro-text"],
-            to: { opacity: 1, scale: 1 },
-            duration: 2,
-            delay: 1,
-          }}
-        /> */}
         <Scrollytelling.Pin
           childHeight={"100vh"}
           pinSpacerHeight={isMobile ? "150vh" : "250vh"}
@@ -155,16 +146,6 @@ export default function Intro({ data }) {
           }}
         >
           <div className={s.introContentWrap}>
-            {/* <Scrollytelling.Waypoint
-              at={0}
-              tween={{
-                target: ["#main-title"],
-                to: { opacity: 1, scale: 1 },
-                duration: 2,
-                delay: 1,
-              }}
-            /> */}
-
             <h1 className={s.title} id="main-title" ref={titleRef}>
               The Wolf's Tailor
             </h1>

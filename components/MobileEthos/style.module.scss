@@ -173,6 +173,12 @@
 }
 
 .mobileWolf {
+  @include vars.ipad-pro-and-smaller() {
+    width: 40%;
+  }
+  @include vars.small() {
+    width: 60%;
+  }
   width: 60%;
   padding-left: 20px;
   opacity: 0;
@@ -202,5 +208,12 @@
   img {
     width: 100%;
     height: auto;
+  }
+
+  @include vars.ipad-pro-and-smaller() {
+    width: 50%;
+  }
+  @include vars.small() {
+    width: 70%;
   }
 }
