@@ -173,13 +173,12 @@
 }
 
 .mobileWolf {
-  @include vars.ipad-pro-and-smaller() {
-    width: 40%;
-  }
   @include vars.small() {
     width: 60%;
   }
-  width: 60%;
+  @include vars.ipad-pro-and-smaller() {
+    width: 40%;
+  }
   padding-left: 20px;
   opacity: 0;
   scale: 0.95;
@@ -203,17 +202,15 @@
   opacity: 0;
   scale: 0.95;
   position: relative;
-  width: 70%;
+  @include vars.small() {
+    width: 70%;
+  }
+  @include vars.ipad-pro-and-smaller() {
+    width: 50%;
+  }
   padding-left: 36px;
   img {
     width: 100%;
     height: auto;
-  }
-
-  @include vars.ipad-pro-and-smaller() {
-    width: 50%;
-  }
-  @include vars.small() {
-    width: 70%;
   }
 }

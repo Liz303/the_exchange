@@ -37,7 +37,7 @@ export default function Contact({ data }) {
               tween={{
                 start: 60,
                 end: 90,
-                to: { opacity: 1, top: -120 },
+                to: { opacity: 1, top: 0 },
               }}
             >
               <div className={s.outroImage}>
@@ -51,7 +51,12 @@ export default function Contact({ data }) {
               tween={{
                 start: 80,
                 end: 100,
-                to: { opacity: 1, bottom: 0, right: 0 },
+                to: {
+                  opacity: 1,
+                  bottom:
+                    isXSmall || isMobile ? "10vh" : ethosSwap ? "40vh" : "5vh",
+                  right: 0,
+                },
               }}
             >
               <div className={s.outroCollageImage}>
