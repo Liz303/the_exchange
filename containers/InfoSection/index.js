@@ -212,7 +212,11 @@ export default function Info({ data }) {
           >
             <span className={s.address}>
               <label className={s.showMobile}> Address </label>
-              <a className={`glitch`} href="#">
+              <a
+                className={`glitch`}
+                href="https://www.google.com/maps/place/4058+Tejon+St,+Denver,+CO+80211/data=!4m2!3m1!1s0x876c788ae2a40fc3:0x50583e1b3236d294?sa=X&ved=1t:242&ictx=111"
+                target="_blank"
+              >
                 <h3>
                   4058 Tejon St <br />
                   Denver, CO 80211
