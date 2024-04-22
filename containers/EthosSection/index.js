@@ -1,22 +1,23 @@
 "use client";
+import React, { useMemo } from "react";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
 import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
 import { useWindowDimensions } from "@/hooks/useWindowDimensions";
-import MobileEthos from "./MobileEthos";
+// import MobileEthos from "./MobileEthos";
+import MobileEthos from "@/components/MobileEthos";
 
-export default function Ethos({ data }) {
+const Ethos = ({ data }) => {
   const { ethosSwap } = useWindowDimensions();
 
-  return (
-    <>
-      {ethosSwap ? (
+  const content = useMemo(
+    () =>
+      ethosSwap ? (
         <MobileEthos data={data} />
       ) : (
         <Scrollytelling.Root
           defaults={{ ease: "none" }}
-          // debug={{ markers: true, vizualizer: true }}
           end="bottom 20%"
           scrub={true}
           callbacks={{
@@ -45,7 +46,11 @@ export default function Ethos({ data }) {
             </Scrollytelling.Pin>
           </section>
         </Scrollytelling.Root>
-      )}
-    </>
+      ),
+    [ethosSwap, data]
   );
-}
+
+  return <>{content}</>;
+};
+
+export default Ethos;

@@ -9,18 +9,38 @@ export const useWindowDimensions = () => {
   });
 
   const handleResize = () => {
-    let vh = window.innerHeight * 0.01;
-    if (window.visualViewport) {
-      vh = window.visualViewport.height * 0.01;
-    }
-    setWindowDimensions({
-      winWidth: window.innerWidth,
-      winHeight: window.innerHeight,
-      isMobile: window.innerWidth <= 768 && window.innerWidth > 430,
-      isXSmall: window.innerWidth <= 430,
-      ethosSwap: window.innerWidth <= 1079,
-      vh: vh || 0.01,
-    });
+    const newWidth = window.innerWidth;
+    const newHeight = window.innerHeight;
+    const newIsMobile = newWidth <= 768 && newWidth > 430;
+    const newIsXSmall = newWidth <= 430;
+    const newEthosSwap = newWidth <= 1079;
+    const newVh = window.visualViewport
+      ? window.visualViewport.height * 0.01
+      : newHeight * 0.01;
+
+    setWindowDimensions((prevDimensions) => ({
+      winWidth:
+        newWidth !== prevDimensions.winWidth
+          ? newWidth
+          : prevDimensions.winWidth,
+      winHeight:
+        newHeight !== prevDimensions.winHeight
+          ? newHeight
+          : prevDimensions.winHeight,
+      isMobile:
+        newIsMobile !== prevDimensions.isMobile
+          ? newIsMobile
+          : prevDimensions.isMobile,
+      isXSmall:
+        newIsXSmall !== prevDimensions.isXSmall
+          ? newIsXSmall
+          : prevDimensions.isXSmall,
+      ethosSwap:
+        newEthosSwap !== prevDimensions.ethosSwap
+          ? newEthosSwap
+          : prevDimensions.ethosSwap,
+      vh: newVh !== prevDimensions.vh ? newVh : prevDimensions.vh,
+    }));
   };
   useEffect(() => {
     try {

@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import gsap from "gsap";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
 import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -16,15 +17,21 @@ export default function Intro({ data }) {
     illustrationOne,
     illustrationTwo,
   } = data;
+
+  const titleRef = useRef();
+  const introTextRef = useRef();
+
   const { winWidth } = useWindowDimensions();
   const isMobile = winWidth < 430;
 
-  const [allowScroll, setAllowScroll] = useState(true);
-
   useEffect(() => {
-    setTimeout(() => {
-      setAllowScroll(false);
-    }, 1000);
+    gsap.to([titleRef.current, introTextRef.current], {
+      opacity: 1,
+      scale: 1,
+      duration: 2,
+      delay: 1,
+      ease: "power2.out",
+    });
   }, []);
 
   const renderIllustrationOne = () => {
@@ -64,15 +71,6 @@ export default function Intro({ data }) {
   const renderPinnedTextContainer = () => {
     return (
       <div className={s.pinnedTextContainer}>
-        <Scrollytelling.Waypoint
-          at={0}
-          tween={{
-            target: ["#intro-text"],
-            to: { opacity: 1, scale: 1 },
-            duration: 2,
-            delay: 1,
-          }}
-        />
         <Scrollytelling.Pin
           childHeight={"100vh"}
           pinSpacerHeight={isMobile ? "150vh" : "250vh"}
@@ -85,7 +83,7 @@ export default function Intro({ data }) {
               to: { opacity: 0, y: -100 },
             }}
           >
-            <div id="intro-text" className={s.introText}>
+            <div id="intro-text" className={s.introText} ref={introTextRef}>
               {aboutText && aboutText.json
                 ? documentToReactComponents(aboutText.json)
                 : ""}
@@ -136,7 +134,6 @@ export default function Intro({ data }) {
         scrub={true}
         start={"top top"}
         end={"bottom bottom"}
-        disabled={allowScroll}
         callbacks={{
           refreshPriority: 1,
           invalidateOnRefresh: true,
@@ -149,17 +146,7 @@ export default function Intro({ data }) {
           }}
         >
           <div className={s.introContentWrap}>
-            <Scrollytelling.Waypoint
-              at={0}
-              tween={{
-                target: ["#main-title"],
-                to: { opacity: 1, scale: 1 },
-                duration: 2,
-                delay: 1,
-              }}
-            />
-
-            <h1 className={s.title} id="main-title">
+            <h1 className={s.title} id="main-title" ref={titleRef}>
               The Wolf's Tailor
             </h1>
             {renderPinnedTextContainer()}
