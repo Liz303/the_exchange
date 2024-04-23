@@ -24,11 +24,11 @@ export default function getSeasonContent(type, season) {
         case "Spring":
           return <img src="/images/Spring.png" alt="Spring" />;
         case "Summer":
-          return <img src="/images/Spring.png" alt="Spring" />;
+          return <img src="/images/Summer.png" alt="Summer" />;
         case "Fall":
-          return <img src="/images/Spring.png" alt="Spring" />;
+          return <img src="/images/Fall.png" alt="Fall" />;
         case "Winter":
-          return <img src="/images/Spring.png" alt="Spring" />;
+          return <img src="/images/Winter.png" alt="Winter" />;
         default:
           return "Image not found";
       }
