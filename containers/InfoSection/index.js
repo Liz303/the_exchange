@@ -75,6 +75,18 @@ export default function Info({ data }) {
     return (
       <div className={s.infoSection}>
         <div className={s.colOne}>
+        <Scrollytelling.Animation
+            tween={{
+              start: isMobile ? 0 : 10,
+              end: isMobile ? 60 : 50,
+              to: { top: "-10px", left: "60px" },
+              scrub: true,
+            }}
+          >
+            <div className={s.one}>
+              <img src="/images/I.png" alt="Roman numeral I" />
+            </div>
+          </Scrollytelling.Animation>
           <div className={s.top}>
             <Scrollytelling.Animation
               tween={{
@@ -295,18 +307,7 @@ export default function Info({ data }) {
             </Scrollytelling.Pin>
           )}
 
-          <Scrollytelling.Animation
-            tween={{
-              start: isMobile ? 0 : 10,
-              end: isMobile ? 60 : 50,
-              to: { top: "-100px", left: "20vw" },
-              scrub: true,
-            }}
-          >
-            <div className={s.one}>
-              <img src="/images/I.png" alt="Roman numeral I" />
-            </div>
-          </Scrollytelling.Animation>
+         
           {infoCollageElement1 && infoCollageElement1.url ? (
             <Scrollytelling.Animation
               tween={{

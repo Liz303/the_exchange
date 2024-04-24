@@ -16,7 +16,6 @@ const MobileEthos = ({ data }) => {
     illustration1,
     annotationsCollection,
     illustration2,
-    ethosCollageElement3,
     ethosImage,
   } = data;
 

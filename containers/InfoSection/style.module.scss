@@ -54,6 +54,7 @@
         }
         .accoladesImage {
           position: absolute;
+          max-width: 400px;
           width: vars.$four-twelfths;
           transform: rotate(15deg);
           img {
@@ -88,6 +89,7 @@
       margin-left: -50px;
       margin-top: 30px;
       padding-right: 30px;
+      z-index: -1;
       .fableWrap {
         transform: translateY(100vh);
         p {
@@ -262,6 +264,7 @@
     position: absolute;
     top: 60vh;
     width: 70px;
+    z-index: 2;
     img {
       height: auto;
       width: 100%;
@@ -270,6 +273,7 @@
   .infoCollageElement1 {
     left: vars.$five-twelfths;
     position: absolute;
+    max-width: 500px;
     top: 100vh;
     width: vars.$five-twelfths;
     img {

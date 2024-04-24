@@ -85,20 +85,6 @@ const SectionTwo = ({ data }) => {
             <img src={illustration2.url} alt={illustration2.title} />
           </div>
         </Scrollytelling.Stagger>
-        <Scrollytelling.Animation
-          tween={{
-            start: 60,
-            end: 90,
-            to: { top: 0, left: "50%", rotate: 0 },
-          }}
-        >
-          <div className={s.ethosCollageElement3}>
-            <img
-              src={ethosCollageElement3.url}
-              alt={ethosCollageElement3.title}
-            />
-          </div>
-        </Scrollytelling.Animation>
         <div className={s.ethosSketch}>
           <PlateSketch />
         </div>
