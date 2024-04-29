@@ -120,7 +120,7 @@ const SectionOne = ({ data }) => {
           <img src="/images/II.png" alt="Roman numeral II" />
         </div>
       </Scrollytelling.Animation>
-      {ethosCollageElement2 &&
+      {(ethosCollageElement2 && ethosCollageElement2.url) &&
       <Scrollytelling.Animation
         tween={{ scrub: true, start: 32, end: 60, to: { top: "-50%" } }}
       >
@@ -132,18 +132,20 @@ const SectionOne = ({ data }) => {
         </div>
       </Scrollytelling.Animation>
       }
-      <Scrollytelling.Animation
-        tween={{
-          scrub: true,
-          start: 50,
-          end: 60,
-          to: { opacity: 0 },
-        }}
-      >
-        <div className={s.ethosIllistration} id="ethos-illustration">
-          <img src={illustration1.url} alt={illustration1.title} />
-        </div>
-      </Scrollytelling.Animation>
+      {(illustration1 && illustration1.url) &&
+        <Scrollytelling.Animation
+          tween={{
+            scrub: true,
+            start: 50,
+            end: 60,
+            to: { opacity: 0 },
+          }}
+        >
+          <div className={s.ethosIllistration} id="ethos-illustration">
+            <img src={illustration1.url} alt={illustration1.title} />
+          </div>
+        </Scrollytelling.Animation>
+      }
     </div>
   );
 };

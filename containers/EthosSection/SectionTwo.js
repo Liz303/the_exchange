@@ -76,9 +76,11 @@ const SectionTwo = ({ data }) => {
           }}
         >
           <div className={s.seasonImg}>{getSeasonContent("ethos", season)}</div>
-          <div className={s.ethosImage}>
-            <img src={ethosImage.url} alt={ethosImage.title} />
-          </div>
+          {(ethosImage && ethosImage.url) &&
+            <div className={s.ethosImage}>
+              <img src={ethosImage.url} alt={ethosImage.title} />
+            </div>
+          }
 
         </Scrollytelling.Stagger>
         <div className={s.ethosSketch}>
