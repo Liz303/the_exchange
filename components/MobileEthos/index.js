@@ -175,18 +175,6 @@ const MobileEthos = ({ data }) => {
               </Scrollytelling.Stagger>
             </div>
           </div>
-          <Scrollytelling.Animation
-            tween={{
-              scrub: true,
-              start: 80,
-              end: 95,
-              to: { opacity: 1, scale: 1 },
-            }}
-          >
-            <div className={s.mobileIllustration}>
-              <img src={illustration2.url} alt={illustration2.title} />
-            </div>
-          </Scrollytelling.Animation>
         </section>
       </Scrollytelling.Root>
     </>

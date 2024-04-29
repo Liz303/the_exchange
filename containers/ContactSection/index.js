@@ -31,7 +31,7 @@ export default function Contact({ data }) {
         }}
         // debug={{ markers: true, vizualizer: false }}
       >
-        <div className={s.contactWrapper}>
+        <div id="contact" className={s.contactWrapper}>
           <div className={s.left}>
             <Scrollytelling.Animation
               tween={{
@@ -95,6 +95,14 @@ export default function Contact({ data }) {
                     );
                   }}
                 />
+              </div>
+              <div className={s.contactLink}> 
+                <p>Contact Us</p>
+                <a href="mailto:info@thewolfstailor.com">
+                  <span> <i>info@thewolfstailor.com</i>
+                  </span>
+                  <WorkSvg />
+                </a>
               </div>
               <div>
                 <p> If interested in collaborating, please reach out</p>

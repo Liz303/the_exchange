@@ -8,8 +8,6 @@ import PlateSketch from "@/components/EthosSVGs/PlateSketch";
 const SectionTwo = ({ data }) => {
   const {
     annotationsCollection,
-    illustration2,
-    ethosCollageElement3,
     ethosImage,
     largePullText,
     season,
@@ -81,9 +79,7 @@ const SectionTwo = ({ data }) => {
           <div className={s.ethosImage}>
             <img src={ethosImage.url} alt={ethosImage.title} />
           </div>
-          <div className={s.illustration2}>
-            <img src={illustration2.url} alt={illustration2.title} />
-          </div>
+
         </Scrollytelling.Stagger>
         <div className={s.ethosSketch}>
           <PlateSketch />

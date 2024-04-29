@@ -53,7 +53,7 @@ const SectionOne = ({ data }) => {
                   start: 15,
                   end: 30,
                   to: {
-                    top: height > winHeight ? -height / 2 : 0,
+                    top: height > winHeight ? -(height / 2) + 60 : 0,
                   },
                 },
                 {
@@ -92,6 +92,7 @@ const SectionOne = ({ data }) => {
           </div>
         </div>
       </Scrollytelling.Animation>
+      {(ethosCollageElement1 && ethosCollageElement1.url) &&
       <Scrollytelling.Animation
         tween={{
           scrub: true,
@@ -106,7 +107,7 @@ const SectionOne = ({ data }) => {
             alt={ethosCollageElement1.title}
           />
         </div>
-      </Scrollytelling.Animation>
+      </Scrollytelling.Animation>}
       <Scrollytelling.Animation
         tween={{
           start: 0,
@@ -119,6 +120,7 @@ const SectionOne = ({ data }) => {
           <img src="/images/II.png" alt="Roman numeral II" />
         </div>
       </Scrollytelling.Animation>
+      {ethosCollageElement2 &&
       <Scrollytelling.Animation
         tween={{ scrub: true, start: 32, end: 60, to: { top: "-50%" } }}
       >
@@ -129,6 +131,7 @@ const SectionOne = ({ data }) => {
           />
         </div>
       </Scrollytelling.Animation>
+      }
       <Scrollytelling.Animation
         tween={{
           scrub: true,

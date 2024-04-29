@@ -72,6 +72,7 @@ const Header = () => {
         >
           <span> ETHOS </span>
         </button>
+        
       </div>
       <div className={s.reserveBottom} ref={reserveRef}>
         <a
@@ -82,6 +83,15 @@ const Header = () => {
         >
           <span>{`{RESERVE}`}</span>
         </a>
+       
+      </div>
+      <div className={s.contact}>
+        <button
+            onClick={() => onClick("contact")}
+            className={`${s.contact} ${s.link} glitch ${!isIntroVisible ? s.fade : ""}`}
+          >
+            <span> CONTACT </span>
+          </button>
       </div>
     </>
   );
