@@ -206,21 +206,6 @@
   }
 }
 
-.ethosCollageElement3 {
-  position: absolute;
-  top: 100vh;
-  left: 70vw;
-  width: 600px;
-  height: auto;
-  z-index: 1;
-  img {
-    width: 100%;
-    height: auto;
-  }
-  @include vars.small() {
-    width: 35vw;
-  }
-}
 
 .ethosSketch {
   position: absolute;
