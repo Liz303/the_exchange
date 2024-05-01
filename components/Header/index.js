@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollToPlugin);
 const Header = () => {
   const headerRef = useRef();
   const reserveRef = useRef();
+  const contactRef = useRef();
   const [isIntroVisible, setIsIntroVisible] = useState(true);
 
   useEffect(() => {
@@ -23,6 +24,13 @@ const Header = () => {
     gsap.to(headerRef.current, {
       opacity: 1,
       y: 0,
+      duration: 0.5,
+      delay: 1,
+      ease: "power2.out",
+    });
+
+    gsap.to(contactRef.current, {
+      opacity: 1,
       duration: 0.5,
       delay: 1,
       ease: "power2.out",
@@ -85,10 +93,10 @@ const Header = () => {
         </a>
        
       </div>
-      <div className={s.contact}>
+      <div className={s.contact} ref={contactRef}>
         <button
             onClick={() => onClick("contact")}
-            className={`${s.contact} ${s.link} glitch ${!isIntroVisible ? s.fade : ""}`}
+            className={`${s.contactButton} ${s.link} glitch ${!isIntroVisible ? s.fade : ""}`}
           >
             <span> CONTACT </span>
           </button>
