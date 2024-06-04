@@ -1,0 +1,13 @@
+@use "@styles/vars";
+
+.headerMarquee {
+    background: vars.$white;
+    bottom: 0;
+    color: vars.$red;
+    left: 0;
+    padding: 15px 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 100000;
+  }

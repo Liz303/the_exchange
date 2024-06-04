@@ -199,11 +199,10 @@ $three-fourths: calc(100vw * 3 / 4);
 }
 
 @mixin h2() {
-  @include body-font();
+  @include header-font();
   font-optical-sizing: auto;
   font-size: 16pt;
-  font-size: calc(65pt + (75 - 65) * ((100vw - 300px) / (1600 - 300)));
-  letter-spacing: 0rem;
+  font-size: calc(50pt + (60 - 65) * ((100vw - 300px) / (1600 - 300)));
   line-height: 100%;
   margin: 0;
   text-transform: capitalize;
