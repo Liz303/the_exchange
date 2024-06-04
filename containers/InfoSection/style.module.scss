@@ -1,4 +1,7 @@
 @use "@styles/vars";
 .sectionWrap {
+  @include vars.flexbox();
+  @include vars.justify-content(center);
   position: relative;
+  padding-top: 60px;
 }

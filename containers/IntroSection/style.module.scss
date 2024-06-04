@@ -39,14 +39,15 @@
   .highlight {
     @include vars.subhead-font();
     background-image: url(../../public/images/border-top-bottom.svg);
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     font-size: 2.25vw;
     line-height: 2.25vw;
-    padding: 30px;
+    padding: 30px 30px 20px 30px;
     text-transform: uppercase;
     text-align: center;
     width: vars.$four-twelfths;
+   
   }
   .rosen {
     width: vars.$seven-twelfths;

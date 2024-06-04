@@ -37,12 +37,29 @@ body {
 
 a,
 button {
+
   color: $white;
   text-decoration: none;
   text-decoration: none;
   -webkit-text-decoration: none;
- 
+ }
+
+ button {
+  @include subhead-font();
+  background-color: $red;
+  border: none;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EDE9DDFF' stroke-width='8' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin: 20px auto;
+  padding: 25px 30px 12px 30px;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $white;
+    color: $red;
+    cursor: pointer;
   }
+ }
 
 .quote {
   @include button();
@@ -66,7 +83,9 @@ svg {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
+main {
+  margin-bottom: 100px;
+}
 .pin-spacer {
   position: relative;
   z-index: 1;

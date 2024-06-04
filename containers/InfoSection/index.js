@@ -16,7 +16,10 @@ export default function Info({ data }) {
       }}
     >
       <section className={s.sectionWrap} id="info">
-    
+        <a href="#">
+          <button> View Menu </button>
+        </a>
+        
       </section>
     </Scrollytelling.Root>
   );
