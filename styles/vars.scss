@@ -43,21 +43,26 @@
 // COLORS
 /* Put in your brand colors here */
 $black: #000000;
-$white: #e8e5e2;
-$pureWhite: #ffffff;
-$gold: #978f38;
+$white: #EDE9DD;
+$red: #C6202D;
 
-$header-font-family: vendetta, serif;
-$header-font-weight: 500;
-$header-font-style: italic;
+@import url("https://use.typekit.net/bkf4nif.css");
 
-$subhead-font-family: var(--font-manrope), sans-serif;
-$subhead-font-weight: 400;
-$subhead-font-style: normal;
+$header-font-family: paralucent, sans-serif;
+$header-font-weight: 900;
+$header-font-style: normal;
 
-$body-font-family: var(--font-manrope), sans-serif;
-$body-font-weight: 200;
+
+$subhead-font-family: "meursault-variable", serif;
+$subhead-font-variation-settings: "wght" 800, "wdth" 50;
+
+$body-font-family: interstate-condensed, sans-serif;
+$body-font-weight: 700;
 $body-font-style: normal;
+
+$button-font-family: backstroke, sans-serif;
+$button-font-weight: 400;
+$button-font-style: normal;
 
 // OTHER SET STYLES
 $border: 1px solid $black;
@@ -154,22 +159,17 @@ $three-fourths: calc(100vw * 3 / 4);
   font-family: $header-font-family;
   font-weight: $header-font-weight;
   font-style: $header-font-style;
-  font-weight: 400;
 }
 
 @mixin subhead-font() {
   font-family: $subhead-font-family;
-  font-optical-sizing: auto;
-  font-weight: $subhead-font-weight;
-  font-style: $subhead-font-style;
-  font-variation-settings: "wght" $subhead-font-weight;
+  font-variation-settings: $subhead-font-variation-settings
 }
 
 @mixin body-font() {
   font-family: $body-font-family;
   font-weight: $body-font-weight;
   font-style: $body-font-style;
-  font-optical-sizing: auto;
   font-size: 16pt;
   font-size: calc(32pt + (35 - 32) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0rem;
@@ -227,10 +227,7 @@ $three-fourths: calc(100vw * 3 / 4);
   font-family: $header-font-family;
   font-weight: 500;
   font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
-  &.header {
-    font-family: $subhead-font-family;
-    font-variation-settings: "wght" $subhead-font-weight;
-  }
+
   @include x-small() {
     font-weight: 100;
     font-size: calc(15pt + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
@@ -247,10 +244,7 @@ $three-fourths: calc(100vw * 3 / 4);
   font-family: $header-font-family;
   font-weight: 500;
   font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
-  &.header {
-    font-family: $subhead-font-family;
-    font-variation-settings: "wght" $subhead-font-weight;
-  }
+ 
 }
 
 @mixin infoText() {
