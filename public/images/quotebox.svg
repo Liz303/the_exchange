@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.5.0, SVG Export Plug-In . SVG Version: 9.03 Build 54727)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 476.3 124.2" style="enable-background:new 0 0 476.3 124.2;" xml:space="preserve">
+<style type="text/css">
+	.Drop_x0020_Shadow{fill:none;}
+	.Round_x0020_Corners_x0020_2_x0020_pt{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.Live_x0020_Reflect_x0020_X{fill:none;}
+	.Bevel_x0020_Soft{fill:url(#SVGID_1_);}
+	.Dusk{fill:#FFFFFF;}
+	.Foliage_GS{fill:#FFDD00;}
+	.Pompadour_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#44ADE2;}
+	.st0{clip-path:url(#SVGID_00000070097086031767295640000003954367859439347637_);}
+	.st1{fill:#ECE8DC;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-224.6842" y1="-344.4737" x2="-223.9771" y2="-343.7666">
+	<stop  offset="0" style="stop-color:#DEDFE3"/>
+	<stop  offset="0.1738" style="stop-color:#D8D9DD"/>
+	<stop  offset="0.352" style="stop-color:#C9CACD"/>
+	<stop  offset="0.5323" style="stop-color:#B4B5B8"/>
+	<stop  offset="0.7139" style="stop-color:#989A9C"/>
+	<stop  offset="0.8949" style="stop-color:#797C7E"/>
+	<stop  offset="1" style="stop-color:#656B6C"/>
+</linearGradient>
+<g>
+	<defs>
+		<rect id="SVGID_00000096047278731316369050000008145631905380569781_" x="8.2" y="9.6" width="460" height="105"/>
+	</defs>
+	<clipPath id="SVGID_00000040557001629580710450000012551208142543401148_">
+		<use xlink:href="#SVGID_00000096047278731316369050000008145631905380569781_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000040557001629580710450000012551208142543401148_);">
+		<path class="st1" d="M43.8,114.6V89.2H23.4C15,89.2,8.2,82.4,8.2,74V24.8c0-8.4,6.8-15.2,15.2-15.2H453c8.4,0,15.2,6.8,15.2,15.2
+			V74c0,8.4-6.8,15.2-15.2,15.2H69.3L43.8,114.6L43.8,114.6z M23.4,11.5c-7.3,0-13.3,5.9-13.3,13.2V74c0,7.3,5.9,13.2,13.2,13.2
+			h22.4v22.7l22.8-22.7H453c7.3,0,13.2-5.9,13.2-13.2V24.8c0-7.3-5.9-13.2-13.2-13.2L23.4,11.5L23.4,11.5z"/>
+	</g>
+</g>
+</svg>

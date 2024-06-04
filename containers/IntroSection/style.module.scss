@@ -1,12 +1,65 @@
 @use "@styles/vars";
 
 .loaderHead {
-  font-size: 7vw;
+  font-size: 6.75vw;
   text-align: center;
+  padding-top: 60px;
   @include vars.tablet-and-lower() {
     font-size: 7vw;
   }
   @include vars.mobile() {
     font-size: 7vw;
+  }
+}
+
+.rowOne {
+  @include vars.flexbox();
+  @include vars.flex-flow(row);
+  padding: 30px;
+}
+.rowTwo {
+  width: vars.$full;
+  svg {
+    width: 100%;
+  }
+
+}
+.columnOne {
+  width: vars.$five-twelfths;
+  svg {
+    width: 100%;
+  }
+}
+.columnTwo {
+  @include vars.flexbox();
+  @include vars.align-items(flex-end);
+  @include vars.flex-flow(column);
+  position: relative;
+  width: vars.$seven-twelfths;
+  .highlight {
+    @include vars.subhead-font();
+    background-image: url(../../public/images/border-top-bottom.svg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    font-size: 2.25vw;
+    line-height: 2.25vw;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    width: vars.$four-twelfths;
+  }
+  .rosen {
+    width: vars.$seven-twelfths;
+  }
+  .quoteContainer {
+    background-image: url(../../public/images/quotebox.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: -10px;
+    left: -40px;
+    font-size: 2.5vw;
+    overflow: visible;
+    position: absolute;
+    padding: 17px 30px 40px 40px;
   }
 }
