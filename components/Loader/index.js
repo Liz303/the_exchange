@@ -7,7 +7,7 @@ const Loader = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 500);
   }, []);
 
   return !loading && <>{children}</>;

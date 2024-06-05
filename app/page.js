@@ -5,9 +5,10 @@ import FooteraMarquee from "@/components/Marquee";
 import OrderButton from "@/components/OrderButton";
 
 export default async function Home() {
+
   return (
     <main>
-      <Intro />
+      <Intro />  
       <Info />
       <Contact />
       <FooteraMarquee />

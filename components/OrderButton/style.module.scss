@@ -1,16 +1,5 @@
 @use "@styles/vars";
 
 .buttonContainer {
-    bottom: 60px;
-    position: fixed;
-    right: 60px;
-    z-index: 100;
-
-    .burger {
-        svg {
-            path {
-                fill: vars.$white;
-            }
-        }
-    }
+    transform: translateY(400px);
 }

@@ -1,13 +1,26 @@
-import styles from "./style.module.scss";
+"use client";
+import s from "./style.module.scss";
+import { gsap } from "gsap";
+import { useRef, useEffect } from "react";
 
 const OrderButton= ({ children }) => {
+    const orderRef = useRef();
+
+    useEffect(() => {
+        setTimeout(() => {
+            gsap.to(orderRef.current, {
+                y: 0,
+                duration: 1,
+            })
+          }, "3500");
+    }, [orderRef]);
+
     return (
         <a href="#" className="no-link">
-            <div className="button-container">
+            <div className={`button-container ${s.buttonContainer}`} ref={orderRef}>
                 <button className="circle"> 
                    <div className="circle-contents">
                     <div className="circle-border">
-                        {/* <img src="../../public/images/circle-border.svg" /> */}
                     </div>
                     <span> 
                         Order Now!
