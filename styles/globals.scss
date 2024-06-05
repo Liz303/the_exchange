@@ -54,25 +54,43 @@ button {
   margin: 20px auto;
   padding: 25px 30px 12px 30px;
   text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
   &:hover {
     background-color: $white;
     color: $red;
     cursor: pointer;
   }
+  &.pill {
+    @include button();
+    background-color: $white;
+    border: 2px solid $white;
+    border-radius: 40px;
+    background-image: none;
+    color: $red;
+    line-height: 0.7rem;
+    transition: all 0.25s ease-in-out;
+    padding: 15px 60px 25px 60px;
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+    
+   
+  }
   
  }
 .button-container {
   bottom: 60px;
-    position: fixed;
-    right: 60px;
-    z-index: 100;
-    .burger {
-        svg {
-            path {
-                fill: $white;
-            }
-        }
-    }
+  position: fixed;
+  right: 60px;
+  z-index: 100;
+  .burger {
+      svg {
+          path {
+              fill: $white;
+          }
+      }
+  }
   .circle {
     @include body-font();
     background: $white;
@@ -111,7 +129,7 @@ button {
     width: 230px;
     scale: 0.1;
     top: 100px; 
-    transition: all 0.5s ease-in-out;
+    transition: all 0.45s ease-in-out;
     left: 0;
     rotate: -50deg;
     z-index: 1;
