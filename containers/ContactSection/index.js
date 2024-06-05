@@ -2,8 +2,9 @@
 import React, { useMemo } from "react";
 import s from "./style.module.scss";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
-
-
+import Condiment from "@/components/SVGs/Condiment";
+import Star
+ from "@/components/SVGs/Star";
 export default function Contact() {
   return (
   <Scrollytelling.Root
@@ -16,7 +17,17 @@ export default function Contact() {
     // debug={{ markers: true, vizualizer: false }}
   >
     <div id="contact" className={s.contactWrapper}>
-     
+      <div className={s.borderContainer}>
+      </div>
+      <div className={s.taglineRow}>
+        <div className={s.icon}>
+          <Condiment />
+        </div>
+        <span> Jersey Burgers One Mile High </span>
+        <div className={s.icon}>
+          <Star />
+        </div>
+      </div>
     </div>
   </Scrollytelling.Root>
   );

@@ -1,5 +1,35 @@
 @use "@styles/vars";
 
 .contactWrapper {
+    @include vars.flexbox();
+    @include vars.flex-flow(column);
+    @include vars.align-items(center);
+    padding: 90px 0;
+    .borderContainer {
+        background: url(../../public/images/border.svg);
+        height: 8px;
+        background-repeat: repeat-x;
+        width: vars.$eleven-twelfths;
+    }
+    .taglineRow {
+        @include vars.flexbox();
+        @include vars.flex-flow(row);
+        @include vars.align-items(center);
+        @include vars.justify-content(space-between);
+        padding: 30px 0;
+        text-transform: uppercase;
+        width: vars.$ten-twelfths;
+        span {
+            font-size: 4.5vw;
+        }
+        .icon {
+            max-width: 80px;
+            width: vars.$one-twelfth;
+            svg {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
 }
 

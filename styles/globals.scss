@@ -15,6 +15,10 @@ body {
   }
 }
 
+main {
+  margin-bottom: 150px;
+}
+
 h1 {
   @include h1();
 }
@@ -188,9 +192,7 @@ svg {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-main {
-  margin-bottom: 100px;
-}
+
 .pin-spacer {
   position: relative;
   z-index: 1;
