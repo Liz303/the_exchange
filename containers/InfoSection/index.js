@@ -19,7 +19,23 @@ export default function Info({ data }) {
         <a href="#">
           <button> View Menu </button>
         </a>
-        
+        <div className={s.hoursAndAddress}>
+          <div className={s.hours}>
+            Friday & Saturday <br/>
+            5p.m. - 2a.m
+          </div>
+          <div className={s.location}>
+            <a href="https://maps.app.goo.gl/CrGYt9hhmfDdJ1J68" target="blank">
+              725 E 26th Ave, Denver, CO. 80205
+            </a>
+          </div>
+          
+        </div>
+      
+        <a href="tel:720.440.9880">
+          <button className="pill"> 720.440.9880 </button> 
+        </a>
+      
       </section>
     </Scrollytelling.Root>
   );
