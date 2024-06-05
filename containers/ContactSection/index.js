@@ -37,6 +37,12 @@ export default function Contact() {
           </div>
         </a>
       </div>
+      <div className={s.logoContainer}>
+        <img src="./images/rosenbergs-logo.svg"/>
+      </div>
+      <a href="https://rosenbergsbagels.com/" className="no-link">
+        rosenbergsbagels.com
+      </a>
     </div>
   </Scrollytelling.Root>
   );

@@ -32,6 +32,7 @@
         }
     }
     .socialContainer {
+        margin: 60px 0 120px 0;
         .circle {
             @include vars.flexbox();
             @include vars.justify-content(center);
@@ -58,6 +59,19 @@
                 }
             }
         }
+    }
+    .logoContainer {
+        width: vars.$two-twelfths;
+        img {
+           width: 100%;
+        }
+        margin-bottom: 10px;
+    }
+    a {
+        @include vars.body-font();
+        font-size: 0.5rem;
+        letter-spacing: 0.03rem;
+        text-transform: uppercase;
     }
 }
 
