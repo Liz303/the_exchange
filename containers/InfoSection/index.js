@@ -16,7 +16,7 @@ export default function Info({ data }) {
       }}
     >
       <section className={s.sectionWrap} id="info">
-        <a href="#">
+        <a href="#" className="no-link">
           <button> View Menu </button>
         </a>
         <div className={s.hoursAndAddress}>
@@ -32,7 +32,7 @@ export default function Info({ data }) {
           
         </div>
       
-        <a href="tel:720.440.9880">
+        <a href="tel:720.440.9880" className="no-link">
           <button className="pill"> 720.440.9880 </button> 
         </a>
       

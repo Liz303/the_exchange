@@ -2,7 +2,7 @@ import styles from "./style.module.scss";
 
 const OrderButton= ({ children }) => {
     return (
-        <a href="#">
+        <a href="#" className="no-link">
             <div className="button-container">
                 <button className="circle"> 
                    <div className="circle-contents">
