@@ -59,16 +59,34 @@ button {
     color: $red;
     cursor: pointer;
   }
-  &.circle {
+  
+ }
+.button-container {
+  bottom: 60px;
+    position: fixed;
+    right: 60px;
+    z-index: 100;
+    .burger {
+        svg {
+            path {
+                fill: $white;
+            }
+        }
+    }
+  .circle {
     @include body-font();
     background: $white;
     border-radius: 50%;
     box-shadow: $red -2px 7px 0px;
     color: $red;
     height: 235px;
-    text-transform: uppercase;
+
+    position: relative;
     padding: 0;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
     width: 235px;
+    z-index: 10;
     span {
       @include flexbox();
       @include justify-content(center);
@@ -79,13 +97,40 @@ button {
       width: 230px;
       padding: 20px;
     }
-    // &:hover {
-    //   box-shadow: $red 1px 5px 0px;
-    //   transform: translate(2px, 10px);
-    // }
-  }
- }
 
+  }
+  .burger-container {
+    position: absolute;
+    width: 230px;
+    scale: 0.1;
+    top: 100px; 
+    transition: all 0.5s ease-in-out;
+    left: 0;
+    rotate: -50deg;
+    z-index: 1;
+    svg {
+      .st0{fill:#0BAA4B;}
+      .st1{fill:#FFFFFF;}
+    }
+  }
+  &:hover {
+    .circle {
+      box-shadow: $red 1px 5px 0px;
+      cursor: pointer;
+      transform: translate(2px, 10px);
+    }
+
+    .burger-container {
+      scale: 1;
+      top: 30px;
+      left: -190px;
+      rotate: 0deg;
+      @include x-small {
+        scale: 0.7;
+      }
+    }
+  }
+}
 .quote {
   @include button();
 }
