@@ -5,9 +5,14 @@ const OrderButton= ({ children }) => {
         <a href="#">
             <div className="button-container">
                 <button className="circle"> 
-                   <span>
-                     Order Now!
-                   </span> 
+                   <div className="circle-contents">
+                    <div className="circle-border">
+                        {/* <img src="../../public/images/circle-border.svg" /> */}
+                    </div>
+                    <span> 
+                        Order Now!
+                     </span> 
+                   </div> 
                 </button>
                 <div className="burger-container">
                     <div className="burger">
