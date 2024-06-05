@@ -13,7 +13,7 @@ export default function FooteraMarquee() {
                 y: 0,
                 duration: 1,
             })
-          }, "2500");
+          }, "3000");
     }, [marqueeRef]);
 
     return (

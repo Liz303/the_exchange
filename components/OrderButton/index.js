@@ -12,7 +12,7 @@ const OrderButton= ({ children }) => {
                 y: 0,
                 duration: 1,
             })
-          }, "3000");
+          }, "3500");
     }, [orderRef]);
 
     return (
