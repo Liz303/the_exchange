@@ -59,7 +59,11 @@ button {
   @include subhead-font();
   background-color: $red;
   border: none;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EDE9DDFF' stroke-width='8' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  // background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EDE9DDFF' stroke-width='8' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-image: repeating-linear-gradient(-2deg, #ffffff, #ffffff 24px, transparent 24px, transparent 53px, #ffffff 53px), repeating-linear-gradient(88deg, #ffffff, #ffffff 24px, transparent 24px, transparent 53px, #ffffff 53px), repeating-linear-gradient(178deg, #ffffff, #ffffff 24px, transparent 24px, transparent 53px, #ffffff 53px), repeating-linear-gradient(268deg, #ffffff, #ffffff 24px, transparent 24px, transparent 53px, #ffffff 53px);
+  background-size: 6px calc(100% + 53.03px), calc(100% + 53.03px) 6px, 6px calc(100% + 53.03px) , calc(100% + 53.03px) 6px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
   font-size: 0.9rem;
   line-height: 1rem;
   margin: 20px auto;
@@ -67,8 +71,9 @@ button {
   text-transform: uppercase;
   transition: all 0.25s ease-in-out;
   &:hover {
-    background-color: $white;
-    color: $red;
+    animation: borderAnimation 0.4s infinite linear;
+    // background-color: $white;
+    // color: $red;
     cursor: pointer;
   }
   &.pill {
@@ -153,7 +158,7 @@ button {
     .circle {
       box-shadow: $red 1px 5px 0px;
       cursor: pointer;
-      transform: translate(2px, 10px);
+      transform: translate(2px, 8px);
       .circle-border {
         animation: none;
       }
@@ -236,3 +241,8 @@ svg {
     transform: rotate(360deg);
   }
 }
+
+@keyframes borderAnimation {
+  from { background-position: 0 0, -53.03px 0, 100% -53.03px, 0 100%; }
+  to { background-position: 0 -53.03px, 0 0, 100% 0, -53.03px 100%; }
+  }
