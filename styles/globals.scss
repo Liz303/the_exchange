@@ -158,6 +158,7 @@ button {
         animation-iteration-count: infinite;
         background: url("../public/images/circle-border.svg");
         background-size: 100% 100%;
+        left: 3px;
         max-height: 230px;
         max-width: 230px;
         min-width: 115px;
@@ -165,6 +166,15 @@ button {
         height: $button-inner-width;
         width: $button-inner-width;
         position: absolute;
+        @include small {
+          left: 4px;
+        };
+        @include tablet-and-lower {
+          left: 4px;
+        }
+        @include x-small {
+          left: 3px;
+        }
       }
     }
   }
