@@ -96,11 +96,14 @@ button {
   right: 60px;
   z-index: 100;
   .burger {
-      svg {
-          path {
-              fill: $white;
-          }
+
+      .st0{
+          fill: $red;
       }
+      .st1{
+          fill: $white;
+      }
+
   }
   .circle {
     @include body-font();
@@ -144,8 +147,7 @@ button {
     left: 0;
     rotate: -50deg;
     z-index: 1;
-    svg {
-      .st0{fill:#0BAA4B;}
+    svg {s
       .st1{fill:#FFFFFF;}
     }
   }
