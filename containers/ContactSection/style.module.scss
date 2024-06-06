@@ -30,9 +30,24 @@
                 width: 100%;
             }
         }
+        @include vars.x-small {
+            span {
+                font-size: 8vw;
+                line-height: 9vw;
+                text-align: center;
+                padding: 0 10px;
+            }
+            .icon {
+                width: 80px;
+            }
+  
+        }
     }
     .socialContainer {
         margin: 60px 0 120px 0;
+        @include vars.tablet-and-lower {
+            margin-bottom: 90px;
+        }
         .circle {
             @include vars.flexbox();
             @include vars.justify-content(center);
@@ -67,6 +82,9 @@
         @include vars.align-items(center);
         min-width: 250px;
         width: vars.$two-twelfths;
+        @include vars.x-small {
+            min-width: 200px;
+        };
         img {
             margin-bottom: 10px;
            width: 100%;
@@ -80,9 +98,12 @@
     }
     a {
         @include vars.body-font();
-        font-size: 0.5rem;
+        font-size: 0.5rem !important;
         letter-spacing: 0.03rem;
         text-transform: uppercase;
+        @include vars.x-small {
+            font-size: 0.7rem !important;
+        }
     }
 }
 

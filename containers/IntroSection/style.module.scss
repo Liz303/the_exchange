@@ -23,6 +23,9 @@
   @include vars.flexbox();
   @include vars.flex-flow(row);
   padding: 30px;
+  @include vars.small() {
+    padding: 30px 0 10px 0;
+  }
 }
 .rowTwo {
   transform: translateY(100vh);
@@ -66,7 +69,9 @@
     text-align: center;
     transform: translateX(100%);
     width: vars.$four-twelfths;
-   
+    @include vars.small {
+     opacity: 0;
+    }
   }
   .rosen {
     transform: translateX(120%);
@@ -83,6 +88,19 @@
     overflow: visible;
     position: absolute;
     padding: 17px 30px 50px 40px;
+    @include vars.small {
+      padding-top: 6px;
+    }
+    @include vars.tablet-and-lower {
+      padding-top: 9px;
+    }
+    @include vars.x-small {
+      padding-left: 20px;
+      padding-right: 10px;
+      span {
+        font-size: 5vw;
+      }
+    }
     &.show {
       opacity: 1 !important;
     }
