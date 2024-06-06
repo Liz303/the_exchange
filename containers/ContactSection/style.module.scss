@@ -61,6 +61,11 @@
         }
     }
     .logoContainer {
+        @include vars.flexbox();
+        @include vars.flex-flow(column);
+        @include vars.justify-content(center);
+        @include vars.align-items(center);
+        min-width: 250px;
         width: vars.$two-twelfths;
         img {
             margin-bottom: 10px;
