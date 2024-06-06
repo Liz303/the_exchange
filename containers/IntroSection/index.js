@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import s from "./style.module.scss";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import BurgerAndBagel from "@/components/SVGs/burgerAndBagel";
+import BurgerAndBagel from "@/components/SVGs/BurgerAndBagel";
 import Rosen from "@/components/SVGs/Rosen";
 import Burger from "@/components/SVGs/Burger";
 import { useWindowDimensions } from "@/hooks/useWindowDimensions";
