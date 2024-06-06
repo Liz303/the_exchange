@@ -127,7 +127,7 @@ button {
     @include body-font();
     background: $white;
     border-radius: 50%;
-    box-shadow: $red -2px 7px 0px;
+    border: 5px solid $red;
     color: $red;
     height: $button-width;
     max-height: 235px;
@@ -145,10 +145,10 @@ button {
       @include justify-content(center);
       @include align-items(center);
       height: $button-inner-width;
-      max-height: 230px;
-      max-width: 230px;
-      min-width: 115px;
-      min-height: 115px;
+      max-height: 220px;
+      max-width: 220px;
+      min-width: 110px;
+      min-height: 110px;
       width: $button-inner-width;
       padding: 20px;
       position: relative;
@@ -158,23 +158,21 @@ button {
         animation-iteration-count: infinite;
         background: url("../public/images/circle-border.svg");
         background-size: 100% 100%;
-        left: 3px;
-        max-height: 230px;
-        max-width: 230px;
-        min-width: 115px;
-        min-height: 115px;
+        left: 2px;
+        max-height: 220px;
+        max-width: 220px;
+        min-width: 110px;
+        min-height: 110px;
         height: $button-inner-width;
         width: $button-inner-width;
         position: absolute;
         @include small {
-          left: 4px;
+          left: 1px;
         };
         @include tablet-and-lower {
-          left: 4px;
+          left: 1px;
         }
-        @include x-small {
-          left: 3px;
-        }
+       
       }
     }
   }

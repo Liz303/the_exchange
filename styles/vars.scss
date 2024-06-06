@@ -88,7 +88,7 @@ $one-fourth: calc(100vw * 1 / 4);
 $two-fourths: calc(100vw * 2 / 4);
 $three-fourths: calc(100vw * 3 / 4);
 $button-width: calc(100vw * 2.5/12);
-$button-inner-width: calc((100vw * 2.5/12) - 5px);
+$button-inner-width: calc((100vw * 2.5/12) - 10px);
 @mixin grid-wrap {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
