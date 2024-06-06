@@ -1,4 +1,8 @@
 @use "@styles/vars";
+.introContainer {
+  margin: 0 auto;
+  width: 100vw;
+}
 .eyebrowContainer {
   transform: scale(0.05);
   .loaderHead {
@@ -30,11 +34,14 @@
 
 }
 .columnOne {
-  width: vars.$five-twelfths;
+  width: calc(5/12 * 100%);
   .burgerAndBagel {
     transform: translateX(-120%);
     svg {
       width: 100%;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 }
@@ -43,7 +50,7 @@
   @include vars.align-items(flex-end);
   @include vars.flex-flow(column);
   position: relative;
-  width: vars.$seven-twelfths;
+  width: calc(7/12 * 100%);
   .highlight {
     @include vars.subhead-font();
     background-image: url(../../public/images/border-top-bottom.svg);
@@ -60,7 +67,7 @@
   }
   .rosen {
     transform: translateX(120%);
-    width: vars.$seven-twelfths;
+    width: 100%;
   }
   .quoteContainer {
     background-image: url(../../public/images/quotebox.svg);
@@ -73,5 +80,11 @@
     overflow: visible;
     position: absolute;
     padding: 17px 30px 40px 40px;
+    &.show {
+      opacity: 1 !important;
+    }
+    &.hide {
+      opacity: 0;
+    }
   }
 }

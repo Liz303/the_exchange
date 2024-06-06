@@ -15,12 +15,16 @@ export default function Intro() {
   const highlightRef = useRef();
   const rosenRef = useRef();
   const burgerRef = useRef();
+  const introRef = useRef();
+  const [showQuote, setShowQuote] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     let tl = gsap.timeline({
       onComplete: function () {
       const body = document.body;
       body.style.position = "relative";
+      setIsLoaded(true);
     },
   });
     tl.to(headlineRef.current, {
@@ -44,24 +48,25 @@ export default function Intro() {
       height: 0
     }).to([quoteRef.current, highlightRef.current], {
       opacity: 0
+    }).to(introRef.current, {
+      width: "83.3333vw",
     });
 
-}, []);
-
+}, [introRef, quoteRef, headlineRef, burgerRef, rosenRef, burgerAndBagelRef]);
 
   return (
-    <section id="intro">
+    <section id="intro" className={s.introContainer} ref={introRef}>
         <div className={s.eyebrowContainer} ref={headlineRef}>
             <h1 className={s.loaderHead} > WHEN DELI & DINNER Collide </h1>
         </div>
         <div className={s.rowOne}>
           <div className={s.columnOne}>
-           <div className={s.burgerAndBagel} ref={burgerAndBagelRef}>
+           <div className={s.burgerAndBagel} ref={burgerAndBagelRef} onMouseEnter={() => setShowQuote(true)} onMouseLeave={() => setShowQuote(false)}>
             <BurgerAndBagel />
            </div>
           </div>
           <div className={s.columnTwo}>
-            <div className={s.quoteContainer} ref={quoteRef}>
+            <div className={`${s.quoteContainer} ${(showQuote && isLoaded) ? s.show : s.hide}`} ref={quoteRef}>
               <span className="quote"> "Hey, I'm grillin' here!" </span>
             </div>
             <div className={s.highlight} ref={highlightRef}>
