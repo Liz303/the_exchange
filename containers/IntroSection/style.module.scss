@@ -1,6 +1,10 @@
 @use "@styles/vars";
 .introContainer {
+  @include vars.flexbox();
+  @include vars.flex-flow(column);
+  @include vars.justify-content(center);  
   margin: 0 auto;
+  min-height: 100vh;
   width: 100vw;
 }
 .eyebrowContainer {
@@ -10,12 +14,7 @@
     text-align: center;
     padding-top: 60px;
   
-    @include vars.tablet-and-lower() {
-      font-size: 7vw;
-    }
-    @include vars.mobile() {
-      font-size: 7vw;
-    }
+   
   }
 }
 
@@ -26,7 +25,7 @@
   padding: 30px;
 }
 .rowTwo {
-  transform: translateY(100%);
+  transform: translateY(100vh);
   width: vars.$full;
   svg {
     width: 100%;
@@ -34,9 +33,13 @@
 
 }
 .columnOne {
+  @include vars.flexbox();
+  @include vars.align-items(flex-end);
+  @include vars.justify-content(flex-end);
   width: calc(5/12 * 100%);
   .burgerAndBagel {
     transform: translateX(-120%);
+    width: 100%;
     svg {
       width: 100%;
     }

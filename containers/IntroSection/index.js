@@ -43,13 +43,15 @@ export default function Intro() {
     }).to(burgerRef.current, {
       y: 0
     }).to(headlineRef.current, {
-      y: -300
+      y: `-100vh`
     }).to(headlineRef.current, {
+      opacity: 0,
       height: 0
     }).to([quoteRef.current, highlightRef.current], {
       opacity: 0
     }).to(introRef.current, {
       width: "83.3333vw",
+      minHeight: "auto",
     });
 
 }, [introRef, quoteRef, headlineRef, burgerRef, rosenRef, burgerAndBagelRef]);
