@@ -9,36 +9,36 @@ import "../styles/vars.scss";
 export const metadata = {
   title: "Rosenburgers",
   description:
-    "",
+    "An evening and late night burger pop up brought to you by Rosenberg's Bagels. Home of the $3.80 burger.",
   icons: {
     icon: [
       { url: "/favicon-32x32.png" },
-      new URL("/favicon-32x32.png", "https://www.thewolfstailor.com/"),
+      new URL("/favicon-32x32.png", "https://www.rosenburgers.com/"),
     ],
     icon: [
       { url: "/favicon-16x16.png" },
-      new URL("/favicon-16x16.png", "https://www.thewolfstailor.com/"),
+      new URL("/favicon-16x16.png", "https://www.rosenburgers.com/"),
     ],
     apple: [{ url: "/apple-touch-icon.png" }],
     maskIcon: [{ url: "/safari-pinned-tab.svg", color: "#5bbad5" }],
   },
-  manifest: "https://www.thewolfstailor.com/site.webmanifest",
+  manifest: "https://www.rosenburgers.com/site.webmanifest",
   twitter: {
     card: "summary_large_image",
     title: "Rosenburgers",
     description:
-      "",
-    images: ["https://www.thewolfstailor.com/og-image.jpg"],
+      "An evening and late night burger pop up brought to you by Rosenberg's Bagels. Home of the $3.80 burger.",
+    images: ["https://www.rosenburgers.com/og-image.jpg"],
   },
   openGraph: {
     title: "Rosenburgers",
     description:
-      "",
-    url: "https://www.thewolfstailor.com/",
+      "An evening and late night burger pop up brought to you by Rosenberg's Bagels. Home of the $3.80 burger.",
+    url: "https://www.rosenburgers.com/",
     siteName: "",
     images: [
       {
-        url: "https://www.thewolfstailor.com/og-image.jpg",
+        url: "https://www.rosenburgers.com/og-image.jpg",
         width: 1257,
         height: 2400,
       },
@@ -46,7 +46,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  metadataBase: new URL("https://www.thewolfstailor.com/"),
+  metadataBase: new URL("https://www.rosenburgers.com/"),
   robots: {
     index: true,
     follow: true,

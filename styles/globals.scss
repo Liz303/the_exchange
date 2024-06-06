@@ -96,14 +96,12 @@ button {
   right: 60px;
   z-index: 100;
   .burger {
-
       .st0{
           fill: $red;
       }
       .st1{
           fill: $white;
       }
-
   }
   .circle {
     @include body-font();
