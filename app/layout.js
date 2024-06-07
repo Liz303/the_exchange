@@ -38,8 +38,8 @@ export const metadata = {
     images: [
       {
         url: "https://www.rosenburgers.com/og-image.jpg",
-        width: 1257,
-        height: 2400,
+        width: 1200,
+        height: 627,
       },
     ],
     locale: "en_US",
@@ -68,7 +68,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
       <body>
         <Loader>
           {children}
