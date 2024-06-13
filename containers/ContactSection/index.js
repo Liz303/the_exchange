@@ -31,7 +31,7 @@ export default function Contact() {
         </div>
       </div>
       <div className={s.socialContainer}>
-        <a className="noline" href="https://www.instagram.com/rosenbergsbagel/?hl=en">
+        <a className="noline" href="https://www.instagram.com/rosenburgers_fivepoints/?hl=en">
           <div className={s.circle}>
             <Insta />
           </div>
