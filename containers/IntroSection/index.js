@@ -72,7 +72,7 @@ export default function Intro() {
               <span className="quote"> "Hey, I'm grillin' here!" </span>
             </div>
             <div className={s.highlight} ref={highlightRef}>
-              Home of the $3.80 burger
+              Home of the $3.80 cheeseburger
             </div>
             <div className={s.rosen} ref={rosenRef}>
               <Rosen />

@@ -20,7 +20,7 @@ export default function FooteraMarquee() {
         <div className={styles.headerMarquee} ref={marqueeRef}>
             <Marquee>
             <h2>
-                HEY! I&apos;M GRILLIN&apos; HERE. HOME OF THE $3.80 BURGER &nbsp;
+                HEY! I&apos;M GRILLIN&apos; HERE. HOME OF THE $3.80 CHEESEBURGER &nbsp;
             </h2>
             </Marquee>
       </div>

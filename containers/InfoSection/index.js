@@ -16,7 +16,7 @@ export default function Info({ data }) {
       }}
     >
       <section className={s.sectionWrap} id="info">
-        <a href="./images/rosenburger_menu.pdf" className="no-link" download target="blank">
+        <a href="./images/rosenburger_menu_Handout_Prod.pdf" className="no-link" download target="blank">
           <button> View Menu </button>
         </a>
         <div className={s.hoursAndAddress}>
