@@ -42,11 +42,12 @@
 
 // COLORS
 /* Put in your brand colors here */
-$black: #000000;
-$white: #EDE9DD;
-$red: #C6202D;
+$black: #231F20;
+$white: #EFEDDC;
+$red: #c45f1f;
+$yellow: #c4a11f;
 
-@import url("https://use.typekit.net/bkf4nif.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 $header-font-family: paralucent, sans-serif;
 $header-font-weight: 900;
@@ -60,8 +61,9 @@ $body-font-family: interstate-condensed, sans-serif;
 $body-font-weight: 700;
 $body-font-style: normal;
 
-$button-font-family: backstroke, sans-serif;
-$button-font-weight: 400;
+
+$button-font-family: "Manrope", sans-serif;
+$button-font-weight: 800;
 $button-font-style: normal;
 
 // OTHER SET STYLES
@@ -229,22 +231,6 @@ $button-inner-width: calc((100vw * 2.5/12) - 10px);
   }
 }
 
-@mixin micro() {
-  font-family: $header-font-family;
-  font-weight: 500;
-  font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
-
-  @include x-small() {
-    font-weight: 100;
-    font-size: calc(15pt + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-@mixin annoText() {
-  font-family: $header-font-family;
-  font-weight: 500;
-  font-size: calc(9pt + (12 - 9) * ((100vw - 300px) / (1600 - 300)));
-}
 
 @mixin link() {
   font-family: $header-font-family;
@@ -253,39 +239,13 @@ $button-inner-width: calc((100vw * 2.5/12) - 10px);
  
 }
 
-@mixin infoText() {
-  font-family: $header-font-family;
-  font-weight: 100;
-  font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
-  text-transform: uppercase;
-}
-
-@mixin script() {
-  font-family: $header-font-family;
-  font-weight: 300;
-  font-style: $header-font-style;
-  font-size: calc(20pt + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
-  letter-spacing: 0.025em;
-  line-height: 100%;
-}
-
-@mixin label() {
-  font-family: $body-font-family;
-  font-weight: 100;
-  font-variation-settings: "wght" $body-font-weight;
-  font-optical-sizing: auto;
-  font-size: calc(10pt + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 100%;
-  @include x-small() {
-    font-size: calc(12pt + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
 
 // Buttons //
 @mixin button() {
   font-family: $button-font-family;
   font-weight: $button-font-weight;
   font-style: $button-font-style;
+  font-optical-sizing: auto;
 }
 
 // Flexbox// --------------------------------------------------

@@ -6,9 +6,9 @@ import "../styles/vars.scss";
 
 
 export const metadata = {
-  title: "Rosenburgers",
+  title: "The Exchange",
   description:
-    "An evening and late night burger pop up brought to you by Rosenberg's Bagels. Home of the $3.80 burger.",
+    "Situated on the National Western Complex and occupying the former livestock exchange, The Exchange is a bridge not only between the natural and the urban; between land and history; but also a gateway to a future that upholds the past.",
   icons: {
     icon: [
       { url: "/favicon-32x32.png" },
@@ -24,15 +24,15 @@ export const metadata = {
   manifest: "https://www.rosenburgers.com/site.webmanifest",
   twitter: {
     card: "summary_large_image",
-    title: "Rosenburgers",
+    title: "The Exchange",
     description:
-      "An evening and late night burger pop up brought to you by Rosenberg's Bagels. Home of the $3.80 burger.",
+      "Situated on the National Western Complex and occupying the former livestock exchange, The Exchange is a bridge not only between the natural and the urban; between land and history; but also a gateway to a future that upholds the past..",
     images: ["https://www.rosenburgers.com/og-image.jpg"],
   },
   openGraph: {
-    title: "Rosenburgers",
+    title: "The Exchange",
     description:
-      "An evening and late night burger pop up brought to you by Rosenberg's Bagels. Home of the $3.80 burger.",
+      "Situated on the National Western Complex and occupying the former livestock exchange, The Exchange is a bridge not only between the natural and the urban; between land and history; but also a gateway to a future that upholds the past.",
     url: "https://www.rosenburgers.com/",
     siteName: "",
     images: [

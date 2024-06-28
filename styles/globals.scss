@@ -3,7 +3,7 @@
 html,
 body {
   @include body-font();
-  background: $red;
+  background: $black;
   color: $white;
   overflow-x: clip;
  
@@ -59,169 +59,32 @@ button {
   }
 
  button {
-  @include subhead-font();
-  background-color: $red;
-  border: none;
-  background-image: repeating-linear-gradient(-2deg, #ffffff, #ffffff 24px, transparent 24px, transparent 53px, #ffffff 53px), repeating-linear-gradient(88deg, #ffffff, #ffffff 24px, transparent 24px, transparent 53px, #ffffff 53px), repeating-linear-gradient(178deg, #ffffff, #ffffff 24px, transparent 24px, transparent 53px, #ffffff 53px), repeating-linear-gradient(268deg, #ffffff, #ffffff 24px, transparent 24px, transparent 53px, #ffffff 53px);
-  background-size: 6px calc(100% + 53.03px), calc(100% + 53.03px) 6px, 6px calc(100% + 53.03px) , calc(100% + 53.03px) 6px;
-  background-position: 0 0, 0 0, 100% 0, 0 100%;
-  background-repeat: no-repeat;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  margin: 20px auto;
-  padding: 25px 30px 12px 30px;
-  text-transform: uppercase;
-  transition: all 0.25s ease-in-out;
-  @include tablet-and-lower {
-    background-image: repeating-linear-gradient(1deg, #ffffff, #ffffff 18px, transparent 18px, transparent 40px, #ffffff 40px), repeating-linear-gradient(91deg, #ffffff, #ffffff 18px, transparent 18px, transparent 40px, #ffffff 40px), repeating-linear-gradient(181deg, #ffffff, #ffffff 18px, transparent 18px, transparent 40px, #ffffff 40px), repeating-linear-gradient(271deg, #ffffff, #ffffff 18px, transparent 18px, transparent 40px, #ffffff 40px);
-    background-size: 4px 100%, 100% 4px, 4px 100% , 100% 4px;
-    background-position: 0 0, 0 0, 100% 0, 0 100%;
-    background-repeat: no-repeat;
-  }
+  @include button();
+  background-color: transparent;
+  border: 2px solid $black;
+  color: $black;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 40px;
+  transition: all 0.25s ease-in-out  ;
   &:hover {
-    animation: borderAnimation 0.4s infinite linear;
-    // background-color: $white;
-    // color: $red;
+    background-color: $black;
+    color: $white;
     cursor: pointer;
   }
-  &.pill {
-    @include button();
-    background-color: $white;
-    border: 2px solid $white;
-    border-radius: 40px;
-    background-image: none;
-    color: $red;
-    line-height: 0.7rem;
-    transition: all 0.25s ease-in-out;
-    padding: 15px 60px 25px 60px;
-    &:hover {
-      background-color: $red;
-      color: $white;
-    }
-    
-   
-  }
-  
  }
-.button-container {
-  bottom: 60px;
-  position: fixed;
-  right: 60px;
-  z-index: 100;
-  @include tablet-and-lower {
-    bottom: 50px;
-    right: 10px;
-  }
-  @include x-small {
-    bottom: 35px;
-  }
-  .burger {
-      .st0{
-          fill: $red;
-      }
-      .st1{
-          fill: $white;
-      }
-  }
-  .circle {
-    @include body-font();
-    background: $white;
-    border-radius: 50%;
-    border: 5px solid $red;
-    color: $red;
-    height: $button-width;
-    max-height: 235px;
-    max-width: 235px;
-    min-width: 120px;
-    min-height: 120px;
-    position: relative;
-    padding: 0;
-    text-transform: uppercase;
-    transition: all 0.5s ease-in-out;
-    width: $button-width;
-    z-index: 10;
-    .circle-contents {
-      @include flexbox();
-      @include justify-content(center);
-      @include align-items(center);
-      height: $button-inner-width;
-      max-height: 220px;
-      max-width: 220px;
-      min-width: 110px;
-      min-height: 110px;
-      width: $button-inner-width;
-      padding: 20px;
-      position: relative;
-      .circle-border {
-        animation-name: spinning;
-        animation-duration: 18s;
-        animation-iteration-count: infinite;
-        background: url("../public/images/circle-border.svg");
-        background-size: 100% 100%;
-        left: 2px;
-        max-height: 220px;
-        max-width: 220px;
-        min-width: 110px;
-        min-height: 110px;
-        height: $button-inner-width;
-        width: $button-inner-width;
-        position: absolute;
-        @include small {
-          left: 1px;
-        };
-        @include tablet-and-lower {
-          left: 1px;
-        }
-       
-      }
-    }
-  }
-  .burger-container {
-    position: absolute;
-    width: 230px;
-    scale: 0.1;
-    top: 100px; 
-    transition: all 0.45s ease-in-out;
-    left: 0;
-    rotate: -50deg;
-    z-index: 1;
-    svg {
-      .st1{fill:#FFFFFF;}
-    }
-    @include tablet-and-lower {
-      top: 50px;
-      width: 170px;
-    }
-  }
-  &:hover {
-    .circle {
-      box-shadow: $red 1px 5px 0px;
-      cursor: pointer;
-      transform: translate(2px, 8px);
-      .circle-border {
-        animation: none;
-      }
-    }
 
-    .burger-container {
-      scale: 1;
-      top: 30px;
-      left: -190px;
-      rotate: 0deg;
-      @include tablet-and-lower {
-        left: -150px;
-      }
-    }
-  }
-}
-.quote {
-  @include button();
-}
 
 svg {
   path {
     fill: $white;
+    &.black {
+ 
+        fill: $black;
+ 
+    }
   }
+ 
 }
 
 * {
@@ -236,52 +99,3 @@ svg {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-.pin-spacer {
-  position: relative;
-  z-index: 1;
-}
-
-.pin-style {
-  overscroll-behavior: none;
-  display: flex;
-  flex-wrap: nowrap;
-  width: 200vw;
-  overflow: hidden;
-}
-
-.mobile-pin-spacer {
-  position: relative;
-  z-index: 1;
-  margin-top: -40vh;
-}
-.mobile-pin-style {
-  overflow: hidden;
-}
-
-// Animations 
-@keyframes spinning {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spinning {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes borderAnimation {
-  from { background-position: 0 0, -53.03px 0, 100% -53.03px, 0 100%; }
-  to { background-position: 0 -53.03px, 0 0, 100% 0, -53.03px 100%; }
-  }

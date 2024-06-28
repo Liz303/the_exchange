@@ -2,21 +2,14 @@
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import s from "./style.module.scss";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import BurgerAndBagel from "@/components/SVGs/BurgerAndBagel";
-import Rosen from "@/components/SVGs/Rosen";
-import Burger from "@/components/SVGs/Burger";
-import { useWindowDimensions } from "@/hooks/useWindowDimensions";
+import Logo from "@/components/SVGs/Logo";
+import Header from "@/components/Header";
 
 export default function Intro() {
-  const headlineRef = useRef();
-  const burgerAndBagelRef = useRef();
-  const quoteRef = useRef();
-  const highlightRef = useRef();
-  const rosenRef = useRef();
-  const burgerRef = useRef();
+  const logoRef = useRef();
   const introRef = useRef();
-  const [showQuote, setShowQuote] = useState(false);
+  const headerRef = useRef();
+  const backgroundImageContainer = useRef();
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -27,60 +20,31 @@ export default function Intro() {
       setIsLoaded(true);
     },
   });
-    tl.to(headlineRef.current, {
+    tl.to(logoRef.current, {
       scale: 1, 
+      opacity: 1, 
       duration: 0.5,
-    }).to(burgerAndBagelRef.current, {
-      x: 0,
-    }).to(quoteRef.current, {
-      opacity: 1
-    }).to(highlightRef.current, {
-      duration: 0.25,
-      x: 0
-    }).to(rosenRef.current, {
-      duration: 0.5,
-      x: 0
-    }).to(burgerRef.current, {
-      y: 0
-    }).to(headlineRef.current, {
-      y: `-100vh`
-    }).to(headlineRef.current, {
-      opacity: 0,
-      height: 0
-    }).to([quoteRef.current, highlightRef.current], {
-      opacity: 0
-    }).to(introRef.current, {
-      width: "83.3333vw",
-      minHeight: "auto",
+    }).to(backgroundImageContainer.current, {
+      delay: 1,
+      top: 0,
+      duration: 1,
+    }).to(headerRef.current, {
+      opacity: 1, 
+      duration: 1
     });
 
-}, [introRef, quoteRef, headlineRef, burgerRef, rosenRef, burgerAndBagelRef]);
+}, [introRef, logoRef]);
 
   return (
     <section id="intro" className={s.introContainer} ref={introRef}>
-        <div className={s.eyebrowContainer} ref={headlineRef}>
-            <h1 className={s.loaderHead} > WHEN DELI & DINNER Collide </h1>
+        <div className={s.headerContainer} ref={headerRef}>
+          <Header />
         </div>
-        <div className={s.rowOne}>
-          <div className={s.columnOne}>
-           <div className={s.burgerAndBagel} ref={burgerAndBagelRef} onMouseEnter={() => setShowQuote(true)} onMouseLeave={() => setShowQuote(false)}>
-            <BurgerAndBagel />
-           </div>
-          </div>
-          <div className={s.columnTwo}>
-            <div className={`${s.quoteContainer} ${(showQuote && isLoaded) ? s.show : s.hide}`} ref={quoteRef}>
-              <span className="quote"> "Hey, I'm grillin' here!" </span>
-            </div>
-            <div className={s.highlight} ref={highlightRef}>
-              Home of the $3.80 cheeseburger
-            </div>
-            <div className={s.rosen} ref={rosenRef}>
-              <Rosen />
-            </div>
-          </div>
+        <div className={s.backgroundImage} ref={backgroundImageContainer}>
+          <img alt="The exchange building exterior" src="./images/DUSYC_EDIT_V1.jpg"/>
         </div>
-        <div className={s.rowTwo} ref={burgerRef}>
-          <Burger />
+        <div className={s.logoContainer} ref={logoRef}>
+          <Logo />
         </div>
     </section>
   );
