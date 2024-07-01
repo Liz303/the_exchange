@@ -9,7 +9,7 @@ const Header = () => {
         <LogoElement />
        </div>
        <div className={s.contactContainer}>
-          <a className="no-link" href="mailto:justin@naturalobject.com">
+          <a className="no-link" href="mailto:justin@naturalobject.dev">
             <button className={s.contactButton}>
               <span> Contact </span>
             </button>

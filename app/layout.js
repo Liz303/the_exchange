@@ -12,32 +12,32 @@ export const metadata = {
   icons: {
     icon: [
       { url: "/favicon-32x32.png" },
-      new URL("/favicon-32x32.png", "https://www.rosenburgers.com/"),
+      new URL("/favicon-32x32.png", "https://www.theexchangedenver.com/"),
     ],
     icon: [
       { url: "/favicon-16x16.png" },
-      new URL("/favicon-16x16.png", "https://www.rosenburgers.com/"),
+      new URL("/favicon-16x16.png", "https://www.theexchangedenver.com/"),
     ],
     apple: [{ url: "/apple-touch-icon.png" }],
     maskIcon: [{ url: "/safari-pinned-tab.svg", color: "#5bbad5" }],
   },
-  manifest: "https://www.rosenburgers.com/site.webmanifest",
+  manifest: "https://www.theexchangedenver.com/site.webmanifest",
   twitter: {
     card: "summary_large_image",
     title: "The Exchange",
     description:
       "Situated on the National Western Complex and occupying the former livestock exchange, The Exchange is a bridge not only between the natural and the urban; between land and history; but also a gateway to a future that upholds the past..",
-    images: ["https://www.rosenburgers.com/og-image.jpg"],
+    images: ["https://www.theexchangedenver.com/og-image.jpg"],
   },
   openGraph: {
     title: "The Exchange",
     description:
       "Situated on the National Western Complex and occupying the former livestock exchange, The Exchange is a bridge not only between the natural and the urban; between land and history; but also a gateway to a future that upholds the past.",
-    url: "https://www.rosenburgers.com/",
+    url: "https://www.theexchangedenver.com/",
     siteName: "",
     images: [
       {
-        url: "https://www.rosenburgers.com/og-image.jpg",
+        url: "https://www.theexchangedenver.com/og-image.jpg",
         width: 1200,
         height: 627,
       },
@@ -45,7 +45,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  metadataBase: new URL("https://www.rosenburgers.com/"),
+  metadataBase: new URL("https://www.theexchangedenver.com/"),
   robots: {
     index: true,
     follow: true,
