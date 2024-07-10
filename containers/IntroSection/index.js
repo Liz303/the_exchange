@@ -41,7 +41,7 @@ export default function Intro() {
           <Header />
         </div>
         <div className={s.backgroundImage} ref={backgroundImageContainer}>
-          <img alt="The exchange building exterior" src="./images/DUSYC_EDIT_V1.jpg"/>
+          <img alt="The exchange building exterior" src="./images/DUSYC_EDIT_V3.jpg"/>
         </div>
         <div className={s.logoContainer} ref={logoRef}>
           <Logo />
